@@ -1,4 +1,5 @@
 
+/* VERSION 2.5 - MOBILE ADAPTATION STABLE */
 :root{--green:#007A3F;--green-dark:#005f32;--dark:#151f1b;--muted:#66736d;--line:#e6e9e5;--bg:#f7f8f6;--gold:#b68f3e}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .topbar{height:40px;background:var(--green);color:white;font-size:14px;display:flex;align-items:center;justify-content:space-between;padding:0 5%}
