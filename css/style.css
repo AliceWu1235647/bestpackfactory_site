@@ -767,20 +767,20 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     min-height:128px;
   }
 
-  /* Mobile chat REFINED CENTERING FIX */
+  /* Mobile chat REFINED CENTERING: Solves Xiaomi/Android misalignment */
   .bpf-whatsapp-chat {
     position: fixed !important;
     left: 50% !important;
-    bottom: 20px !important;
-    width: 92% !important;
-    max-width: 400px !important;
-    transform: translateX(-50%) !important;
-    margin: 0 auto !important;
+    bottom: 16px !important;
+    width: 94% !important;
+    max-width: 420px !important;
+    transform: translateX(-50%) !important; /* Forces true center across all mobile OS */
+    margin: 0 !important;
     padding: 0 !important;
     background: #ffffff !important;
-    border: 2px solid #00843D !important;
-    border-radius: 20px !important;
-    box-shadow: 0 12px 50px rgba(0,0,0,0.25) !important;
+    border: 2.5px solid #00843D !important;
+    border-radius: 24px !important;
+    box-shadow: 0 15px 55px rgba(0,0,0,0.2) !important;
     z-index: 2147483647 !important;
     overflow: hidden !important;
     display: block !important;
@@ -796,13 +796,13 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
   .bpf-whatsapp-chat__body {
     padding: 15px !important;
     display: block !important;
-    text-align: left !important;
   }
   .bpf-whatsapp-chat__body strong {
     font-size: 15px !important;
     margin-bottom: 8px !important;
     display: block !important;
-    color: #17231e !important;
+    color: #111 !important;
+    text-align: center !important;
   }
   .bpf-whatsapp-chat__btn {
     display: flex !important;
@@ -816,6 +816,7 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     font-weight: 900 !important;
     text-decoration: none !important;
     border: 1px solid #ddd;
+    box-sizing: border-box !important;
   }
   .bpf-whatsapp-chat__btn--wa {
     background: #00843D !important;
@@ -823,35 +824,36 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     border: 0 !important;
   }
 
-  /* Carousel TOTAL DETAIL VISIBILITY (Matches PC Version) */
+  /* Carousel TOTAL DETAIL VISIBILITY (Perfect 1600x600 Sync) */
   .hero.hero-image-carousel {
     width: 100% !important;
     height: auto !important;
-    min-height: 180px !important;
+    min-height: 0 !important;
     background: #f7f8f5 !important;
     overflow: visible !important;
     padding: 0 !important;
-    margin-bottom: 20px !important;
+    margin: 0 !important;
   }
   .hero.hero-image-carousel .slider {
-    aspect-ratio: auto !important; /* Let the content decide */
+    aspect-ratio: 2.66 / 1 !important; /* EXACT precision match for source artwork */
     height: auto !important;
+    width: 100% !important;
   }
   .hero.hero-image-carousel .slide.image-slide {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
+    padding: 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
   }
   .hero.hero-image-carousel .hero-banner {
     width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: scale-down !important; /* ABSOLUTE PROTECTION: Never crops any side */
+    height: 100% !important;
+    object-fit: contain !important; /* NO CLIPPING: Shows every pixel from edge to edge */
     object-position: center center !important;
     background: #f7f8f5 !important;
-    display: block !important;
+    border-radius: 0 !important;
   }
   .bpf-whatsapp-chat__head {
     display: block !important;
