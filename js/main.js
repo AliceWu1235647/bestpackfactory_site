@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let current = 0;
   let timer = null;
-  const intervalMs = 4200;
+  const intervalMs = 3500;
 
   function show(index) {
+    if (slides.length <= 1) return;
     current = (index + slides.length) % slides.length;
+    slider.style.transition = "transform .55s ease";
     slider.style.transform = `translateX(-${current * 100}%)`;
     dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
   }
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function startAutoPlay() {
     stopAutoPlay();
+    if (slides.length <= 1) return;
     timer = setInterval(function () {
       show(current + 1);
     }, intervalMs);
