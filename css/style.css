@@ -826,7 +826,7 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     margin-bottom: 25px !important;
   }
   .hero.hero-image-carousel .slider {
-    aspect-ratio: 1.2 / 1 !important; /* Adjusted for full horizontal visibility of products */
+    aspect-ratio: 1.5 / 1 !important; /* PRECISION RATIO: Matches 3:2 landscape photos perfectly */
     height: auto !important;
   }
   .hero.hero-image-carousel .slide.image-slide {
