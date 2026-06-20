@@ -686,23 +686,30 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 }
 
 /* Phone optimization */
-/* UNIFIED MOBILE FIX - VERSION 3.8 */
+/* UNIFIED MOBILE FIX - VERSION 4.0 */
 @media(max-width:640px){
-  .topbar { display:none !important; }
-  .header { border-bottom: none !important; }
+  html, body { margin: 0 !important; padding: 0 !important; overflow-x: hidden !important; }
+  .topbar { display:none !important; height: 0 !important; visibility: hidden !important; }
+  .header { 
+    position: sticky !important; 
+    top: 0 !important; 
+    margin: 0 !important; 
+    padding: 0 !important;
+    border-bottom: none !important;
+    height: 60px !important;
+  }
   .header-inner {
     height: 60px !important;
-    padding: 0 14px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-  }
-  .logo img { width: 160px !important; height: auto !important; }
-  
-  /* Remove white gap above carousel */
-  .hero.hero-image-carousel {
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0 14px !important;
+  }
+  
+  /* Remove white gap above carousel - Forced Sync */
+  .hero.hero-image-carousel {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative !important;
+    top: 0 !important;
     border: none !important;
     background: #f7f8f5 !important;
   }
