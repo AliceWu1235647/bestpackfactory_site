@@ -686,38 +686,44 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 }
 
 /* Phone optimization */
-/* VERSION 5.2 - CAROUSEL LOGIC & VISIBILITY REBORN */
+/* VERSION 5.3 - ULTIMATE MOBILE CAROUSEL RECONSTRUCTION */
 @media(max-width:640px){
-  .header { position: fixed !important; top: 0; left: 0; width: 100% !important; height: 60px !important; z-index: 9999 !important; background: #fff !important; }
+  .header { position: fixed !important; top: 0; left: 0; width: 100% !important; height: 60px !important; z-index: 9999 !important; background: #fff !important; border-bottom: 1px solid #eee !important; }
   
   .hero.hero-image-carousel {
-    margin: 0 !important;
-    padding-top: 60px !important; /* Pushes content precisely below header */
-    background: #f7f8f5 !important;
-    overflow: visible !important;
+    position: relative !important;
+    top: 60px !important; /* Physically offsets the carousel below the header without scrolling */
+    margin: 0 0 80px 0 !important; /* Margin bottom to allow dots and spacing */
+    padding: 0 !important;
     width: 100vw !important;
+    overflow: hidden !important; /* Clips the horizontal rail */
+    height: auto !important;
   }
   .hero.hero-image-carousel .slider {
-    display: flex !important; /* Critical for multi-slide display */
+    display: flex !important;
+    flex-direction: row !important;
     flex-wrap: nowrap !important;
-    width: 100% !important;
+    width: 500% !important; /* Rail for 5 slides */
     height: auto !important;
     aspect-ratio: 2.66 / 1 !important;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.4s ease-out !important;
   }
   .hero.hero-image-carousel .slide.image-slide {
-    flex: 0 0 100% !important; /* Forces each slide to be full screen width */
-    width: 100vw !important;
-    min-width: 100vw !important;
+    width: 20% !important; /* 1/5 of the 500% rail */
+    flex: 0 0 20% !important;
     height: 100% !important;
     display: block !important;
+    padding: 0 !important;
   }
   .hero.hero-image-carousel .hero-banner {
-    width: 100vw !important;
+    width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important; /* NO CUTTING - Guaranteed */
+    object-fit: contain !important; /* ZERO cropping guaranteed */
     object-position: center center !important;
     background: #f7f8f5 !important;
+  }
+  .hero.hero-image-carousel .dots {
+    bottom: -30px !important; /* Position dots clearly below the image */
   }
   .bpf-whatsapp-chat {
     position: fixed !important;
@@ -727,6 +733,7 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     z-index: 999999 !important;
     transform: none !important;
   }
+}
   .hero.hero-image-carousel .slider {
     aspect-ratio: 2.66 / 1 !important; /* Matches 1600x600 perfectly */
     margin: 0 !important;
