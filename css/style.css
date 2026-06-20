@@ -1,10 +1,9 @@
 
-/* VERSION 2.5 - MOBILE ADAPTATION STABLE */
 :root{--green:#007A3F;--green-dark:#005f32;--dark:#151f1b;--muted:#66736d;--line:#e6e9e5;--bg:#f7f8f6;--gold:#b68f3e}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .topbar{height:40px;background:var(--green);color:white;font-size:14px;display:flex;align-items:center;justify-content:space-between;padding:0 5%}
 .header{position:sticky;top:0;z-index:40;background:white;border-bottom:1px solid var(--line);box-shadow:0 8px 26px rgba(0,0,0,.05)}
-.header-inner{height:96px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 5%}.logo{flex-shrink:0;overflow:visible}.logo img{width:100%;max-width:360px;height:auto;display:block}
+.header-inner{height:96px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 5%}.logo img{width:270px}
 .nav{display:flex;gap:24px;font-weight:800;font-size:14px}.nav a:hover{color:var(--green)}
 .search{flex:1;max-width:520px;display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}.search input{border:0;flex:1;padding:14px 16px;font-size:14px}.search button{border:0;background:var(--green);color:#fff;padding:0 28px;font-weight:800}
 .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:14px 24px;font-weight:900;border:1px solid var(--green);background:var(--green);color:#fff;transition:.2s}.btn:hover{transform:translateY(-1px);box-shadow:0 10px 25px rgba(0,122,63,.18)}.btn.light{background:#fff;color:var(--dark);border-color:var(--line)}
@@ -188,17 +187,11 @@
   max-width:none !important;
   height:clamp(500px,37.5vw,760px) !important;
   object-fit:cover !important;
-  object-position:center top;
+  object-position:center center;
   border-radius:0 !important;
   box-shadow:none !important;
   margin:0 !important;
   background:#f7f8f5;
-  /* PC Clarity Fix: Optimized image rendering for large screens */
-  image-rendering: high-quality;
-  image-rendering: -webkit-optimize-contrast;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  filter: contrast(1.02) brightness(1.01); /* Subtle sharpening effect */
 }
 .hero.hero-image-carousel .arrow{
   position:absolute;
@@ -581,7 +574,7 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     gap:10px;
   }
   .logo img{
-    width:220px;
+    width:190px;
     max-height:50px;
   }
   .header .nav,
@@ -686,122 +679,12 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 }
 
 /* Phone optimization */
-/* ============================================================
-   VERSION 6.0 - TOTAL SYNC & STABLE RECONSTRUCTION
-   ============================================================ */
-
-/* 1. Global Reset & Header Sync */
-html, body { margin: 0; padding: 0; overflow-x: hidden; width: 100%; }
-.header { 
-  position: sticky !important; 
-  top: 0; 
-  z-index: 9999; 
-  background: #fff; 
-  border-bottom: 1px solid var(--line); 
-}
-.hero { margin: 0 !important; padding: 0 !important; }
-
-/* 2. Carousel: Zero-Cropping Universal Solution */
-.hero.hero-image-carousel .slider {
-  display: flex !important;
-  flex-direction: row !important;
-  transition: transform 0.5s ease-out;
-  width: 100% !important; /* Reset to 100% for JS logic sync */
-}
-.hero.hero-image-carousel .slide.image-slide {
-  flex: 0 0 100% !important;
-  width: 100% !important;
-}
-.hero.hero-image-carousel .hero-banner {
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 16 / 6 !important; /* PRECISION MATCH: 1600x600 images */
-  object-fit: contain !important; /* GUARANTEED: No patterns cut off at top/sides */
-  object-position: center center !important;
-  background: #f7f8f5 !important;
-  display: block;
-}
-
-/* 3. Mobile Specific Overrides (Clean & Sharp) */
 @media(max-width:640px){
-  .topbar { display: none !important; }
-  .header-inner { height: 60px !important; padding: 0 14px !important; }
-  .hero.hero-image-carousel .hero-banner {
-    aspect-ratio: 2.66 / 1 !important; /* Perfect phone landscape box */
+  .topbar{
+    display:none !important;
   }
-  .bpf-whatsapp-chat {
-    position: fixed !important;
-    left: 4% !important;
-    width: 92% !important;
-    bottom: 16px !important;
-    z-index: 999999 !important;
-    transform: none !important;
-    border: 2px solid #00843D !important;
-  }
-}
-
-  .hero.hero-image-carousel .slider {
-    aspect-ratio: 2.66 / 1 !important; /* Matches 1600x600 perfectly */
-    margin: 0 !important;
-  }
-  .hero.hero-image-carousel .hero-banner {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important; /* Total visibility of all details */
-    object-position: center center !important;
-    background: #f7f8f5 !important;
-    margin: 0 !important;
-  }
-
-  /* Professional Centered Chat UI */
-  .bpf-whatsapp-chat {
-    position: fixed !important;
-    left: 50% !important;
-    bottom: 16px !important;
-    width: 94% !important;
-    max-width: 420px !important;
-    transform: translateX(-50%) !important; /* Critical for Xiaomi/Android centering */
-    margin: 0 !important;
-    background: #ffffff !important;
-    border: 2px solid #00843D !important;
-    border-radius: 20px !important;
-    box-shadow: 0 12px 45px rgba(0,0,0,0.2) !important;
-    z-index: 999999 !important;
-    overflow: hidden !important;
-  }
-  .bpf-whatsapp-chat__head {
-    background: #00843D !important;
-    color: #fff !important;
-    font-size: 16px !important;
-    padding: 10px !important;
-    text-align: center !important;
-    font-weight: 900 !important;
-  }
-  .bpf-whatsapp-chat__body {
-    padding: 14px !important;
-    display: block !important;
-  }
-  .bpf-whatsapp-chat__btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-height: 50px !important;
-    font-size: 16px !important;
-    margin-top: 10px !important;
-    width: 100% !important;
-    border-radius: 12px !important;
-    font-weight: 900 !important;
-    text-decoration: none !important;
-    border: 1px solid #ddd;
-    box-sizing: border-box !important;
-  }
-}
   .header-inner{
-    height:60px !important;
-  }
-  .hero.hero-image-carousel {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+    height:66px;
   }
   .logo img{
     width:168px;
@@ -828,33 +711,8 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; width: 100%; }
   .product-card h3{
     font-size:19px;
   }
-  /* Carousel full visibility fix for all mobile devices */
-  .hero.hero-image-carousel .hero-banner {
-    width: 100vw !important;
-    height: auto !important;
-    min-height: 240px !important;
-    max-height: 60vh !important;
-    object-fit: contain !important;
-    object-position: center top !important;
-    border-radius: 0 !important;
-    background: #f7f8f5 !important;
-    display: block !important;
-    margin: 0 !important;
-  }
-  .hero.hero-image-carousel {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 240px !important;
-    background: #f7f8f5 !important;
-    overflow: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .hero.hero-image-carousel .slide.image-slide {
-    width: 100% !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 0 !important;
+  .hero.hero-image-carousel .hero-banner{
+    height:clamp(340px,92vw,560px) !important;
   }
   .hero.hero-image-carousel .arrow{
     display:none !important;
@@ -877,198 +735,36 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; width: 100%; }
     min-height:128px;
   }
 
-  /* Mobile chat REFINED CENTERING: Solves Xiaomi/Android misalignment */
-  .bpf-whatsapp-chat {
-    position: fixed !important;
-    left: 50% !important;
-    bottom: 16px !important;
-    width: 94% !important;
-    max-width: 420px !important;
-    transform: translateX(-50%) !important; /* Forces true center across all mobile OS */
-    margin: 0 !important;
-    padding: 0 !important;
-    background: #ffffff !important;
-    border: 2.5px solid #00843D !important;
-    border-radius: 24px !important;
-    box-shadow: 0 15px 55px rgba(0,0,0,0.2) !important;
-    z-index: 2147483647 !important;
-    overflow: hidden !important;
-    display: block !important;
+  /* Mobile chat becomes bottom conversion bar so it stays useful without blocking the page */
+  .bpf-whatsapp-chat{
+    left:10px !important;
+    right:10px !important;
+    bottom:10px !important;
+    width:auto !important;
+    max-width:none !important;
+    border-radius:18px !important;
+    border:2px solid #00843D !important;
+    box-shadow:0 16px 42px rgba(0,0,0,.22) !important;
   }
-  .bpf-whatsapp-chat__head {
-    background: #00843D !important;
-    color: #fff !important;
-    font-size: 16px !important;
-    padding: 12px 15px !important;
-    font-weight: 900 !important;
-    text-align: center !important;
+  .bpf-whatsapp-chat__head{
+    font-size:16px !important;
+    padding:11px 14px !important;
   }
-  .bpf-whatsapp-chat__body {
-    padding: 15px !important;
-    display: block !important;
+  .bpf-whatsapp-chat__body{
+    padding:12px !important;
   }
-  .bpf-whatsapp-chat__body strong {
-    font-size: 15px !important;
-    margin-bottom: 8px !important;
-    display: block !important;
-    color: #111 !important;
-    text-align: center !important;
+  .bpf-whatsapp-chat__body strong{
+    font-size:15px !important;
+    margin-bottom:6px !important;
   }
-  .bpf-whatsapp-chat__btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-height: 50px !important;
-    font-size: 16px !important;
-    margin-top: 10px !important;
-    width: 100% !important;
-    border-radius: 12px !important;
-    font-weight: 900 !important;
-    text-decoration: none !important;
-    border: 1px solid #ddd;
-    box-sizing: border-box !important;
+  .bpf-whatsapp-chat__body p,
+  .bpf-whatsapp-chat__email{
+    display:none !important;
   }
-  .bpf-whatsapp-chat__btn--wa {
-    background: #00843D !important;
-    color: #fff !important;
-    border: 0 !important;
-  }
-
-  /* Carousel TOTAL DETAIL VISIBILITY (Perfect 1600x600 Sync) */
-  .hero.hero-image-carousel {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    background: #f7f8f5 !important;
-    overflow: visible !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  .hero.hero-image-carousel .slider {
-    aspect-ratio: 2.66 / 1 !important; /* EXACT precision match for source artwork */
-    height: auto !important;
-    width: 100% !important;
-  }
-  .hero.hero-image-carousel .slide.image-slide {
-    width: 100% !important;
-    height: 100% !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .hero.hero-image-carousel .hero-banner {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important; /* NO CLIPPING: Shows every pixel from edge to edge */
-    object-position: center center !important;
-    background: #f7f8f5 !important;
-    border-radius: 0 !important;
-  }
-  .bpf-whatsapp-chat__head {
-    display: block !important;
-    font-size: 16px !important;
-    padding: 0 0 8px !important;
-    font-weight: 900 !important;
-    color: #00843D !important;
-    text-align: center !important;
-  }
-  .bpf-whatsapp-chat__body {
-    padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-  }
-  .bpf-whatsapp-chat__body strong {
-    font-size: 14px !important;
-    text-align: center !important;
-    color: #333 !important;
-    margin: 0 !important;
-  }
-  .bpf-whatsapp-chat__btn {
-    flex: 1 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-height: 48px !important;
-    font-size: 16px !important;
-    border-radius: 12px !important;
-    font-weight: 900 !important;
-    text-decoration: none !important;
-  }
-
-  /* Carousel PERFECT FULL-WIDTH VISIBILITY (Apple & Xiaomi) */
-  .hero.hero-image-carousel {
-    width: 100% !important;
-    height: auto !important;
-    background: #f7f8f5 !important;
-    overflow: visible !important;
-    padding: 0 !important;
-    margin-bottom: 25px !important;
-  }
-  .hero.hero-image-carousel .slider {
-    aspect-ratio: 2 / 1 !important; /* ULTRA-WIDE RATIO: Guaranteed zero-cropping on all mobile devices */
-    height: auto !important;
-  }
-  .hero.hero-image-carousel .slide.image-slide {
-    width: 100% !important;
-    height: 100% !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: #f7f8f5 !important;
-  }
-  .hero.hero-image-carousel .hero-banner {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important; /* Ensures NO cropping on left or right sides */
-    object-position: center center !important;
-    background: #f7f8f5 !important;
-    border-radius: 0 !important;
-  }
-  .hero.hero-image-carousel .dots {
-    bottom: -18px !important; /* Position dots safely below the product showcase */
-    gap: 12px !important;
-  }
-  .hero.hero-image-carousel .dot {
-    background: #ccc !important;
-  }
-  .hero.hero-image-carousel .dot.active {
-    background: #007A3F !important;
-  }
-  .bpf-whatsapp-chat__head {
-    display: block !important;
-    font-size: 17px !important;
-    padding: 0 0 10px !important;
-    font-weight: 900 !important;
-    color: #00843D !important;
-    text-align: center !important;
-  }
-  .bpf-whatsapp-chat__body {
-    padding: 0 !important;
-    display: block !important;
-    width: 100% !important;
-  }
-  .bpf-whatsapp-chat__body strong {
-    font-size: 15px !important;
-    margin-bottom: 8px !important;
-    display: block !important;
-    text-align: center !important;
-    color: #17231e !important;
-  }
-  .bpf-whatsapp-chat__btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-height: 52px !important;
-    font-size: 17px !important;
-    margin-top: 10px !important;
-    width: 100% !important;
-    border-radius: 14px !important;
-    box-sizing: border-box !important;
-    font-weight: 900 !important;
-    text-decoration: none !important;
+  .bpf-whatsapp-chat__btn{
+    min-height:48px !important;
+    font-size:16px !important;
+    margin-top:8px !important;
   }
   body{
     padding-bottom:190px;
@@ -1399,23 +1095,22 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; width: 100%; }
 }
 @media(max-width:980px){
   .hero.hero-image-carousel picture .hero-banner{
-    height: auto !important;
-    aspect-ratio: 2.66 / 1 !important; /* PERFECT MATCH: Original 1600x600 ratio */
-    object-fit: contain !important; /* NO CLIPPING: Every detail visible */
-    object-position: center center !important;
-    background: #f7f8f5 !important;
+    height:clamp(360px,78vw,620px) !important;
+  }
+  .search{
+    width:100%;
+  }
+  .search input{
+    min-width:0;
+    width:100%;
+  }
+  .rfq-grid{
+    grid-template-columns:1fr;
   }
 }
 @media(max-width:640px){
   .hero.hero-image-carousel picture .hero-banner{
-    height: auto !important;
-    aspect-ratio: 2.66 / 1 !important;
-    object-fit: contain !important;
-    object-position: center center !important;
-    background: #f7f8f5 !important;
-  }
-  .hero.hero-image-carousel {
-    margin-bottom: 20px !important;
+    height:clamp(340px,92vw,560px) !important;
   }
   .rfq-form{
     padding:18px;
