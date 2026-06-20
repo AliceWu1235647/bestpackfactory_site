@@ -686,32 +686,22 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 }
 
 /* Phone optimization */
-/* UNIFIED MOBILE FIX - VERSION 4.0 */
+/* VERSION 5.0 - ABSOLUTE ALIGNMENT FIX */
 @media(max-width:640px){
-  html, body { margin: 0 !important; padding: 0 !important; overflow-x: hidden !important; }
-  .topbar { display:none !important; height: 0 !important; visibility: hidden !important; }
-  .header { 
-    position: sticky !important; 
-    top: 0 !important; 
-    margin: 0 !important; 
-    padding: 0 !important;
-    border-bottom: none !important;
-    height: 60px !important;
-  }
-  .header-inner {
-    height: 60px !important;
-    margin: 0 !important;
-    padding: 0 14px !important;
-  }
-  
-  /* Remove white gap above carousel - Forced Sync */
+  .header { position: fixed !important; width: 100% !important; z-index: 1000 !important; }
   .hero.hero-image-carousel {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    position: relative !important;
-    top: 0 !important;
-    border: none !important;
-    background: #f7f8f5 !important;
+    margin-top: 60px !important; /* Forces the carousel to sit exactly under the 60px header */
+    padding: 0 !important;
+  }
+  .bpf-whatsapp-chat {
+    position: fixed !important;
+    left: 4% !important; /* Robust centering for Android/Xiaomi */
+    width: 92% !important;
+    right: 4% !important;
+    bottom: 20px !important;
+    transform: none !important;
+    max-width: 450px !important;
+    margin: 0 auto !important;
   }
   .hero.hero-image-carousel .slider {
     aspect-ratio: 2.66 / 1 !important; /* Matches 1600x600 perfectly */
