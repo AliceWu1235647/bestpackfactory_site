@@ -1219,22 +1219,23 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 }
 @media(max-width:980px){
   .hero.hero-image-carousel picture .hero-banner{
-    height:clamp(360px,78vw,620px) !important;
-  }
-  .search{
-    width:100%;
-  }
-  .search input{
-    min-width:0;
-    width:100%;
-  }
-  .rfq-grid{
-    grid-template-columns:1fr;
+    height: auto !important;
+    aspect-ratio: 2.66 / 1 !important; /* PERFECT MATCH: Original 1600x600 ratio */
+    object-fit: contain !important; /* NO CLIPPING: Every detail visible */
+    object-position: center center !important;
+    background: #f7f8f5 !important;
   }
 }
 @media(max-width:640px){
   .hero.hero-image-carousel picture .hero-banner{
-    height:clamp(340px,92vw,560px) !important;
+    height: auto !important;
+    aspect-ratio: 2.66 / 1 !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    background: #f7f8f5 !important;
+  }
+  .hero.hero-image-carousel {
+    margin-bottom: 20px !important;
   }
   .rfq-form{
     padding:18px;
