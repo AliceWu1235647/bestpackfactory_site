@@ -735,36 +735,37 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     min-height:128px;
   }
 
-  /* Mobile chat becomes bottom conversion bar so it stays useful without blocking the page */
+  /* Mobile chat fix: force full visibility and better touch area */
   .bpf-whatsapp-chat{
-    left:10px !important;
-    right:10px !important;
-    bottom:10px !important;
+    left:16px !important;
+    right:16px !important;
+    bottom:16px !important;
     width:auto !important;
     max-width:none !important;
-    border-radius:18px !important;
-    border:2px solid #00843D !important;
-    box-shadow:0 16px 42px rgba(0,0,0,.22) !important;
+    min-width:0 !important;
+    border-radius:20px !important;
+    border:2.5px solid #00843D !important;
+    box-shadow:0 12px 45px rgba(0,0,0,.25) !important;
   }
   .bpf-whatsapp-chat__head{
-    font-size:16px !important;
-    padding:11px 14px !important;
+    font-size:17px !important;
+    padding:12px 18px !important;
   }
   .bpf-whatsapp-chat__body{
-    padding:12px !important;
+    padding:14px !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
   .bpf-whatsapp-chat__body strong{
-    font-size:15px !important;
-    margin-bottom:6px !important;
-  }
-  .bpf-whatsapp-chat__body p,
-  .bpf-whatsapp-chat__email{
-    display:none !important;
+    font-size:16px !important;
+    margin-bottom:8px !important;
   }
   .bpf-whatsapp-chat__btn{
-    min-height:48px !important;
-    font-size:16px !important;
-    margin-top:8px !important;
+    min-height:52px !important;
+    font-size:17px !important;
+    margin-top:10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   body{
     padding-bottom:190px;
