@@ -192,6 +192,12 @@
   box-shadow:none !important;
   margin:0 !important;
   background:#f7f8f5;
+  /* PC Clarity Fix: Optimized image rendering for large screens */
+  image-rendering: high-quality;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  filter: contrast(1.02) brightness(1.01); /* Subtle sharpening effect */
 }
 .hero.hero-image-carousel .arrow{
   position:absolute;
