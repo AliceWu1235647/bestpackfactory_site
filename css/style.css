@@ -816,34 +816,38 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     text-decoration: none !important;
   }
 
-  /* Carousel PERFECT VISIBILITY (Apple & Xiaomi) - ULTRA TALL VERSION */
+  /* Carousel PERFECT FULL-WIDTH VISIBILITY (Apple & Xiaomi) */
   .hero.hero-image-carousel {
     width: 100% !important;
     height: auto !important;
     background: #f7f8f5 !important;
-    overflow: visible !important; /* Allow content to breathe */
+    overflow: visible !important;
     padding: 0 !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 25px !important;
   }
   .hero.hero-image-carousel .slider {
-    aspect-ratio: 1 / 1.1 !important; /* Forces a much taller box for products */
+    aspect-ratio: 1.2 / 1 !important; /* Adjusted for full horizontal visibility of products */
     height: auto !important;
   }
   .hero.hero-image-carousel .slide.image-slide {
     width: 100% !important;
     height: 100% !important;
     padding: 0 !important;
-    display: block !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #f7f8f5 !important;
   }
   .hero.hero-image-carousel .hero-banner {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Full bleed display */
-    object-position: center top !important; /* Prioritize the head of the product */
+    object-fit: contain !important; /* Ensures NO cropping on left or right sides */
+    object-position: center center !important;
     background: #f7f8f5 !important;
+    border-radius: 0 !important;
   }
   .hero.hero-image-carousel .dots {
-    bottom: -15px !important; /* Move navigation out of the product area */
+    bottom: -18px !important; /* Position dots safely below the product showcase */
     gap: 12px !important;
   }
   .hero.hero-image-carousel .dot {
