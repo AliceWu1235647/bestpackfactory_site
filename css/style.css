@@ -187,7 +187,7 @@
   max-width:none !important;
   height:clamp(500px,37.5vw,760px) !important;
   object-fit:cover !important;
-  object-position:center center;
+  object-position:center top;
   border-radius:0 !important;
   box-shadow:none !important;
   margin:0 !important;
