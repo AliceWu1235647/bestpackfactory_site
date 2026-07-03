@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let current = 0;
   let timer = null;
-  const intervalMs = Number(hero.getAttribute("data-autoplay-ms")) || 3500;
+  const intervalMs = Number(hero.getAttribute("data-autoplay-ms")) || 3000;
 
   function show(index) {
     current = (index + slides.length) % slides.length;
