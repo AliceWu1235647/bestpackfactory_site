@@ -45,8 +45,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/css/style.css?v=24.1" />
-        <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop.webp" fetchPriority="high" />
+        <link rel="stylesheet" href="/css/style.css?v=25.1" />
+        <link rel="preload" as="image" href="/assets/hero/slide-01-mobile.webp" media="(max-width: 640px)" fetchpriority="high" />
+        <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop-scene.webp" media="(min-width: 641px)" fetchpriority="high" />
         <OrganizationSchema />
         <WebSiteSchema />
       </head>

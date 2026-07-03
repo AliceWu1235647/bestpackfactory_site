@@ -470,3 +470,19 @@ document.addEventListener("DOMContentLoaded", function () {
     initProductsPageSearch(); initHeaderSearch(); initRFQWhatsApp(); initSuccessMessage();
   }
 })();
+
+// --- PERFORMANCE & UX FLAGSHIP v25.1 ---
+document.addEventListener('DOMContentLoaded', function() {
+    const chatBox = document.querySelector('.bpf-whatsapp-chat');
+    if (chatBox) {
+        chatBox.addEventListener('click', function(e) {
+            if (window.innerWidth <= 640) {
+                // If clicking the button directly, let it go to WhatsApp/Email
+                if (e.target.closest('.bpf-whatsapp-chat__btn')) {
+                    return;
+                }
+                this.classList.toggle('is-active');
+            }
+        });
+    }
+});
