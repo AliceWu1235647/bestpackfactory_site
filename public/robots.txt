@@ -10,3 +10,5 @@ Allow: /blog/
 Allow: /news/
 Allow: /whitepapers.html
 Sitemap: https://bestpackfactory.com/r2-products-sitemap.xml
+Sitemap: https://bestpackfactory.com/r2-blog-sitemap.xml
+Sitemap: https://bestpackfactory.com/r2-news-sitemap.xml

@@ -1,0 +1,68 @@
+{
+  "news": [
+    {
+      "slug": "bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model",
+      "title": "BestPackFactory Builds a One-Stop Packaging Model: Strategy, Design, Manufacturing and Logistics",
+      "description": "Company news explaining how BestPackFactory supports B2B packaging buyers beyond boxes by linking strategy, design, sampling, production and logistics.",
+      "keywords": [
+        "packaging strategy",
+        "packaging design",
+        "packaging manufacturing",
+        "packaging logistics",
+        "BestPackFactory news"
+      ],
+      "url": "/news/bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model.html",
+      "canonical": "https://bestpackfactory.com/news/bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model.html",
+      "type": "news"
+    },
+    {
+      "slug": "luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags",
+      "title": "Luxury Packaging Trends: Custom Gift Boxes, Rigid Boxes and Paper Bags for Premium Brands",
+      "description": "News and buyer insight on luxury packaging trends for perfume, jewelry, cosmetics, gift boxes and premium paper bags.",
+      "keywords": [
+        "Custom Gift Boxes",
+        "Rigid Boxes",
+        "Paper Bags",
+        "perfume packaging",
+        "jewelry packaging",
+        "luxury packaging"
+      ],
+      "url": "/news/luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags.html",
+      "canonical": "https://bestpackfactory.com/news/luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags.html",
+      "type": "news"
+    },
+    {
+      "slug": "magnetic-packaging-mailer-boxes-b2b-sourcing-update",
+      "title": "Magnetic Packaging and Mailer Boxes: B2B Sourcing Update for Retail and Ecommerce Brands",
+      "description": "A sourcing update comparing magnetic packaging, mailer boxes and rigid boxes for ecommerce, retail and gifting projects.",
+      "keywords": [
+        "Magnetic Packaging",
+        "Mailer Boxes",
+        "corrugated mailer box",
+        "magnetic rigid box",
+        "ecommerce packaging"
+      ],
+      "url": "/news/magnetic-packaging-mailer-boxes-b2b-sourcing-update.html",
+      "canonical": "https://bestpackfactory.com/news/magnetic-packaging-mailer-boxes-b2b-sourcing-update.html",
+      "type": "news"
+    },
+    {
+      "slug": "packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts",
+      "title": "Packaging Logistics Optimization for Gift Boxes, Paper Bags and Inserts",
+      "description": "Buyer-focused news on how structure choice, packing method and carton planning affect packaging logistics cost and delivery risk.",
+      "keywords": [
+        "packaging logistics",
+        "Custom Gift Boxes",
+        "Paper Bags",
+        "foam insert",
+        "export carton",
+        "packaging manufacturing"
+      ],
+      "url": "/news/packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts.html",
+      "canonical": "https://bestpackfactory.com/news/packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts.html",
+      "type": "news"
+    }
+  ],
+  "count": 4,
+  "source": "BestPackFactory static export seed"
+}

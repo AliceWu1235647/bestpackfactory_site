@@ -163,3 +163,79 @@ This refreshes:
 
 Search aliases are built in for buyer terms including:
 `box`, `pouch`, `rigid box`, `mailer box`, `corrugated mailer box`, `cardstock`, `magnetic packaging`, `magnetic rigid box`, `sliding drawer box`, `cylinder tube packaging`, `paper gift bag`, `food packaging box`, and `foam insert`.
+
+## Blog / News R2 ISR Upgrade
+
+This package also supports R2-powered Blog and News pages with true Next.js ISR.
+
+### R2 object paths
+
+Upload blog/news JSON or raw HTML using these default paths:
+
+```text
+blog/{slug}.json
+blog/{slug}.html
+blog/index.json
+news/{slug}.json
+news/{slug}.html
+news/index.json
+```
+
+Recommended JSON shape:
+
+```json
+{
+  "slug": "custom-gift-boxes-strategy-guide",
+  "title": "Custom Gift Boxes Strategy Guide",
+  "description": "A B2B guide for strategy, design, manufacturing and logistics.",
+  "keywords": ["custom gift boxes", "rigid boxes", "magnetic packaging"],
+  "quickAnswer": "Custom gift boxes should connect brand strategy, design, sampling, manufacturing and logistics.",
+  "parameters": { "MOQ": "500 PCS", "Best fit": "Luxury gift sets" },
+  "procurementChecklist": ["Confirm product size", "Approve dieline", "Confirm shipping method"],
+  "faq": [{ "question": "What is the MOQ?", "answer": "MOQ starts from 500 PCS." }]
+}
+```
+
+For full layout preservation, you can upload JSON with a full HTML field:
+
+```json
+{
+  "slug": "my-news-post",
+  "html": "<!DOCTYPE html><html>...</html>"
+}
+```
+
+### Dynamic ISR URLs
+
+- `/blog/{slug}.html`
+- `/news/{slug}.html`
+
+### Revalidate one blog post
+
+```bash
+/api/revalidate?secret=YOUR_SECRET&path=/blog/custom-gift-boxes-strategy-guide.html&blogSlug=custom-gift-boxes-strategy-guide
+```
+
+### Revalidate one news post
+
+```bash
+/api/revalidate?secret=YOUR_SECRET&path=/news/factory-update.html&newsSlug=factory-update
+```
+
+### Dynamic R2 sitemaps
+
+- `/r2-blog-sitemap.xml`
+- `/r2-news-sitemap.xml`
+
+Add these two sitemap URLs to Google Search Console after deployment.
+
+### Local seed files
+
+The package includes local seed files under:
+
+```text
+r2-seed/blog/
+r2-seed/news/
+```
+
+These are examples and can be uploaded to R2.

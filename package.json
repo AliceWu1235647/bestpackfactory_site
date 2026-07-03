@@ -9,7 +9,9 @@
     "lint:links": "node scripts/check-links.mjs",
     "revalidate:example": "node scripts/revalidate-example.mjs",
     "export:r2-products": "node scripts/export-static-products-to-r2-json.mjs",
-    "r2:health": "echo \"Deploy first, then open /api/r2-health on your Vercel domain\""
+    "r2:health": "echo \"Deploy first, then open /api/r2-health on your Vercel domain\"",
+    "export:r2-content": "node scripts/export-static-content-to-r2-json.mjs",
+    "check:r2-content": "node scripts/check-r2-content-files.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
