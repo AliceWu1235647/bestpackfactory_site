@@ -1,4 +1,3 @@
-
 :root{--green:#007A3F;--green-dark:#005f32;--dark:#151f1b;--muted:#66736d;--line:#e6e9e5;--bg:#f7f8f6;--gold:#b68f3e}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .topbar{height:40px;background:var(--green);color:white;font-size:14px;display:flex;align-items:center;justify-content:space-between;padding:0 5%}
@@ -323,27 +322,7 @@
   text-align:center;
   user-select:all;
 }
-@media(max-width:720px){
-  
-  .bpf-whatsapp-chat { 
-    position: fixed !important; 
-    left: 16px !important; 
-    right: 16px !important; 
-    bottom: 20px !important; 
-    width: auto !important;
-    max-width: none !important;
-    transform: none !important; 
-    margin: 0 !important; 
-    padding: 0 !important;
-    z-index: 999999 !important; 
-    border-radius: 22px !important; 
-    border: 2.5px solid #00843D !important; 
-    background: #fff !important; 
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-  }
 
-}
 
 
 /* V59 image proportion fix: preserve product image aspect ratios */
@@ -2593,5 +2572,25 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 @media(max-width:640px){
   .r2-result-grid{
     grid-template-columns:1fr;
+  }
+}
+
+/* FINAL MOBILE CENTER FIX v12.5 - ZERO SHIFT POLICY */
+@media(max-width:640px){
+  .bpf-whatsapp-chat { 
+    position: fixed !important; 
+    left: 14px !important; 
+    right: 14px !important; 
+    width: auto !important; 
+    bottom: 15px !important; 
+    transform: none !important; 
+    margin: 0 !important; 
+    padding: 0 !important;
+    z-index: 2147483647 !important; 
+    border-radius: 20px !important; 
+    border: 2px solid #00843D !important; 
+    background: #fff !important; 
+    box-sizing: border-box !important;
+    overflow: hidden !important;
   }
 }
