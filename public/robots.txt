@@ -1,14 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
 
 Sitemap: https://bestpackfactory.com/sitemap.xml
-
-# AI and GEO discovery helpers
-Allow: /llms.txt
-Allow: /ai-index.json
-Allow: /blog/
-Allow: /news/
-Allow: /whitepapers.html
 Sitemap: https://bestpackfactory.com/r2-products-sitemap.xml
-Sitemap: https://bestpackfactory.com/r2-blog-sitemap.xml
-Sitemap: https://bestpackfactory.com/r2-news-sitemap.xml
