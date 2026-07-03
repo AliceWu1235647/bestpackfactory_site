@@ -1,0 +1,21 @@
+{
+  "name": "bestpackfactory-nextjs-isr",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:links": "node scripts/check-links.mjs",
+    "revalidate:example": "node scripts/revalidate-example.mjs",
+    "export:r2-products": "node scripts/export-static-products-to-r2-json.mjs",
+    "r2:health": "echo \"Deploy first, then open /api/r2-health on your Vercel domain\""
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {},
+  "type": "module"
+}
