@@ -3,5 +3,10 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://bestpackfactory.com/sitemap.xml
-Sitemap: https://bestpackfactory.com/r2-products-sitemap.xml
+Sitemap: https://www.bestpackfactory.com/sitemap.xml
+Sitemap: https://www.bestpackfactory.com/r2-products-sitemap.xml
+Sitemap: https://www.bestpackfactory.com/r2-blog-sitemap.xml
+Sitemap: https://www.bestpackfactory.com/r2-news-sitemap.xml
+
+# GEO: AI Readability
+Sitemap: https://www.bestpackfactory.com/llms.txt

@@ -5,6 +5,27 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  async redirects() {
+    return [
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
+      // Technical SEO: Ensure www domain unification (301 Permanent)
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'bestpackfactory.com',
+          },
+        ],
+        destination: 'https://www.bestpackfactory.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

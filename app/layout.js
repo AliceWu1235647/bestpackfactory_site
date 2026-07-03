@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style.css?v=RESTORE_233221_FINAL" />
         <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop.webp" />
       </head>
       <body suppressHydrationWarning={true}>

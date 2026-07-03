@@ -164,7 +164,7 @@
   background:#00843D;
   color:#fff;
 }
-.bpf-whatsapp-chat__btn--mail{
+.bpf-whatsapp-chat__btn--mail {
   background:#fff;
   color:#00843D;
   border:1.5px solid #00843D;
@@ -1914,3 +1914,14 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 
 body { overflow-x: hidden !important; width: 100% !important; }
 .hero, .slider, .slide { max-width: 100vw !important; overflow: hidden !important; }
+
+html, body { 
+  overflow-x: hidden !important; 
+  width: 100% !important; 
+  position: relative !important; 
+  margin: 0 !important; 
+  padding: 0 !important;
+}
+.mobile-nav-panel {
+  max-width: 100vw !important;
+}

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default async function sitemap() {
-  const baseUrl = 'https://bestpackfactory.com';
+  const baseUrl = 'https://www.bestpackfactory.com';
 
   // 1. Static Core Pages
   const staticPages = [
