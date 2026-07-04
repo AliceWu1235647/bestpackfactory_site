@@ -1912,8 +1912,8 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
   .bpf-whatsapp-chat__btn { display: flex !important; visibility: visible !important; opacity: 1 !important; }
 }
 
-body { overflow-x: hidden !important; width: 100% !important; }
-.hero, .slider, .slide { max-width: 100vw !important; overflow: hidden !important; }
+.contact-line-beautified{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin-top:12px;font-weight:500;color:var(--muted);white-space:nowrap}
+@media(max-width:768px){.contact-line-beautified{gap:15px;justify-content:center;font-size:12px}}
 
 html, body { 
   overflow-x: hidden !important; 
