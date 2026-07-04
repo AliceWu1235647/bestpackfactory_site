@@ -19,7 +19,14 @@ export async function generateMetadata({ params }) {
   const resolved = await params;
   const slug = getSlug(resolved);
   const page = await getProductPageBySlug(slug);
-  return page?.metadata || { title: 'BestPackFactory Product' };
+  if (!page) return { title: 'BestPackFactory Product' };
+
+  // SEO Fix: Only touch metadata, NEVER greedy replace in body
+  const metadata = page.metadata;
+  if (metadata.alternates && metadata.alternates.canonical) {
+    metadata.alternates.canonical = metadata.alternates.canonical.replace('https://bestpackfactory.com', 'https://www.bestpackfactory.com');
+  }
+  return metadata;
 }
 
 export default async function ProductRoute({ params }) {
