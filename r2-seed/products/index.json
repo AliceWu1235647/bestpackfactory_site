@@ -143,7 +143,7 @@
     },
     {
       "slug": "custom-retort-pouches-ready-meal-packaging",
-      "title": "Custom Retort Pouches for Ready Meal Packaging | 121°C Retort | MOQ 500 PCS | BestPackFactory",
+      "title": "Custom Retort Pouches for Ready Meal Packaging | 121\u00b0C Retort | MOQ 500 PCS | BestPackFactory",
       "description": "Custom Retort Pouches for Ready Meal Packaging technical specification: retort-grade materials, high temperature sterilization, puncture resistance and RFQ checklist. B2B retort packaging manufacturer MOQ 500 PCS.",
       "url": "/products/custom-retort-pouches-ready-meal-packaging.html",
       "json": "/products/custom-retort-pouches-ready-meal-packaging.json"
@@ -254,6 +254,13 @@
       "json": "/products/matte-black-coffee-bags.json"
     },
     {
+      "slug": "medical-aesthetic-packaging-boxes",
+      "title": "Custom Medical Aesthetic Packaging Boxes | GS1 Compliant Pharma Kits | BestPackFactory",
+      "description": "High-end magnetic rigid boxes for medical aesthetic serums and HA rejuvenation kits. GS1 compliant, tamper-evident, and medical-grade materials. MOQ 500 PCS.",
+      "url": "/products/medical-aesthetic-packaging-boxes.html",
+      "json": "/products/medical-aesthetic-packaging-boxes.json"
+    },
+    {
       "slug": "paper-bags",
       "title": "Paper Bags | Technical Specification | MOQ 500 PCS | BestPackFactory",
       "description": "Paper Bags technical specification: materials, thickness, barrier targets, printing, closure, tolerance and RFQ checklist. B2B custom packaging manufacturer MOQ 500 PCS.",
@@ -261,18 +268,18 @@
       "json": "/products/paper-bags.json"
     },
     {
-      "slug": "pet-bottles-candy-pharma",
-      "title": "PET Bottles | Technical Specification | MOQ 500 PCS | BestPackFactory",
-      "description": "PET Bottles technical specification: materials, thickness, barrier targets, printing, closure, tolerance and RFQ checklist. B2B custom packaging manufacturer MOQ 500 PCS.",
-      "url": "/products/pet-bottles-candy-pharma.html",
-      "json": "/products/pet-bottles-candy-pharma.json"
-    },
-    {
       "slug": "pet-bottles",
       "title": "PET Bottles | Technical Specification | MOQ 500 PCS | BestPackFactory",
       "description": "PET Bottles technical specification: materials, thickness, barrier targets, printing, closure, tolerance and RFQ checklist. B2B custom packaging manufacturer MOQ 500 PCS.",
       "url": "/products/pet-bottles.html",
       "json": "/products/pet-bottles.json"
+    },
+    {
+      "slug": "pet-bottles-candy-pharma",
+      "title": "PET Bottles | Technical Specification | MOQ 500 PCS | BestPackFactory",
+      "description": "PET Bottles technical specification: materials, thickness, barrier targets, printing, closure, tolerance and RFQ checklist. B2B custom packaging manufacturer MOQ 500 PCS.",
+      "url": "/products/pet-bottles-candy-pharma.html",
+      "json": "/products/pet-bottles-candy-pharma.json"
     },
     {
       "slug": "pet-food-bags",
