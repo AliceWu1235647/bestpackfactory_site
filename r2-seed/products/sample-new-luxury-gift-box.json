@@ -1,0 +1,29 @@
+{
+  "slug": "sample-new-luxury-gift-box",
+  "title": "Sample New Luxury Gift Box",
+  "seoTitle": "Sample New Luxury Gift Box | Magnetic Rigid Box Supplier",
+  "metaDescription": "Example R2 product JSON for a magnetic rigid box with foam insert, strategy, design, manufacturing and logistics support.",
+  "description": "A sample product JSON showing how to publish a new product through Cloudflare R2 without committing a new HTML file to GitHub.",
+  "quickAnswer": "For a new luxury gift box project, buyers should confirm product dimensions, box structure, insert type, printing finish, sampling needs and export logistics before requesting a factory quote.",
+  "keywords": ["custom gift boxes", "magnetic rigid box", "foam insert", "luxury packaging", "gift box supplier"],
+  "images": ["/assets/products/luxury-magnetic-boxes-01.webp"],
+  "specs": {
+    "Box type": "Magnetic rigid box / collapsible magnetic gift box",
+    "Common materials": "Greyboard, art paper, specialty paper, kraft paper",
+    "Insert options": "Foam insert, paperboard insert, EVA insert, molded pulp insert",
+    "Finishing": "Matte lamination, soft touch, hot foil, embossing, spot UV",
+    "MOQ": "500 PCS"
+  },
+  "procurementChecklist": [
+    "Confirm product dimensions and target packaging structure.",
+    "Choose rigid box, drawer box, tube packaging or paper gift bag format.",
+    "Prepare logo, artwork, Pantone colors and finishing requirements.",
+    "Approve dieline, sample and pre-production proof before bulk manufacturing.",
+    "Confirm export carton, pallet, air freight or sea freight requirements."
+  ],
+  "faq": [
+    {"question": "Can this product be added without rebuilding the whole website?", "answer": "Yes. Upload this JSON to R2 under products/sample-new-luxury-gift-box.json, then call the revalidate API for /products/sample-new-luxury-gift-box.html."},
+    {"question": "Will old product URLs change?", "answer": "No. Existing static product URLs remain unchanged and continue to serve from the same paths."},
+    {"question": "What is the best CTA for this page?", "answer": "Ask buyers to send product size, order quantity, artwork and destination address for a factory quote."}
+  ]
+}
