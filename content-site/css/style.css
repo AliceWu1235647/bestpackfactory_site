@@ -1821,7 +1821,8 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
     min-height:24px !important;
   }
   .hero.hero-image-carousel.bpf-layered-carousel .hero-bullets-list li::before{
-    content:\"✔\";background:#fff;border-radius:14px;padding:16px 18px;margin:10px 0;box-shadow:0 8px 22px rgba(10,24,18,.035);}
+    content:"✔";background:#fff;border-radius:14px;padding:16px 18px;margin:10px 0;box-shadow:0 8px 22px rgba(10,24,18,.035);}
+}
 .faq-block summary{font-weight:900;color:#10231b;cursor:pointer;}
 .faq-block details p{margin:10px 0 0;}
 .geo-article section{margin-top:28px;}
@@ -1942,5 +1943,51 @@ html, body {
     right: 10px !important;
     bottom: 10px !important;
     width: calc(100% - 20px) !important;
+  }
+}
+
+/* Emergency chatbox guard: keep the quote widget compact and out of the product grid. */
+body .bpf-whatsapp-chat.bpf-whatsapp-chat {
+  position: fixed !important;
+  left: auto !important;
+  right: 20px !important;
+  bottom: 20px !important;
+  width: 360px !important;
+  max-width: calc(100vw - 40px) !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  z-index: 99999 !important;
+  box-sizing: border-box !important;
+}
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__head {
+  font-size: 16px !important;
+  padding: 11px 14px !important;
+}
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__body {
+  padding: 12px !important;
+}
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__body strong,
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__body p,
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__email {
+  display: none !important;
+}
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__btn {
+  min-height: 42px !important;
+  margin-top: 0 !important;
+  font-size: 15px !important;
+}
+body .bpf-whatsapp-chat.bpf-whatsapp-chat .bpf-whatsapp-chat__btn + .bpf-whatsapp-chat__btn {
+  margin-top: 8px !important;
+}
+@media (max-width: 768px) {
+  body .bpf-whatsapp-chat.bpf-whatsapp-chat {
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    width: auto !important;
+    max-width: none !important;
+    border-radius: 12px !important;
   }
 }
