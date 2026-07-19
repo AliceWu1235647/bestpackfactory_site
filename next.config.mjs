@@ -12,6 +12,41 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/products/:slug([^/.]+)',
+        destination: '/products/:slug.html',
+        permanent: true,
+      },
+      {
+        source: '/factory.html',
+        destination: '/about.html',
+        permanent: true,
+      },
+      {
+        source: '/factory/about-us.html',
+        destination: '/about.html',
+        permanent: true,
+      },
+      {
+        source: '/industries/coffee-packaging.html',
+        destination: '/products/coffee-bags.html',
+        permanent: true,
+      },
+      {
+        source: '/materials/corrugated-packaging.html',
+        destination: '/products/custom-boxes.html',
+        permanent: true,
+      },
+      {
+        source: '/materials/pet-pe-aluminum-film.html',
+        destination: '/products/flexible-packaging.html',
+        permanent: true,
+      },
+      {
+        source: '/quote-ready-packaging-sourcing-hub.html',
+        destination: '/contact.html',
+        permanent: true,
+      },
       // Technical SEO: Ensure www domain unification (301 Permanent)
       {
         source: '/:path*',

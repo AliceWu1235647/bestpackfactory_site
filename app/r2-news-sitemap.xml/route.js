@@ -1,9 +1,11 @@
 import { getR2ContentIndex, contentRevalidateSeconds } from '../../lib/r2-content';
+import { listStaticContentSlugs } from '../../lib/content-pages';
+import { SITE_URL } from '../../lib/seo-utils';
 
 export const revalidate = 3600;
 
 function siteUrl() {
-  return (process.env.NEXT_PUBLIC_SITE_URL || 'https://bestpackfactory.com').replace(/\/+$/, '');
+  return SITE_URL;
 }
 
 function cleanSlug(value = '') {
@@ -17,9 +19,13 @@ function itemSlug(item) {
 export async function GET() {
   const index = await getR2ContentIndex('news');
   const posts = Array.isArray(index?.news) ? index.news : Array.isArray(index?.items) ? index.items : Array.isArray(index) ? index : [];
-  const urls = posts
+  const slugs = posts
     .map(itemSlug)
     .filter(Boolean)
+    .concat(listStaticContentSlugs('news').map(cleanSlug));
+  const urls = [...new Set(slugs)]
+    .filter(Boolean)
+    .sort()
     .map(slug => `  <url><loc>${siteUrl()}/news/${slug}.html</loc><changefreq>weekly</changefreq><priority>0.86</priority></url>`)
     .join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
