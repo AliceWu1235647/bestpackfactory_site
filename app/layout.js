@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/css/style.css?v=20260722_visual_fix" />
+        <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
         <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop.webp" />
         {GA_ID !== 'G-XXXXXXXXXX' && (
           <>

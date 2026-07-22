@@ -2079,3 +2079,44 @@ html, body {
   margin: 0 !important;
   border-radius: 0 !important;
 }
+
+/* 2026-07-22 homepage desktop product section: keep product cards in 4 columns. */
+@media (min-width: 981px) {
+  .home-product-section .grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    align-items: stretch !important;
+  }
+  .home-product-section .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 14px !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+  .home-product-section .product-card > a {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+  .home-product-section .product-card picture {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 216px !important;
+    padding: 10px 14px 0 !important;
+    background: #fff !important;
+  }
+  .home-product-section .product-card img {
+    height: 220px !important;
+    padding: 0 !important;
+  }
+  .home-product-section .card-body {
+    padding: 18px 16px 28px !important;
+  }
+}
