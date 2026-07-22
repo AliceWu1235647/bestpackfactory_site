@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
+function initHeroCarousel() {
   const hero = document.querySelector(".hero-image-carousel");
   if (!hero) return;
+  if (hero.dataset.carouselReady === "true") return;
+  hero.dataset.carouselReady = "true";
 
   const slider = hero.querySelector(".slider");
   const slides = Array.from(slider ? slider.querySelectorAll(".slide") : []);
@@ -86,7 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   show(0);
   startAutoPlay();
-});
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initHeroCarousel);
+} else {
+  initHeroCarousel();
+}
+})();
 
 // FINAL MOBILE-FIRST: hamburger menu and touch-friendly overlay
 (function(){

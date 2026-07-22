@@ -1945,3 +1945,137 @@ html, body {
     width: calc(100% - 20px) !important;
   }
 }
+
+/* 2026-07-22 requested narrow visual fixes: trust row, small carousel dots, single clean chat card. */
+@media (min-width: 769px) {
+  .trust {
+    position: relative !important;
+    z-index: 50 !important;
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    width: calc(100% - 120px) !important;
+    max-width: 1320px !important;
+    margin: -44px auto 42px !important;
+    padding: 0 !important;
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, .08) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 18px 38px rgba(15, 36, 27, .08) !important;
+    overflow: hidden !important;
+  }
+  .trust-card {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    min-height: 64px !important;
+    padding: 14px 24px !important;
+    margin: 0 !important;
+    background: #fff !important;
+    border-right: 1px solid #e3e8e4 !important;
+  }
+  .trust-card:last-child {
+    border-right: 0 !important;
+  }
+  .trust-card > div:last-child {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+    min-width: 0 !important;
+  }
+  .trust-card b {
+    color: #10231b !important;
+    font-size: 14px !important;
+    line-height: 1.15 !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+  }
+  .trust-card span {
+    color: #66736d !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+  .trust-icon {
+    position: relative !important;
+    flex: 0 0 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0 !important;
+    color: #007A3F !important;
+  }
+  .trust-icon::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 2px !important;
+    border: 1.7px solid currentColor !important;
+    border-radius: 4px !important;
+  }
+  .trust-card:nth-child(2) .trust-icon::before {
+    left: 8px !important;
+    width: 4px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 7px 0 -1px currentColor, 0 13px 0 -1px currentColor !important;
+  }
+  .trust-card:nth-child(3) .trust-icon::before {
+    border-radius: 999px !important;
+    box-shadow: inset 0 0 0 4px #fff !important;
+  }
+  .trust-card:nth-child(4) .trust-icon::before {
+    inset: 5px 1px 5px 1px !important;
+    border-radius: 2px !important;
+    box-shadow: 12px 7px 0 -4px currentColor, 3px 10px 0 -5px currentColor, 12px 10px 0 -5px currentColor !important;
+  }
+  .trust-card:nth-child(5) .trust-icon::before {
+    border-radius: 999px !important;
+    border-style: dashed !important;
+  }
+}
+
+.hero.hero-image-carousel.bpf-layered-carousel .dots {
+  gap: 7px !important;
+}
+@media (min-width: 769px) {
+  .hero.hero-image-carousel.bpf-layered-carousel .dots {
+    bottom: 46px !important;
+    z-index: 80 !important;
+  }
+}
+.hero.hero-image-carousel.bpf-layered-carousel .dot,
+.hero.hero-image-carousel.bpf-layered-carousel .dot.active {
+  width: 7px !important;
+  height: 7px !important;
+  min-width: 7px !important;
+  min-height: 7px !important;
+  flex: 0 0 7px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.hero.hero-image-carousel.bpf-layered-carousel .dot {
+  background: #c4ccc6 !important;
+}
+.hero.hero-image-carousel.bpf-layered-carousel .dot.active {
+  background: #007A3F !important;
+}
+
+.bpf-whatsapp-chat {
+  overflow: hidden !important;
+  box-shadow: none !important;
+  isolation: isolate !important;
+}
+.bpf-whatsapp-chat::before,
+.bpf-whatsapp-chat::after,
+.bpf-whatsapp-chat__head::before,
+.bpf-whatsapp-chat__head::after,
+.bpf-whatsapp-chat__body::before,
+.bpf-whatsapp-chat__body::after {
+  content: none !important;
+  display: none !important;
+}
+.bpf-whatsapp-chat__head {
+  width: auto !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}

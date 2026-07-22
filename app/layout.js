@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/css/style.css?v=RESTORE_233221_FINAL" />
+        <link rel="stylesheet" href="/css/style.css?v=20260722_visual_fix" />
         <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop.webp" />
         {GA_ID !== 'G-XXXXXXXXXX' && (
           <>
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning={true}>
         {children}
-        <Script src="/js/main.js" strategy="beforeInteractive" />
+        <Script src="/js/main.js?v=20260722" strategy="afterInteractive" />
       </body>
     </html>
   );
