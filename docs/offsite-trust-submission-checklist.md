@@ -6,6 +6,8 @@ Use this checklist when creating or updating external company profiles. Keep the
 
 - Company name: BestPackFactory
 - Website: https://www.bestpackfactory.com/
+- Procurement hub: https://www.bestpackfactory.com/packaging-procurement-hub.html
+- RFQ template: https://www.bestpackfactory.com/custom-packaging-rfq-template.html
 - Primary category: Custom packaging manufacturer
 - Business model: B2B factory-direct RFQ
 - Standard MOQ: 500 PCS

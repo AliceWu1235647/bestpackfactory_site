@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning={true}>
         {children}
-        <Script src="/js/main.js?v=20260723_perf" strategy="afterInteractive" />
+        <Script src="/js/main.js?v=20260723_leads_lazy" strategy="lazyOnload" />
       </body>
     </html>
   );

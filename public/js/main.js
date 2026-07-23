@@ -135,6 +135,80 @@ if (document.readyState === "loading") {
     window.dataLayer.push(Object.assign({ event: name }, params));
   }
 
+  function readStoredAttribution(){
+    try {
+      return JSON.parse(window.localStorage.getItem('bpf_lead_attribution') || '{}') || {};
+    } catch(e) {
+      return {};
+    }
+  }
+
+  function writeStoredAttribution(data){
+    try {
+      window.localStorage.setItem('bpf_lead_attribution', JSON.stringify(data));
+    } catch(e) {}
+  }
+
+  function captureAttribution(){
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','msclkid'];
+    var stored = readStoredAttribution();
+    var next = Object.assign({}, stored);
+    var hasNew = false;
+    keys.forEach(function(key){
+      var value = params.get(key);
+      if(value){
+        next[key] = value.slice(0, 180);
+        hasNew = true;
+      }
+    });
+    if(!next.first_landing_page) next.first_landing_page = window.location.pathname;
+    if(!next.first_referrer && document.referrer) next.first_referrer = document.referrer.slice(0, 260);
+    if(hasNew || !stored.first_landing_page) writeStoredAttribution(next);
+    return next;
+  }
+
+  function currentLeadContext(){
+    var attr = captureAttribution();
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get('q') || '';
+    var parts = [
+      'Lead context:',
+      'Page: ' + window.location.pathname,
+      'Title: ' + document.title.replace(/\s+/g, ' ').slice(0, 120)
+    ];
+    if(q) parts.push('Search query: ' + q.slice(0, 120));
+    ['utm_source','utm_medium','utm_campaign','utm_term','gclid','msclkid'].forEach(function(key){
+      if(attr[key]) parts.push(key + ': ' + attr[key]);
+    });
+    if(attr.first_landing_page && attr.first_landing_page !== window.location.pathname){
+      parts.push('First landing: ' + attr.first_landing_page);
+    }
+    if(attr.first_referrer) parts.push('Referrer: ' + attr.first_referrer);
+    return '\n\n' + parts.join('\n');
+  }
+
+  function enrichLeadLink(link){
+    if(!link || link.dataset.bpfLeadContext === 'attached') return;
+    var href = link.getAttribute('href') || '';
+    var lower = href.toLowerCase();
+    if(lower.indexOf('wa.me/') === -1 && lower.indexOf('api.whatsapp.com') === -1 && lower.indexOf('mailto:') !== 0) return;
+    var context = currentLeadContext();
+    try {
+      var url = new URL(href, window.location.href);
+      if(url.protocol === 'mailto:'){
+        var body = url.searchParams.get('body') || '';
+        url.searchParams.set('body', (body || 'Hello Lisa, I need custom packaging.') + context);
+        link.setAttribute('href', url.toString());
+      } else {
+        var text = url.searchParams.get('text') || 'Hello BestPackFactory, I need a custom packaging quote.';
+        url.searchParams.set('text', (text + context).slice(0, 1800));
+        link.setAttribute('href', url.toString());
+      }
+      link.dataset.bpfLeadContext = 'attached';
+    } catch(e) {}
+  }
+
   function isProductPage(){
     return /^\/products\/[^/]+\.html$/i.test(window.location.pathname);
   }
@@ -143,6 +217,7 @@ if (document.readyState === "loading") {
     document.addEventListener('click', function(event){
       var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
       if(!link) return;
+      enrichLeadLink(link);
       var href = link.getAttribute('href') || '';
       var text = (link.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 120);
       var lower = href.toLowerCase();
@@ -218,6 +293,7 @@ if (document.readyState === "loading") {
   }
 
   function initTracking(){
+    captureAttribution();
     initClickTracking();
     initFormTracking();
     initProductScrollDepth();

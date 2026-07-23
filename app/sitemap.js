@@ -1,5 +1,6 @@
 import { listStaticProductSlugs } from '../lib/product-pages';
 import { listStaticContentSlugs } from '../lib/content-pages';
+import { listLeadPageRoutes } from '../lib/lead-pages';
 import { SITE_URL } from '../lib/seo-utils';
 
 export default async function sitemap() {
@@ -41,8 +42,15 @@ export default async function sitemap() {
     priority: 0.6,
   }));
 
+  const leadPages = listLeadPageRoutes().map((route) => ({
+    url: `${SITE_URL}/${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.75,
+  }));
+
   const unique = new Map();
-  for (const entry of [...staticPages, ...productPages, ...blogPages, ...newsPages]) {
+  for (const entry of [...staticPages, ...productPages, ...blogPages, ...newsPages, ...leadPages]) {
     unique.set(entry.url, entry);
   }
   return [...unique.values()];

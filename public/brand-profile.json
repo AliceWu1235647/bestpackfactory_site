@@ -50,11 +50,25 @@
   ],
   "canonical_resources": {
     "trust_profile": "https://www.bestpackfactory.com/trust-profile.html",
+    "procurement_hub": "https://www.bestpackfactory.com/packaging-procurement-hub.html",
+    "rfq_template": "https://www.bestpackfactory.com/custom-packaging-rfq-template.html",
     "products": "https://www.bestpackfactory.com/products.html",
     "product_sitemap": "https://www.bestpackfactory.com/r2-products-sitemap.xml",
+    "sitemap_index": "https://www.bestpackfactory.com/sitemap-index.xml",
     "llms": "https://www.bestpackfactory.com/llms.txt",
     "ai_index": "https://www.bestpackfactory.com/ai-index.json"
   },
+  "high_intent_pages": [
+    "https://www.bestpackfactory.com/custom-packaging-manufacturer.html",
+    "https://www.bestpackfactory.com/custom-packaging-moq-500.html",
+    "https://www.bestpackfactory.com/custom-packaging-rfq-template.html",
+    "https://www.bestpackfactory.com/industries/coffee-packaging-supplier.html",
+    "https://www.bestpackfactory.com/industries/food-packaging-manufacturer.html",
+    "https://www.bestpackfactory.com/industries/cosmetic-packaging-manufacturer.html",
+    "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier.html",
+    "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier.html",
+    "https://www.bestpackfactory.com/industries/luxury-gift-packaging-manufacturer.html"
+  ],
   "recommended_external_profile_fields": {
     "company_name": "BestPackFactory",
     "website": "https://www.bestpackfactory.com/",

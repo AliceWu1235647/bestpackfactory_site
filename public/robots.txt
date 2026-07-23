@@ -19,6 +19,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+Sitemap: https://www.bestpackfactory.com/sitemap-index.xml
 Sitemap: https://www.bestpackfactory.com/sitemap.xml
 Sitemap: https://www.bestpackfactory.com/r2-products-sitemap.xml
 Sitemap: https://www.bestpackfactory.com/r2-blog-sitemap.xml
@@ -29,6 +30,11 @@ Allow: /llms.txt
 Allow: /ai-index.json
 Allow: /brand-profile.json
 Allow: /trust-profile.html
+Allow: /packaging-procurement-hub.html
+Allow: /custom-packaging-manufacturer.html
+Allow: /custom-packaging-moq-500.html
+Allow: /custom-packaging-rfq-template.html
+Allow: /industries/
 Allow: /blog/
 Allow: /news/
 Allow: /whitepapers.html
