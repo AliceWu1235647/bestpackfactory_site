@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
         {GOOGLE_SITE_VERIFICATION && (
           <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning={true}>
         {children}
-        <Script src="/js/main.js?v=20260723_leads_lazy" strategy="lazyOnload" />
+        <Script src="/js/main.js?v=20260724_speed_lazy_search" strategy="lazyOnload" />
       </body>
     </html>
   );

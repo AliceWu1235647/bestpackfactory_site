@@ -351,6 +351,7 @@ if (document.readyState === "loading") {
   var SEARCH_API = '/api/products-search';
   var productCache = null;
   var productPromise = null;
+  var staticProductCache = null;
 
   var QUERY_ALIASES = {
     'box': ['boxes','custom boxes','custom gift boxes','rigid boxes','mailer boxes','cardstock product boxes','folding carton','paperboard box','gift packaging'],
@@ -503,7 +504,10 @@ if (document.readyState === "loading") {
   }
 
   function getLocalProducts(){
-    return STATIC_PRODUCTS.map(normalizeProduct);
+    if(!staticProductCache){
+      staticProductCache = STATIC_PRODUCTS.map(normalizeProduct);
+    }
+    return staticProductCache;
   }
 
   function loadProducts(){
@@ -604,6 +608,10 @@ if (document.readyState === "loading") {
       if(status){
         status.textContent = q ? ('Showing ' + count + ' matching local products for “' + q + '”') : 'Search products by keyword: box, pouch, rigid box, mailer box, cardstock, magnetic packaging...';
       }
+      if(!q){
+        renderDynamicResults(dynamicBox, [], localUrls, q);
+        return;
+      }
       loadProducts().then(function(products){
         renderDynamicResults(dynamicBox, findProducts(products, q, 10), localUrls, q);
       });
@@ -625,7 +633,6 @@ if (document.readyState === "loading") {
       panel.className = 'search-results-panel';
       form.appendChild(panel);
       var products = getLocalProducts();
-      loadProducts().then(function(list){ products = list; });
 
       function render(){
         var q = norm(input.value);
@@ -637,12 +644,17 @@ if (document.readyState === "loading") {
         panel.classList.add('is-open');
       }
 
+      function refreshDynamicProducts(){
+        if(!norm(input.value)) return;
+        loadProducts().then(function(list){ products = list; render(); });
+      }
+
       input.addEventListener('input', function(){
         render();
-        loadProducts().then(function(list){ products = list; render(); });
+        refreshDynamicProducts();
       });
       input.addEventListener('focus', function(){
-        loadProducts().then(function(list){ products = list; render(); });
+        refreshDynamicProducts();
       });
       document.addEventListener('click', function(e){ if(!form.contains(e.target)) panel.classList.remove('is-open'); });
       form.addEventListener('submit', function(e){
