@@ -27,6 +27,8 @@ Sitemap: https://www.bestpackfactory.com/r2-news-sitemap.xml
 # AI and GEO discovery helpers
 Allow: /llms.txt
 Allow: /ai-index.json
+Allow: /brand-profile.json
+Allow: /trust-profile.html
 Allow: /blog/
 Allow: /news/
 Allow: /whitepapers.html

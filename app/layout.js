@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
-        <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop.webp" />
         {GOOGLE_SITE_VERIFICATION && (
           <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
         )}
@@ -46,7 +45,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning={true}>
         {children}
-        <Script src="/js/main.js?v=20260722_tracking" strategy="afterInteractive" />
+        <Script src="/js/main.js?v=20260723_perf" strategy="afterInteractive" />
       </body>
     </html>
   );

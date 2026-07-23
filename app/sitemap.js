@@ -11,6 +11,7 @@ export default async function sitemap() {
     '/blog.html',
     '/news.html',
     '/whitepapers.html',
+    '/trust-profile.html',
   ].map((url) => ({
     url: `${SITE_URL}${url}`,
     lastModified: new Date(),

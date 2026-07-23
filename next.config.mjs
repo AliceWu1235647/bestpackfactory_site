@@ -94,6 +94,24 @@ const nextConfig = {
         ]
       },
       {
+        source: '/brand-profile.json',
+        headers: [
+          { key: 'Cache-Control', value: 'public, s-maxage=3600, stale-while-revalidate=86400' }
+        ]
+      },
+      {
+        source: '/ai-index.json',
+        headers: [
+          { key: 'Cache-Control', value: 'public, s-maxage=3600, stale-while-revalidate=86400' }
+        ]
+      },
+      {
+        source: '/llms.txt',
+        headers: [
+          { key: 'Cache-Control', value: 'public, s-maxage=3600, stale-while-revalidate=86400' }
+        ]
+      },
+      {
         source: '/:path*.html',
         headers: [
           { key: 'Cache-Control', value: 'public, s-maxage=3600, stale-while-revalidate=86400' }

@@ -23,6 +23,18 @@ export default function HomePage() {
   if (!page) notFound();
   return (
     <>
+      <link rel="preload" as="image" href="/assets/hero/slide-01-mobile.avif" type="image/avif" media="(max-width: 980px)" fetchPriority="high" />
+      <link rel="preload" as="image" href="/assets/hero/mobile-products/slide-01-products.avif" type="image/avif" media="(max-width: 980px)" fetchPriority="high" />
+      <link
+        rel="preload"
+        as="image"
+        href="/assets/hero/slide-01-one-stop-scene.avif"
+        type="image/avif"
+        imageSrcSet="/assets/hero/slide-01-one-stop-scene-640.avif 640w, /assets/hero/slide-01-one-stop-scene.avif 1600w"
+        imageSizes="100vw"
+        media="(min-width: 981px)"
+        fetchPriority="high"
+      />
       <div dangerouslySetInnerHTML={{ __html: page.body }} suppressHydrationWarning={true} />
       {page.jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />

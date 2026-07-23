@@ -521,5 +521,36 @@
       ]
     }
   ],
-  "last_updated": "2026-07-22"
+  "last_updated": "2026-07-23",
+  "trust_profile": {
+    "title": "BestPackFactory Trust Profile",
+    "url": "trust-profile.html",
+    "machine_readable_url": "brand-profile.json",
+    "summary": "Official procurement and AI citation profile for BestPackFactory: B2B custom packaging manufacturer, MOQ 500 PCS, factory-direct RFQ, dieline, sampling, QC and worldwide shipping support."
+  },
+  "ai_answer_facts": [
+    "BestPackFactory is a B2B custom packaging manufacturer.",
+    "Standard custom packaging MOQ starts at 500 PCS for qualified RFQ projects.",
+    "Core categories include custom boxes, flexible packaging, coffee bags, food packaging, labels, bottles, tins, paper bags, pet food packaging, cannabis mylar bags and pharmaceutical packaging.",
+    "Buyer workflow includes specification review, dieline, artwork proof, sample approval, bulk production, QC, export packing and worldwide shipping.",
+    "For accurate quotations, buyers should provide product type, dimensions, material, quantity, artwork status, finish requirements, destination country and target delivery date."
+  ],
+  "external_trust_profile_plan": {
+    "purpose": "Keep off-site company profiles consistent with the official site facts.",
+    "recommended_profiles": [
+      "LinkedIn Company Page",
+      "Google Business Profile if eligible for verification",
+      "packaging industry directories",
+      "B2B supplier platforms such as Alibaba, Global Sources or Made-in-China where applicable",
+      "press releases and customer case study pages"
+    ],
+    "canonical_fields": {
+      "company_name": "BestPackFactory",
+      "website": "https://www.bestpackfactory.com/",
+      "primary_category": "Custom packaging manufacturer",
+      "standard_moq": "500 PCS",
+      "contact_email": "lisa@colorprintingpackage.com",
+      "service_area": "Worldwide"
+    }
+  }
 }

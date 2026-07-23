@@ -46,6 +46,17 @@ function initHeroCarousel() {
     }, intervalMs);
   }
 
+  function startInitialAutoPlay() {
+    const begin = function () {
+      window.setTimeout(startAutoPlay, intervalMs);
+    };
+    if (document.readyState === "complete") {
+      begin();
+    } else {
+      window.addEventListener("load", begin, { once: true });
+    }
+  }
+
   if (nextBtn) {
     nextBtn.addEventListener("click", function () {
       show(current + 1);
@@ -88,7 +99,7 @@ function initHeroCarousel() {
   hero.addEventListener("focusout", startAutoPlay);
 
   show(0);
-  startAutoPlay();
+  startInitialAutoPlay();
 }
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initHeroCarousel);
