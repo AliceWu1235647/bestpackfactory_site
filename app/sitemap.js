@@ -4,7 +4,7 @@ import { SITE_URL } from '../lib/seo-utils';
 
 export default async function sitemap() {
   const staticPages = [
-    '',
+    '/',
     '/products.html',
     '/about.html',
     '/contact.html',

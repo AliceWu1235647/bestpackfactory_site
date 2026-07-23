@@ -6,13 +6,18 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'; // Replace via Environment Variable later
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID || process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || '';
+  const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || '';
+  const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '';
   return (
     <html lang="en">
       <head>
         <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
         <link rel="preload" as="image" href="/assets/hero/slide-01-one-stop.webp" />
-        {GA_ID !== 'G-XXXXXXXXXX' && (
+        {GOOGLE_SITE_VERIFICATION && (
+          <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
+        )}
+        {GA_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
             <Script id="google-analytics" strategy="afterInteractive">
@@ -27,10 +32,21 @@ export default function RootLayout({ children }) {
             </Script>
           </>
         )}
+        {CLARITY_ID && (
+          <Script id="microsoft-clarity" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${CLARITY_ID}");
+            `}
+          </Script>
+        )}
       </head>
       <body suppressHydrationWarning={true}>
         {children}
-        <Script src="/js/main.js?v=20260722" strategy="afterInteractive" />
+        <Script src="/js/main.js?v=20260722_tracking" strategy="afterInteractive" />
       </body>
     </html>
   );

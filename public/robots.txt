@@ -2,16 +2,31 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_next/
-Allow: /llms.txt
-Allow: /ai-index.json
-Allow: /blog/
-Allow: /news/
-Allow: /whitepapers.html
+
+# AI / GEO discovery crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: https://www.bestpackfactory.com/sitemap.xml
 Sitemap: https://www.bestpackfactory.com/r2-products-sitemap.xml
 Sitemap: https://www.bestpackfactory.com/r2-blog-sitemap.xml
 Sitemap: https://www.bestpackfactory.com/r2-news-sitemap.xml
 
-# GEO / AI readability file:
-# https://www.bestpackfactory.com/llms.txt
+# AI and GEO discovery helpers
+Allow: /llms.txt
+Allow: /ai-index.json
+Allow: /blog/
+Allow: /news/
+Allow: /whitepapers.html

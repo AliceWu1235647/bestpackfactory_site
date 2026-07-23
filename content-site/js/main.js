@@ -97,6 +97,128 @@ if (document.readyState === "loading") {
 }
 })();
 
+// Analytics events: GA4 + Microsoft Clarity friendly conversion tracking.
+(function(){
+  var sentScrollDepth = {};
+
+  function cleanUrl(value){
+    try {
+      var url = new URL(value, window.location.href);
+      return url.href.replace(url.searchParams.get('text') || '', '[message]');
+    } catch(e) {
+      return value || '';
+    }
+  }
+
+  function sendEvent(name, params){
+    params = params || {};
+    params.page_path = window.location.pathname;
+    params.page_title = document.title;
+    if(typeof window.gtag === 'function'){
+      window.gtag('event', name, params);
+    }
+    if(typeof window.clarity === 'function'){
+      window.clarity('event', name);
+    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: name }, params));
+  }
+
+  function isProductPage(){
+    return /^\/products\/[^/]+\.html$/i.test(window.location.pathname);
+  }
+
+  function initClickTracking(){
+    document.addEventListener('click', function(event){
+      var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+      if(!link) return;
+      var href = link.getAttribute('href') || '';
+      var text = (link.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 120);
+      var lower = href.toLowerCase();
+      var payload = {
+        event_category: 'lead',
+        link_text: text,
+        link_url: cleanUrl(href)
+      };
+      if(lower.indexOf('wa.me/') !== -1 || lower.indexOf('api.whatsapp.com') !== -1){
+        sendEvent('whatsapp_click', Object.assign({ method: 'whatsapp' }, payload));
+        return;
+      }
+      if(lower.indexOf('mailto:') === 0){
+        sendEvent('email_click', Object.assign({ method: 'email' }, payload));
+        return;
+      }
+      if(lower.indexOf('contact.html') !== -1 || /quote|rfq|inquiry/i.test(text)){
+        sendEvent('quote_cta_click', payload);
+      }
+    });
+  }
+
+  function initFormTracking(){
+    document.addEventListener('submit', function(event){
+      var form = event.target;
+      if(!form || !form.tagName || form.tagName.toLowerCase() !== 'form') return;
+      var action = form.getAttribute('action') || '';
+      var id = form.getAttribute('id') || '';
+      var classes = form.className || '';
+      if(id === 'rfqForm' || classes.indexOf('rfq-form') !== -1 || action.indexOf('formsubmit.co') !== -1){
+        sendEvent('rfq_submit', {
+          event_category: 'lead',
+          form_id: id || 'rfq_form',
+          form_action: action
+        });
+      }
+    }, true);
+  }
+
+  function initProductScrollDepth(){
+    if(!isProductPage()) return;
+    sendEvent('product_page_view', {
+      event_category: 'product',
+      product_path: window.location.pathname
+    });
+
+    function checkDepth(){
+      var doc = document.documentElement;
+      var scrollable = Math.max(1, doc.scrollHeight - window.innerHeight);
+      var depth = Math.round((window.scrollY / scrollable) * 100);
+      [25, 50, 75, 90].forEach(function(mark){
+        if(depth >= mark && !sentScrollDepth[mark]){
+          sentScrollDepth[mark] = true;
+          sendEvent('product_scroll_depth', {
+            event_category: 'engagement',
+            product_path: window.location.pathname,
+            scroll_depth: mark
+          });
+        }
+      });
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function(){
+      if(ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function(){
+        ticking = false;
+        checkDepth();
+      });
+    }, { passive: true });
+    checkDepth();
+  }
+
+  function initTracking(){
+    initClickTracking();
+    initFormTracking();
+    initProductScrollDepth();
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initTracking);
+  }else{
+    initTracking();
+  }
+})();
+
 // FINAL MOBILE-FIRST: hamburger menu and touch-friendly overlay
 (function(){
   function initMobileMenu(){

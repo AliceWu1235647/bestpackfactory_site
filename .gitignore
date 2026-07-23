@@ -5,3 +5,4 @@ pfd-site/
 *.log
 .env
 .vercel
+.env*
