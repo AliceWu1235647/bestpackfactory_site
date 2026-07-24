@@ -106,6 +106,12 @@ const nextConfig = {
         ]
       },
       {
+        source: '/buyer-answer-index.json',
+        headers: [
+          { key: 'Cache-Control', value: 'public, s-maxage=3600, stale-while-revalidate=86400' }
+        ]
+      },
+      {
         source: '/llms.txt',
         headers: [
           { key: 'Cache-Control', value: 'public, s-maxage=3600, stale-while-revalidate=86400' }

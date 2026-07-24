@@ -968,5 +968,24 @@
         }
       ]
     }
-  ]
+  ],
+  "buyer_answer_index": {
+    "human_page": "https://www.bestpackfactory.com/packaging-buyer-answer-hub.html",
+    "machine_readable_json": "https://www.bestpackfactory.com/buyer-answer-index.json",
+    "description": "Question-answer graph for buyer-intent packaging searches with related products and procurement guides.",
+    "top_intents": [
+      "custom packaging MOQ 500 PCS",
+      "accurate packaging RFQ",
+      "custom coffee bags RFQ",
+      "kraft coffee pouch vs foil pouch",
+      "flat bottom bag vs stand up pouch",
+      "premium magnetic box inserts",
+      "food-safe packaging material",
+      "pet food bag barrier",
+      "child resistant cannabis mylar bags",
+      "pharma folding carton GS1 DataMatrix",
+      "shipping custom packaging from China",
+      "packaging supplier China"
+    ]
+  }
 }

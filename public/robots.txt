@@ -29,6 +29,8 @@ Sitemap: https://www.bestpackfactory.com/r2-news-sitemap.xml
 Allow: /llms.txt
 Allow: /ai-index.json
 Allow: /brand-profile.json
+Allow: /packaging-buyer-answer-hub.html
+Allow: /buyer-answer-index.json
 Allow: /trust-profile.html
 Allow: /packaging-procurement-hub.html
 Allow: /custom-packaging-manufacturer.html

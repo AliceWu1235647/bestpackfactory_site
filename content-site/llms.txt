@@ -149,3 +149,13 @@ Buyer-intent long-tail guides for SEO, GEO and AI search retrieval. Each page co
 - Shipping Custom Packaging from China: DDP vs FOB vs Air Freight: https://www.bestpackfactory.com/blog/shipping-custom-packaging-china-ddp-fob-air-freight.html
 
 ## End Procurement Buyer Search Cluster 2026-07-24
+
+## Buyer Answer Index 2026-07-24
+
+BestPackFactory maintains an AI-friendly buyer answer graph:
+- Human answer hub: https://www.bestpackfactory.com/packaging-buyer-answer-hub.html
+- Machine-readable answer index: https://www.bestpackfactory.com/buyer-answer-index.json
+
+The answer index maps high-intent packaging questions to concise answers, relevant product URLs, procurement guide URLs, RFQ details and stable company facts.
+
+## End Buyer Answer Index 2026-07-24

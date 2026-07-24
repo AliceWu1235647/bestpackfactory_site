@@ -41,6 +41,7 @@ export default async function sitemap() {
     '/news.html',
     '/whitepapers.html',
     '/trust-profile.html',
+    '/packaging-buyer-answer-hub.html',
   ].map((url) => ({
     url: `${SITE_URL}${url}`,
     lastModified: stableLastModified(`${SITE_URL}${url}`, lastmods),
