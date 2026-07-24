@@ -3,6 +3,7 @@ import path from 'path';
 import { listStaticProductSlugs } from '../lib/product-pages';
 import { listStaticContentSlugs } from '../lib/content-pages';
 import { listLeadPageRoutes } from '../lib/lead-pages';
+import { listHtmlRoutes } from '../lib/static-pages';
 import { SITE_URL } from '../lib/seo-utils';
 
 let sitemapLastmodCache = null;
@@ -78,8 +79,20 @@ export default async function sitemap() {
     priority: 0.75,
   }));
 
+  const htmlPages = listHtmlRoutes().map((route) => {
+    const pathname = route === 'index.html' ? '/' : `/${route}`;
+    const isQuestionPage = pathname.includes('/questions/');
+    const isIndustryPage = pathname.startsWith('/industries/');
+    return {
+      url: `${SITE_URL}${pathname}`,
+      lastModified: stableLastModified(`${SITE_URL}${pathname}`, lastmods),
+      changeFrequency: isQuestionPage || isIndustryPage ? 'weekly' : 'monthly',
+      priority: isQuestionPage ? 0.74 : isIndustryPage ? 0.76 : 0.6,
+    };
+  });
+
   const unique = new Map();
-  for (const entry of [...staticPages, ...productPages, ...blogPages, ...newsPages, ...leadPages]) {
+  for (const entry of [...htmlPages, ...staticPages, ...productPages, ...blogPages, ...newsPages, ...leadPages]) {
     unique.set(entry.url, entry);
   }
   return [...unique.values()];

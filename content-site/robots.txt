@@ -31,6 +31,7 @@ Allow: /ai-index.json
 Allow: /brand-profile.json
 Allow: /packaging-buyer-answer-hub.html
 Allow: /buyer-answer-index.json
+Allow: /industry-question-index.json
 Allow: /trust-profile.html
 Allow: /packaging-procurement-hub.html
 Allow: /custom-packaging-manufacturer.html

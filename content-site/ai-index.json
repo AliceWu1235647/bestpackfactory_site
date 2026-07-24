@@ -987,5 +987,93 @@
       "shipping custom packaging from China",
       "packaging supplier China"
     ]
+  },
+  "industry_buyer_question_index_20260724": {
+    "machine_readable_json": "https://www.bestpackfactory.com/industry-question-index.json",
+    "total_question_pages": 80,
+    "cluster_hubs": [
+      {
+        "industry": "coffee packaging",
+        "hub_url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/buyer-questions.html",
+        "question_count": 20
+      },
+      {
+        "industry": "pet food packaging",
+        "hub_url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/buyer-questions.html",
+        "question_count": 20
+      },
+      {
+        "industry": "pharma carton packaging",
+        "hub_url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/buyer-questions.html",
+        "question_count": 20
+      },
+      {
+        "industry": "food-safe packaging",
+        "hub_url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/buyer-questions.html",
+        "question_count": 20
+      }
+    ],
+    "sample_questions": [
+      {
+        "title": "What is the MOQ for custom coffee bags?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/custom-coffee-bag-moq-500.html",
+        "quick_answer": "MOQ usually applies per confirmed coffee bag size, material structure and artwork."
+      },
+      {
+        "title": "How do buyers choose 250g vs 500g coffee bag size?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/250g-vs-500g-coffee-bag-size.html",
+        "quick_answer": "Coffee bag size should be based on fill weight, bean density, headspace, shelf display and co-packer filling method."
+      },
+      {
+        "title": "Should coffee brands choose flat bottom or side gusset bags?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/flat-bottom-vs-side-gusset-coffee-bags.html",
+        "quick_answer": "Flat bottom bags give stronger retail display while side gusset bags suit traditional coffee shelves and larger capacities."
+      },
+      {
+        "title": "Where should the one-way degassing valve go on a coffee bag?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-valve-placement.html",
+        "quick_answer": "Valve position should avoid seal zones, zipper interference, label areas and artwork elements while supporting degassing after roasting."
+      },
+      {
+        "title": "Is kraft paper or foil better for coffee bags?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/kraft-vs-foil-coffee-bag-material.html",
+        "quick_answer": "Kraft paper supports a natural brand look, while foil laminate provides stronger oxygen, moisture and aroma protection."
+      },
+      {
+        "title": "Should coffee bags use zipper or tin tie closure?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/zipper-or-tin-tie-coffee-bags.html",
+        "quick_answer": "Zippers are useful for resealing freshness after opening; tin ties support a classic coffee look but may not seal as strongly."
+      },
+      {
+        "title": "What affects matte black coffee bag cost?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/matte-black-coffee-bag-cost.html",
+        "quick_answer": "Matte black coffee bag cost depends on film structure, ink coverage, finish, valve, zipper, bag size, quantity and freight volume."
+      },
+      {
+        "title": "What OTR and WVTR targets matter for coffee bags?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-barrier-otr-wvtr.html",
+        "quick_answer": "Coffee bags need oxygen and moisture barrier targets that match roast freshness, shelf life and distribution channel."
+      },
+      {
+        "title": "What should be checked on a coffee bag dieline?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-artwork-dieline-checklist.html",
+        "quick_answer": "Coffee bag dielines should protect bleed, safe text, valve area, zipper zone, gusset copy, barcode and roast-date label space."
+      },
+      {
+        "title": "Are compostable coffee bags right for roasted coffee?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/compostable-coffee-bag-tradeoffs.html",
+        "quick_answer": "Compostable coffee bags can support sustainability goals, but barrier, heat seal, shelf life and certification claims must be checked carefully."
+      },
+      {
+        "title": "What should buyers approve on a coffee bag sample?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-sample-approval.html",
+        "quick_answer": "Buyers should approve size, valve, zipper, standing, seal, color, finish, barcode readability and carton packing before bulk production."
+      },
+      {
+        "title": "What should private label coffee brands send in an RFQ?",
+        "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/private-label-coffee-bag-rfq.html",
+        "quick_answer": "A private label coffee bag RFQ should include fill weight, bag style, material, valve, zipper, artwork status, SKU count and launch deadline."
+      }
+    ]
   }
 }

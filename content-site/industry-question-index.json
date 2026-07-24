@@ -1,0 +1,613 @@
+{
+  "site": "BestPackFactory",
+  "type": "Industry buyer question index",
+  "purpose": "Machine-readable index of industry-specific procurement question pages for SEO, GEO and AI search retrieval.",
+  "last_updated": "2026-07-24",
+  "count": 80,
+  "clusters": [
+    {
+      "id": "coffee-packaging-supplier",
+      "title": "Coffee Packaging Supplier Buyer Questions",
+      "industry": "coffee packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/buyer-questions.html",
+      "parent_url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier.html",
+      "product_type": "custom coffee bags",
+      "common_moq": "500 PCS per custom size and artwork",
+      "questions": [
+        {
+          "title": "What is the MOQ for custom coffee bags?",
+          "intent": "coffee packaging custom coffee bag moq 500",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/custom-coffee-bag-moq-500.html",
+          "short_answer": "MOQ usually applies per confirmed coffee bag size, material structure and artwork.",
+          "must_confirm": "size, fill weight, artwork, valve, zipper and quantity tiers"
+        },
+        {
+          "title": "How do buyers choose 250g vs 500g coffee bag size?",
+          "intent": "coffee packaging 250g vs 500g coffee bag size",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/250g-vs-500g-coffee-bag-size.html",
+          "short_answer": "Coffee bag size should be based on fill weight, bean density, headspace, shelf display and co-packer filling method.",
+          "must_confirm": "target fill weight, coffee form, gusset depth and shelf display needs"
+        },
+        {
+          "title": "Should coffee brands choose flat bottom or side gusset bags?",
+          "intent": "coffee packaging flat bottom vs side gusset coffee bags",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/flat-bottom-vs-side-gusset-coffee-bags.html",
+          "short_answer": "Flat bottom bags give stronger retail display while side gusset bags suit traditional coffee shelves and larger capacities.",
+          "must_confirm": "bag style, fill weight, panel layout and carton packing"
+        },
+        {
+          "title": "Where should the one-way degassing valve go on a coffee bag?",
+          "intent": "coffee packaging coffee bag valve placement",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-valve-placement.html",
+          "short_answer": "Valve position should avoid seal zones, zipper interference, label areas and artwork elements while supporting degassing after roasting.",
+          "must_confirm": "valve diameter, distance below top seal, front or back panel and roast timing"
+        },
+        {
+          "title": "Is kraft paper or foil better for coffee bags?",
+          "intent": "coffee packaging kraft vs foil coffee bag material",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/kraft-vs-foil-coffee-bag-material.html",
+          "short_answer": "Kraft paper supports a natural brand look, while foil laminate provides stronger oxygen, moisture and aroma protection.",
+          "must_confirm": "shelf-life target, outer appearance, inner barrier and sustainability message"
+        },
+        {
+          "title": "Should coffee bags use zipper or tin tie closure?",
+          "intent": "coffee packaging zipper or tin tie coffee bags",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/zipper-or-tin-tie-coffee-bags.html",
+          "short_answer": "Zippers are useful for resealing freshness after opening; tin ties support a classic coffee look but may not seal as strongly.",
+          "must_confirm": "customer use case, bag style, fill weight and reseal expectation"
+        },
+        {
+          "title": "What affects matte black coffee bag cost?",
+          "intent": "coffee packaging matte black coffee bag cost",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/matte-black-coffee-bag-cost.html",
+          "short_answer": "Matte black coffee bag cost depends on film structure, ink coverage, finish, valve, zipper, bag size, quantity and freight volume.",
+          "must_confirm": "matte finish type, Pantone black, surface scuff resistance and quantity tiers"
+        },
+        {
+          "title": "What OTR and WVTR targets matter for coffee bags?",
+          "intent": "coffee packaging coffee bag barrier otr wvtr",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-barrier-otr-wvtr.html",
+          "short_answer": "Coffee bags need oxygen and moisture barrier targets that match roast freshness, shelf life and distribution channel.",
+          "must_confirm": "OTR, WVTR, foil or VMPET structure, valve and seal strength"
+        },
+        {
+          "title": "What should be checked on a coffee bag dieline?",
+          "intent": "coffee packaging coffee bag artwork dieline checklist",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-artwork-dieline-checklist.html",
+          "short_answer": "Coffee bag dielines should protect bleed, safe text, valve area, zipper zone, gusset copy, barcode and roast-date label space.",
+          "must_confirm": "final dieline, bleed, barcode size, QR code, valve and zipper locations"
+        },
+        {
+          "title": "Are compostable coffee bags right for roasted coffee?",
+          "intent": "coffee packaging compostable coffee bag tradeoffs",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/compostable-coffee-bag-tradeoffs.html",
+          "short_answer": "Compostable coffee bags can support sustainability goals, but barrier, heat seal, shelf life and certification claims must be checked carefully.",
+          "must_confirm": "compostability target, food-contact layer, barrier target and destination market"
+        },
+        {
+          "title": "What should buyers approve on a coffee bag sample?",
+          "intent": "coffee packaging coffee bag sample approval",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-sample-approval.html",
+          "short_answer": "Buyers should approve size, valve, zipper, standing, seal, color, finish, barcode readability and carton packing before bulk production.",
+          "must_confirm": "physical sample, artwork proof, product fit and shipping carton data"
+        },
+        {
+          "title": "What should private label coffee brands send in an RFQ?",
+          "intent": "coffee packaging private label coffee bag rfq",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/private-label-coffee-bag-rfq.html",
+          "short_answer": "A private label coffee bag RFQ should include fill weight, bag style, material, valve, zipper, artwork status, SKU count and launch deadline.",
+          "must_confirm": "all SKU names, common structure, variable artwork areas and quantity tiers"
+        },
+        {
+          "title": "Should coffee bags use gravure or digital printing?",
+          "intent": "coffee packaging coffee bag printing gravure vs digital",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-printing-gravure-vs-digital.html",
+          "short_answer": "Gravure is efficient for repeatable larger runs, while digital printing can help shorter test runs and multi-SKU launches.",
+          "must_confirm": "quantity, artwork count, color target and reorder plan"
+        },
+        {
+          "title": "How does material affect coffee shelf life?",
+          "intent": "coffee packaging coffee bag shelf life material",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-shelf-life-material.html",
+          "short_answer": "Coffee shelf life depends on oxygen barrier, moisture barrier, valve function, seal integrity, roast freshness and distribution time.",
+          "must_confirm": "barrier material, valve, seal strength and warehouse conditions"
+        },
+        {
+          "title": "Can coffee bags use a valve without a zipper?",
+          "intent": "coffee packaging coffee bag valve without zipper",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-valve-without-zipper.html",
+          "short_answer": "Yes, valve-only coffee bags can work for single-use or wholesale packs, but retail buyers often prefer resealable zipper options.",
+          "must_confirm": "pack size, usage frequency, retail channel and closure expectation"
+        },
+        {
+          "title": "What packaging works for coffee subscription brands?",
+          "intent": "coffee packaging coffee subscription packaging",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-subscription-packaging.html",
+          "short_answer": "Subscription coffee packaging should balance freshness, mailer fit, flat packing efficiency, barcode labels and unboxing brand experience.",
+          "must_confirm": "bag size, mailer size, label area, valve and carton packing"
+        },
+        {
+          "title": "How should buyers ship custom coffee bags from China?",
+          "intent": "coffee packaging coffee bag shipping ddp fob",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-shipping-ddp-fob.html",
+          "short_answer": "Empty coffee bags can ship by express, air or sea depending on carton volume, deadline and reorder plan.",
+          "must_confirm": "carton dimensions, gross weight, incoterm and arrival deadline"
+        },
+        {
+          "title": "Can custom coffee bags match Pantone colors?",
+          "intent": "coffee packaging coffee bag pantone color match",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-bag-pantone-color-match.html",
+          "short_answer": "Pantone matching is possible, but material surface, kraft base color, matte finish and printing process affect final appearance.",
+          "must_confirm": "Pantone code, material surface, proof method and acceptable tolerance"
+        },
+        {
+          "title": "Should coffee brands use labels or preprinted pouches?",
+          "intent": "coffee packaging coffee label vs preprinted pouch",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-label-vs-preprinted-pouch.html",
+          "short_answer": "Labels offer flexibility for many SKUs; preprinted pouches look more integrated and professional for stable designs.",
+          "must_confirm": "SKU count, reorder volume, label area, artwork stability and budget"
+        },
+        {
+          "title": "What filling details should coffee co-packers confirm?",
+          "intent": "coffee packaging coffee copacker filling requirements",
+          "url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/coffee-copacker-filling-requirements.html",
+          "short_answer": "Co-packers should confirm bag opening, zipper position, heat seal area, valve location, fill weight and machine compatibility.",
+          "must_confirm": "filling method, sealing width, bag mouth opening and machine speed"
+        }
+      ]
+    },
+    {
+      "id": "pet-food-packaging-supplier",
+      "title": "Pet Food Packaging Supplier Buyer Questions",
+      "industry": "pet food packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/buyer-questions.html",
+      "parent_url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier.html",
+      "product_type": "custom pet food bags",
+      "common_moq": "500 PCS per custom size and artwork",
+      "questions": [
+        {
+          "title": "What is the MOQ for custom pet food bags?",
+          "intent": "pet food packaging pet food bag moq 500",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-bag-moq-500.html",
+          "short_answer": "MOQ normally starts at 500 PCS for one pet food bag size, material structure and artwork.",
+          "must_confirm": "bag size, fill weight, material structure, zipper and quantity tiers"
+        },
+        {
+          "title": "When should dog food use a flat bottom bag?",
+          "intent": "pet food packaging flat bottom dog food bag",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/flat-bottom-dog-food-bag.html",
+          "short_answer": "Flat bottom bags are useful for heavier dog food because they stand well, hold more weight and provide large print panels.",
+          "must_confirm": "fill weight, gusset, zipper, handle and shelf display"
+        },
+        {
+          "title": "What barrier material is best for oily kibble?",
+          "intent": "pet food packaging oily kibble barrier material",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/oily-kibble-barrier-material.html",
+          "short_answer": "Oily kibble needs stronger oxygen, moisture, aroma and oil resistance, often using VMPET or foil laminate structures.",
+          "must_confirm": "oil level, shelf life, laminate layers and sealant thickness"
+        },
+        {
+          "title": "How do buyers choose pet treat pouch size?",
+          "intent": "pet food packaging pet treat pouch size",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-treat-pouch-size.html",
+          "short_answer": "Pet treat pouch size depends on treat shape, fill weight, headspace, zipper position and shelf display style.",
+          "must_confirm": "treat dimensions, fill weight, pouch style and display need"
+        },
+        {
+          "title": "How strong should pet food bag zippers be?",
+          "intent": "pet food packaging pet food zipper strength",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-zipper-strength.html",
+          "short_answer": "Pet food zippers should support repeated opening, heavier product weight and powder or oil exposure without losing closure feel.",
+          "must_confirm": "zipper width, bag weight, powder level and consumer use case"
+        },
+        {
+          "title": "Do heavy pet food bags need a handle?",
+          "intent": "pet food packaging pet food bag handle",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-bag-handle.html",
+          "short_answer": "Handles improve carrying experience for heavier pet food bags, but they add material, tooling and QC checks.",
+          "must_confirm": "bag weight, handle style, punch position and carton packing"
+        },
+        {
+          "title": "Can pet food bags use kraft paper?",
+          "intent": "pet food packaging kraft pet food bags",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/kraft-pet-food-bags.html",
+          "short_answer": "Kraft can create a natural look, but the inner laminate still needs barrier and seal strength for pet food shelf life.",
+          "must_confirm": "outer kraft layer, inner barrier, oil level and food-contact layer"
+        },
+        {
+          "title": "How do pet food bags protect aroma?",
+          "intent": "pet food packaging pet food aroma barrier",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-aroma-barrier.html",
+          "short_answer": "Aroma protection comes from laminate barrier, seal integrity, zipper quality and correct carton storage.",
+          "must_confirm": "aroma sensitivity, laminate structure, zipper and seal strength"
+        },
+        {
+          "title": "When is puncture resistance important for pet food?",
+          "intent": "pet food packaging pet food puncture resistance",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-puncture-resistance.html",
+          "short_answer": "Puncture resistance matters for hard kibble, sharp treats, larger weights and rough shipping conditions.",
+          "must_confirm": "product shape, bag drop risk, nylon layer and carton packing"
+        },
+        {
+          "title": "What packaging works for freeze-dried pet food?",
+          "intent": "pet food packaging freeze dried pet food packaging",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/freeze-dried-pet-food-packaging.html",
+          "short_answer": "Freeze-dried pet food needs moisture protection, gentle handling and enough stiffness to protect fragile pieces.",
+          "must_confirm": "moisture barrier, pouch stiffness, zipper and fill method"
+        },
+        {
+          "title": "What material works for cat food pouches?",
+          "intent": "pet food packaging cat food pouch material",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/cat-food-pouch-material.html",
+          "short_answer": "Cat food pouches depend on whether the product is dry food, treats, supplement powder or wet product; each needs a different sealant and barrier.",
+          "must_confirm": "product type, oil or moisture level, filling condition and shelf life"
+        },
+        {
+          "title": "Should pet food bags be drop tested?",
+          "intent": "pet food packaging pet food bag drop test",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-bag-drop-test.html",
+          "short_answer": "Filled drop testing is important for heavier bags because seals, gussets and corners can fail under real logistics stress.",
+          "must_confirm": "fill weight, carton count, drop height and seal strength"
+        },
+        {
+          "title": "What should pet food artwork reserve space for?",
+          "intent": "pet food packaging pet food artwork compliance",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-artwork-compliance.html",
+          "short_answer": "Pet food artwork should reserve space for net weight, ingredients, feeding guide, barcode, batch code and market-specific claims.",
+          "must_confirm": "label text, barcode, nutrition panel, batch area and language version"
+        },
+        {
+          "title": "Can pet food pouches be recyclable?",
+          "intent": "pet food packaging recyclable pet food pouches",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/recyclable-pet-food-pouches.html",
+          "short_answer": "Recyclable pouch options may be possible, but barrier, zipper, stiffness and local recycling claims must be confirmed.",
+          "must_confirm": "mono-material target, barrier need, zipper compatibility and claim documentation"
+        },
+        {
+          "title": "Why do pet treat bags need resealable zippers?",
+          "intent": "pet food packaging resealable pet treat bags",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/resealable-pet-treat-bags.html",
+          "short_answer": "Resealable zippers help maintain freshness and usability after opening, especially for treats consumed over time.",
+          "must_confirm": "treat size, zipper height, opening width and consumer use pattern"
+        },
+        {
+          "title": "Should pet food use side gusset or flat bottom bags?",
+          "intent": "pet food packaging side gusset vs flat bottom pet food",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/side-gusset-vs-flat-bottom-pet-food.html",
+          "short_answer": "Side gusset bags suit bulk formats, while flat bottom bags improve shelf display and panel branding for retail.",
+          "must_confirm": "fill weight, shelf space, panel artwork and freight volume"
+        },
+        {
+          "title": "How should buyers plan shipping for pet food bags?",
+          "intent": "pet food packaging bulk pet food bag shipping",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/bulk-pet-food-bag-shipping.html",
+          "short_answer": "Empty pet food bags can be bulky, so carton dimensions, gross weight and shipment method should be compared before production ends.",
+          "must_confirm": "carton count, carton dimensions, incoterm and deadline"
+        },
+        {
+          "title": "What barrier do pet supplement pouches need?",
+          "intent": "pet food packaging pet supplement pouch barrier",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-supplement-pouch-barrier.html",
+          "short_answer": "Pet supplement pouches often need moisture protection, powder-proof zipper options and clean seal areas.",
+          "must_confirm": "powder type, moisture sensitivity, zipper, sealant and scoop needs"
+        },
+        {
+          "title": "Does matte finish affect pet food bag cost?",
+          "intent": "pet food packaging matte pet food bag finish",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/matte-pet-food-bag-finish.html",
+          "short_answer": "Matte finish can improve shelf appeal but may add scuff, fingerprint and color-control checks.",
+          "must_confirm": "matte film type, ink coverage, rub resistance and carton packing"
+        },
+        {
+          "title": "What should a pet food bag RFQ include?",
+          "intent": "pet food packaging pet food bag rfq template",
+          "url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/pet-food-bag-rfq-template.html",
+          "short_answer": "A pet food bag RFQ should include product type, fill weight, bag style, barrier target, zipper, handle, artwork, quantity and destination.",
+          "must_confirm": "all SKU weights, material target, features and quantity tiers"
+        }
+      ]
+    },
+    {
+      "id": "pharmaceutical-packaging-supplier",
+      "title": "Pharma Folding Carton Buyer Questions",
+      "industry": "pharma carton packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/buyer-questions.html",
+      "parent_url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier.html",
+      "product_type": "pharma folding cartons",
+      "common_moq": "500 PCS for qualified custom pharma carton RFQ projects",
+      "questions": [
+        {
+          "title": "What is the MOQ for custom pharma folding cartons?",
+          "intent": "pharma carton packaging pharma folding carton moq 500",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/pharma-folding-carton-moq-500.html",
+          "short_answer": "MOQ can start at 500 PCS for qualified custom pharma carton projects when size, board, artwork and compliance needs are clear.",
+          "must_confirm": "carton size, board grade, artwork version and quantity tiers"
+        },
+        {
+          "title": "Where should GS1 DataMatrix be placed on pharma cartons?",
+          "intent": "pharma carton packaging gs1 datamatrix placement",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/gs1-datamatrix-placement.html",
+          "short_answer": "GS1 DataMatrix should be placed where quiet zone, contrast, flatness and scan access are protected.",
+          "must_confirm": "code size, quiet zone, panel location and reflective finish"
+        },
+        {
+          "title": "What barcode verification grade should pharma cartons target?",
+          "intent": "pharma carton packaging barcode verification grade",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/barcode-verification-grade.html",
+          "short_answer": "The buyer should define the verification method and grade target before artwork approval and production.",
+          "must_confirm": "target grade, verifier method, code size and print contrast"
+        },
+        {
+          "title": "How do buyers choose pharma carton board grade?",
+          "intent": "pharma carton packaging pharma carton board grade",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/pharma-carton-board-grade.html",
+          "short_answer": "Board grade depends on product weight, blister or bottle fit, folding performance, print quality and destination requirements.",
+          "must_confirm": "board GSM, caliper, stiffness and insert fit"
+        },
+        {
+          "title": "When do pharma cartons need tamper-evident features?",
+          "intent": "pharma carton packaging tamper evident folding cartons",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/tamper-evident-folding-cartons.html",
+          "short_answer": "Tamper-evident features depend on product risk, market rules and buyer quality requirements.",
+          "must_confirm": "closure style, seal label, perforation or locking feature"
+        },
+        {
+          "title": "Where should batch, lot and expiry data go?",
+          "intent": "pharma carton packaging batch lot expiry panel",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/batch-lot-expiry-panel.html",
+          "short_answer": "Batch, lot and expiry areas should be flat, readable and protected from folds, varnish glare and sealing zones.",
+          "must_confirm": "human-readable area, variable print method and label space"
+        },
+        {
+          "title": "Who handles serialization on pharma cartons?",
+          "intent": "pharma carton packaging serialization workflow cartons",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/serialization-workflow-cartons.html",
+          "short_answer": "Serialization may be handled by the buyer, packaging supplier or a third-party system, and that decision affects artwork and QC flow.",
+          "must_confirm": "data ownership, print location, verification and file transfer process"
+        },
+        {
+          "title": "How should blister pack dimensions be used for carton design?",
+          "intent": "pharma carton packaging blister pack carton dimensions",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/blister-pack-carton-dimensions.html",
+          "short_answer": "Carton inner size should protect blister fit, insert clearance, leaflet space and shipping strength.",
+          "must_confirm": "blister dimensions, count, leaflet, clearance and orientation"
+        },
+        {
+          "title": "How do leaflets affect pharma carton structure?",
+          "intent": "pharma carton packaging patient leaflet insert carton",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/patient-leaflet-insert-carton.html",
+          "short_answer": "Leaflets change inner clearance, closing behavior, carton bulge and pack-out process.",
+          "must_confirm": "leaflet folded size, insert position and product orientation"
+        },
+        {
+          "title": "Can varnish or lamination cover barcode zones?",
+          "intent": "pharma carton packaging varnish lamination barcode zone",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/varnish-lamination-barcode-zone.html",
+          "short_answer": "Varnish and lamination can create glare or contrast issues, so barcode zones should be tested and often protected by layout clearance.",
+          "must_confirm": "finish type, code location, contrast and verification target"
+        },
+        {
+          "title": "When is camera inspection needed for pharma cartons?",
+          "intent": "pharma carton packaging camera inspection pharma cartons",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/camera-inspection-pharma-cartons.html",
+          "short_answer": "Camera inspection is useful for variable data, serialization, mixed-version prevention and high-risk text or code checks.",
+          "must_confirm": "inspection scope, pass/fail criteria and report needs"
+        },
+        {
+          "title": "How should pharma carton artwork revisions be controlled?",
+          "intent": "pharma carton packaging pharma artwork revision control",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/pharma-artwork-revision-control.html",
+          "short_answer": "Use locked file names, approval records and version control so old and new regulatory text are not mixed.",
+          "must_confirm": "version number, approval owner, language and release date"
+        },
+        {
+          "title": "What anti-counterfeit options can pharma cartons use?",
+          "intent": "pharma carton packaging anti counterfeit pharma cartons",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/anti-counterfeit-pharma-cartons.html",
+          "short_answer": "Options may include special inks, tamper seals, QR codes, serialization and controlled artwork features.",
+          "must_confirm": "security goal, verification method and cost target"
+        },
+        {
+          "title": "Can folding cartons support child-resistant packaging needs?",
+          "intent": "pharma carton packaging child resistant pharma carton",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/child-resistant-pharma-carton.html",
+          "short_answer": "Some projects may need child-resistant secondary packaging or closures, but requirements must be defined by the buyer and market.",
+          "must_confirm": "target regulation, opening method and test expectations"
+        },
+        {
+          "title": "How small can text be on pharma cartons?",
+          "intent": "pharma carton packaging small text readability pharma",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/small-text-readability-pharma.html",
+          "short_answer": "Small text must remain readable after printing, folding and finishing, especially for dosage, warnings and regulatory copy.",
+          "must_confirm": "font size, contrast, paper surface and print method"
+        },
+        {
+          "title": "What glue details matter for pharma folding cartons?",
+          "intent": "pharma carton packaging pharma carton glue strength",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/pharma-carton-glue-strength.html",
+          "short_answer": "Glue type, glue width, curing, fiber tear and carton opening behavior matter for safe pack-out and shipping.",
+          "must_confirm": "glue flap width, board coating and pack-out process"
+        },
+        {
+          "title": "What should buyers approve on pharma carton samples?",
+          "intent": "pharma carton packaging pharma carton sample approval",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/pharma-carton-sample-approval.html",
+          "short_answer": "Approve size, board, folding, glue, code readability, text, color, batch area, leaflet fit and carton packing.",
+          "must_confirm": "full pack-out sample, barcode verification and artwork version"
+        },
+        {
+          "title": "How should pharma folding cartons be packed and shipped?",
+          "intent": "pharma carton packaging shipping pharma folding cartons",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/shipping-pharma-folding-cartons.html",
+          "short_answer": "Flat cartons need clean export packing, moisture protection, carton labels and version control during shipping.",
+          "must_confirm": "carton quantity, shipping marks, humidity risk and destination"
+        },
+        {
+          "title": "Should buyers use labels or printed pharma cartons?",
+          "intent": "pharma carton packaging label vs printed pharma carton",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/label-vs-printed-pharma-carton.html",
+          "short_answer": "Labels can support late-stage variable data, while printed cartons give cleaner branding and controlled production when data is stable.",
+          "must_confirm": "data variability, artwork stability, label area and validation process"
+        },
+        {
+          "title": "What should a pharma carton RFQ include?",
+          "intent": "pharma carton packaging pharma carton rfq template",
+          "url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/pharma-carton-rfq-template.html",
+          "short_answer": "A pharma carton RFQ should include carton size, board, artwork version, code requirements, verification target, quantity and sample approval workflow.",
+          "must_confirm": "all regulatory copy, code rules, board grade and deadline"
+        }
+      ]
+    },
+    {
+      "id": "food-packaging-manufacturer",
+      "title": "Food-safe Packaging Buyer Questions",
+      "industry": "food-safe packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/buyer-questions.html",
+      "parent_url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer.html",
+      "product_type": "custom food packaging",
+      "common_moq": "500 PCS per custom size and artwork",
+      "questions": [
+        {
+          "title": "How do buyers choose food-safe packaging material?",
+          "intent": "food-safe packaging choose food safe packaging material",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/choose-food-safe-packaging-material.html",
+          "short_answer": "Food-safe material starts with the food type, contact layer, temperature, grease, moisture, shelf life and destination market.",
+          "must_confirm": "food contact condition, coating, direct-contact layer and market needs"
+        },
+        {
+          "title": "What material works for grease-resistant burger boxes?",
+          "intent": "food-safe packaging grease resistant burger boxes",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/grease-resistant-burger-boxes.html",
+          "short_answer": "Burger boxes often need paperboard with PE, PLA or water-based grease-resistant coating depending on oil level and service condition.",
+          "must_confirm": "grease level, heat, coating type and box structure"
+        },
+        {
+          "title": "Can kraft paper bags touch food directly?",
+          "intent": "food-safe packaging kraft food bag direct contact",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/kraft-food-bag-direct-contact.html",
+          "short_answer": "Kraft food bags can be suitable only when the direct-contact side, coating and documentation match the food use.",
+          "must_confirm": "food type, inner coating, odor and destination requirements"
+        },
+        {
+          "title": "Should food packaging use PE, PLA or water-based coating?",
+          "intent": "food-safe packaging pe vs pla vs water based coating",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/pe-vs-pla-vs-water-based-coating.html",
+          "short_answer": "PE is common and moisture resistant, PLA supports compostable positioning where documented, and water-based coatings can support grease resistance with different limits.",
+          "must_confirm": "coating target, heat, moisture, compostability claim and disposal route"
+        },
+        {
+          "title": "What heat resistance should hot food packaging have?",
+          "intent": "food-safe packaging hot food packaging heat resistance",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/hot-food-packaging-heat-resistance.html",
+          "short_answer": "Hot food packaging should be tested for heat exposure, grease, steam, deformation and odor under the real serving condition.",
+          "must_confirm": "serving temperature, contact time, coating and stacking"
+        },
+        {
+          "title": "What paper bag material works for bakery packaging?",
+          "intent": "food-safe packaging bakery paper bag material",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/bakery-paper-bag-material.html",
+          "short_answer": "Bakery bags may need kraft, glassine, grease-resistant paper, window film or coating depending on pastry oil and freshness needs.",
+          "must_confirm": "bakery type, oil level, window, seal and shelf life"
+        },
+        {
+          "title": "What material works for frozen food pouches?",
+          "intent": "food-safe packaging frozen food pouch material",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/frozen-food-pouch-material.html",
+          "short_answer": "Frozen food pouches need seal strength, puncture resistance, low-temperature behavior and moisture barrier.",
+          "must_confirm": "freezing temperature, product shape, sealant and storage time"
+        },
+        {
+          "title": "How much seal strength do food pouches need?",
+          "intent": "food-safe packaging food pouch seal strength",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-pouch-seal-strength.html",
+          "short_answer": "Food pouch seal strength depends on fill weight, product form, oil, moisture, filling temperature and shipping stress.",
+          "must_confirm": "seal width, sealant layer, fill weight and leak risk"
+        },
+        {
+          "title": "What should buyers know about ink on food packaging?",
+          "intent": "food-safe packaging food packaging ink safety",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-packaging-ink-safety.html",
+          "short_answer": "Ink should be kept away from direct food contact unless the process is designed for it, and low-odor or suitable ink systems may be required.",
+          "must_confirm": "print side, food contact side, odor and migration concern"
+        },
+        {
+          "title": "Can food packaging claim compostable?",
+          "intent": "food-safe packaging compostable food packaging claims",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/compostable-food-packaging-claims.html",
+          "short_answer": "Compostable claims require suitable materials, documentation and market-specific disposal conditions.",
+          "must_confirm": "material certificate, coating, ink, adhesive and destination market"
+        },
+        {
+          "title": "What moisture barrier do snack packages need?",
+          "intent": "food-safe packaging snack moisture barrier packaging",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/snack-moisture-barrier-packaging.html",
+          "short_answer": "Snack packages need moisture barrier based on crispness, oil level, shelf life and distribution channel.",
+          "must_confirm": "WVTR target, laminate, seal strength and shelf life"
+        },
+        {
+          "title": "What coating works for fries boxes?",
+          "intent": "food-safe packaging oil resistant fries boxes",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/oil-resistant-fries-boxes.html",
+          "short_answer": "Fries boxes often need grease resistance, heat tolerance, ventilation and stiffness for takeaway use.",
+          "must_confirm": "oil level, steam, coating type and carton stiffness"
+        },
+        {
+          "title": "What material works for sauce spout pouches?",
+          "intent": "food-safe packaging sauce spout pouch material",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/sauce-spout-pouch-material.html",
+          "short_answer": "Sauce spout pouches need seal strength, puncture resistance, spout fit, product compatibility and filling temperature review.",
+          "must_confirm": "sauce acidity, filling temperature, spout size and sealant"
+        },
+        {
+          "title": "How should takeaway packaging be tested for stacking?",
+          "intent": "food-safe packaging takeaway packaging stack strength",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/takeaway-packaging-stack-strength.html",
+          "short_answer": "Takeaway packaging should be tested for stacking, heat, grease, moisture and delivery handling.",
+          "must_confirm": "stack height, food weight, coating and delivery time"
+        },
+        {
+          "title": "Can one food package be microwave and freezer safe?",
+          "intent": "food-safe packaging microwave freezer food packaging",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/microwave-freezer-food-packaging.html",
+          "short_answer": "A package can only make microwave or freezer claims when the material, coating and test conditions support those uses.",
+          "must_confirm": "temperature range, time, food type and material documentation"
+        },
+        {
+          "title": "What should buyers test on food packaging samples?",
+          "intent": "food-safe packaging food packaging sample testing",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-packaging-sample-testing.html",
+          "short_answer": "Test odor, food fit, grease resistance, moisture behavior, heat response, stacking, barcode and carton packing.",
+          "must_confirm": "real food, serving temperature, contact time and delivery method"
+        },
+        {
+          "title": "What should a food packaging RFQ include?",
+          "intent": "food-safe packaging food packaging rfq template",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-packaging-rfq-template.html",
+          "short_answer": "A food packaging RFQ should include food type, contact condition, size, material, coating, artwork, quantity, destination and deadline.",
+          "must_confirm": "food type, coating, direct-contact layer, size and quantity tiers"
+        },
+        {
+          "title": "What documents may food packaging buyers request?",
+          "intent": "food-safe packaging food packaging export documents",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-packaging-export-documents.html",
+          "short_answer": "Buyers may request material, food-contact, coating or supplier documents depending on market and product risk.",
+          "must_confirm": "destination market, contact layer and required documentation"
+        },
+        {
+          "title": "How should food boxes be packed for export?",
+          "intent": "food-safe packaging food box carton packing",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-box-carton-packing.html",
+          "short_answer": "Food boxes need clean, dry export cartons, suitable stacking, moisture control and clear shipping marks.",
+          "must_confirm": "carton quantity, carton size, gross weight and storage condition"
+        },
+        {
+          "title": "What GSM is right for food-safe paperboard boxes?",
+          "intent": "food-safe packaging food safe paperboard gsm",
+          "url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/food-safe-paperboard-gsm.html",
+          "short_answer": "Paperboard GSM depends on box size, food weight, coating, stacking and handling requirements.",
+          "must_confirm": "board GSM, coating, box size and load test"
+        }
+      ]
+    }
+  ]
+}

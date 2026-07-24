@@ -58,7 +58,8 @@
     "llms": "https://www.bestpackfactory.com/llms.txt",
     "ai_index": "https://www.bestpackfactory.com/ai-index.json",
     "buyer_answer_hub": "https://www.bestpackfactory.com/packaging-buyer-answer-hub.html",
-    "buyer_answer_index": "https://www.bestpackfactory.com/buyer-answer-index.json"
+    "buyer_answer_index": "https://www.bestpackfactory.com/buyer-answer-index.json",
+    "industry_question_index": "https://www.bestpackfactory.com/industry-question-index.json"
   },
   "high_intent_pages": [
     "https://www.bestpackfactory.com/custom-packaging-manufacturer.html",
@@ -90,6 +91,30 @@
       "https://www.bestpackfactory.com/packaging-buyer-answer-hub.html",
       "https://www.bestpackfactory.com/products.html",
       "https://www.bestpackfactory.com/blog.html"
-    ]
-  }
+    ],
+    "industry_question_index": "https://www.bestpackfactory.com/industry-question-index.json",
+    "industry_question_page_count": 80
+  },
+  "industry_question_hubs": [
+    {
+      "industry": "coffee packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/buyer-questions.html",
+      "question_count": 20
+    },
+    {
+      "industry": "pet food packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/buyer-questions.html",
+      "question_count": 20
+    },
+    {
+      "industry": "pharma carton packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/buyer-questions.html",
+      "question_count": 20
+    },
+    {
+      "industry": "food-safe packaging",
+      "hub_url": "https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/buyer-questions.html",
+      "question_count": 20
+    }
+  ]
 }

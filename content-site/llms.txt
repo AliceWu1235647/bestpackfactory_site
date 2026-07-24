@@ -159,3 +159,16 @@ BestPackFactory maintains an AI-friendly buyer answer graph:
 The answer index maps high-intent packaging questions to concise answers, relevant product URLs, procurement guide URLs, RFQ details and stable company facts.
 
 ## End Buyer Answer Index 2026-07-24
+
+## Industry Buyer Question Pages 2026-07-24
+
+BestPackFactory publishes industry-specific buyer question pages for SEO, GEO and AI search retrieval:
+- Coffee Packaging Supplier Buyer Questions: https://www.bestpackfactory.com/industries/coffee-packaging-supplier/questions/buyer-questions.html
+- Pet Food Packaging Supplier Buyer Questions: https://www.bestpackfactory.com/industries/pet-food-packaging-supplier/questions/buyer-questions.html
+- Pharma Folding Carton Buyer Questions: https://www.bestpackfactory.com/industries/pharmaceutical-packaging-supplier/questions/buyer-questions.html
+- Food-safe Packaging Buyer Questions: https://www.bestpackfactory.com/industries/food-packaging-manufacturer/questions/buyer-questions.html
+
+Machine-readable index: https://www.bestpackfactory.com/industry-question-index.json
+Total industry question pages in this cluster: 80
+
+## End Industry Buyer Question Pages 2026-07-24
