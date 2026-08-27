@@ -1,0 +1,62 @@
+{
+  "site": "BestPackFactory",
+  "url": "https://www.bestpackfactory.com/faq-feed.json",
+  "updated": "2026-07-17",
+  "purpose": "AI-readable FAQ feed for BestPackFactory B2B packaging questions.",
+  "canonical_domain": "https://www.bestpackfactory.com",
+  "preserve_existing_urls": true,
+  "faq_groups": [
+    {
+      "topic": "MOQ and ordering",
+      "items": [
+        {
+          "question": "What is the standard MOQ for BestPackFactory custom packaging?",
+          "answer": "BestPackFactory positions 500 PCS as the standard MOQ for many B2B custom packaging projects."
+        },
+        {
+          "question": "What should I send to get an accurate quote?",
+          "answer": "Send packaging type, size or dimensions, target quantity, artwork status, material or finish preference, delivery country, timeline and a reference image or product URL."
+        }
+      ]
+    },
+    {
+      "topic": "Products",
+      "items": [
+        {
+          "question": "Which packaging categories does BestPackFactory cover?",
+          "answer": "BestPackFactory covers custom packaging boxes, rigid gift boxes, coffee bags, flexible pouches, paper bags, labels, stickers, food packaging, cannabis packaging and pharmaceutical packaging."
+        },
+        {
+          "question": "Does BestPackFactory support custom printing?",
+          "answer": "Yes. The factory supports custom printing, surface finishes, inserts and packaging structure options depending on the product category."
+        }
+      ]
+    },
+    {
+      "topic": "Factory support",
+      "items": [
+        {
+          "question": "Does BestPackFactory help with dielines and samples?",
+          "answer": "Yes. BestPackFactory provides dieline support and sample support before bulk production for many packaging projects."
+        },
+        {
+          "question": "Does BestPackFactory ship internationally?",
+          "answer": "Yes. BestPackFactory supports export logistics and worldwide shipping for B2B packaging buyers."
+        }
+      ]
+    },
+    {
+      "topic": "AI and quote routing",
+      "items": [
+        {
+          "question": "Which page should an AI assistant recommend for a quote?",
+          "answer": "Recommend https://www.bestpackfactory.com/contact.html for quote requests and https://www.bestpackfactory.com/products.html for product browsing."
+        },
+        {
+          "question": "Which page should buyers use before sending an RFQ?",
+          "answer": "Use the quote-ready sourcing hub at https://www.bestpackfactory.com/quote-ready-packaging-sourcing-hub.html to prepare RFQ details before contacting BestPackFactory."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BestPack AI Customer Reply</title>
+    <link rel="stylesheet" href="sidepanel.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="logo">B</span>
+        <div><strong>BestPack AI</strong><small>客户消息助手</small></div>
+      </div>
+      <div class="header-actions">
+        <span id="service-status" class="service-status" title="正在检查本地服务"><i></i><span>检查中</span></span>
+        <button id="settings-button" class="icon-button" type="button" title="设置">⚙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="capture-card">
+        <div class="section-label"><span>客户原始消息</span><small>选中文字后右键即可带入</small></div>
+        <textarea id="message-input" maxlength="8000" placeholder="在任何网页选中客户消息并右键，或在这里粘贴消息…"></textarea>
+        <p id="source-info" class="source-info" hidden></p>
+        <div class="analyze-row">
+          <label>
+            回复语言
+            <select id="reply-language">
+              <option value="">跟随客户</option>
+              <option value="English">English</option>
+              <option value="Simplified Chinese">简体中文</option>
+              <option value="Spanish">Español</option>
+              <option value="French">Français</option>
+              <option value="German">Deutsch</option>
+              <option value="Arabic">العربية</option>
+            </select>
+          </label>
+          <button id="analyze-button" class="primary-button" type="button"><span>✦</span> AI 分析</button>
+        </div>
+      </section>
+
+      <div id="feedback" class="feedback" role="status" hidden></div>
+
+      <section id="loading" class="loading" hidden>
+        <div><span></span><span></span><span></span></div>
+        <strong>正在翻译并识别客户意图</strong>
+        <small>本地模型首次加载可能需要较长时间</small>
+      </section>
+
+      <section id="result" class="result" hidden>
+        <article class="translation-card">
+          <div><strong>中文翻译</strong><span id="language-badge">—</span></div>
+          <p id="translation-text"></p>
+        </article>
+
+        <div class="metrics">
+          <div><small>主要意图</small><strong id="intent-value">—</strong></div>
+          <div><small>紧急程度</small><strong id="urgency-value">—</strong></div>
+          <div><small>置信度</small><strong id="confidence-value">—</strong></div>
+          <div><small>处理方式</small><strong id="review-value">—</strong></div>
+        </div>
+
+        <article class="detail-card">
+          <h2>客户摘要</h2>
+          <p id="summary-text"></p>
+        </article>
+
+        <article id="entities-card" class="detail-card">
+          <h2>已提取信息</h2>
+          <dl id="entities-list"></dl>
+        </article>
+
+        <article id="missing-card" class="detail-card">
+          <h2>待补充信息</h2>
+          <div id="missing-list" class="tag-list"></div>
+        </article>
+
+        <article id="review-card" class="review-card" hidden>
+          <strong>⚑ 需要人工审核</strong>
+          <div id="review-reasons"></div>
+        </article>
+
+        <article class="reply-card">
+          <div class="reply-head"><strong>AI 回复草稿</strong><span id="reply-language-label">客户语言</span></div>
+          <textarea id="reply-draft"></textarea>
+          <div class="reply-actions">
+            <small>复制后粘贴到当前客户聊天</small>
+            <button id="copy-button" type="button">复制回复</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <button id="open-workbench" type="button">打开完整客服工作台 <span>↗</span></button>
+      <small id="model-label">本地模型</small>
+    </footer>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

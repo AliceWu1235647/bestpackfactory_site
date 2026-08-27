@@ -1,9 +1,6 @@
-(function () {
-function initHeroCarousel() {
+document.addEventListener("DOMContentLoaded", function () {
   const hero = document.querySelector(".hero-image-carousel");
   if (!hero) return;
-  if (hero.dataset.carouselReady === "true") return;
-  hero.dataset.carouselReady = "true";
 
   const slider = hero.querySelector(".slider");
   const slides = Array.from(slider ? slider.querySelectorAll(".slide") : []);
@@ -16,6 +13,19 @@ function initHeroCarousel() {
   let current = 0;
   let timer = null;
   const intervalMs = Number(hero.getAttribute("data-autoplay-ms")) || 3000;
+  const singleSlideOnMobile = hero.getAttribute("data-mobile-single-slide") === "true" &&
+    window.matchMedia("(max-width: 980px)").matches;
+
+  if (singleSlideOnMobile) {
+    slider.style.transition = "none";
+    slider.style.transform = "translate3d(0,0,0)";
+    slides.forEach(function (slide, i) {
+      const isFirst = i === 0;
+      slide.classList.toggle("is-active", isFirst);
+      slide.setAttribute("aria-hidden", isFirst ? "false" : "true");
+    });
+    return;
+  }
 
   function show(index) {
     current = (index + slides.length) % slides.length;
@@ -44,17 +54,6 @@ function initHeroCarousel() {
     timer = setInterval(function () {
       show(current + 1);
     }, intervalMs);
-  }
-
-  function startInitialAutoPlay() {
-    const begin = function () {
-      window.setTimeout(startAutoPlay, intervalMs);
-    };
-    if (document.readyState === "complete") {
-      begin();
-    } else {
-      window.addEventListener("load", begin, { once: true });
-    }
   }
 
   if (nextBtn) {
@@ -99,212 +98,8 @@ function initHeroCarousel() {
   hero.addEventListener("focusout", startAutoPlay);
 
   show(0);
-  startInitialAutoPlay();
-}
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initHeroCarousel);
-} else {
-  initHeroCarousel();
-}
-})();
-
-// Analytics events: GA4 + Microsoft Clarity friendly conversion tracking.
-(function(){
-  var sentScrollDepth = {};
-
-  function cleanUrl(value){
-    try {
-      var url = new URL(value, window.location.href);
-      return url.href.replace(url.searchParams.get('text') || '', '[message]');
-    } catch(e) {
-      return value || '';
-    }
-  }
-
-  function sendEvent(name, params){
-    params = params || {};
-    params.page_path = window.location.pathname;
-    params.page_title = document.title;
-    if(typeof window.gtag === 'function'){
-      window.gtag('event', name, params);
-    }
-    if(typeof window.clarity === 'function'){
-      window.clarity('event', name);
-    }
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(Object.assign({ event: name }, params));
-  }
-
-  function readStoredAttribution(){
-    try {
-      return JSON.parse(window.localStorage.getItem('bpf_lead_attribution') || '{}') || {};
-    } catch(e) {
-      return {};
-    }
-  }
-
-  function writeStoredAttribution(data){
-    try {
-      window.localStorage.setItem('bpf_lead_attribution', JSON.stringify(data));
-    } catch(e) {}
-  }
-
-  function captureAttribution(){
-    var params = new URLSearchParams(window.location.search);
-    var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','msclkid'];
-    var stored = readStoredAttribution();
-    var next = Object.assign({}, stored);
-    var hasNew = false;
-    keys.forEach(function(key){
-      var value = params.get(key);
-      if(value){
-        next[key] = value.slice(0, 180);
-        hasNew = true;
-      }
-    });
-    if(!next.first_landing_page) next.first_landing_page = window.location.pathname;
-    if(!next.first_referrer && document.referrer) next.first_referrer = document.referrer.slice(0, 260);
-    if(hasNew || !stored.first_landing_page) writeStoredAttribution(next);
-    return next;
-  }
-
-  function currentLeadContext(){
-    var attr = captureAttribution();
-    var params = new URLSearchParams(window.location.search);
-    var q = params.get('q') || '';
-    var parts = [
-      'Lead context:',
-      'Page: ' + window.location.pathname,
-      'Title: ' + document.title.replace(/\s+/g, ' ').slice(0, 120)
-    ];
-    if(q) parts.push('Search query: ' + q.slice(0, 120));
-    ['utm_source','utm_medium','utm_campaign','utm_term','gclid','msclkid'].forEach(function(key){
-      if(attr[key]) parts.push(key + ': ' + attr[key]);
-    });
-    if(attr.first_landing_page && attr.first_landing_page !== window.location.pathname){
-      parts.push('First landing: ' + attr.first_landing_page);
-    }
-    if(attr.first_referrer) parts.push('Referrer: ' + attr.first_referrer);
-    return '\n\n' + parts.join('\n');
-  }
-
-  function enrichLeadLink(link){
-    if(!link || link.dataset.bpfLeadContext === 'attached') return;
-    var href = link.getAttribute('href') || '';
-    var lower = href.toLowerCase();
-    if(lower.indexOf('wa.me/') === -1 && lower.indexOf('api.whatsapp.com') === -1 && lower.indexOf('mailto:') !== 0) return;
-    var context = currentLeadContext();
-    try {
-      var url = new URL(href, window.location.href);
-      if(url.protocol === 'mailto:'){
-        var body = url.searchParams.get('body') || '';
-        url.searchParams.set('body', (body || 'Hello Lisa, I need custom packaging.') + context);
-        link.setAttribute('href', url.toString());
-      } else {
-        var text = url.searchParams.get('text') || 'Hello BestPackFactory, I need a custom packaging quote.';
-        url.searchParams.set('text', (text + context).slice(0, 1800));
-        link.setAttribute('href', url.toString());
-      }
-      link.dataset.bpfLeadContext = 'attached';
-    } catch(e) {}
-  }
-
-  function isProductPage(){
-    return /^\/products\/[^/]+\.html$/i.test(window.location.pathname);
-  }
-
-  function initClickTracking(){
-    document.addEventListener('click', function(event){
-      var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
-      if(!link) return;
-      enrichLeadLink(link);
-      var href = link.getAttribute('href') || '';
-      var text = (link.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 120);
-      var lower = href.toLowerCase();
-      var payload = {
-        event_category: 'lead',
-        link_text: text,
-        link_url: cleanUrl(href)
-      };
-      if(lower.indexOf('wa.me/') !== -1 || lower.indexOf('api.whatsapp.com') !== -1){
-        sendEvent('whatsapp_click', Object.assign({ method: 'whatsapp' }, payload));
-        return;
-      }
-      if(lower.indexOf('mailto:') === 0){
-        sendEvent('email_click', Object.assign({ method: 'email' }, payload));
-        return;
-      }
-      if(lower.indexOf('contact.html') !== -1 || /quote|rfq|inquiry/i.test(text)){
-        sendEvent('quote_cta_click', payload);
-      }
-    });
-  }
-
-  function initFormTracking(){
-    document.addEventListener('submit', function(event){
-      var form = event.target;
-      if(!form || !form.tagName || form.tagName.toLowerCase() !== 'form') return;
-      var action = form.getAttribute('action') || '';
-      var id = form.getAttribute('id') || '';
-      var classes = form.className || '';
-      if(id === 'rfqForm' || classes.indexOf('rfq-form') !== -1 || action.indexOf('formsubmit.co') !== -1){
-        sendEvent('rfq_submit', {
-          event_category: 'lead',
-          form_id: id || 'rfq_form',
-          form_action: action
-        });
-      }
-    }, true);
-  }
-
-  function initProductScrollDepth(){
-    if(!isProductPage()) return;
-    sendEvent('product_page_view', {
-      event_category: 'product',
-      product_path: window.location.pathname
-    });
-
-    function checkDepth(){
-      var doc = document.documentElement;
-      var scrollable = Math.max(1, doc.scrollHeight - window.innerHeight);
-      var depth = Math.round((window.scrollY / scrollable) * 100);
-      [25, 50, 75, 90].forEach(function(mark){
-        if(depth >= mark && !sentScrollDepth[mark]){
-          sentScrollDepth[mark] = true;
-          sendEvent('product_scroll_depth', {
-            event_category: 'engagement',
-            product_path: window.location.pathname,
-            scroll_depth: mark
-          });
-        }
-      });
-    }
-
-    var ticking = false;
-    window.addEventListener('scroll', function(){
-      if(ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(function(){
-        ticking = false;
-        checkDepth();
-      });
-    }, { passive: true });
-    checkDepth();
-  }
-
-  function initTracking(){
-    captureAttribution();
-    initClickTracking();
-    initFormTracking();
-    initProductScrollDepth();
-  }
-
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', initTracking);
-  }else{
-    initTracking();
-  }
-})();
+  startAutoPlay();
+});
 
 // FINAL MOBILE-FIRST: hamburger menu and touch-friendly overlay
 (function(){
@@ -351,7 +146,6 @@ if (document.readyState === "loading") {
   var SEARCH_API = '/api/products-search';
   var productCache = null;
   var productPromise = null;
-  var staticProductCache = null;
 
   var QUERY_ALIASES = {
     'box': ['boxes','custom boxes','custom gift boxes','rigid boxes','mailer boxes','cardstock product boxes','folding carton','paperboard box','gift packaging'],
@@ -504,10 +298,7 @@ if (document.readyState === "loading") {
   }
 
   function getLocalProducts(){
-    if(!staticProductCache){
-      staticProductCache = STATIC_PRODUCTS.map(normalizeProduct);
-    }
-    return staticProductCache;
+    return STATIC_PRODUCTS.map(normalizeProduct);
   }
 
   function loadProducts(){
@@ -584,7 +375,7 @@ if (document.readyState === "loading") {
   }
 
   function initProductsPageSearch(){
-    var cards = Array.prototype.slice.call(document.querySelectorAll('.product-card'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.products-grid-fixed > .product-card'));
     if(!cards.length) return;
     var status = document.getElementById('productSearchStatus');
     var localUrls = {};
@@ -608,10 +399,6 @@ if (document.readyState === "loading") {
       if(status){
         status.textContent = q ? ('Showing ' + count + ' matching local products for “' + q + '”') : 'Search products by keyword: box, pouch, rigid box, mailer box, cardstock, magnetic packaging...';
       }
-      if(!q){
-        renderDynamicResults(dynamicBox, [], localUrls, q);
-        return;
-      }
       loadProducts().then(function(products){
         renderDynamicResults(dynamicBox, findProducts(products, q, 10), localUrls, q);
       });
@@ -633,6 +420,7 @@ if (document.readyState === "loading") {
       panel.className = 'search-results-panel';
       form.appendChild(panel);
       var products = getLocalProducts();
+      loadProducts().then(function(list){ products = list; });
 
       function render(){
         var q = norm(input.value);
@@ -644,17 +432,12 @@ if (document.readyState === "loading") {
         panel.classList.add('is-open');
       }
 
-      function refreshDynamicProducts(){
-        if(!norm(input.value)) return;
-        loadProducts().then(function(list){ products = list; render(); });
-      }
-
       input.addEventListener('input', function(){
         render();
-        refreshDynamicProducts();
+        loadProducts().then(function(list){ products = list; render(); });
       });
       input.addEventListener('focus', function(){
-        refreshDynamicProducts();
+        loadProducts().then(function(list){ products = list; render(); });
       });
       document.addEventListener('click', function(e){ if(!form.contains(e.target)) panel.classList.remove('is-open'); });
       form.addEventListener('submit', function(e){
@@ -682,6 +465,34 @@ if (document.readyState === "loading") {
     build();
   }
 
+
+
+  function initRFQDynamicMirror(){
+    var form = document.getElementById('rfqForm');
+    if(!form) return;
+    var endpoint = form.getAttribute('data-api-mirror') || '/api/rfq';
+    form.addEventListener('submit', function(){
+      try{
+        var fd = new FormData(form);
+        var payload = {};
+        fd.forEach(function(value, key){
+          if(value && typeof value === 'object' && value.name){ payload[key] = value.name; }
+          else payload[key] = value;
+        });
+        payload.page = window.location.pathname;
+        payload.submittedAt = new Date().toISOString();
+        var body = JSON.stringify(payload);
+        if(navigator.sendBeacon){
+          var blob = new Blob([body], {type:'application/json'});
+          navigator.sendBeacon(endpoint, blob);
+        }else{
+          fetch(endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:body, keepalive:true}).catch(function(){});
+        }
+      }catch(e){}
+      // Keep native FormSubmit email backend as the delivery fallback.
+    });
+  }
+
   function initSuccessMessage(){
     if(new URLSearchParams(window.location.search).get('rfq') === 'success'){
       var box = document.createElement('div');
@@ -694,9 +505,9 @@ if (document.readyState === "loading") {
 
   if(document.readyState === 'loading'){
     document.addEventListener('DOMContentLoaded', function(){
-      initProductsPageSearch(); initHeaderSearch(); initRFQWhatsApp(); initSuccessMessage();
+      initProductsPageSearch(); initHeaderSearch(); initRFQWhatsApp(); initRFQDynamicMirror(); initSuccessMessage();
     });
   }else{
-    initProductsPageSearch(); initHeaderSearch(); initRFQWhatsApp(); initSuccessMessage();
+    initProductsPageSearch(); initHeaderSearch(); initRFQWhatsApp(); initRFQDynamicMirror(); initSuccessMessage();
   }
 })();

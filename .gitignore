@@ -1,8 +1,8 @@
-node_modules/
-.next/
-out/
-pfd-site/
-*.log
-.env
 .vercel
 .env*
+node_modules
+.next
+out
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+BestPack AI 局域网插件安装说明
+
+1. 把整个 chrome-extension 文件夹复制到需要使用的电脑。
+2. 在 Google Chrome 地址栏打开 chrome://extensions。
+3. 打开右上角“开发者模式”。
+4. 点击“加载已解压的扩展程序”，选择本文件所在的 chrome-extension 文件夹。
+5. 打开插件的“扩展程序选项”。
+6. 服务地址填写：http://192.168.1.6:3000
+7. 访问令牌填写主机 .env.local 中的 AI_WORKBENCH_ACCESS_TOKEN，然后保存并允许访问。
+8. 点击“测试连接”。成功后，在网页中选中客户消息，右键选择“用 BestPack AI 分析”。
+
+主机电脑必须保持 Ollama 和 start-ai-lan.cmd 的命令窗口运行。
+如果主机 IP 地址改变，请在插件选项中填写新的 http://局域网IP:3000 地址。
+仅在可信任的家庭或办公室局域网内使用，不要在路由器上把 3000 或 11434 端口映射到互联网。
+

@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "urls_tested": 3,
+    "strategies": [
+      "mobile",
+      "desktop"
+    ],
+    "results_count": 6,
+    "avg_performance_score": null
+  },
+  "results": [
+    {
+      "url": "https://www.bestpackfactory.com/",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/",
+      "strategy": "mobile",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/blog/how-to-find-custom-packaging-supplier-china.html",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/blog/how-to-find-custom-packaging-supplier-china.html",
+      "strategy": "mobile",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/products/tin-boxes.html",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/products/tin-boxes.html",
+      "strategy": "mobile",
+      "error": "API call failed"
+    }
+  ]
+}

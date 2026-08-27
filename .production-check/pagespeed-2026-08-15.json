@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "urls_tested": 5,
+    "strategies": [
+      "mobile",
+      "desktop"
+    ],
+    "results_count": 10,
+    "avg_performance_score": null
+  },
+  "results": [
+    {
+      "url": "https://www.bestpackfactory.com/",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/",
+      "strategy": "mobile",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/blog/fsc-packaging-labels-custom-boxes-guide.html",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/blog/fsc-packaging-labels-custom-boxes-guide.html",
+      "strategy": "mobile",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/contact.html",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/contact.html",
+      "strategy": "mobile",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/factory.html",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/factory.html",
+      "strategy": "mobile",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/products/custom-boxes.html",
+      "strategy": "desktop",
+      "error": "API call failed"
+    },
+    {
+      "url": "https://www.bestpackfactory.com/products/custom-boxes.html",
+      "strategy": "mobile",
+      "error": "API call failed"
+    }
+  ]
+}

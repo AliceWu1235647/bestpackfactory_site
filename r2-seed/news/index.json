@@ -1,8 +1,45 @@
 {
   "news": [
     {
+      "slug": "bestpackfactory-expands-low-moq-support-global-buyers",
+      "type": "news",
+      "title": "BestPackFactory Expands Low-MOQ Support",
+      "description": "Factory Update: BestPackFactory increases production capacity for small-batch custom packaging (MOQ 500 PCS) for global buyers.",
+      "keywords": [],
+      "canonical": "https://www.bestpackfactory.com/news/bestpackfactory-expands-low-moq-support-global-buyers.html",
+      "url": "/news/bestpackfactory-expands-low-moq-support-global-buyers.html"
+    },
+    {
+      "slug": "bestpackfactory-faster-sampling-dieline-support-update",
+      "type": "news",
+      "title": "Faster Packaging Sampling &amp; Dieline Support",
+      "description": "Factory Update: Lead time for packaging prototypes and dieline support reduced to improve brand time-to-market.",
+      "keywords": [],
+      "canonical": "https://www.bestpackfactory.com/news/bestpackfactory-faster-sampling-dieline-support-update.html",
+      "url": "/news/bestpackfactory-faster-sampling-dieline-support-update.html"
+    },
+    {
+      "slug": "bestpackfactory-new-rfq-guidance-system-launch",
+      "type": "news",
+      "title": "New RFQ Guidance for Overseas Packaging Buyers",
+      "description": "Factory Update: BestPackFactory launches a new technical RFQ system to help buyers provide better specs for faster quoting.",
+      "keywords": [],
+      "canonical": "https://www.bestpackfactory.com/news/bestpackfactory-new-rfq-guidance-system-launch.html",
+      "url": "/news/bestpackfactory-new-rfq-guidance-system-launch.html"
+    },
+    {
+      "slug": "bestpackfactory-one-stop-packaging-solutions-update",
+      "type": "news",
+      "title": "One-Stop Solutions for Boxes, Bags &amp; Labels",
+      "description": "Factory Update: Integration of box, bag, and label manufacturing for streamlined B2B packaging procurement.",
+      "keywords": [],
+      "canonical": "https://www.bestpackfactory.com/news/bestpackfactory-one-stop-packaging-solutions-update.html",
+      "url": "/news/bestpackfactory-one-stop-packaging-solutions-update.html"
+    },
+    {
       "slug": "bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model",
-      "title": "BestPackFactory Builds a One-Stop Packaging Model: Strategy, Design, Manufacturing and Logistics",
+      "type": "news",
+      "title": "BestPackFactory One-Stop Packaging Model",
       "description": "Company news explaining how BestPackFactory supports B2B packaging buyers beyond boxes by linking strategy, design, sampling, production and logistics.",
       "keywords": [
         "packaging strategy",
@@ -11,13 +48,28 @@
         "packaging logistics",
         "BestPackFactory news"
       ],
-      "url": "/news/bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model.html",
-      "canonical": "https://bestpackfactory.com/news/bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model.html",
-      "type": "news"
+      "canonical": "https://www.bestpackfactory.com/news/bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model.html",
+      "url": "/news/bestpackfactory-one-stop-strategy-design-manufacturing-logistics-model.html"
+    },
+    {
+      "slug": "eu-ppwr-2026-custom-packaging-box-compliance-checklist",
+      "type": "news",
+      "title": "EU PPWR 2026 Packaging Checklist | BestPackFactory",
+      "description": "PPWR applies from August 12, 2026. Review custom box recyclability, documentation, labeling, empty space, supplier data and phased deadlines.",
+      "keywords": [
+        "PPWR packaging requirements 2026",
+        "EU packaging regulation",
+        "PPWR compliance checklist",
+        "custom packaging boxes",
+        "packaging declaration of conformity"
+      ],
+      "canonical": "https://www.bestpackfactory.com/news/eu-ppwr-2026-custom-packaging-box-compliance-checklist.html",
+      "url": "/news/eu-ppwr-2026-custom-packaging-box-compliance-checklist.html"
     },
     {
       "slug": "luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags",
-      "title": "Luxury Packaging Trends: Custom Gift Boxes, Rigid Boxes and Paper Bags for Premium Brands",
+      "type": "news",
+      "title": "Luxury Packaging Trends for Premium Brands",
       "description": "News and buyer insight on luxury packaging trends for perfume, jewelry, cosmetics, gift boxes and premium paper bags.",
       "keywords": [
         "Custom Gift Boxes",
@@ -27,13 +79,13 @@
         "jewelry packaging",
         "luxury packaging"
       ],
-      "url": "/news/luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags.html",
-      "canonical": "https://bestpackfactory.com/news/luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags.html",
-      "type": "news"
+      "canonical": "https://www.bestpackfactory.com/news/luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags.html",
+      "url": "/news/luxury-packaging-trends-custom-gift-boxes-rigid-boxes-paper-bags.html"
     },
     {
       "slug": "magnetic-packaging-mailer-boxes-b2b-sourcing-update",
-      "title": "Magnetic Packaging and Mailer Boxes: B2B Sourcing Update for Retail and Ecommerce Brands",
+      "type": "news",
+      "title": "Magnetic &amp; Mailer Box B2B Sourcing Update",
       "description": "A sourcing update comparing magnetic packaging, mailer boxes and rigid boxes for ecommerce, retail and gifting projects.",
       "keywords": [
         "Magnetic Packaging",
@@ -42,13 +94,13 @@
         "magnetic rigid box",
         "ecommerce packaging"
       ],
-      "url": "/news/magnetic-packaging-mailer-boxes-b2b-sourcing-update.html",
-      "canonical": "https://bestpackfactory.com/news/magnetic-packaging-mailer-boxes-b2b-sourcing-update.html",
-      "type": "news"
+      "canonical": "https://www.bestpackfactory.com/news/magnetic-packaging-mailer-boxes-b2b-sourcing-update.html",
+      "url": "/news/magnetic-packaging-mailer-boxes-b2b-sourcing-update.html"
     },
     {
       "slug": "packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts",
-      "title": "Packaging Logistics Optimization for Gift Boxes, Paper Bags and Inserts",
+      "type": "news",
+      "title": "Packaging Logistics for Gift Boxes &amp; Bags",
       "description": "Buyer-focused news on how structure choice, packing method and carton planning affect packaging logistics cost and delivery risk.",
       "keywords": [
         "packaging logistics",
@@ -58,11 +110,10 @@
         "export carton",
         "packaging manufacturing"
       ],
-      "url": "/news/packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts.html",
-      "canonical": "https://bestpackfactory.com/news/packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts.html",
-      "type": "news"
+      "canonical": "https://www.bestpackfactory.com/news/packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts.html",
+      "url": "/news/packaging-logistics-optimization-for-gift-boxes-paper-bags-inserts.html"
     }
   ],
-  "count": 4,
-  "source": "BestPackFactory static export seed"
+  "count": 9,
+  "generatedAt": "2026-08-21T07:12:02.010Z"
 }
