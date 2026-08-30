@@ -32,9 +32,20 @@ function toUrlPath(file) {
   return '/' + rel;
 }
 
+// 部分页面在磁盘上是整页 Next.js 快照(含 <head>)。渲染时 extractBody() 只取 <body>,
+// 所以 head 里的 canonical / hreflang 是死标记,不会出现在线上。审计必须同样只看 body,
+// 否则会把这些 alternate 误报成 25 条断链。
+function servedHtml(raw) {
+  const m = raw.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+  return m ? m[1] : raw;
+}
+
 const files = walk(ROOT);
-const pages = new Map(); // urlPath -> { file, html }
-for (const f of files) pages.set(toUrlPath(f), { file: f, html: fs.readFileSync(f, 'utf8') });
+const pages = new Map(); // urlPath -> { file, html(served body), raw }
+for (const f of files) {
+  const raw = fs.readFileSync(f, 'utf8');
+  pages.set(toUrlPath(f), { file: f, html: servedHtml(raw), raw });
+}
 
 // ---------- headings ----------
 const missingH1 = [];
@@ -48,8 +59,9 @@ for (const [url, { html }] of pages) {
 // ---------- canonicals ----------
 const canonicalOf = new Map();
 const canonicalDupes = {};
-for (const [url, { html }] of pages) {
-  const m = html.match(/<link[^>]+rel=["']canonical["'][^>]*href=["']([^"']+)["']/i);
+// canonical 只可能在 <head>,所以这里读原始文件而非 body。
+for (const [url, { raw }] of pages) {
+  const m = raw.match(/<link[^>]+rel=["']canonical["'][^>]*href=["']([^"']+)["']/i);
   if (!m) continue;
   canonicalOf.set(url, m[1]);
   (canonicalDupes[m[1]] ||= []).push(url);

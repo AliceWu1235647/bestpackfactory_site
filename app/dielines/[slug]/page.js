@@ -19,7 +19,8 @@ export async function generateMetadata({ params }) {
   const entry = getDieline(slug);
   if (!entry) return { title: 'Dieline Template | BestPackFactory' };
   const title = `${entry.name} — Free PDF, DXF & AI Download | BestPackFactory`;
-  const description = `${entry.intro.slice(0, 150)} Free custom-size download in PDF, DXF, AI and SVG. No sign-up.`;
+  const description = entry.seoDescription
+    || `${entry.intro.slice(0, 152).replace(/\s\S+$/, '')}. Free PDF, DXF, AI & SVG. No sign-up.`;
   return {
     title,
     description,
