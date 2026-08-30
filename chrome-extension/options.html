@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BestPack AI 设置</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="settings-shell">
+      <header>
+        <div class="logo">B</div>
+        <div>
+          <h1>BestPack AI 设置</h1>
+          <p>连接 Chrome 侧边栏与本机 AI 客服服务</p>
+        </div>
+      </header>
+
+      <section class="card">
+        <label for="backend-url">本地服务地址</label>
+        <input id="backend-url" type="url" spellcheck="false" placeholder="http://127.0.0.1:3000">
+        <small>本机使用 127.0.0.1；其他电脑填写主机的私有局域网 IP，例如 http://192.168.1.6:3000。Chrome 只会申请你填写的这一个地址。</small>
+
+        <label for="access-token">工作台访问口令</label>
+        <input id="access-token" type="password" autocomplete="off" placeholder="本地开发留空即可">
+        <small>局域网共享必须填写主机设置的 AI_WORKBENCH_ACCESS_TOKEN。这不是 Ollama 或 OpenAI API Key。</small>
+
+        <label class="check-row">
+          <input id="auto-analyze" type="checkbox">
+          <span>选中文字并右键后自动开始分析</span>
+        </label>
+
+        <div class="actions">
+          <button id="test-button" class="secondary">测试连接</button>
+          <button id="save-button" class="primary">保存设置</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+      </section>
+
+      <section class="help">
+        <h2>使用前必须启动</h2>
+        <code>ollama serve</code>
+        <code>npm.cmd run dev</code>
+        <p>如果 Ollama 已作为 Windows 后台程序运行，则不需要执行第一条命令。</p>
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

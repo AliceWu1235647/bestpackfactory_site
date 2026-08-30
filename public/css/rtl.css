@@ -1,0 +1,80 @@
+/* Arabic (dir="rtl") flow overrides.
+   style.css uses physical left/right properties throughout. These rules mirror the
+   ones that affect reading flow -- text alignment, inline padding/margin, and the
+   accent borders that sit on the reading edge. Absolutely positioned decoration
+   (fixed widgets, carousel arrows) is intentionally left alone: it is symmetric or
+   direction-neutral, and flipping it would move controls users already expect.
+   Every selector below mirrors a declaration that exists in style.css. */
+
+/* --- text alignment ------------------------------------------------------- */
+[dir="rtl"] .technical-spec-table td,
+[dir="rtl"] .tech-table th,
+[dir="rtl"] .tech-table td {
+  text-align: right;
+}
+
+[dir="rtl"] .hero.hero-image-carousel.bpf-layered-carousel .hero-bullets-list li,
+[dir="rtl"] .hero.hero-image-carousel.bpf-layered-carousel .hero-copy-layer,
+[dir="rtl"] .hero.hero-image-carousel.bpf-layered-carousel .hero-copy-layer .eyebrow,
+[dir="rtl"] body:has(.hero.hero-image-carousel.bpf-layered-carousel) .hero.hero-image-carousel.bpf-layered-carousel .hero-copy-layer,
+[dir="rtl"] body:has(.hero.hero-image-carousel.bpf-layered-carousel) .bpf-whatsapp-chat__head {
+  text-align: right !important;
+}
+
+/* --- inline padding ------------------------------------------------------- */
+[dir="rtl"] .slide-copy {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+[dir="rtl"] .author-profile-list {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+[dir="rtl"] .ai-snapshot ul,
+[dir="rtl"] .rfq-checklist ol {
+  padding-left: 0;
+  padding-right: 22px;
+}
+
+[dir="rtl"] .internal-links {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* --- inline margin ------------------------------------------------------- */
+[dir="rtl"] .mobile-menu-toggle {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* --- accent borders on the reading edge ---------------------------------- */
+[dir="rtl"] .content-evidence,
+[dir="rtl"] .geo-article .quick-answer-box {
+  border-left: 0;
+  border-right: 5px solid var(--green);
+}
+
+/* --- table / card dividers ----------------------------------------------- */
+[dir="rtl"] .trust-card {
+  border-right: 0;
+  border-left: 1px solid var(--line);
+}
+
+[dir="rtl"] .trust-card:last-child {
+  border-left: 0;
+}
+
+[dir="rtl"] body:has(.hero.hero-image-carousel.bpf-layered-carousel) .trust-card {
+  border-right: 0 !important;
+  border-left: 1px solid #e5e9e6 !important;
+}
+
+[dir="rtl"] body:has(.hero.hero-image-carousel.bpf-layered-carousel) .trust-card:last-child {
+  border-left: 0 !important;
+}
+
+/* --- symmetric gutters: no flip needed, kept for clarity ------------------
+   .article-detail, .hybrid-product-category-hubs and the two media queries set
+   equal left/right padding, so they already mirror correctly. */
