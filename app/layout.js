@@ -1,16 +1,22 @@
 import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const RTL_LANGS = new Set(['ar']);
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const hdrs = await headers();
+  const lang = hdrs.get('x-lang') || 'en';
+  const dir = RTL_LANGS.has(lang) ? 'rtl' : 'ltr';
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID || process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || '';
   const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || '';
   const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '';
   return (
-    <html lang="en">
+    <html lang={lang} dir={dir}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
