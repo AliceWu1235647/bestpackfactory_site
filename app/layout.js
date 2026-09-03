@@ -19,7 +19,7 @@ export default async function RootLayout({ children }) {
     <html lang={lang} dir={dir}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
+        <link rel="stylesheet" href="/css/style.css?v=20260904_restore_v2" />
         {GOOGLE_SITE_VERIFICATION && (
           <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
         )}
