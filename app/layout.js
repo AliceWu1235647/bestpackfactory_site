@@ -19,7 +19,8 @@ export default async function RootLayout({ children }) {
     <html lang={lang} dir={dir}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="stylesheet" href="/css/style.css?v=20260722_products4" />
+        <link rel="stylesheet" href="/css/style.css?v=20260901_gridfix4" />
+        <style dangerouslySetInnerHTML={{ __html: '.bpf-whatsapp-chat{display:none!important}body .grid .product-card img{object-fit:cover!important;aspect-ratio:4/3!important;height:auto!important;max-height:none!important;padding:0!important;background:#f8f9f7!important}@media(max-width:980px){body .grid .product-card img{object-fit:cover!important;aspect-ratio:4/3!important;height:auto!important;max-height:none!important;padding:0!important}}@media(max-width:640px){body .grid .product-card img{object-fit:cover!important;aspect-ratio:4/3!important;height:auto!important;max-height:none!important;padding:0!important}}' }} />
         {GOOGLE_SITE_VERIFICATION && (
           <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
         )}
@@ -53,6 +54,7 @@ export default async function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
         {children}
         <Script src="/js/main.js?v=20260724_speed_lazy_search" strategy="lazyOnload" />
+        <Script id="bpf-grid-img-fix" strategy="afterInteractive">{`(function(){function fix(){document.querySelectorAll('.grid .product-card img').forEach(function(img){img.style.setProperty('object-fit','cover','important');img.style.setProperty('aspect-ratio','4/3','important');img.style.setProperty('height','auto','important');img.style.setProperty('max-height','none','important');img.style.setProperty('padding','0','important');img.style.setProperty('background','#f8f9f7','important');});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',fix);}else{fix();}setTimeout(fix,500);setTimeout(fix,2000);})()`}</Script>
       </body>
     </html>
   );

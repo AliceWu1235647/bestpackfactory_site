@@ -2132,3 +2132,43 @@ html, body {
   white-space:nowrap !important;
   border:0 !important;
 }
+
+/* V-GRID-FIX2: force product card grid images to a uniform 4:3 crop, kill the squashed contain look */
+body .grid .product-card img,
+body .grid.products-grid-fixed .product-card img{
+  object-fit:cover !important;
+  aspect-ratio:4/3 !important;
+  height:auto !important;
+  max-height:none !important;
+  width:100% !important;
+  padding:0 !important;
+  background:#f8f9f7 !important;
+  box-shadow:none !important;
+  border:0 !important;
+}
+body .grid .product-card picture,
+body .grid.products-grid-fixed .product-card picture{
+  display:block !important;
+  overflow:hidden !important;
+  background:#f8f9f7 !important;
+}
+@media(max-width:980px){
+  body .grid .product-card img,
+  body .grid.products-grid-fixed .product-card img{
+    object-fit:cover !important;
+    aspect-ratio:4/3 !important;
+    height:auto !important;
+    max-height:none !important;
+    padding:0 !important;
+  }
+}
+@media(max-width:640px){
+  body .grid .product-card img,
+  body .grid.products-grid-fixed .product-card img{
+    object-fit:cover !important;
+    aspect-ratio:4/3 !important;
+    height:auto !important;
+    max-height:none !important;
+    padding:0 !important;
+  }
+}
