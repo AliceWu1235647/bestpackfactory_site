@@ -16,7 +16,6 @@
   .hero.hero-image-carousel .slide.image-slide{padding:0 2.5%}
   .hero.hero-image-carousel .hero-banner{border-radius:16px}
 }
-} /* close any earlier unclosed media block */
 /* V59 final fix: large responsive homepage carousel */
 .hero.hero-image-carousel{
   width:100%;
