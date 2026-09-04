@@ -1,0 +1,69 @@
+/* Locale switcher injected by lib/static-pages.js on pages that have translations.
+   Kept in its own file so content-site/css/style.css and public/css/style.css (which
+   have drifted and have no sync script) do not need to be touched. Sits directly
+   before <header>, rendering as a full-width bar at the very top of the page. */
+
+.locale-switcher {
+  background: #0b120f;
+  color: #dbe5df;
+  padding: 10px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  border-bottom: 1px solid #1a2e22;
+}
+
+.locale-switcher-label {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #8fa79b;
+}
+
+.locale-switcher ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.locale-switcher a {
+  display: inline-block;
+  color: #dbe5df;
+  text-decoration: none;
+  border: 1px solid #24352d;
+  border-radius: 999px;
+  padding: 6px 14px;
+  line-height: 1.4;
+  transition: .2s;
+}
+
+.locale-switcher a:hover,
+.locale-switcher a:focus-visible {
+  background: #173026;
+  border-color: #24b96d;
+  color: #fff;
+}
+
+/* The current language stays a real link so the cluster is reciprocal in-body,
+   but is visually marked as the active choice. */
+.locale-switcher a[aria-current="page"] {
+  background: #24b96d;
+  border-color: #24b96d;
+  color: #06120c;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .locale-switcher {
+    padding: 16px 4%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

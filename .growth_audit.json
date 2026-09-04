@@ -1,0 +1,75 @@
+{
+  "generatedFrom": "content-site",
+  "htmlPages": 516,
+  "headings": {
+    "missingH1Count": 0,
+    "missingH1": [],
+    "multipleH1Count": 0,
+    "multipleH1": []
+  },
+  "canonicals": {
+    "withCanonical": 242,
+    "duplicateCount": 0,
+    "duplicates": []
+  },
+  "links": {
+    "brokenCount": 0,
+    "broken": [],
+    "orphanCount": 3,
+    "orphans": [
+      "/case-studies.html",
+      "/products/custom-paper-bags.html",
+      "/thank-you.html"
+    ],
+    "atMostOneInternalLinkCount": 5,
+    "atMostOneInternalLink": [
+      {
+        "url": "/case-studies.html",
+        "inDegree": 0
+      },
+      {
+        "url": "/industries/ecommerce-packaging.html",
+        "inDegree": 1
+      },
+      {
+        "url": "/products/custom-food-packaging.html",
+        "inDegree": 1
+      },
+      {
+        "url": "/products/custom-paper-bags.html",
+        "inDegree": 0
+      },
+      {
+        "url": "/thank-you.html",
+        "inDegree": 0
+      }
+    ],
+    "weakBySection": {
+      "case-studies.html": 1,
+      "industries": 1,
+      "products": 2,
+      "thank-you.html": 1
+    }
+  },
+  "images": {
+    "total": 1566,
+    "missingAltCount": 0,
+    "missingDimensionsCount": 0
+  },
+  "structuredData": {
+    "jsonErrorCount": 0,
+    "jsonErrors": [],
+    "typeCounts": {
+      "ContactPage": 5,
+      "Product": 102,
+      "FAQPage": 114,
+      "BreadcrumbList": 226,
+      "WebPage": 98,
+      "CollectionPage": 5,
+      "Article": 32,
+      "Service": 10,
+      "ItemList": 4,
+      "AboutPage": 1
+    }
+  }
+}

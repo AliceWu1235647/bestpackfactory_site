@@ -1,0 +1,10 @@
+
+> bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready@1.2.0 start
+> next start
+
+   ▲ Next.js 15.5.21
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.6:3000
+
+ ✓ Starting...
+ ✓ Ready in 767ms

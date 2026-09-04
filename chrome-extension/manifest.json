@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "BestPack AI Customer Reply",
+  "version": "1.1.0",
+  "description": "Translate customer messages, extract intent, and draft replies with a local or LAN BestPack AI service.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "contextMenus",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "http://127.0.0.1:3000/*"
+  ],
+  "optional_host_permissions": [
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Open BestPack AI Customer Reply"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_page": "options.html"
+}

@@ -1,0 +1,15 @@
+import { DIELINES, defaultParams } from '../lib/dielines/catalog.js';
+import { renderFormat } from '../lib/dielines/build.js';
+const d = DIELINES[0];
+const dxf = renderFormat(d, defaultParams(d), 'dxf').data;
+const has = s => dxf.includes(s) ? 'y' : 'NO';
+console.log('SECTION/HEADER  ', has('HEADER'));
+console.log('$INSUNITS       ', has('$INSUNITS'));
+console.log('TABLES/LAYER    ', has('LAYER'));
+console.log('ENTITIES        ', has('ENTITIES'));
+console.log('EOF             ', has('EOF'));
+console.log('layers present  ', ['CUT','FOLD','PERF','BLEED','GLUE','INFO'].filter(l => dxf.includes(l)).join(','));
+console.log('LINE/LWPOLY/CIRC', ['LINE','LWPOLYLINE','CIRCLE','TEXT'].filter(k=>dxf.includes(k)).join(','));
+const pairs = dxf.split(/\r?\n/);
+console.log('line count      ', pairs.length, '(even pairs:', pairs.length % 2 === 0 ? 'y' : 'check', ')');
+console.log('\n--- head ---\n' + pairs.slice(0,14).join('|'));

@@ -1,0 +1,1143 @@
+{
+  "htmlPages": 514,
+  "headings": {
+    "missingH1": [],
+    "multipleH1": []
+  },
+  "canonicals": {
+    "duplicates": [],
+    "missingFromSitemaps": [
+      "ar/contact.html",
+      "ar/products/coffee-bags.html",
+      "ar/products/custom-boxes.html",
+      "ar/products/custom-compostable-stand-up-pouches.html",
+      "ar/products/custom-cosmetic-packaging-boxes.html",
+      "ar/products/custom-flat-bottom-pouches.html",
+      "ar/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "ar/products/custom-printed-tape.html",
+      "ar/products/custom-printed-tissue-paper.html",
+      "ar/products/custom-retort-pouches-ready-meal-packaging.html",
+      "ar/products/custom-tea-packaging-bags.html",
+      "ar/products/kraft-paper-coffee-bags.html",
+      "ar/products/labels-stickers.html",
+      "ar/products/luxury-magnetic-boxes.html",
+      "ar/products/paper-bags.html",
+      "ar/products/pet-food-bags.html",
+      "ar/products/pharma-packaging.html",
+      "ar/products/pharmaceutical-folding-cartons.html",
+      "ar/products/pizza-packaging-boxes.html",
+      "ar/products/tin-boxes.html",
+      "ar/products/wine-magnetic-gift-boxes.html",
+      "ar/products.html",
+      "de/contact.html",
+      "de/products/coffee-bags.html",
+      "de/products/custom-boxes.html",
+      "de/products/custom-compostable-stand-up-pouches.html",
+      "de/products/custom-cosmetic-packaging-boxes.html",
+      "de/products/custom-flat-bottom-pouches.html",
+      "de/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "de/products/custom-printed-tape.html",
+      "de/products/custom-printed-tissue-paper.html",
+      "de/products/custom-retort-pouches-ready-meal-packaging.html",
+      "de/products/custom-tea-packaging-bags.html",
+      "de/products/kraft-paper-coffee-bags.html",
+      "de/products/labels-stickers.html",
+      "de/products/luxury-magnetic-boxes.html",
+      "de/products/paper-bags.html",
+      "de/products/pet-food-bags.html",
+      "de/products/pharma-packaging.html",
+      "de/products/pharmaceutical-folding-cartons.html",
+      "de/products/pizza-packaging-boxes.html",
+      "de/products/tin-boxes.html",
+      "de/products/wine-magnetic-gift-boxes.html",
+      "de/products.html",
+      "es/contact.html",
+      "es/products/coffee-bags.html",
+      "es/products/custom-boxes.html",
+      "es/products/custom-compostable-stand-up-pouches.html",
+      "es/products/custom-cosmetic-packaging-boxes.html",
+      "es/products/custom-flat-bottom-pouches.html",
+      "es/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "es/products/custom-printed-tape.html",
+      "es/products/custom-printed-tissue-paper.html",
+      "es/products/custom-retort-pouches-ready-meal-packaging.html",
+      "es/products/custom-tea-packaging-bags.html",
+      "es/products/kraft-paper-coffee-bags.html",
+      "es/products/labels-stickers.html",
+      "es/products/luxury-magnetic-boxes.html",
+      "es/products/paper-bags.html",
+      "es/products/pet-food-bags.html",
+      "es/products/pharma-packaging.html",
+      "es/products/pharmaceutical-folding-cartons.html",
+      "es/products/pizza-packaging-boxes.html",
+      "es/products/tin-boxes.html",
+      "es/products/wine-magnetic-gift-boxes.html",
+      "es/products.html",
+      "fr/contact.html",
+      "fr/products/coffee-bags.html",
+      "fr/products/custom-boxes.html",
+      "fr/products/custom-compostable-stand-up-pouches.html",
+      "fr/products/custom-cosmetic-packaging-boxes.html",
+      "fr/products/custom-flat-bottom-pouches.html",
+      "fr/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "fr/products/custom-printed-tape.html",
+      "fr/products/custom-printed-tissue-paper.html",
+      "fr/products/custom-retort-pouches-ready-meal-packaging.html",
+      "fr/products/custom-tea-packaging-bags.html",
+      "fr/products/kraft-paper-coffee-bags.html",
+      "fr/products/labels-stickers.html",
+      "fr/products/luxury-magnetic-boxes.html",
+      "fr/products/paper-bags.html",
+      "fr/products/pet-food-bags.html",
+      "fr/products/pharma-packaging.html",
+      "fr/products/pharmaceutical-folding-cartons.html",
+      "fr/products/pizza-packaging-boxes.html",
+      "fr/products/tin-boxes.html",
+      "fr/products/wine-magnetic-gift-boxes.html",
+      "fr/products.html",
+      "ja/contact.html",
+      "ja/products/coffee-bags.html",
+      "ja/products/custom-boxes.html",
+      "ja/products/custom-compostable-stand-up-pouches.html",
+      "ja/products/custom-cosmetic-packaging-boxes.html",
+      "ja/products/custom-flat-bottom-pouches.html",
+      "ja/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "ja/products/custom-printed-tape.html",
+      "ja/products/custom-printed-tissue-paper.html",
+      "ja/products/custom-retort-pouches-ready-meal-packaging.html",
+      "ja/products/custom-tea-packaging-bags.html",
+      "ja/products/kraft-paper-coffee-bags.html",
+      "ja/products/labels-stickers.html",
+      "ja/products/luxury-magnetic-boxes.html",
+      "ja/products/paper-bags.html",
+      "ja/products/pet-food-bags.html",
+      "ja/products/pharma-packaging.html",
+      "ja/products/pharmaceutical-folding-cartons.html",
+      "ja/products/pizza-packaging-boxes.html",
+      "ja/products/tin-boxes.html",
+      "ja/products/wine-magnetic-gift-boxes.html",
+      "ja/products.html"
+    ],
+    "sitemapUrlCount": 417
+  },
+  "links": {
+    "brokenCount": 0,
+    "broken": [],
+    "orphanCount": 158,
+    "orphans": [
+      "ar/contact.html",
+      "ar/index.html",
+      "ar/products/custom-compostable-stand-up-pouches.html",
+      "ar/products/custom-cosmetic-packaging-boxes.html",
+      "ar/products/custom-flat-bottom-pouches.html",
+      "ar/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "ar/products/custom-printed-tape.html",
+      "ar/products/custom-printed-tissue-paper.html",
+      "ar/products/custom-retort-pouches-ready-meal-packaging.html",
+      "ar/products/custom-tea-packaging-bags.html",
+      "ar/products/kraft-paper-coffee-bags.html",
+      "ar/products/pharmaceutical-folding-cartons.html",
+      "ar/products/pizza-packaging-boxes.html",
+      "ar/products/wine-magnetic-gift-boxes.html",
+      "ar/products.html",
+      "blog/amazon-fba-sioc-packaging-requirements.html",
+      "blog/candle-packaging-materials-guide.html",
+      "blog/cannabis-packaging-compliance.html",
+      "blog/china-packaging-factory-audit-checklist.html",
+      "blog/chinese-packaging-supplier-payment-terms.html",
+      "blog/coffee-bag-packaging-guide.html",
+      "blog/cold-chain-packaging-guide.html",
+      "blog/corrugated-box-printing-guide.html",
+      "blog/cosmetic-packaging-materials.html",
+      "blog/cosmetic-serum-box-guide.html",
+      "blog/custom-folding-carton-printing-guide.html",
+      "blog/custom-hang-tag-printing-guide.html",
+      "blog/custom-label-printing-guide.html",
+      "blog/custom-mailer-box-design-guide.html",
+      "blog/custom-mylar-bag-printing-guide.html",
+      "blog/custom-packaging-artwork-dieline-guide.html",
+      "blog/custom-packaging-for-food-brands.html",
+      "blog/custom-packaging-for-subscription-boxes.html",
+      "blog/custom-paper-bag-sizes-guide.html",
+      "blog/custom-printed-tissue-paper-guide.html",
+      "blog/custom-rigid-box-manufacturer-china.html",
+      "blog/custom-shipping-box-guide.html",
+      "blog/eco-friendly-packaging-options.html",
+      "blog/flat-pack-vs-assembled-packaging.html",
+      "blog/flexible-packaging-structures.html",
+      "blog/foil-stamping-packaging.html",
+      "blog/food-packaging-material-safety-guide.html",
+      "blog/food-packaging-regulations.html",
+      "blog/how-to-import-packaging-from-china.html",
+      "blog/how-to-reduce-packaging-weight.html",
+      "blog/how-to-write-packaging-copy.html",
+      "blog/jewelry-packaging-guide.html",
+      "blog/kraft-paper-packaging-guide.html",
+      "blog/luxury-candle-packaging.html",
+      "blog/luxury-gift-box-packaging-guide.html",
+      "blog/magnetic-closure-gift-box-guide.html",
+      "blog/packaging-artwork-checklist.html",
+      "blog/packaging-barcode-requirements.html",
+      "blog/packaging-certificate-fsc.html",
+      "blog/packaging-color-management.html",
+      "blog/packaging-cost-reduction.html",
+      "blog/packaging-design-mistakes.html",
+      "blog/packaging-factory-audit-guide.html",
+      "blog/packaging-for-amazon-fba.html",
+      "blog/packaging-for-baby-products.html",
+      "blog/packaging-for-cosmetics-oem.html",
+      "blog/packaging-for-ecommerce.html",
+      "blog/packaging-for-electronics-esd.html",
+      "blog/packaging-for-food-delivery.html",
+      "blog/packaging-for-health-supplements.html",
+      "blog/packaging-for-perfume-fragrance.html",
+      "blog/packaging-for-pet-supplements.html",
+      "blog/packaging-for-retailers.html",
+      "blog/packaging-for-startups.html",
+      "blog/packaging-freight-options.html",
+      "blog/packaging-incoterms-guide-fob-exw-ddp.html",
+      "blog/packaging-lead-times-china.html",
+      "blog/packaging-minimum-order-guide.html",
+      "blog/packaging-mold-tooling-costs.html",
+      "blog/packaging-payment-terms-guide.html",
+      "blog/packaging-print-prepress-checklist.html",
+      "blog/packaging-sampling-process-guide.html",
+      "blog/packaging-supplier-evaluation.html",
+      "blog/packaging-testing-standards.html",
+      "blog/packaging-trends-2026.html",
+      "blog/packaging-trends-sustainable-2026.html",
+      "blog/packaging-unboxing-experience.html",
+      "blog/paper-tube-packaging-guide.html",
+      "blog/perfume-packaging-design.html",
+      "blog/pet-food-packaging-requirements.html",
+      "blog/pharmaceutical-packaging-guide.html",
+      "blog/printing-pantone-colors-on-packaging.html",
+      "blog/rigid-box-vs-folding-carton.html",
+      "blog/soft-touch-lamination-guide.html",
+      "blog/spot-uv-printing-guide.html",
+      "blog/stand-up-pouch-barrier-materials.html",
+      "blog/subscription-box-packaging.html",
+      "blog/sustainable-packaging-certifications-explained.html",
+      "blog/tea-coffee-packaging-trends.html",
+      "blog/wine-spirits-packaging-guide.html",
+      "de/contact.html",
+      "de/index.html",
+      "de/products/custom-compostable-stand-up-pouches.html",
+      "de/products/custom-cosmetic-packaging-boxes.html",
+      "de/products/custom-flat-bottom-pouches.html",
+      "de/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "de/products/custom-printed-tape.html",
+      "de/products/custom-printed-tissue-paper.html",
+      "de/products/custom-retort-pouches-ready-meal-packaging.html",
+      "de/products/custom-tea-packaging-bags.html",
+      "de/products/kraft-paper-coffee-bags.html",
+      "de/products/pharmaceutical-folding-cartons.html",
+      "de/products/pizza-packaging-boxes.html",
+      "de/products/wine-magnetic-gift-boxes.html",
+      "de/products.html",
+      "es/contact.html",
+      "es/index.html",
+      "es/products/custom-compostable-stand-up-pouches.html",
+      "es/products/custom-cosmetic-packaging-boxes.html",
+      "es/products/custom-flat-bottom-pouches.html",
+      "es/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "es/products/custom-printed-tape.html",
+      "es/products/custom-printed-tissue-paper.html",
+      "es/products/custom-retort-pouches-ready-meal-packaging.html",
+      "es/products/custom-tea-packaging-bags.html",
+      "es/products/kraft-paper-coffee-bags.html",
+      "es/products/pharmaceutical-folding-cartons.html",
+      "es/products/pizza-packaging-boxes.html",
+      "es/products/wine-magnetic-gift-boxes.html",
+      "es/products.html",
+      "fr/contact.html",
+      "fr/index.html",
+      "fr/products/custom-compostable-stand-up-pouches.html",
+      "fr/products/custom-cosmetic-packaging-boxes.html",
+      "fr/products/custom-flat-bottom-pouches.html",
+      "fr/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "fr/products/custom-printed-tape.html",
+      "fr/products/custom-printed-tissue-paper.html",
+      "fr/products/custom-retort-pouches-ready-meal-packaging.html",
+      "fr/products/custom-tea-packaging-bags.html",
+      "fr/products/kraft-paper-coffee-bags.html",
+      "fr/products/pharmaceutical-folding-cartons.html",
+      "fr/products/pizza-packaging-boxes.html",
+      "fr/products/wine-magnetic-gift-boxes.html",
+      "fr/products.html",
+      "industries/ecommerce-packaging.html",
+      "ja/contact.html",
+      "ja/index.html",
+      "ja/products/custom-compostable-stand-up-pouches.html",
+      "ja/products/custom-cosmetic-packaging-boxes.html",
+      "ja/products/custom-flat-bottom-pouches.html",
+      "ja/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+      "ja/products/custom-printed-tape.html",
+      "ja/products/custom-printed-tissue-paper.html",
+      "ja/products/custom-retort-pouches-ready-meal-packaging.html",
+      "ja/products/custom-tea-packaging-bags.html",
+      "ja/products/kraft-paper-coffee-bags.html",
+      "ja/products/pharmaceutical-folding-cartons.html",
+      "ja/products/pizza-packaging-boxes.html",
+      "ja/products/wine-magnetic-gift-boxes.html",
+      "ja/products.html",
+      "samples.html",
+      "thank-you.html"
+    ],
+    "atMostOneInternalLinkCount": 197,
+    "atMostOneInternalLink": [
+      {
+        "page": "ar/contact.html",
+        "links": 0
+      },
+      {
+        "page": "ar/index.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/coffee-bags.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/custom-boxes.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/custom-compostable-stand-up-pouches.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-cosmetic-packaging-boxes.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-flat-bottom-pouches.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-printed-tape.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-printed-tissue-paper.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-retort-pouches-ready-meal-packaging.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/custom-tea-packaging-bags.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/kraft-paper-coffee-bags.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/labels-stickers.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/paper-bags.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/pet-food-bags.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/pharma-packaging.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/pharmaceutical-folding-cartons.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/pizza-packaging-boxes.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products/tin-boxes.html",
+        "links": 1
+      },
+      {
+        "page": "ar/products/wine-magnetic-gift-boxes.html",
+        "links": 0
+      },
+      {
+        "page": "ar/products.html",
+        "links": 0
+      },
+      {
+        "page": "blog/amazon-fba-sioc-packaging-requirements.html",
+        "links": 0
+      },
+      {
+        "page": "blog/candle-packaging-materials-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/cannabis-packaging-compliance.html",
+        "links": 0
+      },
+      {
+        "page": "blog/china-packaging-factory-audit-checklist.html",
+        "links": 0
+      },
+      {
+        "page": "blog/chinese-packaging-supplier-payment-terms.html",
+        "links": 0
+      },
+      {
+        "page": "blog/coffee-bag-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/cold-chain-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/corrugated-box-printing-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/cosmetic-packaging-materials.html",
+        "links": 0
+      },
+      {
+        "page": "blog/cosmetic-serum-box-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-folding-carton-printing-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-hang-tag-printing-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-label-printing-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-mailer-box-design-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-mylar-bag-printing-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-packaging-artwork-dieline-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-packaging-for-food-brands.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-packaging-for-subscription-boxes.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-paper-bag-sizes-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-printed-tissue-paper-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-rigid-box-manufacturer-china.html",
+        "links": 0
+      },
+      {
+        "page": "blog/custom-shipping-box-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/eco-friendly-packaging-options.html",
+        "links": 0
+      },
+      {
+        "page": "blog/flat-pack-vs-assembled-packaging.html",
+        "links": 0
+      },
+      {
+        "page": "blog/flexible-packaging-structures.html",
+        "links": 0
+      },
+      {
+        "page": "blog/foil-stamping-packaging.html",
+        "links": 0
+      },
+      {
+        "page": "blog/food-packaging-material-safety-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/food-packaging-regulations.html",
+        "links": 0
+      },
+      {
+        "page": "blog/how-to-import-packaging-from-china.html",
+        "links": 0
+      },
+      {
+        "page": "blog/how-to-reduce-packaging-weight.html",
+        "links": 0
+      },
+      {
+        "page": "blog/how-to-verify-china-factory-legitimacy.html",
+        "links": 1
+      },
+      {
+        "page": "blog/how-to-write-packaging-copy.html",
+        "links": 0
+      },
+      {
+        "page": "blog/jewelry-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/kraft-paper-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/luxury-candle-packaging.html",
+        "links": 0
+      },
+      {
+        "page": "blog/luxury-gift-box-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/magnetic-closure-gift-box-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-artwork-checklist.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-barcode-requirements.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-certificate-fsc.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-color-management.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-cost-reduction.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-design-brief-template.html",
+        "links": 1
+      },
+      {
+        "page": "blog/packaging-design-mistakes.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-factory-audit-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-amazon-fba.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-baby-products.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-cosmetics-oem.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-ecommerce.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-electronics-esd.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-food-delivery.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-health-supplements.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-perfume-fragrance.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-pet-supplements.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-retailers.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-for-startups.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-freight-options.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-incoterms-guide-fob-exw-ddp.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-lead-times-china.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-minimum-order-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-mold-tooling-costs.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-payment-terms-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-print-prepress-checklist.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-sampling-process-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-supplier-evaluation.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-testing-standards.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-trends-2026.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-trends-sustainable-2026.html",
+        "links": 0
+      },
+      {
+        "page": "blog/packaging-unboxing-experience.html",
+        "links": 0
+      },
+      {
+        "page": "blog/paper-tube-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/perfume-packaging-design.html",
+        "links": 0
+      },
+      {
+        "page": "blog/pet-food-packaging-requirements.html",
+        "links": 0
+      },
+      {
+        "page": "blog/pharmaceutical-packaging-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/printing-pantone-colors-on-packaging.html",
+        "links": 0
+      },
+      {
+        "page": "blog/rigid-box-vs-folding-carton.html",
+        "links": 0
+      },
+      {
+        "page": "blog/soft-touch-lamination-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/spot-uv-printing-guide.html",
+        "links": 0
+      },
+      {
+        "page": "blog/stand-up-pouch-barrier-materials.html",
+        "links": 0
+      }
+    ]
+  },
+  "images": {
+    "total": 1553,
+    "missingAltCount": 0,
+    "missingAlt": [],
+    "missingDimensionsCount": 725,
+    "missingDimensionsBySection": {
+      "ar": 122,
+      "de": 122,
+      "es": 122,
+      "fr": 122,
+      "(root)": 23,
+      "ja": 122,
+      "products": 92
+    },
+    "safeToDimensionOutsideProtectedPages": 610,
+    "safeToDimensionPages": 110,
+    "safeExamples": [
+      {
+        "page": "ar/index.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/custom-boxes-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/flexible-packaging-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/luxury-magnetic-boxes-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/food-packaging-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/pharma-packaging-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/pet-food-bags-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/cannabis-mylar-bags-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/paper-bags-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/labels-stickers-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/pet-bottles-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/tin-boxes-01.webp"
+      },
+      {
+        "page": "ar/index.html",
+        "src": "/assets/products/luxury-magnetic-boxes-01.webp"
+      },
+      {
+        "page": "ar/products/coffee-bags.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-boxes.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-compostable-stand-up-pouches.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-cosmetic-packaging-boxes.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-flat-bottom-pouches.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-printed-tape.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-printed-tissue-paper.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-retort-pouches-ready-meal-packaging.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/custom-tea-packaging-bags.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/kraft-paper-coffee-bags.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/labels-stickers.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/luxury-magnetic-boxes.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/paper-bags.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/pet-food-bags.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/pharma-packaging.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/pharmaceutical-folding-cartons.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/pizza-packaging-boxes.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/tin-boxes.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products/wine-magnetic-gift-boxes.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/logo/bestpackfactory-logo.svg"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/flexible-packaging-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/luxury-magnetic-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/food-packaging-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pharma-packaging-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pet-food-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/cannabis-mylar-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/paper-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/labels-stickers-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pet-bottles-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/tin-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/250g-coffee-bags-with-valve-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/500g-flat-bottom-coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/1kg-coffee-bean-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/kraft-paper-coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/matte-black-coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-tea-packaging-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/protein-powder-stand-up-pouches-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/collagen-powder-packaging-pouches-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/dog-food-flat-bottom-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/child-resistant-cannabis-mylar-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/cannabis-flower-packaging-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pre-roll-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/cbd-gummies-packaging-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/smell-proof-mylar-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pharmaceutical-folding-cartons-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/weight-loss-pill-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/vitamin-supplement-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-cosmetic-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/wine-magnetic-gift-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-pizza-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/sandwich-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/bakery-paper-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/luxury-retail-paper-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-printed-tissue-paper-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-printed-tape-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/roll-labels-for-automatic-labeling-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/gs1-pharma-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/burger-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/fries-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/fried-chicken-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/bakery-donut-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/shawarma-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pizza-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/tissue-paper-packaging-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/cannabis-child-resistant-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pet-bottles-candy-pharma-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/H78bad36b45c34ee0a62ffa69d234cb27C.png"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/H5d3fc2f4c2464a61b46521c37cfd01bbB.png"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/Hc4a7bc2525aa4ffcbbbfdfd11b0c560be.png"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/H9de6ba89a70e433586e49df6865fecc7z.png"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/H2d234bedbdec4fc5b8e5a5693fe9d853y.png"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/Hbd9d80e06b684eecacf08ece9d95bab2P.png"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/Hf8aed687639a40abbb5a465c2da80942Q.jpg"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "https://sc02.alicdn.com/kf/H319a19040719405da2da32f2b48aba73I.jpg"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/cannabis-mylar-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-cosmetic-packaging-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/500g-flat-bottom-coffee-bags-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pharmaceutical-folding-cartons-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/labels-stickers-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-boxes-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/pharma-packaging-01.webp"
+      },
+      {
+        "page": "ar/products.html",
+        "src": "/assets/products/custom-printed-tape-01.webp"
+      }
+    ]
+  },
+  "structuredData": {
+    "jsonErrors": [],
+    "typeCounts": {
+      "PropertyValue": 1622,
+      "ListItem": 956,
+      "Question": 759,
+      "Answer": 759,
+      "Organization": 396,
+      "Thing": 294,
+      "WebPage": 292,
+      "BreadcrumbList": 287,
+      "FAQPage": 193,
+      "Product": 186,
+      "Brand": 186,
+      "Person": 156,
+      "Article": 153,
+      "ImageObject": 112,
+      "Offer": 106,
+      "WebSite": 98,
+      "PriceSpecification": 41,
+      "PostalAddress": 14,
+      "ContactPoint": 14,
+      "ItemList": 10,
+      "Service": 10,
+      "CollectionPage": 7,
+      "ContactPage": 6,
+      "Manufacturer": 6,
+      "ProfilePage": 1,
+      "BlogPosting": 1,
+      "NewsArticle": 1,
+      "AboutPage": 1
+    }
+  }
+}
