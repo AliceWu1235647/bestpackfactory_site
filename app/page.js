@@ -17,14 +17,18 @@ export default function HomePage() {
       <link
         rel="preload"
         as="image"
-        href="/assets/hero/mobile-products/slide-01-products.webp"
+        href="/assets/hero/mobile-products/slide-01-products-720.webp"
+        imagesizes="(max-width: 980px) 100vw, 800px"
+        imagesrcset="/assets/hero/mobile-products/slide-01-products-480.webp 480w, /assets/hero/mobile-products/slide-01-products-720.webp 720w, /assets/hero/mobile-products/slide-01-products-900.webp 900w"
         media="(max-width: 980px)"
         fetchPriority="high"
       />
       <link
         rel="preload"
         as="image"
-        href="/assets/hero/slide-01-one-stop-scene.webp"
+        href="/assets/hero/slide-01-one-stop-scene-1600.webp"
+        imagesizes="100vw"
+        imagesrcset="/assets/hero/slide-01-one-stop-scene-720.webp 720w, /assets/hero/slide-01-one-stop-scene-1080.webp 1080w, /assets/hero/slide-01-one-stop-scene-1600.webp 1600w"
         media="(min-width: 981px)"
         fetchPriority="high"
       />
