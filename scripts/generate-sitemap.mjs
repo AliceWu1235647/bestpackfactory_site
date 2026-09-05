@@ -76,7 +76,7 @@ function robotsValue(html) {
 
 function isDedicatedContentUrl(url) {
   const pathname = new URL(url).pathname;
-  return /^\/(?:products|blog|news)\//i.test(pathname);
+  return /^\/(?:(?:ar|de|es|fr|ja)\/)?(?:products|blog|news)\//i.test(pathname);
 }
 
 function pageHints(url) {

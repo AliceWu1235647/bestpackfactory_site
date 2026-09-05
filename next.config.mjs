@@ -117,6 +117,11 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: '/index',
+        destination: '/',
+        permanent: true
+      },
+      {
         source: '/contact',
         destination: '/contact.html',
         permanent: true
