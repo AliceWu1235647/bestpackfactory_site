@@ -6,6 +6,8 @@
   "verified_credentials": {
     "verified_credentials_category": "Third-party certificates held by the factory behind BestPackFactory",
     "legal_entity": "Shenzhen Color Printing Paper Packaging Co., Ltd.",
+    "legal_entity_chinese": "深圳市彩之印纸品包装有限公司",
+    "unified_social_credit_code": "91440300MA5DA1RR87",
     "note": "Each certificate is independently verifiable from the identifier above. An FSC claim applies to an order only where stated on the invoice and shipping documents.",
     "credentials": [
       {

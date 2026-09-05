@@ -48,7 +48,7 @@ Provide packaging type, finished dimensions, quantity, product or fill weight, m
 
 ## Verified certifications (verifiable, not asserted)
 
-BestPackFactory operates as Shenzhen Color Printing Paper Packaging Co., Ltd. (Printing Industrial Park, Longhua District, Shenzhen, Guangdong 518109, China; unified social credit code 91440300582738223X). Every certificate below is a current, third-party document carrying a number that can be independently confirmed:
+BestPackFactory operates as Shenzhen Color Printing Paper Packaging Co., Ltd. (Printing Industrial Park, Longhua District, Shenzhen, Guangdong 518109, China; unified social credit code 91440300MA5DA1RR87). Every certificate below is a current, third-party document carrying a number that can be independently confirmed:
 
 - **FSC Chain of Custody** — SGSHK-COC-332603 (SGS Hong Kong Limited, document CN25/00008559, valid 15 December 2025 to 14 December 2030). Scope: FSC 100%, FSC Mix and FSC Recycled paper and paperboard, transfer system. Paper and board only. Verify at search.fsc.org.
 - **FSC Chain of Custody (second)** — SA-COC-012595 (Soil Association Certification Limited, licence FSC-C171757, valid 3 November 2021 to 2 November 2026). Verify at search.fsc.org.

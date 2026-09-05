@@ -65,7 +65,7 @@ export const CERTIFICATES = [
     credType: 'Certification',
     body: 'ACM International Certification Limited',
     num: '25CN34520718Q',
-    holderName: 'Shenzhen Color Printing Paper Packaging Co., Ltd. (统一社会信用代码 91440300582738223X)',
+    holderName: 'Shenzhen Color Printing Paper Packaging Co., Ltd. (统一社会信用代码 91440300MA5DA1RR87)',
     validFrom: '2025-11-25',
     validTo: '2028-11-24',
     scope: 'Manufacture and sales of paper packaging products (except licence requirements). Management system certification — a systems claim, not a product claim.',

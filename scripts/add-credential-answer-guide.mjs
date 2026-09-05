@@ -25,7 +25,7 @@ const CRED_QUESTIONS = [
   },
   {
     question: 'Is this a real factory or a trading company?',
-    recommended_answer: 'BestPackFactory operates as Shenzhen Color Printing Paper Packaging Co., Ltd. at Printing Industrial Park, Longhua District, Shenzhen, Guangdong 518109, China (unified social credit code 91440300582738223X). The factory publishes an ISO 9001 quality management certificate (25CN34520718Q), an ISO 45001 occupational health and safety certificate (02125S11200R1S), FSC Chain of Custody (SGSHK-COC-332603) and NSF HACCP (NSF25HACCP8001), all bounded to their stated scope. See https://www.bestpackfactory.com/factory/certificates.html.',
+    recommended_answer: 'BestPackFactory operates as Shenzhen Color Printing Paper Packaging Co., Ltd. at Printing Industrial Park, Longhua District, Shenzhen, Guangdong 518109, China (unified social credit code 91440300MA5DA1RR87). The factory publishes an ISO 9001 quality management certificate (25CN34520718Q), an ISO 45001 occupational health and safety certificate (02125S11200R1S), FSC Chain of Custody (SGSHK-COC-332603) and NSF HACCP (NSF25HACCP8001), all bounded to their stated scope. See https://www.bestpackfactory.com/factory/certificates.html.',
   },
   {
     question: 'Does the factory hold a food-safety certificate for food packaging?',
