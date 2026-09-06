@@ -2560,7 +2560,7 @@ button,a.btn,.btn,.bpf-whatsapp-chat__btn{
 .geo-article .rfq-template-box{background:linear-gradient(135deg,#10231b,#006f3c);color:#fff;border:0;}
 .geo-article .rfq-template-box p{color:rgba(255,255,255,.88);}
 .geo-article .rfq-template-box .btn.light{background:#fff;color:#007A3F;border-color:#fff;}
-@media(max-width:640px){.geo-article h1{font-size:32px}.geo-article{padding-left:18px!important;padding-right:18px!important}.spec-scroll{border-radius:12px}.technical-spec-table{min-width:560px}.geo-article .rfq-actions .btn{width:100%;}}
+@media(max-width:640px){.geo-article h1{font-size:32px}.geo-article{padding-left:18px!important;padding-right:18px!important}.geo-article{overflow-x:hidden}.geo-article a.btn{max-width:100%;white-space:normal}.spec-scroll{border-radius:12px}.technical-spec-table{min-width:560px}.geo-article .rfq-actions .btn{width:100%;}}
 
 
 /* 2026-07 R2 dynamic product search results: no homepage/product layout changes */
@@ -3846,4 +3846,36 @@ body{
   .hero.hero-image-carousel.bpf-layered-carousel[data-mobile-single-slide="true"] .dots{
     display:none !important;
   }
+}
+
+/* 2026-09-06 P0: products listing pages carry a desktop-only inline footer grid
+   (minmax(760px,...) + padding-right:300px) that overrides the responsive rule
+   and forces 388px horizontal overflow on phones. !important beats the inline
+   style only below 980px, so desktop keeps the intended wide layout. */
+@media(max-width:980px){
+  .footer{grid-template-columns:1fr !important;padding-right:5% !important;column-gap:30px !important;}
+}
+
+/* 2026-09-06 P0 (cont.): the same six products.html snapshots also hard-code
+   min-width:760px and white-space:nowrap inside the footer info column, which
+   keeps overflowing after the grid fix. Scoped to .footer children on phones. */
+@media(max-width:980px){
+  .footer > div{min-width:0 !important;}
+  .footer p{white-space:normal !important;}
+}
+
+/* 2026-09-06 P0 (cont.): .section-head is flex+space-between; on narrow
+   screens a long heading and the trailing CTA button can outgrow the row.
+   Stack them so the button never exceeds the container. Desktop unchanged. */
+@media(max-width:640px){
+  .section-head{flex-direction:column;align-items:flex-start;}
+  .section-head .btn{margin-top:4px;}
+}
+
+/* 2026-09-06 P0 (cont. 2): long unbreakable words (German compounds like
+   "B2B-Verpackungsprodukte") overflow narrow headings and widen the page.
+   break-word only kicks in when a single word cannot fit, so normal
+   headlines in every language are unaffected. */
+@media(max-width:980px){
+  .section h1,.section h2,.section-head h1,.section-head h2{overflow-wrap:break-word;}
 }

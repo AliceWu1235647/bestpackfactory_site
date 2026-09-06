@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "bestpackfactory-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "bestpackfactory-prod",
+      "url": "https://www.bestpackfactory.com",
+      "port": 3000
+    }
+  ]
+}
