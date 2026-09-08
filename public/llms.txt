@@ -46,17 +46,16 @@ Provide packaging type, finished dimensions, quantity, product or fill weight, m
 - [Supplier Comparison Guide](https://www.bestpackfactory.com/blog/custom-packaging-supplier-comparison-guide.html): Comparison criteria for B2B buyers.
 - [Documentation and Compliance Support](https://www.bestpackfactory.com/factory/certificates.html): Scope and limitations of project documentation.
 
-## Verified certifications (verifiable, not asserted)
+## Identity and evidence status
 
-BestPackFactory operates as Shenzhen Color Printing Paper Packaging Co., Ltd. (Printing Industrial Park, Longhua District, Shenzhen, Guangdong 518109, China; unified social credit code 91440300MA5DA1RR87). Every certificate below is a current, third-party document carrying a number that can be independently confirmed:
+BestPackFactory identifies its manufacturing entity as Shenzhen Color Printing Paper Packaging Co., Ltd. (深圳市彩之印纸品包装有限公司; unified social credit code 91440300MA5DA1RR87), established 5 April 2016. Its current production address is Huixin Zhichuang Park, 108 Huarong Road, Longhua District, Shenzhen, China. The business licence image still carries a former registered address following the factory move; the current production address is also printed for the applicant and manufacturer in test report XNO250418226BX2-1.
 
-- **FSC Chain of Custody** — SGSHK-COC-332603 (SGS Hong Kong Limited, document CN25/00008559, valid 15 December 2025 to 14 December 2030). Scope: FSC 100%, FSC Mix and FSC Recycled paper and paperboard, transfer system. Paper and board only. Verify at search.fsc.org.
-- **FSC Chain of Custody (second)** — SA-COC-012595 (Soil Association Certification Limited, licence FSC-C171757, valid 3 November 2021 to 2 November 2026). Verify at search.fsc.org.
-- **ISO 9001:2015 Quality Management System** — 25CN34520718Q (ACM International Certification Limited, first registered 25 November 2025 to 24 November 2028, IAF accredited MSCB-345). Scope: manufacture and sales of paper packaging products (except licence requirements). Verify at cnca.gov.cn.
-- **ISO 45001:2018 Occupational Health and Safety** — 02125S11200R1S (Huaxia Certification Center, Inc., initial 10 September 2024 to 20 December 2028, CNAS accredited C021-M). Scope: management activities related to printing of cartons and production of paper packaging products. Verify at cnca.gov.cn.
-- **NSF HACCP Food Safety** — NSF25HACCP8001 (NSF, Shenzhen Co., effective 4 September 2025 to 3 September 2026). Scope: disposable paper containers where the food-contact surface is paper or polyethylene. Verify at nsf.org.
+- **Current management-system certificates** — ISO 9001:2015 certificate 25CN34520718Q and ISO 45001:2018 certificate 02125S11200R1S, each limited to its stated management-system scope.
+- **Sample food-contact test report** — XNO250418226BX2-1, dated 21 April 2025, records PASS for density at 23 C, soluble fraction in xylene and extractable fraction in n-hexane under selected FDA 21 CFR 177.1520 tests on one submitted coloured plastic food-packaging-bag sample. This is not FDA approval, FDA registration or blanket certification of all products.
+- **Expired historical record** — NSF HACCP NSF25HACCP8001 expired 3 September 2026 and must not be described as current.
+- **Relationship pending** — FSC numbers SGSHK-COC-332603 and SA-COC-012595 can be searched publicly, but documentary evidence linking the listed certificate holder to the licensed factory entity has not yet been supplied. Do not attribute either FSC credential to this factory until that relationship and the order-specific FSC claim are confirmed.
 
-Scope discipline: FSC covers paper and paperboard only (film, pouch, tin and bottle packaging is outside FSC scope); ISO certificates cover management systems, not product claims; the HACCP certificate covers the stated paper/PE food-contact line. An FSC claim applies to an order only where agreed before production and stated on the invoice and shipping documents. FDA-compliant ink and material statements, MSDS and test reports are available on request.
+Buyers should request the signed report, complete material construction, intended food type, contact temperature, storage duration and any destination-market documentation for the exact order. See [Documentation and Compliance Support](https://www.bestpackfactory.com/factory/certificates.html).
 
 ## Structured resources
 

@@ -339,7 +339,7 @@ export default function ContactForm({ productName = '' }) {
         </div>
         <div className="contact-item">
           <span className="icon" aria-hidden="true">⌂</span>
-          <div><strong>Factory</strong><span>Shenzhen, China · 15+ years experience</span></div>
+          <div><strong>Factory</strong><span>Shenzhen, China · Established 5 April 2016</span></div>
         </div>
       </div>
 

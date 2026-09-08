@@ -3,6 +3,7 @@ node_modules/
 .env*
 !.env.example
 *.log
+artifacts/
 
 .vercel
 shots_p1/

@@ -55,7 +55,7 @@ export function SiteFooter() {
         <h3>BestPackFactory</h3>
         <p>B2B custom packaging manufacturer for boxes, bags, labels, bottles, tins and printing.</p>
         <p>Sales Manager: Lisa Wu Email: lisa@colorprintingpackage.com WhatsApp +86 158 8653 0985</p>
-        <p>Address: Printing Industrial Park, Longhua District, Shenzhen, Guangdong Province, 518109, China</p>
+        <p>Address: Huixin Zhichuang Park, 108 Huarong Road, Longhua District, Shenzhen, China</p>
       </div>
       <div>
         <h3>Free Tools</h3>

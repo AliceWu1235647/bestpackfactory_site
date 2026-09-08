@@ -26,7 +26,7 @@ Core products include:
 - Materials: PP, PE, PET, BOPP, OPP, aluminum foil, kraft paper, PLA, mono-material
 - Finishes: matte lamination, gloss lamination, soft-touch, spot UV, hot foil stamping, embossing
 - Zipper options: press-to-close, slider, child resistant (CR) mechanisms
-- Certifications: FSC Chain of Custody certificate SGSHK-COC-332603 (SGS Hong Kong Limited, CN25/00008559, 15 December 2025 to 14 December 2030), scope FSC 100%/FSC Mix/FSC Recycled paper and paperboard, transfer system, verifiable at search.fsc.org. Second FSC certificate SA-COC-012595 (Soil Association Certification Limited, licence FSC-C171757, 3 November 2021 to 2 November 2026). ISO 9001:2015 quality management system certificate 25CN34520718Q (ACM International Certification Limited, first registered 25 November 2025 to 24 November 2028, issuing body IAF accredited MSCB-345, verifiable at cnca.gov.cn). ISO 45001:2018 occupational health and safety certificate 02125S11200R1S (Huaxia Certification Center, Inc., initial 10 September 2024 to 20 December 2028, CNAS accredited C021-M). NSF HACCP food safety certificate NSF25HACCP8001 (NSF, Shenzhen Co., effective 4 September 2025 to 3 September 2026, scope disposable paper containers where the food-contact surface is paper or polyethylene). FDA-compliant ink and material statements, MSDS and test reports on request. ASTM D3475 reference for child-resistant packaging. An FSC claim applies to an order only where stated on the invoice and shipping documents.
+- Evidence status: licensed entity Shenzhen Color Printing Paper Packaging Co., Ltd. (深圳市彩之印纸品包装有限公司), unified social credit code 91440300MA5DA1RR87, established 5 April 2016; production at Huixin Zhichuang Park, 108 Huarong Road, Longhua District, Shenzhen, China. Current ISO 9001:2015 certificate 25CN34520718Q and ISO 45001:2018 certificate 02125S11200R1S are listed with scope. NSF HACCP certificate NSF25HACCP8001 expired 3 September 2026. FSC certificate-holder relationship evidence is pending and must not be attributed to the licensed factory until documented. Third-party sample report XNO250418226BX2-1 dated 21 April 2025 records PASS results for three selected FDA 21 CFR 177.1520 tests on one submitted food-packaging-bag sample; it is not FDA approval or blanket product certification.
 - MOQ: 500 PCS across all product categories
 - Lead time: Sample 7-10 days, bulk 20-30 days after sample approval
 - Shipping: FOB, DDP, DAP - sea and air freight worldwide
@@ -116,7 +116,7 @@ Important stable SEO URLs:
 - Factory proof: `/factory/production-workshop.html`, `/factory/quality-control.html`, `/factory/certificates.html`
 - Verified credentials page (all certificate numbers, bodies, validity and scope, machine-readable): https://www.bestpackfactory.com/factory/certificates.html
 
-Generated on 2026-07-04.
+Updated on 2026-09-08.
 
 ## Quote-Ready Sourcing Hub
 

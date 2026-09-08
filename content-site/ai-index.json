@@ -4,11 +4,11 @@
     "whatsapp": "+86 158 8653 0985"
   },
   "verified_credentials": {
-    "verified_credentials_category": "Third-party certificates held by the factory behind BestPackFactory",
+    "verified_credentials_category": "Factory identity, certificate and test-report evidence register",
     "legal_entity": "Shenzhen Color Printing Paper Packaging Co., Ltd.",
     "legal_entity_chinese": "深圳市彩之印纸品包装有限公司",
     "unified_social_credit_code": "91440300MA5DA1RR87",
-    "note": "Each certificate is independently verifiable from the identifier above. An FSC claim applies to an order only where stated on the invoice and shipping documents.",
+    "note": "Status and scope must be checked per item. FSC holder-to-factory relationship evidence is pending; the HACCP certificate expired on 2026-09-03; the FDA-referenced report covers one submitted sample only.",
     "credentials": [
       {
         "certificate": "FSC Chain of Custody",
@@ -17,9 +17,11 @@
         "issuing_body": "SGS Hong Kong Limited",
         "valid_from": "2025-12-15",
         "valid_to": "2030-12-14",
-        "scope": "FSC 100%, FSC Mix and FSC Recycled paper and paperboard, chain of custody, transfer system. Paper and board only — film, pouch, tin and bottle packaging is outside this scope.",
+        "scope": "FSC 100%, FSC Mix and FSC Recycled paper and paperboard, chain of custody, transfer system. Paper and board only — film, pouch, tin and bottle packaging is outside this scope. BestPackFactory has not yet supplied documentary evidence linking the public certificate holder to the licensed factory entity, so this record is not presented as a current factory-held credential.",
         "verify_at": "https://search.fsc.org/",
-        "image": "/assets/factory/fsc-cert-2.webp"
+        "image": "/assets/factory/fsc-cert-2.webp",
+        "status": "relationship_pending",
+        "claimed_as_held_by_factory": false
       },
       {
         "certificate": "FSC Chain of Custody (second certificate)",
@@ -28,9 +30,11 @@
         "issuing_body": "Soil Association Certification Limited",
         "valid_from": "2021-11-03",
         "valid_to": "2026-11-02",
-        "scope": "FSC 100%, FSC Mix and FSC Recycled paper and paperboard, chain of custody. Held under the same FSC licence programme; the licence code is printed on this certificate.",
+        "scope": "FSC 100%, FSC Mix and FSC Recycled paper and paperboard, chain of custody. Held under the same FSC licence programme; the licence code is printed on this certificate. BestPackFactory has not yet supplied documentary evidence linking the public certificate holder to the licensed factory entity, so this record is not presented as a current factory-held credential.",
         "verify_at": "https://search.fsc.org/",
-        "image": "/assets/factory/fsc-cert-1.webp"
+        "image": "/assets/factory/fsc-cert-1.webp",
+        "status": "relationship_pending",
+        "claimed_as_held_by_factory": false
       },
       {
         "certificate": "ISO 9001:2015 Quality Management System",
@@ -41,7 +45,8 @@
         "valid_to": "2028-11-24",
         "scope": "Manufacture and sales of paper packaging products (except licence requirements). Management system certification — a systems claim, not a product claim.",
         "verify_at": "https://www.acmchina.com/ and CNCA (www.cnca.gov.cn).",
-        "image": null
+        "image": null,
+        "status": "current"
       },
       {
         "certificate": "ISO 45001:2018 Occupational Health and Safety",
@@ -52,7 +57,8 @@
         "valid_to": "2028-12-20",
         "scope": "Management activities related to printing of cartons (trademarks and logos) and production of paper packaging products.",
         "verify_at": "https://www.cnca.gov.cn/ (CNAS C021-M).",
-        "image": null
+        "image": null,
+        "status": "current"
       },
       {
         "certificate": "HACCP Food Safety (NSF)",
@@ -63,7 +69,9 @@
         "valid_to": "2026-09-03",
         "scope": "Disposable paper containers — paper cups, paper bowls, paper bags, paper boxes, paper cup lids and paper cup sleeves — die-cut and formed; the food-contact surface is paper or polyethylene. Printing process is subcontracted.",
         "verify_at": "https://www.nsf.org/ and the national food-contact certification registry.",
-        "image": null
+        "image": null,
+        "status": "expired",
+        "current": false
       }
     ]
   },
@@ -921,7 +929,7 @@
       "cta": "https://www.bestpackfactory.com/quote-ready-packaging-sourcing-hub.html"
     }
   ],
-  "updated": "2026-08-15",
+  "updated": "2026-09-08",
   "authors": [
     {
       "name": "Lisa Wu",
@@ -950,5 +958,50 @@
       "PerplexityBot",
       "Perplexity-User"
     ]
-  }
+  },
+  "factory_identity": {
+    "brand": "BestPackFactory",
+    "legal_entity": "Shenzhen Color Printing Paper Packaging Co., Ltd.",
+    "legal_entity_chinese": "深圳市彩之印纸品包装有限公司",
+    "unified_social_credit_code": "91440300MA5DA1RR87",
+    "established": "2016-04-05",
+    "production_address": "Huixin Zhichuang Park, 108 Huarong Road, Longhua District, Shenzhen, China",
+    "address_note": "This is the current production address supplied by the company and printed as the applicant and manufacturer address in test report XNO250418226BX2-1. The business licence image still shows a former registered address following the factory move."
+  },
+  "sample_test_reports": [
+    {
+      "report_type": "Third-party sample test report",
+      "report_number": "XNO250418226BX2-1",
+      "report_date": "2025-04-21",
+      "laboratory": "Guangzhou Supreme Technology & Testing Service Co., Ltd.",
+      "applicant": "Shenzhen Color Printing Paper Packaging Co., Ltd.",
+      "applicant_address": "Huixin Zhichuang Park, 108 Huarong Road, Longhua District, Shenzhen, China",
+      "sample": "Red 800g coloured plastic food packaging bag",
+      "applicant_identified_main_substance": "PE",
+      "standard": "FDA 21 CFR 177.1520",
+      "results": [
+        {
+          "test": "Density at 23 C",
+          "limit": "0.880-0.913 g/cm3",
+          "result": "0.882 g/cm3",
+          "conclusion": "PASS"
+        },
+        {
+          "test": "Soluble fraction in xylene at 25 C",
+          "limit": "11.3%",
+          "result": "<1.0%",
+          "conclusion": "PASS"
+        },
+        {
+          "test": "Extractable fraction in n-hexane at 50 C",
+          "limit": "5.5%",
+          "result": "<0.5%",
+          "conclusion": "PASS"
+        }
+      ],
+      "scope_limit": "The report states that results apply only to the submitted sample and selected tests. It is not an FDA approval, an FDA facility registration, or blanket certification of every BestPackFactory product. Buyers must confirm the complete material structure and intended food-contact conditions for each order.",
+      "availability": "The signed four-page report is available to qualified buyers on request.",
+      "public_reference": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-177/subpart-B/section-177.1520"
+    }
+  ]
 }
