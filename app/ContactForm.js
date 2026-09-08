@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { sendGaEvent } from './GeoAnalytics';
 
 const WHATSAPP_NUMBER = '8615886530985';
 const SUCCESS_PATH = '/thank-you.html';
@@ -30,6 +31,17 @@ function fallbackWhatsAppLink(formData) {
   ];
   if (formData.message) lines.push(`Requirements: ${formData.message}`);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+}
+
+function trackSuccessfulQuote(method, submitted) {
+  const params = {
+    submission_method: method,
+    product_category: submitted.product || '(not set)',
+    quantity_band: submitted.quantity || '(not set)',
+    page_path: window.location.pathname
+  };
+  sendGaEvent('quote_form_submission', params);
+  sendGaEvent('generate_lead', params);
 }
 
 async function formSubmitFallback(data) {
@@ -94,15 +106,18 @@ export default function ContactForm({ productName = '' }) {
         const msg = result.error || 'Unable to send your inquiry.';
         if (/not configured|Email delivery/i.test(msg)) {
           await formSubmitFallback(submitted);
+          trackSuccessfulQuote('formsubmit_fallback', submitted);
           window.location.href = SUCCESS_PATH;
           return;
         }
         throw new Error(msg);
       }
+      trackSuccessfulQuote('site_api', submitted);
       window.location.href = SUCCESS_PATH;
     } catch (err) {
       try {
         await formSubmitFallback(submitted);
+        trackSuccessfulQuote('formsubmit_fallback', submitted);
         window.location.href = SUCCESS_PATH;
       } catch {
         setStatus({

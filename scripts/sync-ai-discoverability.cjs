@@ -3,7 +3,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_ROOT = path.join(ROOT, 'content-site');
-const UPDATED = '2026-08-15';
+const UPDATED = '2026-09-08';
 
 function decodeEntities(value) {
   return String(value || '')

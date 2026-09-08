@@ -105,6 +105,8 @@ const pages = htmlFiles.map(file => {
   return { file, rel: rel(file), html, canonical, pathname: new URL(canonical).pathname };
 });
 const knownPaths = new Set(pages.map(page => page.pathname));
+knownPaths.add('/dielines');
+for (const redirected of REDIRECTED_STATIC_PAGES) knownPaths.add(`/${redirected}`);
 const canonicalCounts = new Map();
 pages.forEach(page => canonicalCounts.set(page.canonical, (canonicalCounts.get(page.canonical) || 0) + 1));
 

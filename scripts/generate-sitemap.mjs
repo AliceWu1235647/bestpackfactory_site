@@ -76,7 +76,10 @@ function robotsValue(html) {
 
 function isDedicatedContentUrl(url) {
   const pathname = new URL(url).pathname;
-  return /^\/(?:(?:ar|de|es|fr|ja)\/)?(?:products|blog|news)\//i.test(pathname);
+  // English product/blog/news detail routes have dedicated dynamic sitemaps.
+  // Translated product mirrors do not: keep those locale URLs in the static
+  // sitemap so every reciprocal hreflang target is discoverable.
+  return /^\/(?:products|blog|news)\//i.test(pathname);
 }
 
 function pageHints(url) {

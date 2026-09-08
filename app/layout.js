@@ -1,5 +1,6 @@
 import Script from 'next/script';
 import WhatsAppWidget from './WhatsAppWidget';
+import GeoAnalytics from './GeoAnalytics';
 
 // content-site/<code>/ 下的翻译页面目录。js/、assets/、css/ 等资源目录不是语言目录。
 // 所有页面都是 force-static，headers() 在该模式下返回空值，所以语言只能在浏览器端
@@ -73,6 +74,7 @@ export default function RootLayout({ children }) {
                 gtag('config', ${JSON.stringify(googleAnalyticsId)});
               `}
             </Script>
+            <GeoAnalytics />
           </>
         ) : null}
         <WhatsAppWidget />

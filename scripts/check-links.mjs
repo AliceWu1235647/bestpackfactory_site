@@ -3,6 +3,11 @@ import path from 'path';
 
 const root = path.join(process.cwd(), 'content-site');
 const publicRoot = path.join(process.cwd(), 'public');
+const runtimePaths = new Set([
+  '/dielines',
+  '/products/custom-food-packaging.html',
+  '/products/custom-paper-bags.html'
+]);
 let errors = 0;
 
 function walk(dir, files = []) {
@@ -24,9 +29,10 @@ function existsForHref(from, href) {
   // as local files in content-site/ or public/. Treating them as missing is a false
   // positive, so exempt them from the content dead-link check.
   if (clean.startsWith('/_next/') || clean.startsWith('/fonts/') || clean === '/feed.xml') return true;
+  if (runtimePaths.has(clean)) return true;
   if (clean.startsWith('/assets/') || clean.startsWith('/css/') || clean.startsWith('/js/')) return fs.existsSync(path.join(publicRoot, clean.slice(1)));
   if (clean.startsWith('/')) return fs.existsSync(path.join(root, clean.slice(1))) || fs.existsSync(path.join(publicRoot, clean.slice(1)));
-  return fs.existsSync(path.resolve(path.dirname(from), clean));
+  return fs.existsSync(path.resolve(path.dirname(from), clean)) || fs.existsSync(path.join(publicRoot, clean));
 }
 
 for (const file of walk(root)) {
