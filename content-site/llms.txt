@@ -234,6 +234,6 @@ This file maps high-intent buyer questions to the best BestPackFactory quote pat
 ## Machine-readable discovery
 
 - [RSS feed](https://www.bestpackfactory.com/feed.xml): The latest packaging engineering, sourcing, quality-control and compliance articles.
-- [Sitemap index](https://www.bestpackfactory.com/sitemap-index.xml): Canonical discovery entry for product, article, image and AI resource sitemaps.
-- [AI resource sitemap](https://www.bestpackfactory.com/ai-sitemap.xml): Machine-readable resources and high-priority answer pages.
+- [Sitemap index](https://www.bestpackfactory.com/sitemap-index.xml): Canonical discovery entry for indexable product, article and image pages.
+- [AI resource sitemap](https://www.bestpackfactory.com/ai-sitemap.xml): Machine-readable resources and high-priority answer pages; intentionally separate from the Google-facing sitemap index.
 - [Complete product catalog](https://www.bestpackfactory.com/ai-index.json): Product URLs, intent clusters, contact data and author identity.

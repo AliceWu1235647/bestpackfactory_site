@@ -1,3 +1,5 @@
+import { MACHINE_RESOURCE_PATHS } from './lib/indexing-policy.js';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -24,6 +26,12 @@ const nextConfig = {
   },
   async headers() {
     return [
+      ...MACHINE_RESOURCE_PATHS.map(source => ({
+        source,
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, follow' }
+        ]
+      })),
       {
         source: '/:path*',
         headers: [

@@ -165,16 +165,15 @@ for (const file of walkHtml(contentRoot)) {
 const { DIELINES } = await import(
   pathToFileURL(path.join(projectRoot, 'lib', 'dielines', 'catalog.js')).href
 );
-const today = new Date().toISOString().slice(0, 10);
 pages.set(`${SITE_URL}/dielines`, {
-  loc: `${SITE_URL}/dielines`, lastmod: today, changefreq: 'monthly', priority: '0.90'
+  loc: `${SITE_URL}/dielines`, lastmod: '', changefreq: 'monthly', priority: '0.90'
 });
 for (const entry of DIELINES) {
   const loc = `${SITE_URL}/dielines/${entry.slug}`;
-  pages.set(loc, { loc, lastmod: today, changefreq: 'monthly', priority: '0.90' });
+  pages.set(loc, { loc, lastmod: '', changefreq: 'monthly', priority: '0.90' });
   for (const preset of entry.presets || []) {
     const sizeLoc = `${loc}/${dielineSizeSlug(preset.name)}`;
-    pages.set(sizeLoc, { loc: sizeLoc, lastmod: today, changefreq: 'monthly', priority: '0.80' });
+    pages.set(sizeLoc, { loc: sizeLoc, lastmod: '', changefreq: 'monthly', priority: '0.80' });
   }
 }
 
@@ -188,7 +187,8 @@ const urlXml = sortedPages.map(page => {
   const alternates = (page.alternates || [])
     .map(alt => `<xhtml:link rel="alternate" hreflang="${escapeXml(alt.hreflang)}" href="${escapeXml(alt.href)}"/>`)
     .join('');
-  return `  <url><loc>${escapeXml(page.loc)}</loc><lastmod>${page.lastmod}</lastmod><changefreq>${page.changefreq}</changefreq><priority>${page.priority}</priority>${alternates}</url>`;
+  const modified = page.lastmod ? `<lastmod>${page.lastmod}</lastmod>` : '';
+  return `  <url><loc>${escapeXml(page.loc)}</loc>${modified}<changefreq>${page.changefreq}</changefreq><priority>${page.priority}</priority>${alternates}</url>`;
 }).join('\n');
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlXml}\n</urlset>\n`;
 

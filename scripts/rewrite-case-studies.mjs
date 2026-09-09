@@ -136,7 +136,7 @@ const WALKTHROUGHS = [
       ['Acceptance evidence', 'Colour to ΔE ≤ 3.0, dimensions to ±1.5 mm, grease resistance confirmed on the coated face, food-contact material declarations supplied where the application requires them, and AQL 2.5 inspection before shipment.']
     ],
     links: [
-      ['/products/custom-food-packaging.html', 'Custom food packaging'],
+      ['/products/food-packaging.html', 'Custom food packaging'],
       ['/products/custom-folding-cartons.html', 'Folding cartons'],
       ['/materials/kraft-paper-packaging.html', 'Kraft paper'],
       ['/industries/food-packaging.html', 'Food packaging']

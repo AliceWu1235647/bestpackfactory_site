@@ -84,7 +84,7 @@ function updateIndex(file, catalog) {
 function updateLlms(file) {
   let text = fs.readFileSync(file, 'utf8');
   text = text.replace(/\[Last updated:\s*[^\]]+\]/i, `[Last updated: ${UPDATED}]`);
-  const section = `## Machine-readable discovery\n\n- [RSS feed](https://www.bestpackfactory.com/feed.xml): The latest packaging engineering, sourcing, quality-control and compliance articles.\n- [Sitemap index](https://www.bestpackfactory.com/sitemap-index.xml): Canonical discovery entry for product, article, image and AI resource sitemaps.\n- [AI resource sitemap](https://www.bestpackfactory.com/ai-sitemap.xml): Machine-readable resources and high-priority answer pages.\n- [Complete product catalog](https://www.bestpackfactory.com/ai-index.json): Product URLs, intent clusters, contact data and author identity.\n`;
+  const section = `## Machine-readable discovery\n\n- [RSS feed](https://www.bestpackfactory.com/feed.xml): The latest packaging engineering, sourcing, quality-control and compliance articles.\n- [Sitemap index](https://www.bestpackfactory.com/sitemap-index.xml): Canonical discovery entry for indexable product, article and image pages.\n- [AI resource sitemap](https://www.bestpackfactory.com/ai-sitemap.xml): Machine-readable resources and high-priority answer pages; intentionally separate from the Google-facing sitemap index.\n- [Complete product catalog](https://www.bestpackfactory.com/ai-index.json): Product URLs, intent clusters, contact data and author identity.\n`;
   if (/## Machine-readable discovery/i.test(text)) {
     text = text.replace(/## Machine-readable discovery[\s\S]*?(?=\n## |$)/i, section.trimEnd());
   } else {

@@ -1,6 +1,7 @@
 import { getR2ProductIndex } from '../../lib/r2-products';
 import { escapeXml, localHtmlEntries, mergeSitemapEntries, sitemapItemDate } from '../../lib/local-sitemap';
 import { LOCALES, localeUrl, translatedPaths } from '../../lib/locales';
+import { REDIRECTED_PRODUCT_SLUGS } from '../../lib/indexing-policy';
 
 export const revalidate = 3600;
 
@@ -23,7 +24,7 @@ export async function GET() {
       lastmod: sitemapItemDate(item)
     })),
     localHtmlEntries('products')
-  );
+  ).filter(({ slug }) => !REDIRECTED_PRODUCT_SLUGS.has(slug));
   // Translated product pages are listed in sitemap.xml with hreflang rows. Google
   // only honours a cluster when the annotations are reciprocal, so the English
   // side has to advertise the same set from here.

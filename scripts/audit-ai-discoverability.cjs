@@ -54,7 +54,8 @@ const report = {
     // feed.xml is deliberately absent here: it is RSS, not a sitemap, so it does not
     // belong in the sitemap index. Its discoverability is asserted by llmsLinksFeed,
     // aiSitemapLinksFeed and layoutLinksFeed instead.
-    sitemapIndexLinksAiSitemap: /['"]\/ai-sitemap\.xml['"]/.test(sitemapIndex),
+    aiSitemapPublished: /<urlset\b/i.test(aiSitemap),
+    googleSitemapIndexExcludesAiResources: !/['"]\/ai-sitemap\.xml['"]/.test(sitemapIndex),
     layoutLinksLlms: /rel="alternate"[^>]+href="\/llms\.txt"/.test(layout),
     layoutLinksAiIndex: /rel="alternate"[^>]+href="\/ai-index\.json"/.test(layout),
     layoutLinksFeed: /rel="alternate"[^>]+href="\/feed\.xml"/.test(layout),

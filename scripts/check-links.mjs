@@ -4,9 +4,7 @@ import path from 'path';
 const root = path.join(process.cwd(), 'content-site');
 const publicRoot = path.join(process.cwd(), 'public');
 const runtimePaths = new Set([
-  '/dielines',
-  '/products/custom-food-packaging.html',
-  '/products/custom-paper-bags.html'
+  '/dielines'
 ]);
 let errors = 0;
 

@@ -53,7 +53,7 @@ const orphans = {
   ],
   'custom-paper-bags-wholesale.html': [
     li('/products/paper-bags.html', 'Paper Bags'),
-    li('/products/custom-paper-bags.html', 'Custom Paper Bags'),
+    li('/products/paper-bags.html', 'Custom Paper Bags'),
     li('/products/bakery-paper-bags.html', 'Bakery Paper Bags'),
     li('/products/luxury-retail-paper-bags.html', 'Luxury Retail Paper Bags'),
     li('/products/custom-embossed-paper-shopping-bags-ribbon-handles.html', 'Embroidered Shopping Bags with Ribbon Handles'),

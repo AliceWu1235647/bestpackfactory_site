@@ -29,6 +29,7 @@
     "check:extension": "node scripts/validate-chrome-extension.cjs",
     "test:ai:lan": "node scripts/smoke-test-ai-lan.cjs",
     "audit:content": "node scripts/audit-content-quality.cjs",
+    "audit:indexability-online": "node scripts/audit-indexability-online.mjs",
     "audit:seo": "node scripts/audit-growth-foundations.cjs",
     "seo:link-clusters": "node scripts/apply-internal-link-clusters.cjs",
     "traffic:check": "npm run lint:links && npm run check:r2-content && npm run check:hybrid && npm run audit:seo"

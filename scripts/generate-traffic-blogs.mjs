@@ -130,7 +130,7 @@ const posts = [
     ],
     checklist: ['State food type and fat content','State fill and storage temperature','Identify every contact layer','Match reports to supplied specification','Retain approved documents by lot'],
     faq: [['Does “food grade” prove compliance everywhere?','No. Compliance depends on material identity, intended use and destination requirements. Request a specific regulatory basis and supporting records.'],['Why do temperature and food type matter?','Migration and permitted use conditions can vary with temperature, duration and the nature of the food.'],['Can one report cover every packaging structure?','Usually not. Verify that the report sample and conditions match the purchased material and intended use.']],
-    links: [['/products/custom-food-packaging.html','Custom food packaging'],['/factory/certificates.html','Documentation support']],
+    links: [['/products/food-packaging.html','Custom food packaging'],['/factory/certificates.html','Documentation support']],
     sources: [['FDA food packaging overview','https://www.fda.gov/food/food-ingredients-packaging/packaging-food-contact-substances-fcs'],['FDA food types and conditions of use','https://www.fda.gov/food/packaging-food-contact-substances-fcs/food-types-conditions-use-food-contact-substances'],['FDA regulatory status of food-contact components','https://www.fda.gov/food/packaging-food-contact-substances-fcs/determining-regulatory-status-components-food-contact-material']]
   },
   {
