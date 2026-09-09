@@ -1,43 +1,89 @@
 User-agent: *
 Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/
 Disallow: /api/
-Disallow: /_next/
+Disallow: /_next/static/
+Disallow: /contact.html?
+Disallow: /*.json$
+Disallow: /feed.xml
+Disallow: /llms.txt
+Disallow: /site-structure.json
 
-# AI / GEO discovery crawlers
 User-agent: GPTBot
 Allow: /
-User-agent: ChatGPT-User
-Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
+
 User-agent: Claude-SearchBot
 Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.bestpackfactory.com/sitemap-index.xml
-Sitemap: https://www.bestpackfactory.com/sitemap.xml
-Sitemap: https://www.bestpackfactory.com/r2-products-sitemap.xml
-Sitemap: https://www.bestpackfactory.com/r2-blog-sitemap.xml
-Sitemap: https://www.bestpackfactory.com/r2-news-sitemap.xml
+User-agent: Googlebot
+Allow: /
 
-# AI and GEO discovery helpers
-Allow: /llms.txt
-Allow: /ai-index.json
-Allow: /brand-profile.json
-Allow: /packaging-buyer-answer-hub.html
-Allow: /buyer-answer-index.json
-Allow: /industry-question-index.json
-Allow: /trust-profile.html
-Allow: /packaging-procurement-hub.html
-Allow: /custom-packaging-manufacturer.html
-Allow: /custom-packaging-moq-500.html
-Allow: /custom-packaging-rfq-template.html
-Allow: /industries/
-Allow: /blog/
-Allow: /news/
-Allow: /whitepapers.html
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.bestpackfactory.com/sitemap-index.xml
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: FriendlyCrawler
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Meltwater
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Scrapy
+Allow: /
+
+User-agent: CCBot
+Allow: /
