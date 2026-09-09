@@ -110,7 +110,7 @@ const pages = [
       ['2,000 PCS', 'Conversion planning and material utilization can improve, but barrier and filling compatibility still take priority over unit price.'],
       ['5,000 PCS+', 'Longer-run printing may become more economical. Gravure feasibility depends on film, colors, cylinders and total volume; compare cylinder cost, repeat orders and inventory risk before choosing it.']
     ],
-    scope: 'This page owns stand-up pouch manufacturer China, factory, supplier and MOQ 500 intent. For detailed printing, barrier-film, zipper, valve and artwork decisions, use the custom printed stand-up pouch specification page.',
+    scope: 'This page helps buyers evaluate stand-up pouch manufacturers, factory qualifications and MOQ 500 requirements. For detailed printing, barrier-film, zipper, valve and artwork decisions, use the custom printed stand-up pouch specification page.',
     crossLink: ['/products/custom-stand-up-pouches.html', 'Open the custom printed stand-up pouch specification page'],
     supports: [
       ['/blog/stand-up-pouch-barrier-materials.html', 'Stand-up pouch barrier material guide'],
@@ -132,7 +132,7 @@ const pages = [
       ['2,000 PCS', 'The print method depends on total surface area, colors, film and repeat demand. Ask for both feasible methods if the specification sits near a supplier break point.'],
       ['5,000 PCS+', 'Gravure may become more economical for repeat volume, but cylinder charges and inventory risk must be included. Digital can still make sense for many SKUs or frequent artwork changes.']
     ],
-    scope: 'This page owns custom printed stand-up pouches, stand-up pouch printing, custom logo pouch and film-feature specification intent. The separate stand-up pouch page is the primary factory and supplier qualification route.',
+    scope: 'This page helps buyers compare custom printed stand-up pouches, logo printing and film-feature specifications. The separate stand-up pouch page is the primary factory and supplier qualification route.',
     crossLink: ['/products/stand-up-pouch.html', 'Open the stand-up pouch manufacturer and factory page'],
     supports: [
       ['/blog/custom-mylar-bag-printing-guide.html', 'Custom flexible pouch printing guide'],

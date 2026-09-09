@@ -24,6 +24,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+throw new Error('Retired: the FSC certificate-holder relationship is pending and this script must not publish a factory-held FSC claim.');
+
 const FILE = path.join(process.cwd(), 'content-site', 'trust-profile.html');
 const apply = !process.argv.includes('--dry-run');
 

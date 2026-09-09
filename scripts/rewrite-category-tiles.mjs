@@ -40,7 +40,7 @@ const SLUGS = [
 
 const COPY = {
   en: {
-    intro: 'Twelve production lines under one RFQ: paperboard, corrugated, flexible film, labels, PET and tinplate. MOQ 500 PCS, free dieline within 24 hours.',
+    intro: 'Multiple packaging categories under one RFQ: paperboard, corrugated, flexible film, labels, PET and tinplate. MOQ 500 PCS, free dieline within 24 hours.',
     tiles: {
       'custom-boxes': {
         alt: 'Assortment of custom printed mailer and rigid boxes with foil-stamped brand logos',

@@ -1,4 +1,5 @@
-/* Add a machine-readable verified_credentials block to the AI index files.
+/* Add a machine-readable, status-aware credential evidence block to the
+ * procurement index files.
  *
  * The AI index (public/ai-index.json, served at /ai-index.json) is the file
  * answer engines read to build a sourcing recommendation. Until now it carried
@@ -18,9 +19,9 @@ const FILES = ['public/ai-index.json', 'content-site/ai-index.json'];
 
 function buildBlock() {
   return {
-    verified_credentials_category: 'Third-party certificates held by the factory behind BestPackFactory',
+    verified_credentials_category: 'Status-aware third-party certificate and report evidence',
     legal_entity: HOLDER,
-    note: 'Each certificate is independently verifiable from the identifier above. An FSC claim applies to an order only where stated on the invoice and shipping documents.',
+    note: 'Current, expired and relationship-pending records are distinguished. A material or certification claim applies only when the holder, scope and order documents are confirmed.',
     credentials: CERTIFICATES.map((c) => ({
       certificate: c.certType,
       identifier: c.num,
@@ -31,6 +32,9 @@ function buildBlock() {
       scope: c.scope,
       verify_at: c.verify,
       image: c.image || null,
+      status: c.status,
+      claimed_as_held_by_factory: c.factoryHeld,
+      status_note: c.note,
     })),
   };
 }

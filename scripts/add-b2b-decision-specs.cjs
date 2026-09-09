@@ -32,7 +32,7 @@ const ROWS = [
 ];
 
 // FAQ entries mirror the table rows so the same answers can win a rich result and
-// be quoted by AI assistants, which read FAQPage JSON-LD rather than table markup.
+// be understood by procurement systems, which read FAQPage JSON-LD rather than table markup.
 const FAQ_ENTRIES = [
   ['How long does bulk production take?', 'Bulk production is usually completed within 20–30 days after final sample approval. Sampling takes 5–7 working days after artwork confirmation, with the dieline and artwork proof returned within 24 hours.'],
   ['What are your payment terms?', 'Standard terms are 30% T/T deposit before production and the 70% balance before shipment. Letter of credit, PayPal and Escrow are also accepted.'],

@@ -1,12 +1,11 @@
-/* Single source of truth for the certificates this facility actually holds.
+/* Status-aware evidence register for certificates and reports associated with
+ * this business. A record may be current, expired or relationship-pending;
+ * presence here must never be interpreted as a current factory-held claim.
  *
  * Every certificate below is a real, third-party-issuable document for
- * Shenzhen Color Printing Paper Packaging Co., Ltd. at Printing Industrial
- * Park, Longhua District, Shenzhen, Guangdong 518109, China — the entity
- * behind BestPackFactory. Each entry carries the fields that let a
- * procurement reviewer (or an AI answer engine) independently re-verify the
- * claim from the number alone, which is what makes a credential citable
- * rather than merely asserted.
+ * Shenzhen Color Printing Paper Packaging Co., Ltd. — the licensed entity
+ * behind BestPackFactory. Each entry carries the fields a procurement
+ * reviewer can use to check the record and its exact status.
  *
  * Fields:
  *   num          the identifier printed on the certificate
@@ -29,7 +28,7 @@
  */
 
 export const HOLDER = 'Shenzhen Color Printing Paper Packaging Co., Ltd.';
-export const LEGAL_ADDRESS = 'Printing Industrial Park, Longhua District, Shenzhen, Guangdong 518109, China';
+export const CURRENT_PRODUCTION_ADDRESS = 'Huixin Zhichuang Park, 108 Huarong Road, Longhua District, Shenzhen, China';
 
 export const CERTIFICATES = [
   {
@@ -44,7 +43,9 @@ export const CERTIFICATES = [
     verify: 'https://search.fsc.org/',
     image: '/assets/factory/fsc-cert-2.webp',
     imageAlt: 'SGS FSC Chain of Custody certificate SGSHK-COC-332603 for Shenzhen Color Printing Paper Packaging Co., Ltd.',
-    note: 'An FSC claim applies to an order only where it is agreed before production and stated on the invoice and shipping documents.',
+    status: 'relationship_pending',
+    factoryHeld: false,
+    note: 'The public certificate-holder relationship to the licensed factory has not yet been documented. Do not present this as a factory-held FSC credential.',
   },
   {
     certType: 'FSC Chain of Custody (second certificate)',
@@ -58,7 +59,9 @@ export const CERTIFICATES = [
     verify: 'https://search.fsc.org/',
     image: '/assets/factory/fsc-cert-1.webp',
     imageAlt: 'Soil Association FSC Certificate of Registration SA-COC-012595, licence FSC-C171757',
-    note: 'Valid to 2 November 2026 — a stated expiry rather than a silent lapse; the active certificate is the SGS one above.',
+    status: 'relationship_pending',
+    factoryHeld: false,
+    note: 'The public certificate-holder relationship to the licensed factory has not yet been documented. Do not present this as a factory-held FSC credential.',
   },
   {
     certType: 'ISO 9001:2015 Quality Management System',
@@ -72,6 +75,8 @@ export const CERTIFICATES = [
     verify: 'https://www.acmchina.com/ and CNCA (www.cnca.gov.cn).',
     image: null,
     imageAlt: null,
+    status: 'current',
+    factoryHeld: true,
     note: 'IAF-accredited certification body (MSCB-345). Registered with CNCA.',
   },
   {
@@ -86,6 +91,8 @@ export const CERTIFICATES = [
     verify: 'https://www.cnca.gov.cn/ (CNAS C021-M).',
     image: null,
     imageAlt: null,
+    status: 'current',
+    factoryHeld: true,
     note: 'IAF multi-lateral recognition arrangement and CNAS accredited management system certificate.',
   },
   {
@@ -99,6 +106,8 @@ export const CERTIFICATES = [
     verify: 'https://www.nsf.org/ and the national food-contact certification registry.',
     image: null,
     imageAlt: null,
-    note: 'Audited 20 July 2025 (initial factory audit plus post-certification surveillance).',
+    status: 'expired',
+    factoryHeld: false,
+    note: 'Expired 3 September 2026. Retained as historical evidence only and not presented as a current credential.',
   },
 ];
