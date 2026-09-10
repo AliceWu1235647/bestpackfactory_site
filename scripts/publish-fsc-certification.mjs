@@ -40,8 +40,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-throw new Error('Retired: the FSC certificate-holder relationship is pending and this script must not publish a factory-held FSC claim.');
-
 const ROOT = path.join(process.cwd(), 'content-site');
 const apply = !process.argv.includes('--dry-run');
 
