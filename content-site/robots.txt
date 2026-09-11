@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/static/
 
 User-agent: GPTBot
 Allow: /

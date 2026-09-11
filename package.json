@@ -22,6 +22,7 @@
     "check:r2-content": "node scripts/check-r2-content-files.mjs",
     "check:sitemap": "node scripts/check-sitemap-index.mjs",
     "check:verified-facts": "node scripts/check-verified-facts.mjs",
+    "check:structured-data": "node scripts/check-public-structured-data.mjs",
     "check:protected-markup": "node scripts/check-protected-markup.mjs",
     "check:codex": "npm run lint:links && npm run check:r2-content && npm run check:hybrid && npm run check:sitemap && npm run build",
     "build:codex": "npm run build",
@@ -35,8 +36,8 @@
     "traffic:check": "npm run lint:links && npm run check:r2-content && npm run check:hybrid && npm run audit:seo"
   },
   "dependencies": {
-    "next": "15.5.21",
-    "nodemailer": "^9.0.3",
+    "next": "15.5.25",
+    "nodemailer": "^9.1.1",
     "openai": "^7.4.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -44,7 +45,7 @@
   "overrides": {
     "nanoid": "3.3.18",
     "postcss": "8.5.25",
-    "sharp": "0.35.3"
+    "sharp": "0.35.4"
   },
   "type": "module"
 }
