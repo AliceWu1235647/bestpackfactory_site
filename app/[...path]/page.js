@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getPage, listHtmlRoutes } from '../../lib/static-pages';
 import BlogIndex from '../BlogIndex';
+import { injectCommercialAuthorityHub } from '../../lib/commercial-authority-hubs';
 
 export const revalidate = 3600;
 export const dynamic = 'force-static';
@@ -37,9 +38,10 @@ export default async function StaticHtmlRoute({ params }) {
   if (route === 'blog.html') return <BlogIndex />;
   const page = getPage(route);
   if (!page) notFound();
+  const body = injectCommercialAuthorityHub(page.body, route);
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: page.body }} suppressHydrationWarning={true} />
+      <div dangerouslySetInnerHTML={{ __html: body }} suppressHydrationWarning={true} />
       {page.jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
       ))}

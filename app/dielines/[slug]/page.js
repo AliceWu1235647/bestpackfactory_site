@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { DIELINES, getDieline, CATEGORIES } from '../../../lib/dielines/catalog.js';
 import DielineGenerator from '../DielineGenerator.js';
 import { SiteHeader, SiteFooter } from '../chrome.js';
+import { getDielineAuthorityLinks } from '../../../lib/dielines/authority-links.js';
 import styles from '../dielines.module.css';
 
 export const revalidate = 86400;
@@ -34,6 +35,7 @@ export default async function DielinePage({ params }) {
   const { slug } = await params;
   const entry = getDieline(slug);
   if (!entry) notFound();
+  const authorityLinks = getDielineAuthorityLinks(entry);
 
   const category = CATEGORIES.find(c => c.id === entry.category);
   const siblings = DIELINES.filter(d => d.category === entry.category && d.slug !== entry.slug).slice(0, 3);
@@ -116,6 +118,17 @@ export default async function DielinePage({ params }) {
               artwork on it and we will quote within 24 hours — 500 pieces minimum.
             </p>
             <a href={entry.relatedProduct}>View {entry.relatedLabel} →</a>
+          </div>
+        ) : null}
+
+        {authorityLinks.length ? (
+          <div className={styles.noteCard} style={{ marginTop: 20 }}>
+            <h3>From dieline to a supplier-ready RFQ</h3>
+            <ul>
+              {authorityLinks.map(([href, label]) => (
+                <li key={href}><a href={href}>{label}</a> — compare MOQ, specifications, samples, production evidence and quote inputs.</li>
+              ))}
+            </ul>
           </div>
         ) : null}
 

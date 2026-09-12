@@ -2,6 +2,11 @@ import { notFound } from 'next/navigation';
 import { preload } from 'react-dom';
 import { getProductPageBySlug, listStaticProductSlugs } from '../../../lib/product-pages';
 import { cleanProductSlug, productTag } from '../../../lib/r2-products';
+import {
+  commercialAuthorityMetadata,
+  injectCommercialAuthorityHub,
+  normalizeCommercialAuthorityJsonLd,
+} from '../../../lib/commercial-authority-hubs';
 
 export const revalidate = 3600;
 export const dynamic = 'force-static';
@@ -56,7 +61,7 @@ export async function generateMetadata({ params }) {
   const resolved = await params;
   const slug = getSlug(resolved);
   const page = await getProductPageBySlug(slug);
-  return page?.metadata || { title: 'BestPackFactory Product' };
+  return page ? commercialAuthorityMetadata(page.metadata, `products/${slug}.html`) : { title: 'BestPackFactory Product' };
 }
 
 export default async function ProductRoute({ params }) {
@@ -64,7 +69,9 @@ export default async function ProductRoute({ params }) {
   const slug = getSlug(resolved);
   const page = await getProductPageBySlug(slug);
   if (!page) notFound();
-  const primaryImage = getPrimaryProductImage(page.body);
+  const body = injectCommercialAuthorityHub(page.body, `products/${slug}.html`);
+  const jsonLd = normalizeCommercialAuthorityJsonLd(page.jsonLd, `products/${slug}.html`);
+  const primaryImage = getPrimaryProductImage(body);
   if (primaryImage) {
     preload(primaryImage.href, {
       as: 'image',
@@ -75,8 +82,8 @@ export default async function ProductRoute({ params }) {
   }
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: page.body }} suppressHydrationWarning={true} />
-      {page.jsonLd.map((json, index) => (
+      <div dangerouslySetInnerHTML={{ __html: body }} suppressHydrationWarning={true} />
+      {jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
       ))}
     </>

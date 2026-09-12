@@ -24,6 +24,8 @@
     "check:verified-facts": "node scripts/check-verified-facts.mjs",
     "check:structured-data": "node scripts/check-public-structured-data.mjs",
     "check:product-hub": "node scripts/check-product-entity-hub.mjs",
+    "check:commercial-authority": "node scripts/check-commercial-authority-hubs.mjs",
+    "capture:commercial-authority": "node scripts/capture-commercial-authority-hubs.mjs",
     "check:protected-markup": "node scripts/check-protected-markup.mjs",
     "test:dielines": "node scripts/test-dielines.mjs && node scripts/check-dxf.mjs",
     "test:dielines:browser": "node scripts/verify-dieline-downloads.mjs",

@@ -7,6 +7,7 @@ export const revalidate = 86400;
 export const dynamic = 'force-static';
 
 const SITE = 'https://www.bestpackfactory.com';
+const PRESET_COUNT = DIELINES.reduce((count, entry) => count + (entry.presets?.length || 0), 0);
 
 export const metadata = {
   title: 'Free Dieline Templates — Custom Size, PDF / DXF / AI Download | BestPackFactory',
@@ -136,6 +137,44 @@ export default function DielinesIndex() {
             </div>
           );
         })}
+
+        <div className={styles.catHead}>
+          <h2>How to reference and verify this dieline library</h2>
+          <p>A public, no-gate engineering resource for packaging buyers, designers and educators.</p>
+        </div>
+        <div className={styles.notes}>
+          <div className={styles.noteCard}>
+            <h3>What the library contains</h3>
+            <ul>
+              <li>{DIELINES.length} base parametric structures and {PRESET_COUNT} named size presets.</li>
+              <li>PDF, DXF, AI-compatible PDF and SVG exports generated from the same dimensions.</li>
+              <li>1:1 millimetre geometry with named cut, fold, bleed or structure-specific technical information.</li>
+              <li>No account, email gate, watermark or payment is required.</li>
+            </ul>
+          </div>
+          <div className={styles.noteCard}>
+            <h3>Responsible use and citation</h3>
+            <ul>
+              <li>Link directly to the relevant permanent template URL when it helps your readers; no reciprocal link is required.</li>
+              <li>Record the dimensions and download date when a file is used in a specification or teaching resource.</li>
+              <li>A converter must approve stock, crease rules, tolerances, sealing and a physical blank before production tooling.</li>
+              <li>Last methodology review: September 12, 2026.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.noteCard} style={{ marginTop: 20 }}>
+          <h3>Continue from structure to supplier qualification</h3>
+          <ul>
+            <li><a href="/products/custom-packaging-boxes.html">Paper box manufacturer sourcing center</a></li>
+            <li><a href="/products/custom-rigid-boxes.html">Rigid box manufacturer sourcing center</a></li>
+            <li><a href="/products/paper-bags.html">Paper bag manufacturer sourcing center</a></li>
+            <li><a href="/products/stand-up-pouch.html">Stand-up pouch manufacturer sourcing center</a></li>
+            <li><a href="/products/flexible-packaging.html">Flexible packaging manufacturer sourcing center</a></li>
+            <li><a href="/products/custom-printed-tissue-paper.html">Printed tissue paper manufacturer sourcing center</a></li>
+            <li><a href="/industries/food-packaging-manufacturer.html">Food packaging manufacturer sourcing center</a></li>
+          </ul>
+        </div>
 
         <div className={styles.cta}>
           <div>
