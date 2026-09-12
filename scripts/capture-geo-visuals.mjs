@@ -29,10 +29,20 @@ const viewports = [
 
 const report = [];
 const browser = await chromium.launch();
+const bypassSecret = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
+const extraHTTPHeaders = bypassSecret ? {
+  'x-vercel-protection-bypass': bypassSecret,
+  'x-vercel-set-bypass-cookie': 'true'
+} : undefined;
 
 for (const [routeName, route] of routes.filter(([name]) => !routeFilter || name === routeFilter)) {
   for (const [viewportName, width, height, deviceScaleFactor] of viewports) {
-    const context = await browser.newContext({ viewport: { width, height }, deviceScaleFactor, reducedMotion: 'reduce' });
+    const context = await browser.newContext({
+      viewport: { width, height },
+      deviceScaleFactor,
+      reducedMotion: 'reduce',
+      extraHTTPHeaders
+    });
     const page = await context.newPage();
     await page.route(/https:\/\/(?:fonts\.googleapis\.com|fonts\.gstatic\.com)\//, route => route.abort());
     const errors = [];

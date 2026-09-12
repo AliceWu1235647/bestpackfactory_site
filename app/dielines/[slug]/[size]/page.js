@@ -33,8 +33,9 @@ export async function generateMetadata({ params }) {
   if (!preset) return { title: `${entry.name} | BestPackFactory` };
 
   // Build a human-readable dimension string from the preset's numeric values.
+  const displayKeys = entry.sizeDisplayKeys || Object.keys(preset.values);
   const dimStr = Object.entries(preset.values)
-    .filter(([, v]) => typeof v === 'number')
+    .filter(([key, v]) => typeof v === 'number' && displayKeys.includes(key))
     .map(([k, v]) => `${k} ${v} mm`)
     .join(', ');
 
@@ -67,8 +68,9 @@ export default async function SizePage({ params }) {
     }))
   };
 
+  const displayKeys = entry.sizeDisplayKeys || Object.keys(preset.values);
   const dimStr = Object.entries(preset.values)
-    .filter(([, v]) => typeof v === 'number')
+    .filter(([key, v]) => typeof v === 'number' && displayKeys.includes(key))
     .map(([k, v]) => `${k} ${v} mm`)
     .join(', ');
 
@@ -93,8 +95,8 @@ export default async function SizePage({ params }) {
     totalTime: 'PT2M',
     step: [
       { '@type': 'HowToStep', name: 'Confirm dimensions', text: `The dimensions are pre-set to ${dimStr}. Adjust any value to fine-tune the layout.` },
-      { '@type': 'HowToStep', name: 'Check the live preview', text: 'The preview updates in real time showing cut, fold, bleed and seal lines.' },
-      { '@type': 'HowToStep', name: 'Download', text: 'Choose PDF for print, DXF for a cutting table, AI for Illustrator, or SVG for web. Generated in your browser, no sign-up needed.' }
+      { '@type': 'HowToStep', name: 'Check the live preview', text: 'The preview updates in real time showing cut, fold, safe-artwork and construction lines.' },
+      { '@type': 'HowToStep', name: 'Download and preflight', text: 'Choose PDF, DXF, AI or SVG, then have the converter approve material caliper, machine tolerances and a physical blank before tooling.' }
     ]
   };
 
@@ -118,7 +120,7 @@ export default async function SizePage({ params }) {
           <ul className={styles.heroPoints}>
             <li>Free, no sign-up</li>
             <li>PDF · DXF · AI · SVG</li>
-            <li>Fold allowance applied</li>
+            <li>1:1 millimetre geometry</li>
             <li>MOQ 500 pcs if you produce with us</li>
           </ul>
         </div>
@@ -133,7 +135,7 @@ export default async function SizePage({ params }) {
             <ul>{entry.materials.map(m => <li key={m}>{m}</li>)}</ul>
           </div>
           <div className={styles.noteCard}>
-            <h3>Production notes from our prepress team</h3>
+            <h3>Production-preflight notes</h3>
             <ul>{entry.notes.map(n => <li key={n}>{n}</li>)}</ul>
           </div>
         </div>
@@ -146,7 +148,7 @@ export default async function SizePage({ params }) {
                 <li key={p.name}>
                   <a href={`/dielines/${entry.slug}/${slugify(p.name)}`}><b>{p.name}</b></a>
                   {' — '}
-                  {Object.entries(p.values).filter(([, v]) => typeof v === 'number').map(([k, v]) => `${k} ${v} mm`).join(', ')}.
+                  {Object.entries(p.values).filter(([key, v]) => typeof v === 'number' && displayKeys.includes(key)).map(([k, v]) => `${k} ${v} mm`).join(', ')}.
                   {' '}{p.note}
                 </li>
               ))}

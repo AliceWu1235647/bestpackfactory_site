@@ -11,7 +11,7 @@ const SITE = 'https://www.bestpackfactory.com';
 export const metadata = {
   title: 'Free Dieline Templates — Custom Size, PDF / DXF / AI Download | BestPackFactory',
   description:
-    'Free packaging dieline templates you can resize and download as PDF, DXF, AI or SVG. Coffee bags, mylar pouches, magnetic rigid boxes, mailers and cartons — factory-verified, no sign-up required.',
+    'Free packaging engineering dieline templates you can resize and download as PDF, DXF, AI or SVG. Coffee bags, pouches, rigid boxes, mailers and cartons — 1:1 mm files, no sign-up required.',
   alternates: { canonical: `${SITE}/dielines` },
   openGraph: {
     title: 'Free Packaging Dieline Templates — Resize & Download',
@@ -28,11 +28,11 @@ const FAQ = [
   },
   {
     q: 'What is the difference between your dielines and a generic template library?',
-    a: 'We are the factory. Every template carries the fold allowance for the board or film thickness you select, and the seal, valve and turn-in positions match how the job actually runs on our machines. Generic dielines usually omit that compensation, which is why they often fail at prepress.'
+    a: 'The downloads keep dimensions in millimetres at 1:1 scale and separate cut, fold, seal, safe-artwork and non-printing information. Structure-specific inputs such as board caliper, seal width, turn-in and handle spacing are exposed where relevant. A converter still has to approve its own crease rules, machine tolerances and a physical blank before tooling.'
   },
   {
     q: 'Which file format should I use?',
-    a: 'PDF for sending to a printer or reviewing with your team. DXF for a cutting table or CAD. AI for Adobe Illustrator, where you will lay artwork over the dieline. SVG for web mockups. All four contain the same geometry on separate CUT, FOLD, PERF, BLEED and GLUE layers.'
+    a: 'PDF for review and 100% scale printing. DXF for CAD or a cutting table. The AI download is PDF-compatible artwork that opens in Adobe Illustrator. SVG is best for vector inspection and web mockups. The four exports use the same generated geometry; DXF and SVG preserve named technical layers.'
   },
   {
     q: 'Can you produce the packaging once my artwork is ready?',
@@ -93,9 +93,9 @@ export default function DielinesIndex() {
           <div className={styles.eyebrow}>Free tools from the factory floor</div>
           <h1>Free packaging dieline templates</h1>
           <p>
-            Set your own dimensions and download a production-ready dieline in PDF, DXF, AI or SVG.
-            Fold allowance for board and film thickness is already compensated, so these files go
-            straight to press — not back to your designer.
+            Set your dimensions and download a 1:1 mm production-preflight template in PDF, DXF,
+            AI or SVG. Construction allowances are shown where the selected structure supports
+            them; your converter approves the final stock, crease and machine settings before tooling.
           </p>
           <ul className={styles.heroPoints}>
             <li>No sign-up or email required</li>

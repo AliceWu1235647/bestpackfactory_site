@@ -11,5 +11,6 @@ console.log('EOF             ', has('EOF'));
 console.log('layers present  ', ['CUT','FOLD','PERF','BLEED','GLUE','INFO'].filter(l => dxf.includes(l)).join(','));
 console.log('LINE/LWPOLY/CIRC', ['LINE','LWPOLYLINE','CIRCLE','TEXT'].filter(k=>dxf.includes(k)).join(','));
 const pairs = dxf.split(/\r?\n/);
+if (pairs.at(-1) === '') pairs.pop();
 console.log('line count      ', pairs.length, '(even pairs:', pairs.length % 2 === 0 ? 'y' : 'check', ')');
 console.log('\n--- head ---\n' + pairs.slice(0,14).join('|'));

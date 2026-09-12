@@ -25,6 +25,8 @@
     "check:structured-data": "node scripts/check-public-structured-data.mjs",
     "check:product-hub": "node scripts/check-product-entity-hub.mjs",
     "check:protected-markup": "node scripts/check-protected-markup.mjs",
+    "test:dielines": "node scripts/test-dielines.mjs && node scripts/check-dxf.mjs",
+    "test:dielines:browser": "node scripts/verify-dieline-downloads.mjs",
     "check:codex": "npm run lint:links && npm run check:r2-content && npm run check:hybrid && npm run check:sitemap && npm run build",
     "build:codex": "npm run build",
     "check:hybrid": "node scripts/check-hybrid-structure.mjs",

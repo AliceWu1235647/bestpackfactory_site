@@ -16,7 +16,8 @@ const LEGEND = [
   [LAYERS.CUT, 'Cut'],
   [LAYERS.FOLD, 'Fold'],
   [LAYERS.PERF, 'Perf / valve'],
-  [LAYERS.BLEED, 'Safe area'],
+  [LAYERS.BLEED, 'Bleed'],
+  [LAYERS.SAFE, 'Safe artwork'],
   [LAYERS.GLUE, 'Glue / seal']
 ];
 
@@ -100,9 +101,14 @@ export default function DielineGenerator({ entry }) {
 
   const quoteHref = useMemo(() => {
     const lines = [
-      `Hello BestPackFactory, I designed a ${entry.name} on your dieline tool and would like a production quote.`,
+      `Hello BestPackFactory, I prepared a ${entry.name} on your dieline tool and would like a production quote.`,
       `Size: ${sizeSummary}.`,
-      'MOQ 500 pcs. Please send pricing and lead time.'
+      'Please confirm the dieline for your actual material and converting equipment before tooling.',
+      'Quantity:',
+      'Material / board grade:',
+      'Printing and finishes:',
+      'Ship-to country and postcode:',
+      'Required delivery date:'
     ];
     return `https://wa.me/8615886530985?text=${encodeURIComponent(lines.join('\n'))}`;
   }, [entry.name, sizeSummary]);
@@ -125,8 +131,9 @@ export default function DielineGenerator({ entry }) {
       <aside className={styles.panel}>
         <h2>Set your dimensions</h2>
         <p className={styles.panelHint}>
-          Internal dimensions in millimetres. Fold allowance for board or film thickness
-          is applied automatically — you do not need to add it yourself.
+          Dimensions are in millimetres; each field states whether it is a finished or
+          construction value. Allowances are calculated where this structure supports
+          them. Your converter must approve the actual stock and machine rules.
         </p>
 
         {entry.presets?.length ? (
@@ -215,13 +222,14 @@ export default function DielineGenerator({ entry }) {
         </div>
         <p className={styles.noReg}>
           Free. No sign-up, no email, no watermark.<br />
-          Files are generated in your browser.
+          Files are generated in your browser at 1:1 mm scale.<br />
+          Prepress approval and a physical blank sample are required before tooling.
         </p>
 
         <div className={styles.quoteBox}>
           <strong>Want these made?</strong>
           <p>
-            We are the factory behind this dieline. Get a quote for this exact size —
+            Get this exact size reviewed for your chosen material and production line —
             MOQ 500 pcs, free artwork check, worldwide shipping from Shenzhen.
           </p>
           <div className={styles.quoteActions}>

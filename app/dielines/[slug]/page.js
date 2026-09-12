@@ -56,8 +56,8 @@ export default async function DielinePage({ params }) {
     totalTime: 'PT2M',
     step: [
       { '@type': 'HowToStep', name: 'Set dimensions', text: 'Enter your internal dimensions in millimetres, or start from a preset size.' },
-      { '@type': 'HowToStep', name: 'Check the preview', text: 'The live preview shows cut, fold, bleed and seal lines as you change values.' },
-      { '@type': 'HowToStep', name: 'Download', text: 'Choose PDF, DXF, AI or SVG. The file is generated in your browser with no sign-up.' }
+      { '@type': 'HowToStep', name: 'Check the preview', text: 'The live preview shows cut, fold, safe-artwork and construction lines as you change values.' },
+      { '@type': 'HowToStep', name: 'Download and preflight', text: 'Choose PDF, DXF, AI or SVG, then have the converter approve material caliper, machine tolerances and a physical blank before tooling.' }
     ]
   };
 
@@ -75,7 +75,7 @@ export default async function DielinePage({ params }) {
           <ul className={styles.heroPoints}>
             <li>Free, no sign-up</li>
             <li>PDF · DXF · AI · SVG</li>
-            <li>Fold allowance applied</li>
+            <li>1:1 millimetre geometry</li>
             <li>MOQ 500 pcs if you produce with us</li>
           </ul>
         </div>
@@ -90,7 +90,7 @@ export default async function DielinePage({ params }) {
             <ul>{entry.materials.map(m => <li key={m}>{m}</li>)}</ul>
           </div>
           <div className={styles.noteCard}>
-            <h3>Production notes from our prepress team</h3>
+            <h3>Production-preflight notes</h3>
             <ul>{entry.notes.map(n => <li key={n}>{n}</li>)}</ul>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default async function DielinePage({ params }) {
             <ul>
               {entry.presets.map(p => (
                 <li key={p.name}>
-                  <b>{p.name}</b> — {Object.entries(p.values).filter(([, v]) => typeof v === 'number').map(([k, v]) => `${k} ${v} mm`).join(', ')}. {p.note}
+                  <b>{p.name}</b> — {Object.entries(p.values).filter(([key, v]) => typeof v === 'number' && (!entry.sizeDisplayKeys || entry.sizeDisplayKeys.includes(key))).map(([k, v]) => `${k} ${v} mm`).join(', ')}. {p.note}
                 </li>
               ))}
             </ul>
