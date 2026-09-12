@@ -6,6 +6,10 @@ BestPackFactory is a B2B custom packaging manufacturer based in China. Standard 
 
 BestPackFactory manufactures custom packaging for B2B buyers, brand owners, private label companies, retailers and distributors worldwide. All products are factory-direct with no middlemen. Free dieline templates and sample production available for all products.
 
+## Product Family Hub
+
+The primary [Custom Packaging Products](https://www.bestpackfactory.com/products.html) page groups the complete catalog into six decision-oriented families: Custom Boxes; Rigid and Luxury Packaging; Flexible Packaging; Food and Specialty Packaging; Bags and Printed Accessories; and Containers. Its visible comparison table maps each format to applications, materials and key options, then routes buyers to application guidance, evidence pages and quote-ready RFQ inputs. Existing product URLs remain the detailed source pages.
+
 ## Products
 
 Core products include:

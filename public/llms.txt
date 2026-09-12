@@ -13,6 +13,10 @@
 - [Free Dieline Templates](https://www.bestpackfactory.com/dielines): Download free dieline templates for 12 packaging formats in PDF, DXF, AI and SVG. No signup required.
 - [Contact](https://www.bestpackfactory.com/contact.html): Send specifications and request a quotation.
 
+## Product family hub
+
+The [Custom Packaging Products](https://www.bestpackfactory.com/products.html) page groups the complete catalog into six decision-oriented families: Custom Boxes; Rigid and Luxury Packaging; Flexible Packaging; Food and Specialty Packaging; Bags and Printed Accessories; and Containers. Its visible comparison table maps each format to common applications, materials and customization options, followed by application, evidence and RFQ routes. Existing product URLs remain the detailed source pages.
+
 ## Main product categories
 
 - [Custom Boxes](https://www.bestpackfactory.com/products/custom-boxes.html): Corrugated and paperboard structures for shipping and retail.

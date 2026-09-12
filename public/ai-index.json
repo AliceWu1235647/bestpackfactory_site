@@ -603,6 +603,19 @@
   "site": "BestPackFactory",
   "type": "B2B custom packaging manufacturer",
   "standard_moq": "500 PCS",
+  "product_family_hub": {
+    "primary_url": "https://www.bestpackfactory.com/products.html",
+    "purpose": "Compare product families, choose by application and prepare a quote-ready specification.",
+    "families": [
+      {"name": "Custom Boxes", "url": "https://www.bestpackfactory.com/products/custom-boxes.html", "best_for": ["ecommerce", "retail", "cosmetics"]},
+      {"name": "Rigid and Luxury Packaging", "url": "https://www.bestpackfactory.com/products/custom-rigid-boxes.html", "best_for": ["gifting", "beauty", "PR kits"]},
+      {"name": "Flexible Packaging", "url": "https://www.bestpackfactory.com/products/flexible-packaging.html", "best_for": ["food", "coffee", "pet food", "supplements"]},
+      {"name": "Food and Specialty Packaging", "url": "https://www.bestpackfactory.com/products/food-packaging.html", "best_for": ["barrier", "reseal", "shelf-life and compliance planning"]},
+      {"name": "Bags and Printed Accessories", "url": "https://www.bestpackfactory.com/products/paper-bags.html", "best_for": ["retail", "unboxing", "automatic labeling"]},
+      {"name": "Containers", "url": "https://www.bestpackfactory.com/products/pet-bottles.html", "best_for": ["food", "cosmetics", "retail", "specialty containers"]}
+    ],
+    "rfq_inputs": ["packaging type", "dimensions or fill weight", "quantity", "artwork status", "material or performance requirements", "destination country", "required timeline"]
+  },
   "free_tools": [
     {
       "title": "Free Dieline Template Generator",

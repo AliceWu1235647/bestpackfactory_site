@@ -23,6 +23,7 @@
     "check:sitemap": "node scripts/check-sitemap-index.mjs",
     "check:verified-facts": "node scripts/check-verified-facts.mjs",
     "check:structured-data": "node scripts/check-public-structured-data.mjs",
+    "check:product-hub": "node scripts/check-product-entity-hub.mjs",
     "check:protected-markup": "node scripts/check-protected-markup.mjs",
     "check:codex": "npm run lint:links && npm run check:r2-content && npm run check:hybrid && npm run check:sitemap && npm run build",
     "build:codex": "npm run build",
