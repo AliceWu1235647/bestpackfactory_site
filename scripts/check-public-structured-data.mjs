@@ -1,10 +1,12 @@
-import { listHtmlRoutes, pageFromHtml, readHtml } from '../lib/static-pages.js';
+import { listHtmlRoutes, normalizeArticleJsonLd, pageFromHtml, readHtml } from '../lib/static-pages.js';
 import { readFileSync } from 'node:fs';
 
 const routes = listHtmlRoutes();
 const failures = [];
 let jsonLdBlocks = 0;
 let productNodes = 0;
+let articleNodes = 0;
+let articleImagesAddedFromMetadata = 0;
 
 function visit(value, route) {
   if (Array.isArray(value)) {
@@ -20,6 +22,13 @@ function visit(value, route) {
     if (Object.prototype.hasOwnProperty.call(value, 'offers')) {
       failures.push(`${route}: custom-quote Product still exposes offers`);
     }
+  }
+
+  if (types.some(type => ['Article', 'BlogPosting', 'NewsArticle', 'TechArticle'].includes(type))) {
+    articleNodes += 1;
+    if (!value.description) failures.push(`${route}: Article is missing description`);
+    if (!value.publisher?.name) failures.push(`${route}: Article publisher is missing name`);
+    if (!value.publisher?.logo) failures.push(`${route}: Article publisher is missing logo`);
   }
 
   Object.values(value).forEach(item => visit(item, route));
@@ -38,7 +47,16 @@ for (const route of routes) {
     failures.push(`${route}: duplicate JSON-LD payloads after extraction`);
   }
 
-  for (const json of page.jsonLd) {
+  const renderedJsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
+  if (page.metadata?.openGraph?.images) {
+    for (let index = 0; index < page.jsonLd.length; index += 1) {
+      if (!/"image"\s*:/.test(page.jsonLd[index]) && /"image"\s*:/.test(renderedJsonLd[index])) {
+        articleImagesAddedFromMetadata += 1;
+      }
+    }
+  }
+
+  for (const json of renderedJsonLd) {
     jsonLdBlocks += 1;
     try {
       visit(JSON.parse(json), route);
@@ -59,4 +77,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Structured-data check passed: ${routes.length} HTML pages, ${jsonLdBlocks} unique blocks, ${productNodes} Product nodes, no duplicate body output, no unsupported Product offers.`);
+console.log(`Structured-data check passed: ${routes.length} HTML pages, ${jsonLdBlocks} unique blocks, ${articleNodes} Article nodes, ${articleImagesAddedFromMetadata} Article images reused from existing metadata, ${productNodes} Product nodes, no duplicate body output, no unsupported Product offers.`);

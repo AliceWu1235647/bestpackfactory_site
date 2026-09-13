@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getContentPageBySlug, listStaticContentSlugs } from '../../../lib/content-pages';
 import { cleanContentSlug, contentTag } from '../../../lib/r2-content';
 import { enhanceBlogPostBody } from '../../../lib/blog-post-enhancements';
+import { normalizeArticleJsonLd } from '../../../lib/static-pages';
 
 export const revalidate = 3600;
 export const dynamic = 'force-static';
@@ -29,10 +30,11 @@ export default async function BlogPostRoute({ params }) {
   const page = await getContentPageBySlug('blog', slug);
   if (!page) notFound();
   const body = enhanceBlogPostBody(page, slug);
+  const jsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: body }} suppressHydrationWarning={true} />
-      {page.jsonLd.map((json, index) => (
+      {jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
       ))}
     </>
