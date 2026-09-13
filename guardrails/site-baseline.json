@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T21:33:31.352Z",
+  "generatedAt": "2026-09-13T23:01:30.023Z",
   "generatedFromCommit": "10d87158910db81c62baac28c3275437d7f005cd",
   "identity": {
     "repositoryId": 1275025881,
@@ -49,12 +49,12 @@
       "sha256": "60e722d56d95f8cb0044a33748cb6e8f0aa6cd3335c38202e16846624ee15441"
     },
     "app/dielines/page.js": {
-      "bytes": 9904,
+      "bytes": 9848,
       "sha256": "1f4de29bdd4e21592444cac505657925b4e6976be9d162c86b87938c1e73623f"
     },
     "app/dielines/DielineGenerator.js": {
-      "bytes": 9721,
-      "sha256": "af2d68ae4e4d2ded45dedfda5460c11dfdd3d23134e18f18a61a902c859812c6"
+      "bytes": 12402,
+      "sha256": "1964207d3464f969a9e95ba712b46f90b79d8ace180a99a8613d13acee23e356"
     },
     "app/dielines/dielines.module.css": {
       "bytes": 8971,
@@ -69,15 +69,15 @@
       "sha256": "d995896bef64627945ac4773fdc4e6c77d7108afb97baf5ded828dd2752507cd"
     },
     "lib/dielines/build.js": {
-      "bytes": 5342,
+      "bytes": 5303,
       "sha256": "0a5441956c118e91894a5b561cf796e647f64b38259cc402a6f28ecab9c43f42"
     },
     "lib/dielines/geometry.js": {
-      "bytes": 4995,
+      "bytes": 4989,
       "sha256": "df0d621534205a2fa80bac97c2dd80862ac022788ceac864ca5c7e2c3438189a"
     },
     "lib/dielines/export-svg.js": {
-      "bytes": 3070,
+      "bytes": 3069,
       "sha256": "9aaaee36010799414e91c71e0dcdca9dd995d43ea7257895b12b6a0dc2147e9e"
     },
     "lib/dielines/export-pdf.js": {
@@ -133,7 +133,7 @@
       "sha256": "1fac66fd8fa617a07db8193c6b7926a4a801d37e90f028000900100f3503fedd"
     },
     "public/robots.txt": {
-      "bytes": 595,
+      "bytes": 592,
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "public/sitemap.xml": {
@@ -147,7 +147,7 @@
       "sha256": "bcacb8c51ad1a7bd0c154c8cca430979fbec63037b8df19b9ad331625b72a582"
     },
     "content-site/ai-index.json": {
-      "bytes": 44229,
+      "bytes": 44212,
       "sha256": "e660af78545fb28b00075857f13ec9a19ea4957aba60508de64cb2d331d6138e"
     },
     "content-site/ai-rfq-intent-map.json": {
@@ -2775,8 +2775,8 @@
       "sha256": "bb375c80da345c7bf82d8f4c0e8c6c312c4cbed8ea03b8d5a88ba8de60558cee"
     },
     "content-site/contact.html": {
-      "bytes": 11503,
-      "sha256": "9136dfaaadb78b319f95e886796bd9706cfbbba2a6c3bd33288e81b6d09d0c16"
+      "bytes": 12013,
+      "sha256": "084eedc212d7d2af30a3c1bc5ca4b869be139e7b2a31ff0c945ef14400819b03"
     },
     "content-site/css/i18n.css": {
       "bytes": 1616,
@@ -3639,7 +3639,7 @@
       "sha256": "a654828d1604ea9fed2dcda2f508d4542ca28a628018d261e63ca8434644ec3e"
     },
     "content-site/llms.txt": {
-      "bytes": 24920,
+      "bytes": 24913,
       "sha256": "0a8230a1eb6c5c1570f7580de4c8ee6abe355bfc15f3a1b7e2bb559aa52570be"
     },
     "content-site/materials.html": {
@@ -4147,7 +4147,7 @@
       "sha256": "e1bee5fbf218265c15ef60b5669d1b43564ba1022e0f256fd6cac4b19e6c1c3e"
     },
     "content-site/robots.txt": {
-      "bytes": 595,
+      "bytes": 592,
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "content-site/samples.html": {
