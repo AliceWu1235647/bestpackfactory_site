@@ -50,6 +50,14 @@ export default async function StaticHtmlRoute({ params }) {
   const jsonLd = normalizePageEntityJsonLd(productJsonLd, page.metadata);
   return (
     <>
+      {/(^|\/)products\.html$/.test(route) ? (
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/products/custom-boxes-01-640.webp"
+          fetchPriority="high"
+        />
+      ) : null}
       <div dangerouslySetInnerHTML={{ __html: body }} suppressHydrationWarning={true} />
       {jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
