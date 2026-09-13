@@ -25,7 +25,7 @@
   },
   "cloudflare": {
     "configured": false,
-    "accountId": null,
+    "accountId": "c817ebe138fc02b49431ed951f8e062f",
     "bucketName": null,
     "accountIdEnv": "CLOUDFLARE_ACCOUNT_ID",
     "bucketNameEnv": "R2_BUCKET_NAME"

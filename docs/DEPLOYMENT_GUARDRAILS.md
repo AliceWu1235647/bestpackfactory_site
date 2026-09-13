@@ -6,10 +6,10 @@
 
 - GitHub 仓库：`AliceWu1235647/bestpackfactory_site`，仓库 ID `1275025881`
 - Vercel 项目：`bestpackfactory-site-gmrk`，项目 ID `prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4`
-- 禁止项目：旧项目 `bestpackfactory-site`（`prj_5ZusTqnQpUHSLitLydgDcdG5f652`）仍连接同一仓库并以 `main` 为生产分支；在获得单独授权断开前，任何脚本都不得链接、部署或回滚这个项目
-- GitHub deployment 门禁只接受环境名 `Preview – bestpackfactory-site-gmrk` 与 `Production – bestpackfactory-site-gmrk`；旧项目即使构建成功也只能得到 skipped，不能触发验收、Promote 或回滚逻辑
+- 禁止项目：旧项目 `bestpackfactory-site`（`prj_5ZusTqnQpUHSLitLydgDcdG5f652`）已于 2026-09-14 解除 Git 连接；项目和历史部署保留，但任何脚本仍不得链接、部署或回滚这个项目
+- GitHub deployment 门禁只接受 Vercel 机器人创建的 `Preview`/`Production` 事件，并要求 deployment URL 以 `https://bestpackfactory-site-gmrk-` 开头且以 `.vercel.app` 结尾；其他项目不能触发验收、Promote 或回滚逻辑
 - 当前 Vercel 生产分支：`restored-correct-20260904`
-- Cloudflare Account ID 与 R2 bucket：尚未完成只读核验，所以 `guardrails/site-identity.json` 保持 `configured: false`
+- Cloudflare Account ID 已通过只读 OAuth 核验并固定；Wrangler OAuth 没有独立的 R2 read scope，R2 bucket 尚未核验，所以 `guardrails/site-identity.json` 继续保持 `configured: false`
 - GitHub 默认分支与 Vercel Production Branch 已于 2026-09-13 统一为 `restored-correct-20260904`；仓库 ID、项目 ID、生产提交和回滚 deployment 已读回核验。
 
 账号密码不得写入仓库、`.env`、脚本、报告或聊天提示。GitHub 使用 OAuth/`gh auth`，Vercel 使用范围受限 token，Cloudflare 使用仅限目标 R2 bucket 的 token。
@@ -20,7 +20,7 @@
 2. 先运行 `npm run guard:identity`，确认当前文件夹、GitHub remote、仓库 ID 与分支祖先完全正确。
 3. 修改完成后运行 `npm run guard:ci`。现有 520 个页面、504 张图片、5 个语言目录、18 个布局/运行文件以及 460 个 sitemap URL/lastmod 都会与冻结基线核对。
 4. 运行 `npm run deploy` 只创建 Vercel Preview。`npm run deploy -- --prod` 已被硬禁用。
-5. Preview 的 GitHub Deployment Status 会触发 `guardrails / complete-preview-acceptance`，逐页检查 canonical/hreflang/关键布局标记，逐张下载图片并核对 SHA-256，同时要求 R2 products/blog/news 三个索引全部健康。
+5. Preview 的 GitHub Deployment Status 会触发 `guardrails / preview / bestpackfactory-site-gmrk`，逐页检查 canonical/hreflang/关键布局标记，逐张下载图片并核对 SHA-256，同时要求 R2 products/blog/news 三个索引全部健康。
 6. 只有 required checks 全绿且人工确认 Preview 后，才允许把这个已经验证的 Preview 提升为 Production。不得从本地重新构建一个“看起来相同”的生产包。
 7. Production 上线后自动再验收一次。失败时工作流调用 Vercel rollback 恢复上一版，并把检查标红。
 
@@ -57,12 +57,12 @@ npm run guard:r2:build -- --source <完整快照目录> --previous-manifest <上
 
 以下动作在代码合并前必须完成：
 
-1. 在 GitHub Ruleset/Branch protection 中，把以下 checks 设为合并必需：
+1. GitHub Ruleset `BestPack production guardrails` 已启用，并把以下 checks 设为 `restored-correct-20260904` 的合并必需：
    - `guardrails / immutable-site-assets`
-   - `guardrails / preview / Preview – bestpackfactory-site-gmrk`
+   - `guardrails / preview / bestpackfactory-site-gmrk`
 2. 在 Vercel 为 Production 启用 Deployment Checks，要求 Preview 门禁成功后才可 Promote。
-3. GitHub Actions secrets 配置 `VERCEL_TOKEN`；若 Preview 开了保护，再配置 `VERCEL_AUTOMATION_BYPASS_SECRET`。token 只授权这个 Vercel 项目。
-4. 只读核验 Cloudflare Account ID、R2 bucket 与当前对象后，把精确值固定到 `site-identity.json`，并为发布器使用仅能读写这个 bucket 的 token。
+3. 专用 `VERCEL_AUTOMATION_BYPASS_SECRET` 已写入 GitHub Actions；生产自动回滚还需要核验 `VERCEL_TOKEN` 仅授权正确 Vercel 项目。
+4. Cloudflare Account ID 已核验；还需使用 `Workers R2 Storage Read`/R2 `Admin Read only` token 只读列出 bucket 与当前对象，再把精确 bucket 固定到 `site-identity.json`。发布器应另用仅能读写这个 bucket 的 token，不能复用盘点 token。
 5. 先恢复 `/api/r2-health` 为全绿，再启用自动生产发布。当前 products/blog/news 三个 R2 index 不可用，因此门禁会按设计阻断。
 
 ## 紧急回滚
