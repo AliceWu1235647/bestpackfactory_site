@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "siteUrl": "https://www.bestpackfactory.com",
   "packageName": "bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready",
-  "sourceOfTruthStatus": "blocked-branch-unification-required",
+  "sourceOfTruthStatus": "ready",
   "git": {
     "repository": "AliceWu1235647/bestpackfactory_site",
     "repositoryId": 1275025881,
     "ownerId": 294268451,
     "productionBranch": "restored-correct-20260904",
-    "observedDefaultBranch": "main",
+    "observedDefaultBranch": "restored-correct-20260904",
     "allowedRemoteUrls": [
       "https://github.com/AliceWu1235647/bestpackfactory_site.git",
       "git@github.com:AliceWu1235647/bestpackfactory_site.git"
@@ -28,6 +28,15 @@
     "bucketNameEnv": "R2_BUCKET_NAME"
   },
   "production": {
+    "lastApprovedCommit": "10d87158910db81c62baac28c3275437d7f005cd",
+    "lastApprovedDeploymentId": "dpl_9id5CtRZ7RQzYS6oNGpeNxTSPUr1",
+    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-mzh6jzngg-alicewu1235647s-projects.vercel.app",
+    "allowedDomains": [
+      "bestpackfactory.com",
+      "www.bestpackfactory.com",
+      "bestpackfactory-site-gmrk.vercel.app"
+    ],
+    "allowedPreviewDomainSuffix": ".vercel.app",
     "r2HealthPath": "/api/r2-health",
     "requiredR2Indexes": ["products", "blog", "news"],
     "canonicalOverrides": {

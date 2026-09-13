@@ -8,7 +8,7 @@
 - Vercel 项目：`bestpackfactory-site-gmrk`，项目 ID `prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4`
 - 当前 Vercel 生产分支：`restored-correct-20260904`
 - Cloudflare Account ID 与 R2 bucket：尚未完成只读核验，所以 `guardrails/site-identity.json` 保持 `configured: false`
-- GitHub 默认分支仍是 `main`，与 Vercel 生产分支不一致，所以 `sourceOfTruthStatus` 保持阻断状态。禁止为了通过检查而手工改成 `ready`。
+- GitHub 默认分支与 Vercel Production Branch 已于 2026-09-13 统一为 `restored-correct-20260904`；仓库 ID、项目 ID、生产提交和回滚 deployment 已读回核验。
 
 账号密码不得写入仓库、`.env`、脚本、报告或聊天提示。GitHub 使用 OAuth/`gh auth`，Vercel 使用范围受限 token，Cloudflare 使用仅限目标 R2 bucket 的 token。
 
@@ -55,14 +55,13 @@ npm run guard:r2:build -- --source <完整快照目录> --previous-manifest <上
 
 以下动作在代码合并前必须完成：
 
-1. 统一 GitHub 默认分支和 Vercel Production Branch，核对实际生产 HEAD 后再把 `sourceOfTruthStatus` 改成 `ready`。
-2. 在 GitHub Ruleset/Branch protection 中，把以下 checks 设为合并必需：
+1. 在 GitHub Ruleset/Branch protection 中，把以下 checks 设为合并必需：
    - `guardrails / immutable-site-assets`
    - `guardrails / complete-preview-acceptance`
-3. 在 Vercel 为 Production 启用 Deployment Checks，要求 Preview 门禁成功后才可 Promote。
-4. GitHub Actions secrets 配置 `VERCEL_TOKEN`；若 Preview 开了保护，再配置 `VERCEL_AUTOMATION_BYPASS_SECRET`。token 只授权这个 Vercel 项目。
-5. 只读核验 Cloudflare Account ID、R2 bucket 与当前对象后，把精确值固定到 `site-identity.json`，并为发布器使用仅能读写这个 bucket 的 token。
-6. 先恢复 `/api/r2-health` 为全绿，再启用自动生产发布。当前 products/blog/news 三个 R2 index 不可用，因此门禁会按设计阻断。
+2. 在 Vercel 为 Production 启用 Deployment Checks，要求 Preview 门禁成功后才可 Promote。
+3. GitHub Actions secrets 配置 `VERCEL_TOKEN`；若 Preview 开了保护，再配置 `VERCEL_AUTOMATION_BYPASS_SECRET`。token 只授权这个 Vercel 项目。
+4. 只读核验 Cloudflare Account ID、R2 bucket 与当前对象后，把精确值固定到 `site-identity.json`，并为发布器使用仅能读写这个 bucket 的 token。
+5. 先恢复 `/api/r2-health` 为全绿，再启用自动生产发布。当前 products/blog/news 三个 R2 index 不可用，因此门禁会按设计阻断。
 
 ## 紧急回滚
 
