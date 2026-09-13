@@ -1,10 +1,18 @@
 'use client';
 
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useState, useCallback, useEffect, useRef } from 'react';
 import { previewSVG, renderFormat } from '../../lib/dielines/build.js';
 import { LAYER_STYLE, LAYERS } from '../../lib/dielines/geometry.js';
-import { sendGaEvent } from '../GeoAnalytics.js';
+import { sendGaEvent, setDielineContext, pageLanguageFromPath } from '../GeoAnalytics.js';
 import styles from './dielines.module.css';
+
+// Buckets an exact millimetre value into a coarse range so dimension_range stays
+// a low-cardinality GA4 dimension instead of one unique value per visitor input.
+function bucketDimension(mm) {
+  if (!Number.isFinite(mm) || mm < 0) return 'unknown';
+  const bucketStart = Math.floor(mm / 100) * 100;
+  return `${bucketStart}-${bucketStart + 100}mm`;
+}
 
 const FORMATS = [
   { id: 'pdf', label: 'PDF', hint: 'print ready', primary: true },
@@ -33,6 +41,18 @@ export default function DielineGenerator({ entry }) {
   const [activePreset, setActivePreset] = useState(0);
   const [busy, setBusy] = useState('');
 
+  // Fires once per mount: a visitor opened this structure's generator.
+  useEffect(() => {
+    sendGaEvent('dieline_view', {
+      dieline_type: entry.slug,
+      product_category: entry.category || '',
+      page_language: pageLanguageFromPath(window.location.pathname)
+    });
+    // Intentionally re-run only if the structure itself changes (catalog route swap),
+    // not on every param edit — that is dieline_generate's job below.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [entry.slug]);
+
   const setValue = useCallback((key, value) => {
     setParams(prev => ({ ...prev, [key]: value }));
     setActivePreset(-1);
@@ -52,6 +72,28 @@ export default function DielineGenerator({ entry }) {
       return { svg: null, error: err.message };
     }
   }, [entry, params]);
+
+  // Debounced dieline_generate: skips the initial render (already covered by
+  // dieline_view) and only counts settled edits, not every keystroke/slider tick.
+  const firstGenerate = useRef(true);
+  useEffect(() => {
+    if (firstGenerate.current) {
+      firstGenerate.current = false;
+      return;
+    }
+    if (error) return;
+    const timer = setTimeout(() => {
+      const numericFields = entry.fields.filter(f => f.type !== 'bool');
+      const maxDim = Math.max(0, ...numericFields.map(f => Number(params[f.key]) || 0));
+      sendGaEvent('dieline_generate', {
+        dieline_type: entry.slug,
+        dimension_range: bucketDimension(maxDim),
+        page_language: pageLanguageFromPath(window.location.pathname)
+      });
+    }, 600);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [entry, params, error]);
 
   const sheet = useMemo(() => {
     try {
@@ -74,10 +116,30 @@ export default function DielineGenerator({ entry }) {
       a.click();
       document.body.removeChild(a);
       setTimeout(() => URL.revokeObjectURL(url), 1500);
+      const numericFields = entry.fields.filter(f => f.type !== 'bool');
+      const dimensions = numericFields.map(f => params[f.key]).join('x');
+      const maxDim = Math.max(0, ...numericFields.map(f => Number(params[f.key]) || 0));
+      const language = pageLanguageFromPath(window.location.pathname);
       sendGaEvent('dieline_download', {
+        // Legacy fields, kept as-is so existing GA4 reports do not break.
         dieline: entry.slug,
         format,
-        dimensions: entry.fields.filter(f => f.type !== 'bool').map(f => params[f.key]).join('x')
+        dimensions,
+        // Names requested by the Section 5 conversion-funnel spec.
+        dieline_type: entry.slug,
+        file_format: format,
+        dimension_range: bucketDimension(maxDim),
+        product_category: entry.category || '',
+        page_language: language
+      });
+      setDielineContext({
+        slug: entry.slug,
+        name: entry.name,
+        dimensions,
+        format,
+        language,
+        productCategory: entry.category || '',
+        relatedProduct: entry.relatedProduct || ''
       });
     } catch (err) {
       // Surface a real message rather than failing silently on the button.
@@ -86,6 +148,7 @@ export default function DielineGenerator({ entry }) {
       setBusy('');
     }
   }, [entry, params]);
+
 
   const numeric = entry.fields.filter(f => f.type !== 'bool');
   const flags = entry.fields.filter(f => f.type === 'bool');

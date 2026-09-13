@@ -42,6 +42,7 @@ function trackSuccessfulQuote(method, submitted) {
   };
   sendGaEvent('quote_submit', params);
   sendGaEvent('generate_lead', params);
+  sendGaEvent('quote_form_submit', { ...params, form_id: 'contactQuoteForm' });
 }
 
 async function formSubmitFallback(data) {
