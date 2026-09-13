@@ -31,8 +31,7 @@ const report = [];
 const browser = await chromium.launch();
 const bypassSecret = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 const extraHTTPHeaders = bypassSecret ? {
-  'x-vercel-protection-bypass': bypassSecret,
-  'x-vercel-set-bypass-cookie': 'true'
+  'x-vercel-protection-bypass': bypassSecret
 } : undefined;
 
 for (const [routeName, route] of routes.filter(([name]) => !routeFilter || name === routeFilter)) {

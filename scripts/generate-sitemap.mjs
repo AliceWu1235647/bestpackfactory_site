@@ -12,6 +12,20 @@ const outputs = [
   path.join(contentRoot, 'sitemap.xml')
 ];
 
+// Preserve the lastmod already published for an unchanged URL. Falling back to
+// checkout mtimes rewrites the whole sitemap in fresh clones and worktrees even
+// when no page content changed, which creates false recrawl signals.
+const existingLastmods = new Map();
+for (const output of outputs) {
+  if (!fs.existsSync(output)) continue;
+  const xml = fs.readFileSync(output, 'utf8');
+  for (const block of xml.matchAll(/<url>([\s\S]*?)<\/url>/gi)) {
+    const loc = block[1].match(/<loc>([\s\S]*?)<\/loc>/i)?.[1]?.trim();
+    const lastmod = block[1].match(/<lastmod>([\s\S]*?)<\/lastmod>/i)?.[1]?.trim();
+    if (loc && lastmod && !existingLastmods.has(loc)) existingLastmods.set(loc, lastmod);
+  }
+}
+
 function dielineSizeSlug(name) {
   return String(name).toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
@@ -39,12 +53,13 @@ function sitemapDate(value) {
   return Number.isNaN(date.getTime()) ? '' : date.toISOString().slice(0, 10);
 }
 
-function lastModified(html, file) {
+function lastModified(html, file, canonical) {
   const structuredDates = [
     ...[...html.matchAll(/["']dateModified["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1])),
     ...[...html.matchAll(/["']datePublished["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1]))
   ].filter(Boolean).sort();
   if (structuredDates.length) return structuredDates[structuredDates.length - 1];
+  if (canonical && existingLastmods.has(canonical)) return existingLastmods.get(canonical);
   return sitemapDate(fs.statSync(file).mtime);
 }
 
@@ -152,7 +167,7 @@ for (const file of walkHtml(contentRoot)) {
   }
   const entry = {
     loc: canonical,
-    lastmod: lastModified(html, file),
+    lastmod: lastModified(html, file, canonical),
     ...pageHints(canonical),
     alternates: sitemapAlternates(routeFromFile(file))
   };

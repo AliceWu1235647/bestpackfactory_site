@@ -1,0 +1,47 @@
+name: BestPack Site Guardrails
+
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches:
+      - restored-correct-20260904
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bestpack-site-guardrails-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  immutable-site-assets:
+    name: guardrails / immutable-site-assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout complete history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install pinned dependencies
+        run: npm ci
+
+      - name: Verify repository identity
+        run: node scripts/check-repository-identity.mjs --mode=ci
+
+      - name: Verify old pages, locales, layouts, images, and sitemap signals
+        run: node scripts/check-site-protection.mjs
+
+      - name: Run technical checks and build
+        run: npm run guard:ci
+
+      - name: Ensure build did not rewrite existing sitemap dates
+        run: git diff --exit-code -- content-site/sitemap.xml public/sitemap.xml

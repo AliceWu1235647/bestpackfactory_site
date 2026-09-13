@@ -11,6 +11,7 @@ const vercelCommand = isWindows ? 'vercel.cmd' : 'vercel';
 const argumentsList = process.argv.slice(2);
 const supportedArguments = new Set([
   '--prod',
+  '--preview',
   '--dry-run',
   '--skip-install',
   '--allow-missing-email',
@@ -24,8 +25,9 @@ Usage:
   node scripts/deploy.mjs [options]
 
 Options:
-  --prod                 Deploy to the linked Vercel production project
-  --dry-run              Run production checks and build without deploying
+  --preview              Deploy a Preview after all local guardrails pass
+  --prod                 Disabled; production requires release:verified-preview
+  --dry-run              Run all checks and build without deploying
   --skip-install         Skip npm dependency installation
   --allow-missing-email  Allow deployment without complete SMTP configuration
   --help                 Show this help message
@@ -34,6 +36,7 @@ Examples:
   npm run deploy:check
   npm run deploy:dry-run
   npm run deploy
+  npm run release:verified-preview -- --preview <url> --rollback <url>
 `);
 }
 
@@ -112,12 +115,16 @@ if (argumentsList.includes('--help')) {
   process.exit(0);
 }
 
-const deployToProduction = argumentsList.includes('--prod');
+if (argumentsList.includes('--prod')) {
+  fail('Direct production deployment is disabled. Validate a Preview, then use npm run release:verified-preview with explicit approval and rollback targets.');
+}
+
+const deployToPreview = argumentsList.includes('--preview');
 const dryRun = argumentsList.includes('--dry-run');
 const skipInstall = argumentsList.includes('--skip-install');
 const allowMissingEmail = argumentsList.includes('--allow-missing-email');
 
-console.log('🚀 Starting BestPack Factory deployment checks...');
+console.log('Starting BestPack Factory guarded deployment checks...');
 
 const nodeMajorVersion = Number(process.versions.node.split('.')[0]);
 if (!Number.isFinite(nodeMajorVersion) || nodeMajorVersion < 20) {
@@ -133,7 +140,7 @@ const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
 console.log(`✅ Project: ${packageJson.name || 'bestpackfactory-site'}`);
 console.log(`✅ Node.js: ${process.versions.node}`);
 
-if (deployToProduction) {
+if (deployToPreview) {
   const vercelProjectPath = path.join(projectDirectory, '.vercel', 'project.json');
   if (!existsSync(vercelProjectPath)) {
     fail('This folder is not linked to Vercel. Run "vercel link" first.');
@@ -143,8 +150,8 @@ if (deployToProduction) {
     fail('Vercel CLI was not found. Install it with "npm install --global vercel".');
   }
 
-  console.log('\n🔎 Checking Vercel Production environment variables...');
-  const environmentOutput = run(vercelCommand, ['env', 'ls', 'production'], {
+  console.log('\nChecking Vercel Preview environment variable names...');
+  const environmentOutput = run(vercelCommand, ['env', 'ls', 'preview'], {
     capture: true,
   });
   const environmentNames = readVercelEnvironmentNames(environmentOutput);
@@ -156,11 +163,7 @@ if (deployToProduction) {
   if (missingEmailVariables.length > 0) {
     const missingList = missingEmailVariables.join(', ');
     if (!allowMissingEmail) {
-      fail(
-        `Production email configuration is incomplete: ${missingList}. ` +
-          'Add these variables in Vercel, or deliberately bypass this safeguard with --allow-missing-email.',
-        2,
-      );
+      console.warn(`Preview email configuration is incomplete: ${missingList}. Preview form delivery must be tested separately.`);
     }
     console.warn(`⚠️ Continuing without complete email configuration: ${missingList}`);
   } else {
@@ -184,14 +187,20 @@ if (!skipInstall) {
   console.log('\n⏭️ Dependency installation skipped.');
 }
 
-console.log('\n🔨 Generating sitemaps and building the project...');
+console.log('\nRunning repository identity and immutable-site checks...');
+run(process.execPath, ['scripts/check-repository-identity.mjs', '--mode=local']);
+run(process.execPath, ['scripts/check-site-protection.mjs']);
+run(npmCommand, ['run', 'check:protected-markup']);
+
+console.log('\nGenerating sitemaps and building the project...');
 console.log('\nRunning traffic and technical SEO checks...');
 run(npmCommand, ['run', 'traffic:check']);
 run(npmCommand, ['run', 'build']);
 console.log('\n✅ Production build completed successfully.');
+run(process.execPath, ['scripts/check-site-protection.mjs']);
 
-if (!deployToProduction) {
-  console.log('ℹ️ No deployment was requested. Run "npm run deploy" when ready.');
+if (!deployToPreview) {
+  console.log('No deployment was requested. All local guardrails passed.');
   process.exit(0);
 }
 
@@ -200,6 +209,6 @@ if (dryRun) {
   process.exit(0);
 }
 
-console.log('\n🚀 Deploying the verified build to Vercel Production...');
-run(vercelCommand, ['--prod', '--yes']);
-console.log('\n🎉 BestPack Factory was deployed successfully.');
+console.log('\nDeploying the verified build to Vercel Preview...');
+run(vercelCommand, ['deploy', '--yes']);
+console.log('\nBestPack Factory Preview was created. Production was not changed.');

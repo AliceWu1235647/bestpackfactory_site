@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "siteUrl": "https://www.bestpackfactory.com",
+  "packageName": "bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready",
+  "sourceOfTruthStatus": "ready",
+  "git": {
+    "repository": "AliceWu1235647/bestpackfactory_site",
+    "repositoryId": 1275025881,
+    "ownerId": 294268451,
+    "productionBranch": "restored-correct-20260904",
+    "observedDefaultBranch": "restored-correct-20260904",
+    "allowedRemoteUrls": [
+      "https://github.com/AliceWu1235647/bestpackfactory_site",
+      "https://github.com/AliceWu1235647/bestpackfactory_site.git",
+      "git@github.com:AliceWu1235647/bestpackfactory_site.git"
+    ]
+  },
+  "vercel": {
+    "orgId": "team_imNQTfSTG7UsB1hYxcv1bok0",
+    "projectId": "prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4",
+    "projectName": "bestpackfactory-site-gmrk",
+    "productionBranch": "restored-correct-20260904",
+    "deniedProjectIds": ["prj_5ZusTqnQpUHSLitLydgDcdG5f652"],
+    "deniedProjectNames": ["bestpackfactory-site"]
+  },
+  "cloudflare": {
+    "configured": false,
+    "accountId": "c817ebe138fc02b49431ed951f8e062f",
+    "bucketName": null,
+    "accountIdEnv": "CLOUDFLARE_ACCOUNT_ID",
+    "bucketNameEnv": "R2_BUCKET_NAME"
+  },
+  "production": {
+    "lastApprovedCommit": "10d87158910db81c62baac28c3275437d7f005cd",
+    "lastApprovedDeploymentId": "dpl_9id5CtRZ7RQzYS6oNGpeNxTSPUr1",
+    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-mzh6jzngg-alicewu1235647s-projects.vercel.app",
+    "allowedDomains": [
+      "bestpackfactory.com",
+      "www.bestpackfactory.com",
+      "bestpackfactory-site-gmrk.vercel.app"
+    ],
+    "allowedPreviewDomainSuffix": ".vercel.app",
+    "r2HealthPath": "/api/r2-health",
+    "requiredR2Indexes": ["products", "blog", "news"],
+    "canonicalOverrides": {
+      "/products/custom-food-packaging.html": "https://www.bestpackfactory.com/products/food-packaging.html",
+      "/products/custom-paper-bags.html": "https://www.bestpackfactory.com/products/paper-bags.html"
+    }
+  },
+  "protection": {
+    "locales": ["ar", "de", "es", "fr", "ja"],
+    "protectedLayoutFiles": [
+      "app/layout.js",
+      "app/WhatsAppWidget.js",
+      "app/page.js",
+      "app/[...path]/page.js",
+      "app/products/[slug]/page.js",
+      "app/blog/[slug]/page.js",
+      "app/news/[slug]/page.js",
+      "lib/locales.js",
+      "content-site/css/style.css",
+      "content-site/css/i18n.css",
+      "content-site/css/rtl.css",
+      "content-site/js/main.js",
+      "content-site/js/main-bootstrap.js",
+      "public/css/style.css",
+      "public/css/i18n.css",
+      "public/css/rtl.css",
+      "public/js/main.js",
+      "public/js/main-bootstrap.js"
+    ],
+    "protectedContentRoot": "content-site",
+    "protectedAssetRoot": "public/assets",
+    "sitemapFile": "public/sitemap.xml"
+  }
+}
+

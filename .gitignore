@@ -4,6 +4,7 @@ node_modules/
 !.env.example
 *.log
 artifacts/
+guardrails/r2-releases/
 
 .vercel
 shots_p1/

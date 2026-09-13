@@ -1,0 +1,40 @@
+name: BestPack Preview Guardrails
+
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bestpack-preview-${{ github.event.deployment.id }}
+  cancel-in-progress: true
+
+jobs:
+  complete-preview-acceptance:
+    name: guardrails / preview / bestpackfactory-site-gmrk
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'Preview' &&
+      github.event.deployment.creator.login == 'vercel[bot]' &&
+      startsWith(github.event.deployment_status.environment_url || github.event.deployment_status.target_url, 'https://bestpackfactory-site-gmrk-') &&
+      endsWith(github.event.deployment_status.environment_url || github.event.deployment_status.target_url, '.vercel.app')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout the exact deployed commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 0
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Verify every protected page and image on Preview
+        env:
+          PREVIEW_URL: ${{ github.event.deployment_status.environment_url || github.event.deployment_status.target_url }}
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+        run: node scripts/check-preview.mjs --url "$PREVIEW_URL" --retries 3 --asset-mode hash --concurrency 16
