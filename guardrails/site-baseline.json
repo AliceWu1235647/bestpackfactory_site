@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T19:22:55.743Z",
+  "generatedAt": "2026-09-13T21:29:35.219Z",
   "generatedFromCommit": "10d87158910db81c62baac28c3275437d7f005cd",
   "identity": {
     "repositoryId": 1275025881,
@@ -65,8 +65,8 @@
       "sha256": "3bca51357e88044b744c4f438739b79a6bcdce399163f6e560b38421f8ef8b0e"
     },
     "lib/dielines/catalog.js": {
-      "bytes": 52065,
-      "sha256": "d9efbd145171d6377c153493e882b4c571b0503fc1a2fdb40cf1b7cd5c2f0dba"
+      "bytes": 54689,
+      "sha256": "d995896bef64627945ac4773fdc4e6c77d7108afb97baf5ded828dd2752507cd"
     },
     "lib/dielines/build.js": {
       "bytes": 5342,
@@ -129,7 +129,7 @@
       "sha256": "624891e371a88fdd96cf9e1762112ca740e284de3419d79ce842968964577d03"
     },
     "scripts/generate-sitemap.mjs": {
-      "bytes": 8477,
+      "bytes": 8498,
       "sha256": "1fac66fd8fa617a07db8193c6b7926a4a801d37e90f028000900100f3503fedd"
     },
     "public/robots.txt": {
