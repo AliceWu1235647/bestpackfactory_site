@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T19:22:55.743Z",
+  "generatedAt": "2026-09-13T21:33:31.352Z",
   "generatedFromCommit": "10d87158910db81c62baac28c3275437d7f005cd",
   "identity": {
     "repositoryId": 1275025881,
@@ -17,7 +17,7 @@
       "fr": 23,
       "ja": 23
     },
-    "sitemapUrls": 460
+    "sitemapUrls": 469
   },
   "protectedFiles": {
     "app/layout.js": {
@@ -65,8 +65,8 @@
       "sha256": "3bca51357e88044b744c4f438739b79a6bcdce399163f6e560b38421f8ef8b0e"
     },
     "lib/dielines/catalog.js": {
-      "bytes": 52065,
-      "sha256": "d9efbd145171d6377c153493e882b4c571b0503fc1a2fdb40cf1b7cd5c2f0dba"
+      "bytes": 54689,
+      "sha256": "d995896bef64627945ac4773fdc4e6c77d7108afb97baf5ded828dd2752507cd"
     },
     "lib/dielines/build.js": {
       "bytes": 5342,
@@ -129,7 +129,7 @@
       "sha256": "624891e371a88fdd96cf9e1762112ca740e284de3419d79ce842968964577d03"
     },
     "scripts/generate-sitemap.mjs": {
-      "bytes": 8477,
+      "bytes": 8498,
       "sha256": "1fac66fd8fa617a07db8193c6b7926a4a801d37e90f028000900100f3503fedd"
     },
     "public/robots.txt": {
@@ -137,8 +137,8 @@
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "public/sitemap.xml": {
-      "bytes": 181094,
-      "sha256": "8403b3b8624e927140b66d0e8f6f19571c1d4db48b9009ef952a090330adbdd7"
+      "bytes": 182126,
+      "sha256": "c3131663101f56efa16923048e2465d91c232fbc7baeb7574d41965d6c10c175"
     }
   },
   "contentFiles": {
@@ -4159,8 +4159,8 @@
       "sha256": "00538ba44127eeae0e21688756a81fd284871c3c070658331ac6203b0bb21567"
     },
     "content-site/sitemap.xml": {
-      "bytes": 181094,
-      "sha256": "8403b3b8624e927140b66d0e8f6f19571c1d4db48b9009ef952a090330adbdd7"
+      "bytes": 182126,
+      "sha256": "c3131663101f56efa16923048e2465d91c232fbc7baeb7574d41965d6c10c175"
     },
     "content-site/thank-you.html": {
       "bytes": 5691,
@@ -6815,6 +6815,33 @@
       "lastmod": null
     },
     "https://www.bestpackfactory.com/dielines/sachet-stick-pack-dieline/teasachet": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/apparelmailer": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/bookmailer": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/electronicsmailer": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/largemailer": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/shoemailer": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/smallparcel": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/standardmailer": {
+      "lastmod": null
+    },
+    "https://www.bestpackfactory.com/dielines/self-locking-mailer-box-dieline/subscriptionbox": {
       "lastmod": null
     },
     "https://www.bestpackfactory.com/dielines/sleeve-dieline": {
