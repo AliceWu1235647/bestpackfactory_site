@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "approvedAt": "2026-09-14",
+  "siteUrl": "https://www.bestpackfactory.com",
+  "packageName": "bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready",
+  "sourceOfTruthStatus": "ready",
+  "git": {
+    "repository": "AliceWu1235647/bestpackfactory_site",
+    "repositoryId": 1275025881,
+    "ownerId": 294268451,
+    "productionBranch": "restored-correct-20260904",
+    "allowedRemoteUrls": [
+      "https://github.com/AliceWu1235647/bestpackfactory_site",
+      "https://github.com/AliceWu1235647/bestpackfactory_site.git",
+      "git@github.com:AliceWu1235647/bestpackfactory_site.git"
+    ]
+  },
+  "vercel": {
+    "orgId": "team_imNQTfSTG7UsB1hYxcv1bok0",
+    "projectId": "prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4",
+    "projectName": "bestpackfactory-site-gmrk",
+    "productionBranch": "restored-correct-20260904"
+  },
+  "cloudflare": {
+    "accountId": "c817ebe138fc02b49431ed951f8e062f",
+    "r2Configured": false,
+    "bucketName": null,
+    "contentSource": "repository-static-content"
+  },
+  "production": {
+    "lastApprovedCommit": "10d87158910db81c62baac28c3275437d7f005cd",
+    "rollbackTag": "rollback/pre-protection-bootstrap-20260914",
+    "lastApprovedDeploymentId": "dpl_9id5CtRZ7RQzYS6oNGpeNxTSPUr1",
+    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-mzh6jzngg-alicewu1235647s-projects.vercel.app",
+    "allowedDomains": [
+      "bestpackfactory.com",
+      "www.bestpackfactory.com",
+      "bestpackfactory-site-gmrk.vercel.app"
+    ]
+  },
+  "protection": {
+    "locales": ["ar", "de", "es", "fr", "ja"],
+    "contentRoots": ["content-site", "public/assets"],
+    "sitemapFile": "public/sitemap.xml",
+    "protectedFiles": [
+      "app/layout.js",
+      "app/page.js",
+      "app/[...path]/page.js",
+      "app/products/[slug]/page.js",
+      "app/blog/[slug]/page.js",
+      "app/news/[slug]/page.js",
+      "app/WhatsAppWidget.js",
+      "app/dielines/page.js",
+      "app/dielines/DielineGenerator.js",
+      "app/dielines/dielines.module.css",
+      "lib/locales.js",
+      "lib/dielines/catalog.js",
+      "lib/dielines/build.js",
+      "lib/dielines/geometry.js",
+      "lib/dielines/export-svg.js",
+      "lib/dielines/export-pdf.js",
+      "lib/dielines/export-dxf.js",
+      "content-site/css/style.css",
+      "content-site/css/i18n.css",
+      "content-site/css/rtl.css",
+      "content-site/js/main.js",
+      "content-site/js/main-bootstrap.js",
+      "public/css/style.css",
+      "public/css/i18n.css",
+      "public/css/rtl.css",
+      "public/js/main.js",
+      "public/js/main-bootstrap.js",
+      "scripts/generate-sitemap.mjs",
+      "public/robots.txt",
+      "public/sitemap.xml"
+    ]
+  }
+}
