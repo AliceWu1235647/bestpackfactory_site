@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "siteUrl": "https://www.bestpackfactory.com",
+  "packageName": "bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready",
+  "sourceOfTruthStatus": "blocked-branch-unification-required",
+  "git": {
+    "repository": "AliceWu1235647/bestpackfactory_site",
+    "repositoryId": 1275025881,
+    "ownerId": 294268451,
+    "productionBranch": "restored-correct-20260904",
+    "observedDefaultBranch": "main",
+    "allowedRemoteUrls": [
+      "https://github.com/AliceWu1235647/bestpackfactory_site.git",
+      "git@github.com:AliceWu1235647/bestpackfactory_site.git"
+    ]
+  },
+  "vercel": {
+    "orgId": "team_imNQTfSTG7UsB1hYxcv1bok0",
+    "projectId": "prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4",
+    "projectName": "bestpackfactory-site-gmrk",
+    "productionBranch": "restored-correct-20260904"
+  },
+  "cloudflare": {
+    "configured": false,
+    "accountId": null,
+    "bucketName": null,
+    "accountIdEnv": "CLOUDFLARE_ACCOUNT_ID",
+    "bucketNameEnv": "R2_BUCKET_NAME"
+  },
+  "production": {
+    "r2HealthPath": "/api/r2-health",
+    "requiredR2Indexes": ["products", "blog", "news"]
+  },
+  "protection": {
+    "locales": ["ar", "de", "es", "fr", "ja"],
+    "protectedLayoutFiles": [
+      "app/layout.js",
+      "app/WhatsAppWidget.js",
+      "app/page.js",
+      "app/[...path]/page.js",
+      "app/products/[slug]/page.js",
+      "app/blog/[slug]/page.js",
+      "app/news/[slug]/page.js",
+      "lib/locales.js",
+      "content-site/css/style.css",
+      "content-site/css/i18n.css",
+      "content-site/css/rtl.css",
+      "content-site/js/main.js",
+      "content-site/js/main-bootstrap.js",
+      "public/css/style.css",
+      "public/css/i18n.css",
+      "public/css/rtl.css",
+      "public/js/main.js",
+      "public/js/main-bootstrap.js"
+    ],
+    "protectedContentRoot": "content-site",
+    "protectedAssetRoot": "public/assets",
+    "sitemapFile": "public/sitemap.xml"
+  }
+}
+
