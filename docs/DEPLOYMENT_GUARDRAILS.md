@@ -6,6 +6,7 @@
 
 - GitHub 仓库：`AliceWu1235647/bestpackfactory_site`，仓库 ID `1275025881`
 - Vercel 项目：`bestpackfactory-site-gmrk`，项目 ID `prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4`
+- 禁止项目：旧项目 `bestpackfactory-site`（`prj_5ZusTqnQpUHSLitLydgDcdG5f652`）仍连接同一仓库并以 `main` 为生产分支；在获得单独授权断开前，任何脚本都不得链接、部署或回滚这个项目
 - 当前 Vercel 生产分支：`restored-correct-20260904`
 - Cloudflare Account ID 与 R2 bucket：尚未完成只读核验，所以 `guardrails/site-identity.json` 保持 `configured: false`
 - GitHub 默认分支与 Vercel Production Branch 已于 2026-09-13 统一为 `restored-correct-20260904`；仓库 ID、项目 ID、生产提交和回滚 deployment 已读回核验。

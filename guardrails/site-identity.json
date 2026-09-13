@@ -10,6 +10,7 @@
     "productionBranch": "restored-correct-20260904",
     "observedDefaultBranch": "restored-correct-20260904",
     "allowedRemoteUrls": [
+      "https://github.com/AliceWu1235647/bestpackfactory_site",
       "https://github.com/AliceWu1235647/bestpackfactory_site.git",
       "git@github.com:AliceWu1235647/bestpackfactory_site.git"
     ]
@@ -18,7 +19,9 @@
     "orgId": "team_imNQTfSTG7UsB1hYxcv1bok0",
     "projectId": "prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4",
     "projectName": "bestpackfactory-site-gmrk",
-    "productionBranch": "restored-correct-20260904"
+    "productionBranch": "restored-correct-20260904",
+    "deniedProjectIds": ["prj_5ZusTqnQpUHSLitLydgDcdG5f652"],
+    "deniedProjectNames": ["bestpackfactory-site"]
   },
   "cloudflare": {
     "configured": false,
