@@ -23,6 +23,8 @@ const googleAnalyticsId = /^G-[A-Z0-9]+$/.test(googleAnalyticsCandidate)
   ? googleAnalyticsCandidate
   : '';
 
+const interFontCss = `@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-v20-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}`;
+
 export const viewport = {
   width: 'device-width',
   initialScale: 1
@@ -33,23 +35,14 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: localeBootstrapScript }} />
-        {/* BestPack Factory 紧急速度优化 */}
-        <link rel="preconnect" href="https://wa.me" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          id="bpf-inter-font-stylesheet"
           rel="preload"
-          as="style"
-          fetchPriority="low"
-          href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+          href="/fonts/inter-v20-latin-400.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: '(function(){var a=document.getElementById("bpf-inter-font-stylesheet");if(a){a.onload=function(){this.onload=null;this.rel="stylesheet"}}})();'
-          }}
-        />
-        <noscript dangerouslySetInnerHTML={{ __html: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">' }} />
+        <style dangerouslySetInnerHTML={{ __html: interFontCss }} />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="BestPackFactory LLM summary" />
         <link rel="alternate" type="application/json" href="/ai-index.json" title="BestPackFactory AI index" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="BestPackFactory Packaging Insights" />
