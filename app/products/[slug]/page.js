@@ -7,6 +7,7 @@ import {
   injectCommercialAuthorityHub,
   normalizeCommercialAuthorityJsonLd,
 } from '../../../lib/commercial-authority-hubs';
+import { normalizeProductJsonLd } from '../../../lib/static-pages';
 
 export const revalidate = 3600;
 export const dynamic = 'force-static';
@@ -70,7 +71,8 @@ export default async function ProductRoute({ params }) {
   const page = await getProductPageBySlug(slug);
   if (!page) notFound();
   const body = injectCommercialAuthorityHub(page.body, `products/${slug}.html`);
-  const jsonLd = normalizeCommercialAuthorityJsonLd(page.jsonLd, `products/${slug}.html`);
+  const authorityJsonLd = normalizeCommercialAuthorityJsonLd(page.jsonLd, `products/${slug}.html`);
+  const jsonLd = normalizeProductJsonLd(authorityJsonLd, body, page.metadata);
   const primaryImage = getPrimaryProductImage(body);
   if (primaryImage) {
     preload(primaryImage.href, {

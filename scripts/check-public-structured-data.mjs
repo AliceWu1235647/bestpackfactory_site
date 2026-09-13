@@ -1,4 +1,4 @@
-import { listHtmlRoutes, normalizeArticleJsonLd, pageFromHtml, readHtml } from '../lib/static-pages.js';
+import { listHtmlRoutes, normalizeArticleJsonLd, normalizeProductJsonLd, pageFromHtml, readHtml } from '../lib/static-pages.js';
 import { readFileSync } from 'node:fs';
 
 const routes = listHtmlRoutes();
@@ -22,6 +22,8 @@ function visit(value, route) {
     if (Object.prototype.hasOwnProperty.call(value, 'offers')) {
       failures.push(`${route}: custom-quote Product still exposes offers`);
     }
+    if (!value.image) failures.push(`${route}: Product is missing image`);
+    if (!value.mainEntityOfPage) failures.push(`${route}: Product is missing mainEntityOfPage`);
   }
 
   if (types.some(type => ['Article', 'BlogPosting', 'NewsArticle', 'TechArticle'].includes(type))) {
@@ -47,7 +49,8 @@ for (const route of routes) {
     failures.push(`${route}: duplicate JSON-LD payloads after extraction`);
   }
 
-  const renderedJsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
+  const articleJsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
+  const renderedJsonLd = normalizeProductJsonLd(articleJsonLd, page.body, page.metadata);
   if (page.metadata?.openGraph?.images) {
     for (let index = 0; index < page.jsonLd.length; index += 1) {
       if (!/"image"\s*:/.test(page.jsonLd[index]) && /"image"\s*:/.test(renderedJsonLd[index])) {
