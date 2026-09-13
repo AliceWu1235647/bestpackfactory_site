@@ -1,4 +1,11 @@
-import { listHtmlRoutes, normalizeArticleJsonLd, normalizeProductJsonLd, pageFromHtml, readHtml } from '../lib/static-pages.js';
+import {
+  listHtmlRoutes,
+  normalizeArticleJsonLd,
+  normalizePageEntityJsonLd,
+  normalizeProductJsonLd,
+  pageFromHtml,
+  readHtml,
+} from '../lib/static-pages.js';
 import { readFileSync } from 'node:fs';
 
 const routes = listHtmlRoutes();
@@ -7,6 +14,13 @@ let jsonLdBlocks = 0;
 let productNodes = 0;
 let articleNodes = 0;
 let articleImagesAddedFromMetadata = 0;
+
+function entityPageUrl(value) {
+  if (!value) return '';
+  if (typeof value === 'string') return value;
+  if (typeof value === 'object') return value['@id'] || value.url || '';
+  return '';
+}
 
 function visit(value, route) {
   if (Array.isArray(value)) {
@@ -33,12 +47,24 @@ function visit(value, route) {
     if (!value.publisher?.logo) failures.push(`${route}: Article publisher is missing logo`);
   }
 
+  if (types.some(type => ['WebPage', 'AboutPage', 'ContactPage', 'Article', 'BlogPosting', 'NewsArticle', 'TechArticle', 'Product'].includes(type))) {
+    const expected = pageCanonicals.get(route);
+    for (const pageUrl of [value.url, entityPageUrl(value.mainEntityOfPage)]) {
+      if (pageUrl && expected && pageUrl !== expected) {
+        failures.push(`${route}: structured page URL does not match canonical (${pageUrl})`);
+      }
+    }
+  }
+
   Object.values(value).forEach(item => visit(item, route));
 }
+
+const pageCanonicals = new Map();
 
 for (const route of routes) {
   const html = readHtml(route);
   const page = pageFromHtml(html, route);
+  pageCanonicals.set(route, page.metadata?.alternates?.canonical || '');
 
   if (/type=["']application\/ld\+json["']/i.test(page.body)) {
     failures.push(`${route}: JSON-LD remains inside rendered body`);
@@ -50,7 +76,8 @@ for (const route of routes) {
   }
 
   const articleJsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
-  const renderedJsonLd = normalizeProductJsonLd(articleJsonLd, page.body, page.metadata);
+  const productJsonLd = normalizeProductJsonLd(articleJsonLd, page.body, page.metadata);
+  const renderedJsonLd = normalizePageEntityJsonLd(productJsonLd, page.metadata);
   if (page.metadata?.openGraph?.images) {
     for (let index = 0; index < page.jsonLd.length; index += 1) {
       if (!/"image"\s*:/.test(page.jsonLd[index]) && /"image"\s*:/.test(renderedJsonLd[index])) {
