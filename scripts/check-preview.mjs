@@ -70,6 +70,18 @@ async function request(url, options = {}) {
   throw lastError || new Error('request failed');
 }
 
+if (base.hostname.endsWith('.vercel.app')) {
+  try {
+    const accessProbe = await request(`${baseUrl}/`);
+    const finalUrl = new URL(accessProbe.url);
+    if (finalUrl.hostname === 'vercel.com' && finalUrl.pathname.startsWith('/login')) {
+      fail('Preview access is protected. Configure a dedicated Vercel automation bypass or trusted GitHub OIDC source; public access must not be enabled just to satisfy CI.');
+    }
+  } catch (error) {
+    fail(`Preview access probe failed: ${error.message}`);
+  }
+}
+
 async function runPool(label, items, worker) {
   let cursor = 0;
   let completed = 0;

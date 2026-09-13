@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   complete-preview-acceptance:
-    name: guardrails / complete-preview-acceptance
+    name: guardrails / preview / ${{ github.event.deployment.environment }}
     if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Preview – bestpackfactory-site-gmrk'
     runs-on: ubuntu-latest
     timeout-minutes: 30

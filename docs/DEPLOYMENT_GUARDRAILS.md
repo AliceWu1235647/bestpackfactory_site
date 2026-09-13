@@ -59,7 +59,7 @@ npm run guard:r2:build -- --source <完整快照目录> --previous-manifest <上
 
 1. 在 GitHub Ruleset/Branch protection 中，把以下 checks 设为合并必需：
    - `guardrails / immutable-site-assets`
-   - `guardrails / complete-preview-acceptance`
+   - `guardrails / preview / Preview – bestpackfactory-site-gmrk`
 2. 在 Vercel 为 Production 启用 Deployment Checks，要求 Preview 门禁成功后才可 Promote。
 3. GitHub Actions secrets 配置 `VERCEL_TOKEN`；若 Preview 开了保护，再配置 `VERCEL_AUTOMATION_BYPASS_SECRET`。token 只授权这个 Vercel 项目。
 4. 只读核验 Cloudflare Account ID、R2 bucket 与当前对象后，把精确值固定到 `site-identity.json`，并为发布器使用仅能读写这个 bucket 的 token。

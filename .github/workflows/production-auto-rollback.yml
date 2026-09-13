@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   production-acceptance:
-    name: guardrails / production-acceptance
+    name: guardrails / production / ${{ github.event.deployment.environment }}
     if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production – bestpackfactory-site-gmrk'
     runs-on: ubuntu-latest
     timeout-minutes: 30
