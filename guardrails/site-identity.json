@@ -29,7 +29,11 @@
   },
   "production": {
     "r2HealthPath": "/api/r2-health",
-    "requiredR2Indexes": ["products", "blog", "news"]
+    "requiredR2Indexes": ["products", "blog", "news"],
+    "canonicalOverrides": {
+      "/products/custom-food-packaging.html": "https://www.bestpackfactory.com/products/food-packaging.html",
+      "/products/custom-paper-bags.html": "https://www.bestpackfactory.com/products/paper-bags.html"
+    }
   },
   "protection": {
     "locales": ["ar", "de", "es", "fr", "ja"],

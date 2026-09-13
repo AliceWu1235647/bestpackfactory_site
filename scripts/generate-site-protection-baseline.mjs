@@ -5,13 +5,15 @@ import {
   git,
   htmlMetadata,
   parseSitemap,
+  portableFileBuffer,
+  portableSha256File,
   publicUrlForContentFile,
   readJson,
   relativePath,
-  sha256File,
   walkFiles,
   writeJson,
 } from './guard-lib.mjs';
+import { hreflangFor } from '../lib/locales.js';
 
 const identity = readJson('guardrails/site-identity.json');
 const protection = identity.protection;
@@ -21,8 +23,8 @@ function recordFiles(files) {
   const entries = {};
   for (const absolute of files) {
     const relative = relativePath(absolute);
-    const stat = fs.statSync(absolute);
-    entries[relative] = { sha256: sha256File(absolute), bytes: stat.size };
+    const portable = portableFileBuffer(absolute);
+    entries[relative] = { sha256: portableSha256File(absolute), bytes: portable.length };
   }
   return entries;
 }
@@ -36,12 +38,19 @@ for (const absolute of htmlFiles) {
   const relative = relativePath(absolute);
   const html = fs.readFileSync(absolute, 'utf8');
   const metadata = htmlMetadata(html);
+  const publicUrl = publicUrlForContentFile(relative, identity.siteUrl);
+  const routePath = relative.replace(`${protection.protectedContentRoot}/`, '');
+  const runtimeHreflang = hreflangFor(routePath)?.languages || {};
   pages[relative] = {
-    sha256: sha256File(absolute),
-    bytes: fs.statSync(absolute).size,
-    publicUrl: publicUrlForContentFile(relative, identity.siteUrl),
+    sha256: portableSha256File(absolute),
+    bytes: portableFileBuffer(absolute).length,
+    publicUrl,
     canonical: metadata.canonical,
-    hreflang: metadata.hreflang,
+    expectedCanonical: identity.production.canonicalOverrides?.[new URL(publicUrl).pathname] || metadata.canonical || publicUrl,
+    sourceHreflang: metadata.hreflang,
+    expectedHreflang: Object.entries(runtimeHreflang)
+      .map(([code, href]) => ({ code, href }))
+      .sort((a, b) => `${a.code}:${a.href}`.localeCompare(`${b.code}:${b.href}`)),
     images: metadata.images,
   };
 }

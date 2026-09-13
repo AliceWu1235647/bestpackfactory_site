@@ -8,7 +8,7 @@ import {
   parseSitemap,
   readJson,
   relativePath,
-  sha256File,
+  portableSha256File,
   walkFiles,
 } from './guard-lib.mjs';
 
@@ -24,7 +24,7 @@ function verifyEntries(label, entries) {
       failures.push(`${label} missing: ${relative}`);
       continue;
     }
-    const actualHash = sha256File(absolute);
+    const actualHash = portableSha256File(absolute);
     if (actualHash !== expected.sha256) failures.push(`${label} changed: ${relative}`);
   }
 }

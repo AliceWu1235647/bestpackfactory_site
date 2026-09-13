@@ -45,4 +45,3 @@ jobs:
 
       - name: Ensure build did not rewrite existing sitemap dates
         run: git diff --exit-code -- content-site/sitemap.xml public/sitemap.xml
-

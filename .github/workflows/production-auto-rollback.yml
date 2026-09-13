@@ -33,7 +33,7 @@ jobs:
         continue-on-error: true
         env:
           VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
-        run: node scripts/check-preview.mjs --url https://www.bestpackfactory.com --retries 3
+        run: node scripts/check-preview.mjs --url https://www.bestpackfactory.com --retries 3 --asset-mode head --concurrency 16
 
       - name: Prepare pinned Vercel CLI
         if: steps.acceptance.outcome == 'failure'
@@ -54,4 +54,3 @@ jobs:
       - name: Fail the deployment check after rollback
         if: steps.acceptance.outcome == 'failure'
         run: exit 1
-

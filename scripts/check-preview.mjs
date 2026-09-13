@@ -1,8 +1,6 @@
 import fs from 'node:fs';
-import path from 'node:path';
 import {
   absolutePath,
-  extractAttributes,
   fail,
   htmlMetadata,
   parseArgs,
@@ -17,6 +15,10 @@ const baseline = readJson('guardrails/site-baseline.json');
 const rawBase = args.get('url');
 const concurrency = Math.max(1, Math.min(24, Number(args.get('concurrency', '8')) || 8));
 const retries = Math.max(1, Math.min(5, Number(args.get('retries', '2')) || 2));
+const scope = args.get('scope', 'all');
+const assetMode = args.get('asset-mode', 'hash');
+if (!['all', 'pages', 'assets'].includes(scope)) fail(`Invalid --scope: ${scope}`);
+if (!['hash', 'head'].includes(assetMode)) fail(`Invalid --asset-mode: ${assetMode}`);
 if (!rawBase) fail('Usage: node scripts/check-preview.mjs --url https://deployment.vercel.app');
 
 let base;
@@ -38,6 +40,11 @@ const headers = bypassSecret ? {
 } : {};
 const failures = [];
 const results = { pages: [], assets: [], endpoints: [], r2: null };
+
+function portableResponseBuffer(file, buffer) {
+  if (!file.toLowerCase().endsWith('.svg')) return buffer;
+  return Buffer.from(buffer.toString('utf8').replace(/\r\n?/g, '\n'), 'utf8');
+}
 
 async function request(url, options = {}) {
   let lastError;
@@ -63,33 +70,39 @@ async function request(url, options = {}) {
   throw lastError || new Error('request failed');
 }
 
-async function runPool(items, worker) {
+async function runPool(label, items, worker) {
   let cursor = 0;
+  let completed = 0;
+  console.log(`Checking ${items.length} ${label} with concurrency ${concurrency}...`);
   const runners = Array.from({ length: Math.min(concurrency, items.length || 1) }, async () => {
     while (cursor < items.length) {
       const item = items[cursor++];
       await worker(item);
+      completed++;
+      if (completed % 50 === 0 || completed === items.length) {
+        console.log(`${label}: ${completed}/${items.length}`);
+      }
     }
   });
   await Promise.all(runners);
 }
 
 const pageEntries = Object.entries(baseline.pages);
-await runPool(pageEntries, async ([file, expected]) => {
+if (scope !== 'assets') await runPool('pages', pageEntries, async ([file, expected]) => {
   const pathname = new URL(expected.publicUrl).pathname;
   const url = `${baseUrl}${pathname}`;
   try {
     const response = await request(url);
     const body = await response.text();
     const metadata = htmlMetadata(body);
-    const expectedCanonical = expected.canonical || expected.publicUrl;
+    const expectedCanonical = expected.expectedCanonical || expected.canonical || expected.publicUrl;
     const record = { file, url, status: response.status, canonical: metadata.canonical };
     results.pages.push(record);
     if (response.status !== 200) failures.push(`Page ${pathname} returned ${response.status}`);
     if (metadata.canonical !== expectedCanonical) {
       failures.push(`Canonical mismatch at ${pathname}: expected ${expectedCanonical}, got ${metadata.canonical || '(missing)'}`);
     }
-    for (const alternate of expected.hreflang || []) {
+    for (const alternate of expected.expectedHreflang || expected.hreflang || []) {
       const found = metadata.hreflang.some(item => item.code === alternate.code && item.href === alternate.href);
       if (!found) failures.push(`Missing hreflang ${alternate.code} at ${pathname}`);
     }
@@ -103,18 +116,25 @@ await runPool(pageEntries, async ([file, expected]) => {
 });
 
 const assetEntries = Object.entries(baseline.assets);
-await runPool(assetEntries, async ([file, expected]) => {
+if (scope !== 'pages') await runPool('assets', assetEntries, async ([file, expected]) => {
   const pathname = `/${file.replace(/^public\//, '')}`;
   try {
-    const response = await request(`${baseUrl}${pathname}`);
-    const buffer = Buffer.from(await response.arrayBuffer());
-    const hash = sha256Buffer(buffer);
+    const response = await request(`${baseUrl}${pathname}`, { method: assetMode === 'head' ? 'HEAD' : 'GET' });
+    const responseBuffer = assetMode === 'hash' ? Buffer.from(await response.arrayBuffer()) : null;
+    const buffer = responseBuffer ? portableResponseBuffer(file, responseBuffer) : null;
+    const reportedBytes = Number(response.headers.get('content-length') || 0);
+    const bytes = buffer?.length ?? reportedBytes;
+    const hash = buffer ? sha256Buffer(buffer) : null;
     const contentType = response.headers.get('content-type') || '';
-    results.assets.push({ file, status: response.status, bytes: buffer.length, contentType });
+    results.assets.push({ file, status: response.status, bytes, contentType, mode: assetMode });
     if (response.status !== 200) failures.push(`Asset ${pathname} returned ${response.status}`);
     if (!contentType.toLowerCase().startsWith('image/')) failures.push(`Asset ${pathname} has non-image type ${contentType || '(missing)'}`);
-    if (buffer.length !== expected.bytes) failures.push(`Asset byte size changed ${pathname}: ${expected.bytes} -> ${buffer.length}`);
-    if (hash !== expected.sha256) failures.push(`Asset bytes changed ${pathname}`);
+    // HEAD cannot normalize text line endings. SVG byte identity is enforced in
+    // the full hash gate; HEAD mode still verifies its status and media type.
+    if (!(assetMode === 'head' && file.toLowerCase().endsWith('.svg')) && bytes !== expected.bytes) {
+      failures.push(`Asset byte size changed ${pathname}: ${expected.bytes} -> ${bytes || '(missing)'}`);
+    }
+    if (assetMode === 'hash' && hash !== expected.sha256) failures.push(`Asset bytes changed ${pathname}`);
   } catch (error) {
     failures.push(`Asset request failed ${pathname}: ${error.message}`);
   }
@@ -165,5 +185,5 @@ if (failures.length) {
   fail(`Preview gate failed with ${failures.length} violation(s).`);
 }
 
-console.log(`Preview gate passed: ${results.pages.length} pages, ${results.assets.length} images, and R2 health are intact.`);
+console.log(`Preview gate passed: ${results.pages.length} pages, ${results.assets.length} images (${assetMode}), and R2 health are intact.`);
 

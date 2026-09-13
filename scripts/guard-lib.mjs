@@ -37,6 +37,21 @@ export function sha256Buffer(buffer) {
   return createHash('sha256').update(buffer).digest('hex');
 }
 
+const portableTextPattern = /\.(?:css|csv|html?|js|jsx|json|md|mjs|svg|txt|xml|ya?ml)$/i;
+
+// Git checks text files out with platform-specific line endings. Hash the
+// canonical LF representation so a Windows-authored baseline also validates in
+// GitHub Actions and on Vercel's Linux builders. Binary assets remain exact.
+export function portableFileBuffer(file) {
+  const buffer = fs.readFileSync(file);
+  if (!portableTextPattern.test(file)) return buffer;
+  return Buffer.from(buffer.toString('utf8').replace(/\r\n?/g, '\n'), 'utf8');
+}
+
+export function portableSha256File(file) {
+  return sha256Buffer(portableFileBuffer(file));
+}
+
 export function walkFiles(directory, predicate = () => true) {
   if (!fs.existsSync(directory)) return [];
   const files = [];
