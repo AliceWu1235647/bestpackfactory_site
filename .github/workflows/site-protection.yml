@@ -1,4 +1,4 @@
-name: Site protection
+name: BestPack guardrails
 
 on:
   pull_request:
@@ -10,7 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  protect-existing-site:
+  immutable-site-assets:
+    name: guardrails / immutable-site-assets
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,3 +27,19 @@ jobs:
       - run: npm run check:sitemap
       - run: npm run build
       - run: npm run guard:site
+
+  verified-project-preview:
+    name: guardrails / preview / bestpackfactory-site-gmrk
+    needs: immutable-site-assets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Recheck the exact commit accepted by the Vercel integration
+        run: npm run guard:site
