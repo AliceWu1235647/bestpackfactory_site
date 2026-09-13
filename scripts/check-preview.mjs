@@ -102,9 +102,16 @@ if (scope !== 'assets') await runPool('pages', pageEntries, async ([file, expect
     if (metadata.canonical !== expectedCanonical) {
       failures.push(`Canonical mismatch at ${pathname}: expected ${expectedCanonical}, got ${metadata.canonical || '(missing)'}`);
     }
-    for (const alternate of expected.expectedHreflang || expected.hreflang || []) {
+    const expectedHreflang = expected.expectedHreflang || expected.hreflang || [];
+    for (const alternate of expectedHreflang) {
       const found = metadata.hreflang.some(item => item.code === alternate.code && item.href === alternate.href);
       if (!found) failures.push(`Missing hreflang ${alternate.code} at ${pathname}`);
+    }
+    const expectedAlternates = new Set(expectedHreflang.map(item => `${item.code}\u0000${item.href}`));
+    for (const alternate of metadata.hreflang) {
+      if (!expectedAlternates.has(`${alternate.code}\u0000${alternate.href}`)) {
+        failures.push(`Unexpected hreflang ${alternate.code} at ${pathname}: ${alternate.href}`);
+      }
     }
     for (const marker of ['products-grid-fixed', 'locale-switcher']) {
       const expectedCount = (fs.readFileSync(absolutePath(file), 'utf8').match(new RegExp(marker, 'g')) || []).length;

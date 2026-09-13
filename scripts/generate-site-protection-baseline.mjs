@@ -39,14 +39,15 @@ for (const absolute of htmlFiles) {
   const html = fs.readFileSync(absolute, 'utf8');
   const metadata = htmlMetadata(html);
   const publicUrl = publicUrlForContentFile(relative, identity.siteUrl);
-  const routePath = relative.replace(`${protection.protectedContentRoot}/`, '');
-  const runtimeHreflang = hreflangFor(routePath)?.languages || {};
+  const expectedCanonical = identity.production.canonicalOverrides?.[new URL(publicUrl).pathname] || metadata.canonical || publicUrl;
+  const canonicalPath = new URL(expectedCanonical).pathname.replace(/^\/+/, '') || 'index.html';
+  const runtimeHreflang = hreflangFor(canonicalPath)?.languages || {};
   pages[relative] = {
     sha256: portableSha256File(absolute),
     bytes: portableFileBuffer(absolute).length,
     publicUrl,
     canonical: metadata.canonical,
-    expectedCanonical: identity.production.canonicalOverrides?.[new URL(publicUrl).pathname] || metadata.canonical || publicUrl,
+    expectedCanonical,
     sourceHreflang: metadata.hreflang,
     expectedHreflang: Object.entries(runtimeHreflang)
       .map(([code, href]) => ({ code, href }))

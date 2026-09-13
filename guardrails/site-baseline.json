@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T14:51:45.200Z",
-  "generatedFromCommit": "d67532b0114d05b81241d9bb392c5bb7586e632a",
+  "generatedAt": "2026-09-13T15:05:22.182Z",
+  "generatedFromCommit": "371af083af5d794e2b0b8668b6c3217f8c5742dd",
   "identity": {
     "siteUrl": "https://www.bestpackfactory.com",
     "repository": "AliceWu1235647/bestpackfactory_site",
@@ -16091,7 +16091,36 @@
       "canonical": "https://www.bestpackfactory.com/products/custom-paper-bags.html",
       "expectedCanonical": "https://www.bestpackfactory.com/products/paper-bags.html",
       "sourceHreflang": [],
-      "expectedHreflang": [],
+      "expectedHreflang": [
+        {
+          "code": "ar",
+          "href": "https://www.bestpackfactory.com/ar/products/paper-bags.html"
+        },
+        {
+          "code": "de",
+          "href": "https://www.bestpackfactory.com/de/products/paper-bags.html"
+        },
+        {
+          "code": "en",
+          "href": "https://www.bestpackfactory.com/products/paper-bags.html"
+        },
+        {
+          "code": "es",
+          "href": "https://www.bestpackfactory.com/es/products/paper-bags.html"
+        },
+        {
+          "code": "fr",
+          "href": "https://www.bestpackfactory.com/fr/products/paper-bags.html"
+        },
+        {
+          "code": "ja",
+          "href": "https://www.bestpackfactory.com/ja/products/paper-bags.html"
+        },
+        {
+          "code": "x-default",
+          "href": "https://www.bestpackfactory.com/products/paper-bags.html"
+        }
+      ],
       "images": [
         {
           "src": "/assets/logo/bestpackfactory-logo.svg?v=1.2",
