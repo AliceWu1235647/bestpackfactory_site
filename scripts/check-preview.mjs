@@ -36,7 +36,6 @@ const baseUrl = base.toString().replace(/\/$/, '');
 const bypassSecret = process.env.VERCEL_AUTOMATION_BYPASS_SECRET || '';
 const headers = bypassSecret ? {
   'x-vercel-protection-bypass': bypassSecret,
-  'x-vercel-set-bypass-cookie': 'true',
 } : {};
 const failures = [];
 const results = { pages: [], assets: [], endpoints: [], r2: null };
@@ -78,7 +77,8 @@ if (base.hostname.endsWith('.vercel.app')) {
       fail('Preview access is protected. Configure a dedicated Vercel automation bypass or trusted GitHub OIDC source; public access must not be enabled just to satisfy CI.');
     }
   } catch (error) {
-    fail(`Preview access probe failed: ${error.message}`);
+    const details = [error.message, error.cause?.code, error.cause?.message].filter(Boolean).join(' | ');
+    fail(`Preview access probe failed: ${details || 'unknown network error'}`);
   }
 }
 
