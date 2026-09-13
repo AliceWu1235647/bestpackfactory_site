@@ -12,6 +12,17 @@ const outputs = [
   path.join(contentRoot, 'sitemap.xml')
 ];
 
+function existingLastmods(file) {
+  if (!fs.existsSync(file)) return new Map();
+  const xml = fs.readFileSync(file, 'utf8');
+  return new Map([...xml.matchAll(/<url>\s*<loc>([^<]+)<\/loc>([\s\S]*?)<\/url>/g)].map(match => [
+    match[1],
+    match[2].match(/<lastmod>([^<]+)<\/lastmod>/)?.[1] || ''
+  ]));
+}
+
+const previousLastmods = existingLastmods(outputs[0]);
+
 function dielineSizeSlug(name) {
   return String(name).toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
@@ -39,12 +50,13 @@ function sitemapDate(value) {
   return Number.isNaN(date.getTime()) ? '' : date.toISOString().slice(0, 10);
 }
 
-function lastModified(html, file) {
+function lastModified(html, file, canonical) {
   const structuredDates = [
     ...[...html.matchAll(/["']dateModified["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1])),
     ...[...html.matchAll(/["']datePublished["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1]))
   ].filter(Boolean).sort();
   if (structuredDates.length) return structuredDates[structuredDates.length - 1];
+  if (previousLastmods.has(canonical)) return previousLastmods.get(canonical);
   return sitemapDate(fs.statSync(file).mtime);
 }
 
@@ -152,7 +164,7 @@ for (const file of walkHtml(contentRoot)) {
   }
   const entry = {
     loc: canonical,
-    lastmod: lastModified(html, file),
+    lastmod: lastModified(html, file, canonical),
     ...pageHints(canonical),
     alternates: sitemapAlternates(routeFromFile(file))
   };
