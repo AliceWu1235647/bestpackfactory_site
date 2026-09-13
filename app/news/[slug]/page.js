@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getContentPageBySlug, listStaticContentSlugs } from '../../../lib/content-pages';
 import { cleanContentSlug } from '../../../lib/r2-content';
+import { normalizeArticleJsonLd } from '../../../lib/static-pages';
 
 export const revalidate = 3600;
 export const dynamic = 'force-static';
@@ -27,10 +28,11 @@ export default async function NewsPostRoute({ params }) {
   const slug = getSlug(resolved);
   const page = await getContentPageBySlug('news', slug);
   if (!page) notFound();
+  const jsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: page.body }} suppressHydrationWarning={true} />
-      {page.jsonLd.map((json, index) => (
+      {jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
       ))}
     </>

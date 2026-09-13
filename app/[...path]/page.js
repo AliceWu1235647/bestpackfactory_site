@@ -1,5 +1,11 @@
 import { notFound } from 'next/navigation';
-import { getPage, listHtmlRoutes } from '../../lib/static-pages';
+import {
+  getPage,
+  listHtmlRoutes,
+  normalizeArticleJsonLd,
+  normalizePageEntityJsonLd,
+  normalizeProductJsonLd,
+} from '../../lib/static-pages';
 import BlogIndex from '../BlogIndex';
 import { injectCommercialAuthorityHub } from '../../lib/commercial-authority-hubs';
 
@@ -39,10 +45,13 @@ export default async function StaticHtmlRoute({ params }) {
   const page = getPage(route);
   if (!page) notFound();
   const body = injectCommercialAuthorityHub(page.body, route);
+  const articleJsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
+  const productJsonLd = normalizeProductJsonLd(articleJsonLd, body, page.metadata);
+  const jsonLd = normalizePageEntityJsonLd(productJsonLd, page.metadata);
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: body }} suppressHydrationWarning={true} />
-      {page.jsonLd.map((json, index) => (
+      {jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
       ))}
     </>

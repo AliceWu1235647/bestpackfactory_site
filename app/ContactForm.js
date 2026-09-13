@@ -40,7 +40,7 @@ function trackSuccessfulQuote(method, submitted) {
     quantity_band: submitted.quantity || '(not set)',
     page_path: window.location.pathname
   };
-  sendGaEvent('quote_form_submission', params);
+  sendGaEvent('quote_submit', params);
   sendGaEvent('generate_lead', params);
 }
 

@@ -3,6 +3,7 @@
 import { useMemo, useState, useCallback } from 'react';
 import { previewSVG, renderFormat } from '../../lib/dielines/build.js';
 import { LAYER_STYLE, LAYERS } from '../../lib/dielines/geometry.js';
+import { sendGaEvent } from '../GeoAnalytics.js';
 import styles from './dielines.module.css';
 
 const FORMATS = [
@@ -20,11 +21,6 @@ const LEGEND = [
   [LAYERS.SAFE, 'Safe artwork'],
   [LAYERS.GLUE, 'Glue / seal']
 ];
-
-function track(event, params) {
-  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
-  try { window.gtag('event', event, params); } catch { /* analytics is best effort */ }
-}
 
 export default function DielineGenerator({ entry }) {
   const initial = useMemo(() => {
@@ -78,7 +74,7 @@ export default function DielineGenerator({ entry }) {
       a.click();
       document.body.removeChild(a);
       setTimeout(() => URL.revokeObjectURL(url), 1500);
-      track('dieline_download', {
+      sendGaEvent('dieline_download', {
         dieline: entry.slug,
         format,
         dimensions: entry.fields.filter(f => f.type !== 'bool').map(f => params[f.key]).join('x')
@@ -117,14 +113,6 @@ export default function DielineGenerator({ entry }) {
     const subject = `Quote — ${entry.name} (${sizeSummary})`;
     return `/contact.html?subject=${encodeURIComponent(subject)}`;
   }, [entry.name, sizeSummary]);
-
-  const onQuote = useCallback((channel) => {
-    track('dieline_quote_click', {
-      dieline: entry.slug,
-      channel,
-      dimensions: numeric.map(f => params[f.key]).join('x')
-    });
-  }, [entry.slug, numeric, params]);
 
   return (
     <div className={styles.layout}>
@@ -238,14 +226,12 @@ export default function DielineGenerator({ entry }) {
               href={quoteHref}
               rel="noopener"
               target="_blank"
-              onClick={() => onQuote('whatsapp')}
             >
               Quote this size on WhatsApp
             </a>
             <a
               className={`${styles.quoteBtn} ${styles.quoteGhost}`}
               href={contactHref}
-              onClick={() => onQuote('contact')}
             >
               Request a quote by email
             </a>
