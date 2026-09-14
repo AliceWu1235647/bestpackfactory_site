@@ -63,6 +63,39 @@ export default async function DielinePage({ params }) {
     ]
   };
 
+  const presetExamples = (entry.presets || []).slice(0, 2).map(p => p.name);
+  const sizeAnswer = presetExamples.length
+    ? `This dieline ships with ${entry.presets.length} preset sizes — including ${presetExamples.join(' and ')} — and every dimension is also adjustable in the live generator above, so you can enter your own internal measurements in millimetres.`
+    : 'Every dimension in the live generator above is adjustable in millimetres, so you can match any internal size you need.';
+  const faqPage = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `What material should I use for a ${entry.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: entry.materials.join('; ') + '.' }
+      },
+      {
+        '@type': 'Question',
+        name: `What sizes does the ${entry.name} come in?`,
+        acceptedAnswer: { '@type': 'Answer', text: sizeAnswer }
+      },
+      {
+        '@type': 'Question',
+        name: entry.relatedProduct
+          ? `Can I get the ${entry.name} manufactured after downloading it?`
+          : `What should I check before sending this dieline to print?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: entry.relatedProduct
+            ? `Yes — we produce ${entry.relatedLabel} in our own factory in Shenzhen, 500 pieces minimum. Send the dieline back with your artwork on it and we quote within 24 hours.`
+            : entry.notes[0]
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <SiteHeader />
@@ -183,6 +216,7 @@ export default async function DielinePage({ params }) {
       <SiteFooter />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howTo) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }} />
     </>
   );
 }

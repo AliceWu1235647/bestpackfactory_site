@@ -10,7 +10,7 @@
 - [Printing and Finishes](https://www.bestpackfactory.com/finishes.html): Surface finish and decoration options.
 - [Factory and Quality Control](https://www.bestpackfactory.com/factory.html): Production, sampling and QC information.
 - [Quote-Ready Sourcing Hub](https://www.bestpackfactory.com/quote-ready-packaging-sourcing-hub.html): RFQ preparation and product routing.
-- [Free Dieline Templates](https://www.bestpackfactory.com/dielines): Download free dieline templates for 12 packaging formats in PDF, DXF, AI and SVG. No signup required.
+- [Free Dieline Templates](https://www.bestpackfactory.com/dielines): Download free dieline templates for 18 packaging formats in PDF, DXF, AI and SVG. No signup required.
 - [Contact](https://www.bestpackfactory.com/contact.html): Send specifications and request a quotation.
 
 ## Product family hub
@@ -20,6 +20,7 @@ The [Custom Packaging Products](https://www.bestpackfactory.com/products.html) p
 ## Main product categories
 
 - [Custom Boxes](https://www.bestpackfactory.com/products/custom-boxes.html): Corrugated and paperboard structures for shipping and retail.
+- [Custom Packaging Boxes](https://www.bestpackfactory.com/products/custom-packaging-boxes.html): Compare corrugated mailers, folding cartons and rigid boxes by product weight, structure, board, finish, sampling and MOQ 500 requirements.
 - [Flexible Packaging](https://www.bestpackfactory.com/products/flexible-packaging.html): Pouches, bags and printed film.
 - [Coffee Bags](https://www.bestpackfactory.com/products/coffee-bags.html): Valve, zipper, flat-bottom and side-gusset formats.
 - [Food Packaging](https://www.bestpackfactory.com/products/food-packaging.html): Project-specific food packaging formats and material selection.
@@ -38,8 +39,8 @@ Provide packaging type, finished dimensions, quantity, product or fill weight, m
 
 ## Free dieline download tool (August 2026)
 
-- [Free Dieline Templates](https://www.bestpackfactory.com/dielines): Download production-ready dielines for 12 packaging formats (coffee bags, mylar bags, child-resistant pouches, stand-up pouches, magnetic rigid boxes, tuck-end boxes, mailer boxes, paper bags, display trays, sleeves and pillow boxes). Each format includes 3 common preset sizes with exact dimensions. Generate and download PDF, DXF, AI and SVG files instantly—no signup, no watermark. Adjustable dimensions for custom sizes.
-- Featured preset sizes: 250g coffee bag (135×225 mm with 60 mm gusset), 500g flat-bottom coffee bag, 3.5g mylar bag, 10-pack child-resistant pouch, cosmetic rigid box, supplement tuck-end box, apparel mailer, retail paper bag, bakery display tray, rigid-box sleeve, jewellery pillow box and more.
+- [Free Dieline Templates](https://www.bestpackfactory.com/dielines): Download production-ready dielines for 18 packaging formats (coffee bags, mylar bags, child-resistant pouches, stand-up pouches, sachet and stick packs, magnetic rigid boxes, two-piece rigid gift boxes, wine bottle boxes, tuck-end boxes, gable top boxes, box sleeves, pillow boxes, mailer boxes, self-locking mailer boxes, roll end trays, paper bags and display trays). Each format includes multiple preset sizes with exact dimensions. Generate and download PDF, DXF, AI and SVG files instantly—no signup, no watermark. Adjustable dimensions for custom sizes.
+- Featured preset sizes: 250g coffee bag (135×225 mm with 60 mm gusset), 500g flat-bottom coffee bag, 3.5g mylar bag, 10-pack child-resistant pouch, cosmetic rigid box, two-piece jewellery gift box, wine bottle box, supplement tuck-end box, gable-top carry-handle carton, apparel mailer, self-locking mailer, retail paper bag, bakery display tray, roll-end tray, rigid-box sleeve, jewellery pillow box, stick pack and more.
 - Use cases: Designer pre-production artwork setup, buyer specification validation, supplier RFQ preparation, structural prototyping.
 
 ## Knowledge resources
@@ -94,6 +95,13 @@ Content reflects general B2B packaging guidance. Final materials, dimensions, to
 
 - [EU PPWR Now Applies: A 2026 Custom Packaging Box Checklist](https://www.bestpackfactory.com/news/eu-ppwr-2026-custom-packaging-box-compliance-checklist.html): A dated checklist separating current PPWR obligations from later recyclability, minimization, empty-space and labeling milestones.
 - [FSC Packaging Labels Explained: FSC 100%, FSC Mix and FSC Recycled](https://www.bestpackfactory.com/blog/fsc-packaging-labels-custom-boxes-guide.html): A buyer guide to FSC label meaning, chain of custody, trademark approval, QR labels and supplier documentation.
+
+
+## New buyer guidance pages (September 2026)
+
+- [GEO Guide for Custom Packaging Buyers](https://www.bestpackfactory.com/blog/geo-custom-packaging-ai-search-guide.html): Use this GEO guide to structure AI-ready packaging answers by type, dimensions, MOQ, materials, finishes, delivery country and timeline.
+- [Brand Packaging Brief Checklist](https://www.bestpackfactory.com/blog/brand-packaging-brief-checklist-custom-packaging-rfq.html): Use this B2B brand packaging brief checklist to define product, dimensions, artwork, material, finish, inserts, quantity, destination and timeline.
+- [Packaging Sample-to-Production Timeline](https://www.bestpackfactory.com/blog/custom-packaging-sample-to-production-timeline-guide.html): Plan custom packaging from artwork and dieline approval through sampling, bulk production, quality control and shipping with realistic checkpoints.
 
 
 ## Luxury insert packaging collections (August 2026)
