@@ -21,12 +21,12 @@
     },
     {
       "source": "/news/luxury-paper-bag-customization",
-      "destination": "/products/custom-paper-bags.html",
+      "destination": "/products/paper-bags.html",
       "permanent": true
     },
     {
       "source": "/news/luxury-paper-bag-customization.html",
-      "destination": "/products/custom-paper-bags.html",
+      "destination": "/products/paper-bags.html",
       "permanent": true
     },
     {
