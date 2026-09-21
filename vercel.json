@@ -20,6 +20,51 @@
       "permanent": true
     },
     {
+      "source": "/news/luxury-paper-bag-customization",
+      "destination": "/products/paper-bags.html",
+      "permanent": true
+    },
+    {
+      "source": "/news/luxury-paper-bag-customization.html",
+      "destination": "/products/paper-bags.html",
+      "permanent": true
+    },
+    {
+      "source": "/news/cannabis-mylar-bag-demand",
+      "destination": "/blog/cannabis-mylar-bags-b2b-sourcing-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/news/cannabis-mylar-bag-demand.html",
+      "destination": "/blog/cannabis-mylar-bags-b2b-sourcing-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/custom-luxury-cosmetic-boxes-eva-inserts.html",
+      "destination": "/de/products/custom-cosmetic-packaging-boxes.html",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/custom-luxury-cosmetic-boxes-eva-inserts.html",
+      "destination": "/fr/products/custom-cosmetic-packaging-boxes.html",
+      "permanent": true
+    },
+    {
+      "source": "/products/custom-inserts-trays-packaging.html",
+      "destination": "/blog/custom-packaging-insert-inner-tray-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/products/shelf-ready-coffee-packaging.html",
+      "destination": "/products/coffee-bags.html",
+      "permanent": true
+    },
+    {
+      "source": "/custom-boxes.html",
+      "destination": "/products/custom-boxes.html",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
