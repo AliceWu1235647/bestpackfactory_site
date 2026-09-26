@@ -22,7 +22,7 @@
   "protectedFiles": {
     "app/layout.js": {
       "bytes": 3965,
-      "sha256": "1219690234821ae3d7f98e897bc858bc249930a14e4d6d9c116e334f56b2daf8"
+      "sha256": "cfb94219866d45c0ff2260cb6c0952101916733395c39649ec3fe3eb04cbe05a"
     },
     "app/page.js": {
       "bytes": 1579,
@@ -46,7 +46,7 @@
     },
     "app/WhatsAppWidget.js": {
       "bytes": 7838,
-      "sha256": "6ecc8068ba5f67df1b9ca1a93a76281261e6ce304eaffb11bfd1e002893c77b1"
+      "sha256": "aee5ae9ef5bcf258f54616811285a9ef9347083e5fe89d04c561c35b62f1d49f"
     },
     "app/dielines/page.js": {
       "bytes": 9848,
@@ -110,7 +110,7 @@
     },
     "public/css/style.css": {
       "bytes": 133484,
-      "sha256": "bc75ea247156c057953d80e9f32bfc80bda540e2bed4af495e8e69246298a08a"
+      "sha256": "d9776a2c2f9ff7997a8664dff4563f59ee3c521a4d1c8adfc6a9c2da8365df9e"
     },
     "public/css/i18n.css": {
       "bytes": 874,
