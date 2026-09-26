@@ -2187,28 +2187,28 @@
       "sha256": "8c880cd51938ce3550bcfd1b11d5f614235fdb26331ebf7d00f254d82b4d2114"
     },
     "content-site/blog/brand-packaging-brief-checklist-custom-packaging-rfq.html": {
-      "bytes": 10923,
-      "sha256": "bf9b3020d74b908b671eb806da11082a4682ad34a70014df4153d90fe13953c2"
+      "bytes": 10846,
+      "sha256": "5f15ef138fba31cce8e1f5c031f814eb5c502a238e637debcd23b20ea50eab92"
     },
     "content-site/blog/candle-packaging-materials-guide.html": {
       "bytes": 6982,
       "sha256": "ff27b4f64be0fc7cd0db031238d9e9044da4062f9b4692a6c7740a4def23a735"
     },
     "content-site/blog/cannabis-mylar-bag-child-resistant-checklist.html": {
-      "bytes": 16250,
-      "sha256": "8c0d4e95ed77928851139c800c82f34d3375530e2d9bada03e93c06f12349999"
+      "bytes": 16173,
+      "sha256": "1dd4b5d2a56914241bd95389021f74bcffbb9a180baa0a4ec2f01bbef909b3e1"
     },
     "content-site/blog/cannabis-mylar-bags-b2b-sourcing-guide.html": {
-      "bytes": 13716,
-      "sha256": "7348c66a604aa76ac07cf928f00f78490f9067d1a33fbd82b54a645841b8c229"
+      "bytes": 13639,
+      "sha256": "dd26e14542da80dbe06109abac0b9f005d4fba86e6d6b5da4705b94cc73a033d"
     },
     "content-site/blog/cannabis-packaging-compliance.html": {
       "bytes": 8950,
       "sha256": "0d44abf1b6148f21c9380b76eaaa806b78fdeb49b9c1d3925eccaa0708b82d01"
     },
     "content-site/blog/cardstock-product-boxes-and-food-packaging-box-procurement-guide.html": {
-      "bytes": 15044,
-      "sha256": "a8558ee178f952081a4b0c80c53d48cfaa44e41160e1bcda5191ca1600c6b8db"
+      "bytes": 14967,
+      "sha256": "f619f38d62be32a7e96487f7fd192a0c2a1698dbf0289f714a713fbe120d6a41"
     },
     "content-site/blog/china-packaging-factory-audit-checklist.html": {
       "bytes": 7528,
@@ -2219,20 +2219,20 @@
       "sha256": "63e06e7edb6653bdbc9ce44cefe0a97c40be1baa0acc9706fec9961b57c6be1d"
     },
     "content-site/blog/coffee-bag-material-guide.html": {
-      "bytes": 12300,
-      "sha256": "d162268ae1022cfb58a6d1a4f348e0ae62f727fbe04d53388e2c882c2b0f675f"
+      "bytes": 11996,
+      "sha256": "6b5c45c2dd5453f8e4da422f16ee2e483a609804a8ccd9a3b2b0bb74049b9729"
     },
     "content-site/blog/coffee-bag-packaging-guide.html": {
       "bytes": 8803,
       "sha256": "beb64b15f79478562144877d725f6ea39f3800039c581736212fa402cf40a293"
     },
     "content-site/blog/coffee-bag-pinhole-vs-degassing-valve-troubleshooting.html": {
-      "bytes": 12789,
-      "sha256": "be2d7ae154ce713b9113a8a8194e322bf616b75c345ccc036e5fc3daebc06950"
+      "bytes": 12575,
+      "sha256": "93e7a7889f2608ba89eae6782bbf221a47d81e9382ff76315c2586f38064d1e7"
     },
     "content-site/blog/coffee-bags-rfq-preparation-checklist.html": {
-      "bytes": 16291,
-      "sha256": "49b222914b8901a1a55c38e7aeddeea7ecbd83f371b136fb0acb6cdf13f81c07"
+      "bytes": 16207,
+      "sha256": "acd315f4e264204b5825dffa97d23cc6bfb23ceee0348b8c2a7841e038ebe9fe"
     },
     "content-site/blog/cold-chain-packaging-guide.html": {
       "bytes": 7288,
@@ -2243,8 +2243,8 @@
       "sha256": "2b22cef26174d4bf10478f4f47e1074b72623cf8ba300518cbac1cd9cee9ac38"
     },
     "content-site/blog/corrugated-mailer-box-vs-rigid-box-ecommerce-packaging-guide.html": {
-      "bytes": 15166,
-      "sha256": "43808e94b4ae1c218b4702d84de72e611df1eccc635570e0b070d1d438cbf61e"
+      "bytes": 15089,
+      "sha256": "1b4ac9581dd2904eb9922dedc2a02415bfdbd76e74e98018744533897d16db4c"
     },
     "content-site/blog/cosmetic-packaging-materials.html": {
       "bytes": 8721,
@@ -2255,12 +2255,12 @@
       "sha256": "d74e8479dc55ad2d8862074074409f803fe0780ed57070afe13e26d678ca91a1"
     },
     "content-site/blog/custom-coffee-bags-buying-guide-materials-valves.html": {
-      "bytes": 10676,
-      "sha256": "b925b640434b498cafcc71e298713d33ed64392dfe0e87b18974dd61a156c63e"
+      "bytes": 10592,
+      "sha256": "9b0b9cbddfc955361c1c0c2a88e7c64f2c7765f481261181e9f97f61412940fa"
     },
     "content-site/blog/custom-coffee-bags-moq-500-b2b-guide.html": {
-      "bytes": 16264,
-      "sha256": "8bd3ab779b1e48c7ec2e82f2e1fd2baadcfb768995b6ec3da058a5a4b7c19857"
+      "bytes": 16180,
+      "sha256": "f7849299a822aca726d8360c07069f3cb52a6a9aa13585060527d9cbde089070"
     },
     "content-site/blog/custom-folding-carton-printing-guide.html": {
       "bytes": 10505,
@@ -2299,8 +2299,8 @@
       "sha256": "9b89977dc1c23323b5c5daf2e3fbc5dc3caea515023158e10531cbbd26a247e4"
     },
     "content-site/blog/custom-packaging-factory-direct-vs-trading-company-vs-marketplace-seller-guide.html": {
-      "bytes": 10486,
-      "sha256": "aa8711adb8f5ddd408a76f228f4aead96ce6e2f5dcafbcb73d606ed4fe9fbb42"
+      "bytes": 10409,
+      "sha256": "a7035320cdcf75678a52409aed8e74401bbdf0bc301be6be43fbd5121bc9ebc1"
     },
     "content-site/blog/custom-packaging-for-food-brands.html": {
       "bytes": 7434,
@@ -2311,12 +2311,12 @@
       "sha256": "62184fb48a0e182e816ca5de1ce2cc933dfa92a78623c5b62d9d83808bdc80fc"
     },
     "content-site/blog/custom-packaging-format-decision-guide.html": {
-      "bytes": 10082,
-      "sha256": "f28e7d26ebb8e94772a11bcdcb44f0bc57ff380137356025cb792fa7588ed75c"
+      "bytes": 10005,
+      "sha256": "cfd738e291688a63af818a1c45827ee3000f58ec044e7139b024e09b20b2a2af"
     },
     "content-site/blog/custom-packaging-insert-inner-tray-guide.html": {
-      "bytes": 10760,
-      "sha256": "2012e82ae413fffe8e42d3a666a909eb34fc321edb7d4205405d86fc3ccdb87e"
+      "bytes": 10683,
+      "sha256": "9260a5749c017d54ab815df3612db7ea4df851a9f50de33e4fb2813554792858"
     },
     "content-site/blog/custom-packaging-landed-cost-calculator-buyer-guide.html": {
       "bytes": 13247,
@@ -2327,40 +2327,40 @@
       "sha256": "e967902dd533f00804ba4c31e234ff23b007761d593738d4a4cdc5d1e614cba3"
     },
     "content-site/blog/custom-packaging-material-selection-guide.html": {
-      "bytes": 11052,
-      "sha256": "a056718223b82f706fa2d3adad6eba858e1bf6d22d8bdf14077621c61c3c8941"
+      "bytes": 10975,
+      "sha256": "0e8712682d658935127322af26869b96ac93f647bd96e88a5e808e389637ae7e"
     },
     "content-site/blog/custom-packaging-moq-500-pcs-sourcing-guide.html": {
-      "bytes": 10504,
-      "sha256": "248649f0a6c50753013f3a72d6c5b4f00915c07818c56657588c2b6d60c8bfb4"
+      "bytes": 10427,
+      "sha256": "1b215192cdb68eadd88c026b44885dee777e93db4dfd7ca988e25fbb0faa14ba"
     },
     "content-site/blog/custom-packaging-moq-500-real-cost-factors.html": {
-      "bytes": 16388,
-      "sha256": "c6d7415ea9b13919e4df29da93084d972d9ad491829f626d41bbeb4eb773d3d9"
+      "bytes": 16311,
+      "sha256": "37836d5732564b5a6b05cdedcd6ce85cfbb88b01ab851a71f99a820ad1fbe853"
     },
     "content-site/blog/custom-packaging-moq-500-what-you-need-to-know.html": {
-      "bytes": 15767,
-      "sha256": "863d079c8b5972326c5606d0540ca10d2f60cc0f3a891d01bdb073c6b3c93496"
+      "bytes": 15690,
+      "sha256": "1f1527283b3b54cc062cf56c9cc93b0f02a0cbbd2925728e834e07f23f69ed45"
     },
     "content-site/blog/custom-packaging-moq-guide-for-b2b-buyers.html": {
-      "bytes": 14508,
-      "sha256": "679cf30ad3deab3ef3142268772d894082a042124f942897884110c1c8687678"
+      "bytes": 14431,
+      "sha256": "a344199396046b30938786f3a508032da5c8bf4836dd78d913f11b455a451d40"
     },
     "content-site/blog/custom-packaging-rfq-checklist.html": {
-      "bytes": 14327,
-      "sha256": "89ded93f65b2a13615922a2b32a3c6092fbf2a4d8baea54ec462971c661d4ff3"
+      "bytes": 14250,
+      "sha256": "f0e7ca07bcb00a7b6fe19f58575ff663e69fda49013e4318a98f05ac7cf6441c"
     },
     "content-site/blog/custom-packaging-rfq-parameter-guide.html": {
-      "bytes": 10022,
-      "sha256": "24e89ee4216c00f4f231686e4ba665ed943128cabe6d40f460a4624b79634597"
+      "bytes": 9945,
+      "sha256": "6c144e4e13885eae50ee74af3eae56c2fb9dccf42186227e9ed62268dd3fac27"
     },
     "content-site/blog/custom-packaging-sample-to-production-timeline-guide.html": {
-      "bytes": 10686,
-      "sha256": "e6f755f210278b8523bf6b709173f26e342d69e34aa8da44bb7ae9f2b1b3c4e3"
+      "bytes": 10609,
+      "sha256": "83484bffbbec35dc9f0348366692566ccc8b866d34a27f7e570cfe16fc3bea83"
     },
     "content-site/blog/custom-packaging-supplier-comparison-guide.html": {
-      "bytes": 11200,
-      "sha256": "998ed5b47fb800538cd3104fdd6aca4f17d8b84186981a84c7ef7cbea5ff20aa"
+      "bytes": 11123,
+      "sha256": "a0b417d455f82d143a45a8b63550c9cdd0755048cdde291b406e1841b15577ea"
     },
     "content-site/blog/custom-paper-bag-sizes-guide.html": {
       "bytes": 10053,
@@ -2379,8 +2379,8 @@
       "sha256": "aaa23a7224c09172d512d714ab7d61a62c1157e328b5528ed188775ff20e041b"
     },
     "content-site/blog/cylinder-tube-packaging-luxury-gifts-guide.html": {
-      "bytes": 14764,
-      "sha256": "dba758ebb1d6549671c7c4917ffd24f0f3cbc35896f31607c868f61727a4341b"
+      "bytes": 14687,
+      "sha256": "bbca0e687cb25e9f2096b9876172f5dffeacb882604476e345440ec536d60e08"
     },
     "content-site/blog/dieline-artwork-checklist-custom-packaging.html": {
       "bytes": 14506,
@@ -2395,8 +2395,8 @@
       "sha256": "b59b3af24531ff36a111b8a32d0f2914c98bbc390be90091fe2c343c071b7753"
     },
     "content-site/blog/flat-bottom-bag-vs-stand-up-pouch.html": {
-      "bytes": 16056,
-      "sha256": "f4ccd11498236692600edd1fee8f6905ccab78ebcae9f3827fd6f41a82b3e6d9"
+      "bytes": 15972,
+      "sha256": "b8d50a8b278e3501a9d803f9ef603b6d2da8de082edbd7a9468faf30ced31192"
     },
     "content-site/blog/flat-pack-vs-assembled-packaging.html": {
       "bytes": 7033,
@@ -2407,8 +2407,8 @@
       "sha256": "13dd3b47674400b9c39a7cd8ef69d1954041a2e78a3e35771c95ddee62ccdd2b"
     },
     "content-site/blog/flexible-packaging-vs-rigid-packaging-b2b-guide.html": {
-      "bytes": 13779,
-      "sha256": "1c91f06c2b321fe535b7f0776915e9f7fb2d332a8f4622f8fce49755c0d52ad3"
+      "bytes": 13695,
+      "sha256": "f0b965e8ff2063db80be688471a55f806139aa1b30cddce73c606bb9ec4d162f"
     },
     "content-site/blog/foil-stamping-packaging.html": {
       "bytes": 8807,
@@ -2439,16 +2439,16 @@
       "sha256": "cb6b24f4e0f73436ce9fc5c837df6931983254769dcc1f0754036e4b741e07c6"
     },
     "content-site/blog/how-to-choose-a-magnetic-gift-box.html": {
-      "bytes": 11610,
-      "sha256": "e19456c910d131828fb1af8f0578827ff5477bbbbe77442427c27e06c2316dc5"
+      "bytes": 11533,
+      "sha256": "1ab2974972ae32ba83e54697f4d3b743f8a94e8f6bbfb251fda07d072e02f57c"
     },
     "content-site/blog/how-to-choose-china-packaging-supplier.html": {
-      "bytes": 14714,
-      "sha256": "467af60877b44c937d8cc1b270fddd2df8fe1aa3a670256e0daa3ce324ebe206"
+      "bytes": 14637,
+      "sha256": "e5c823451f1e8a8f002d723ba5c44b8a8ed59323a47adaec1b30ba54f076a424"
     },
     "content-site/blog/how-to-find-custom-packaging-supplier-china.html": {
-      "bytes": 14014,
-      "sha256": "6d5979bd52a312cca6103f095a494f17e5bf0d70c07df229ca95fcef3452bb7b"
+      "bytes": 13937,
+      "sha256": "3c8443b10080dd1db8aca35266b5bd64b681d181b685ee835b2c786ccb073c61"
     },
     "content-site/blog/how-to-import-packaging-from-china.html": {
       "bytes": 7416,
@@ -2475,12 +2475,12 @@
       "sha256": "51aa6dd4fbb08dfdceaca95face3d10f13b984d4f9b283d5f2113f1ead3058f4"
     },
     "content-site/blog/kraft-paper-pouch-vs-foil-pouch-coffee.html": {
-      "bytes": 16208,
-      "sha256": "58061ddd4e52df86798c6d0abfa3b4f081197cb6fb38e71aa0ce484343f57163"
+      "bytes": 16124,
+      "sha256": "4508767d111d38aa5d5d45fc2ea95bdeee5455ebf5704e030b6652057d1386ad"
     },
     "content-site/blog/low-moq-seasonal-packaging-hybrid-plan.html": {
-      "bytes": 12621,
-      "sha256": "9d82da0c1181adf8a51039607bab57c9ae3292969bc646f241ed7da4a64c3ab2"
+      "bytes": 12397,
+      "sha256": "474e7e8a3b412f15f29e7a8ade7e54ef5f50740af4cc785b5bda06c1cb89e30e"
     },
     "content-site/blog/luxury-candle-packaging.html": {
       "bytes": 9151,
@@ -2491,8 +2491,8 @@
       "sha256": "ab1ba6e4651e4eb507614dcdd185ce888ce7cf6778a1c73743d0569e2b753751"
     },
     "content-site/blog/magnetic-box-insert-options-premium-gifts.html": {
-      "bytes": 16032,
-      "sha256": "245370176129d6945e9d3e4b7f6338b3188ff089243b063ba23317a06dbf5d74"
+      "bytes": 15955,
+      "sha256": "dd17d621e60bf4744692ad8545c616c6816ccd3889d0a744d544355c2491e305"
     },
     "content-site/blog/magnetic-box-inserts-finishes-guide.html": {
       "bytes": 14682,
@@ -2511,8 +2511,8 @@
       "sha256": "24ebe7607940f3cb289d7cee4a83b033549a7526299a73d79d1d0d507b35294e"
     },
     "content-site/blog/mylar-bags-barrier-materials-rfq-checklist.html": {
-      "bytes": 10478,
-      "sha256": "6526345b25e6ac6a09100ae48125c022bbe26a8c15dc934b8a89e190b2f5cd5a"
+      "bytes": 10394,
+      "sha256": "a2750043aec512e3dc817555aeab9987d95b4ab78bcdfb7af6ef5a79c8495188"
     },
     "content-site/blog/packaging-artwork-checklist.html": {
       "bytes": 9019,
@@ -2535,8 +2535,8 @@
       "sha256": "952ccd6daca628cd73b96c45e0fffe65827dff91cbabf9bb5b87d2912af26d94"
     },
     "content-site/blog/packaging-damage-root-cause-checklist-ecommerce.html": {
-      "bytes": 12705,
-      "sha256": "9632c130cbc88a6192e265fd7a69419682dbe693c573d1de73769870129d733c"
+      "bytes": 12412,
+      "sha256": "00d445753ebfb102c5fa5cd4524252025b3265b0d24e8a69f5b4a01c2bceb8fa"
     },
     "content-site/blog/packaging-design-brief-template.html": {
       "bytes": 7044,
@@ -2623,12 +2623,12 @@
       "sha256": "6bac467831a7907fee62c8c69cdf37d683aac488ae2aa67d6f82b2eb5ef889a1"
     },
     "content-site/blog/packaging-sample-checklist-before-mass-production.html": {
-      "bytes": 14798,
-      "sha256": "7c7450ee1cda369865bb843988891cdebc83bf529db07f245a3ea065d3054797"
+      "bytes": 14721,
+      "sha256": "fc2a4cafa9c3c146bcdf8a5a1a8c76913fd1999ef2fe847e8c8ba158c3937953"
     },
     "content-site/blog/packaging-sample-color-tolerance-approval-guide.html": {
-      "bytes": 12699,
-      "sha256": "a9cd189c510f111beaa76e364b1441028550bf3ec26b4b6304959441e9c93c77"
+      "bytes": 12560,
+      "sha256": "c8f7a12f744baf6e2b0b9081c502bb3416c68b5941989e13b088fbca0a14f364"
     },
     "content-site/blog/packaging-sampling-process-guide.html": {
       "bytes": 9583,
@@ -2659,8 +2659,8 @@
       "sha256": "c92d799b0667d19b2edce978016ed547924d0ca8d15c0823552c90dface27efb"
     },
     "content-site/blog/paper-gift-bag-and-foam-insert-luxury-packaging-guide.html": {
-      "bytes": 15166,
-      "sha256": "3bbffadb23b8d63ac5bba76895168dbc292a89903dae523647e58253fa3bdc09"
+      "bytes": 15089,
+      "sha256": "15e370cc7cf0b551b740b5de7dd25ee4facba849bea805f07d736c5856c4e5c8"
     },
     "content-site/blog/paper-tube-packaging-guide.html": {
       "bytes": 6771,
@@ -2671,20 +2671,20 @@
       "sha256": "ecf26d2920ac1c5a1cc7eee1dbd5ab60f5a8b4183aeedff9d58b3858c5611837"
     },
     "content-site/blog/pet-food-bag-barrier-material-guide.html": {
-      "bytes": 15929,
-      "sha256": "aa74a28099392381125e00a2032ead82aba895350e79dcfb00bdcaa353f5b2b9"
+      "bytes": 15845,
+      "sha256": "79c5e785a0cde0b54614a32e299000d0da0417825c7d4d554276f6acebee0cd8"
     },
     "content-site/blog/pet-food-packaging-buyer-guide.html": {
-      "bytes": 11476,
-      "sha256": "1217109589f0ef40f93712675daee50bb30f6d51ab7c0380b87f1c02546597ff"
+      "bytes": 11392,
+      "sha256": "cf0f7dfcc55d35f956ca3279a10f2833b0f708fade9a0c57053879f81d522369"
     },
     "content-site/blog/pet-food-packaging-requirements.html": {
       "bytes": 8504,
       "sha256": "26de60c6b5ea21d176a4a2a643bd94f0943f8877ce4e163c8da6668616bfda43"
     },
     "content-site/blog/pet-food-packaging-trends-2025-b2b-guide.html": {
-      "bytes": 14099,
-      "sha256": "2eb798af949630322386ebb7d42b47a32ee5cbebac319361bd4da1ad5b23e4a2"
+      "bytes": 14015,
+      "sha256": "37556137191614064520b6769fb8dad50d04bbc96b6b176d2e690fb2b583c7f5"
     },
     "content-site/blog/pharma-folding-carton-gs1-datamatrix-checklist.html": {
       "bytes": 16094,
@@ -2703,16 +2703,16 @@
       "sha256": "23d2f2b96ea50c538a13d3e26346d3f7c5e14b0a889de5d49ca8dd91ad458016"
     },
     "content-site/blog/rigid-box-vs-folding-carton-procurement-guide.html": {
-      "bytes": 14562,
-      "sha256": "e8b9077bba57f949ad0f5628dfba52f158f692934d3b12a9c565cd7973c7f528"
+      "bytes": 14485,
+      "sha256": "3929d627287ed35bad582cae97285e079e0c6add36d1483fb41b1b4342ae3647"
     },
     "content-site/blog/rigid-box-vs-folding-carton.html": {
       "bytes": 7636,
       "sha256": "1d61c5f05eb01c61cd123e9f3f544f98f032ffe171aceffaeae6159443ebc3ac"
     },
     "content-site/blog/rigid-boxes-vs-folding-cartons-vs-mailer-boxes.html": {
-      "bytes": 10538,
-      "sha256": "a343f81484d2d10ff052184a38491c673efda05c18f48b69ea2e01bcf7a2e14b"
+      "bytes": 10461,
+      "sha256": "af15fd23cbfeb60ef8f846feb3c693ef549cf49e9f9e423ae46d80b669f19e1f"
     },
     "content-site/blog/roll-label-winding-direction-application-checklist.html": {
       "bytes": 12555,
@@ -2723,12 +2723,12 @@
       "sha256": "0ae2f76df7251ca502a46717afbdf4875a375da9ac6e72d1ab0868cdd5a29c7e"
     },
     "content-site/blog/skincare-cosmetic-box-insert-fit-guide.html": {
-      "bytes": 11796,
-      "sha256": "3931cf093fec785975bd86024addc94d4fb7eb5e1af77c31b9f1fa1582b27236"
+      "bytes": 11719,
+      "sha256": "8fa9543c71a0bb94f1eec3605300eb7e038e359ab09c23853aa5587726536999"
     },
     "content-site/blog/sliding-drawer-box-packaging-guide.html": {
-      "bytes": 14900,
-      "sha256": "f4d9b78a5f86bdefa1b379cd18284cb125bbaa694895cd10105f9db1b6110a9e"
+      "bytes": 14823,
+      "sha256": "099ae1e36ce2354f8f98a71d5b68650107e9d4ae9e1566de9d773371f27ebefc"
     },
     "content-site/blog/soft-touch-lamination-guide.html": {
       "bytes": 9005,
@@ -2755,8 +2755,8 @@
       "sha256": "b3cefdbe45b241afeb47f349d3f8e4d15bb162fdaa20f85e54f1f2e7b193bb62"
     },
     "content-site/blog/variable-data-pharma-packaging.html": {
-      "bytes": 11707,
-      "sha256": "5387acd788dc2d5e1e02e3cc9fba4c954a79f3c1507c017c63bd4888e9f5425a"
+      "bytes": 11561,
+      "sha256": "40fdb3fdf4458ef00932660e403768a9a8617f438059caaeddf6f26965afe714"
     },
     "content-site/blog/wine-spirits-packaging-guide.html": {
       "bytes": 7565,
