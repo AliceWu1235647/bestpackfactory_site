@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T23:01:30.023Z",
-  "generatedFromCommit": "10d87158910db81c62baac28c3275437d7f005cd",
+  "generatedAt": "2026-09-26T18:52:32.701Z",
+  "generatedFromCommit": "4b7351404f7efb8196fed3075964c3291ce77ac2",
   "identity": {
     "repositoryId": 1275025881,
     "vercelProjectId": "prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4",
-    "rollbackTag": "rollback/pre-protection-bootstrap-20260914"
+    "rollbackTag": "rollback/pre-seo-geo-20260928"
   },
   "counts": {
-    "contentFiles": 1522,
-    "htmlPages": 520,
+    "contentFiles": 1523,
+    "htmlPages": 521,
     "localePages": {
       "ar": 23,
       "de": 23,
@@ -17,12 +17,12 @@
       "fr": 23,
       "ja": 23
     },
-    "sitemapUrls": 469
+    "sitemapUrls": 470
   },
   "protectedFiles": {
     "app/layout.js": {
-      "bytes": 3965,
-      "sha256": "cfb94219866d45c0ff2260cb6c0952101916733395c39649ec3fe3eb04cbe05a"
+      "bytes": 4069,
+      "sha256": "3282bb817db302eb2df4b3848c2bf9b906fe1a25de656a046fb9488262be63d3"
     },
     "app/page.js": {
       "bytes": 1579,
@@ -49,7 +49,7 @@
       "sha256": "aee5ae9ef5bcf258f54616811285a9ef9347083e5fe89d04c561c35b62f1d49f"
     },
     "app/dielines/page.js": {
-      "bytes": 9848,
+      "bytes": 9904,
       "sha256": "1f4de29bdd4e21592444cac505657925b4e6976be9d162c86b87938c1e73623f"
     },
     "app/dielines/DielineGenerator.js": {
@@ -69,15 +69,15 @@
       "sha256": "d995896bef64627945ac4773fdc4e6c77d7108afb97baf5ded828dd2752507cd"
     },
     "lib/dielines/build.js": {
-      "bytes": 5303,
+      "bytes": 5342,
       "sha256": "0a5441956c118e91894a5b561cf796e647f64b38259cc402a6f28ecab9c43f42"
     },
     "lib/dielines/geometry.js": {
-      "bytes": 4989,
+      "bytes": 4995,
       "sha256": "df0d621534205a2fa80bac97c2dd80862ac022788ceac864ca5c7e2c3438189a"
     },
     "lib/dielines/export-svg.js": {
-      "bytes": 3069,
+      "bytes": 3070,
       "sha256": "9aaaee36010799414e91c71e0dcdca9dd995d43ea7257895b12b6a0dc2147e9e"
     },
     "lib/dielines/export-pdf.js": {
@@ -133,7 +133,7 @@
       "sha256": "1fac66fd8fa617a07db8193c6b7926a4a801d37e90f028000900100f3503fedd"
     },
     "public/robots.txt": {
-      "bytes": 592,
+      "bytes": 595,
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "public/sitemap.xml": {
@@ -147,7 +147,7 @@
       "sha256": "bcacb8c51ad1a7bd0c154c8cca430979fbec63037b8df19b9ad331625b72a582"
     },
     "content-site/ai-index.json": {
-      "bytes": 44212,
+      "bytes": 44229,
       "sha256": "e660af78545fb28b00075857f13ec9a19ea4957aba60508de64cb2d331d6138e"
     },
     "content-site/ai-rfq-intent-map.json": {
@@ -163,7 +163,7 @@
       "sha256": "c506f49d26c2170f413f324d1f7baee8369992da3bf1076b87806a085788c052"
     },
     "content-site/ar/products.html": {
-      "bytes": 118934,
+      "bytes": 119172,
       "sha256": "f43aae42ca062bad0d5ede8d4a4fbbc30d9c3070e7d36042f9af3aa688e357e2"
     },
     "content-site/ar/products/coffee-bags.html": {
@@ -2327,7 +2327,7 @@
       "sha256": "e967902dd533f00804ba4c31e234ff23b007761d593738d4a4cdc5d1e614cba3"
     },
     "content-site/blog/custom-packaging-material-selection-guide.html": {
-      "bytes": 13664,
+      "bytes": 13735,
       "sha256": "5e9e09eb8da92757fe331250f2d13ff79851b1aebafc8b06607bf42b52256ae1"
     },
     "content-site/blog/custom-packaging-moq-500-pcs-sourcing-guide.html": {
@@ -2747,7 +2747,7 @@
       "sha256": "1d2038a2552eb1be66862f0fb2258bb86d5bdbf218245761a6a16e282d5755f1"
     },
     "content-site/blog/sustainable-packaging-certifications-explained.html": {
-      "bytes": 12093,
+      "bytes": 12165,
       "sha256": "56340a902dde41c1d0af5fb7468fbc8b2bb191d91b3844f193250c3df25217f4"
     },
     "content-site/blog/tea-coffee-packaging-trends.html": {
@@ -2787,6 +2787,7 @@
       "sha256": "bca47d3e53b9b52b36197d3fc099c5efad8ebaba709a313595d0be7a335d3a65"
     },
     "content-site/css/style.css": {
+      "bytes": 133453,
       "sha256": "c82fd42d133830a0a2828f956992456de9187962a344daa547b95a5b937127ba"
     },
     "content-site/custom-packaging-manufacturer.html": {
@@ -2810,7 +2811,7 @@
       "sha256": "d7abf8a025f93ebaafb4b9fd7ffcbac5c9e518b6c824438615f9b3647a1c0b39"
     },
     "content-site/de/products.html": {
-      "bytes": 109314,
+      "bytes": 109552,
       "sha256": "b3654de738bdf4d80caa759a724f6f7b2000fb3043298b2937f49d9eac4068e1"
     },
     "content-site/de/products/coffee-bags.html": {
@@ -2906,7 +2907,7 @@
       "sha256": "34b08a5ab67e3c08bc49cdfa638aeace5865eaf4ff14141e1ca814fdbd586ab5"
     },
     "content-site/es/products.html": {
-      "bytes": 112029,
+      "bytes": 112267,
       "sha256": "ab952e7530d68e841a0929dc78a82b4eab3008d9594fbbd483e7ab56f70fff63"
     },
     "content-site/es/products/coffee-bags.html": {
@@ -2994,7 +2995,7 @@
       "sha256": "d77b10e44b95a02b9dd2b77135879926fa7d23c40c6602d1dd8f6de957cbe6cf"
     },
     "content-site/factory/about-us.html": {
-      "bytes": 10415,
+      "bytes": 10419,
       "sha256": "fce8bf68650697684aa0796bed2175bd0ce285ec9b317177d0770ce0f52e6074"
     },
     "content-site/factory/certificates.html": {
@@ -3002,15 +3003,15 @@
       "sha256": "36c5c30194ceb2bd39f81dd29544cc91d5dcf5db17366de945b4e789606282de"
     },
     "content-site/factory/exhibition.html": {
-      "bytes": 10336,
+      "bytes": 10340,
       "sha256": "406fb0e376777a79e8053efd958bdb2a03a4205d45b75427efaaf3a89cc27ac3"
     },
     "content-site/factory/production-workshop.html": {
-      "bytes": 10325,
+      "bytes": 10329,
       "sha256": "f9eff66fd2040cf8c8156186281452d5a2b041b59d189c1df882540b354979c5"
     },
     "content-site/factory/quality-control.html": {
-      "bytes": 10314,
+      "bytes": 10318,
       "sha256": "7ad42158e66afba271776568d62e01496afe2f4c9ede7e91198b166caf116475"
     },
     "content-site/faq.html": {
@@ -3022,23 +3023,23 @@
       "sha256": "0fb027ca6c3f73e46b1903093a6630343a5b7ed964d4048c3f3113a79f5e00fd"
     },
     "content-site/finishes/embossing-packaging.html": {
-      "bytes": 9051,
+      "bytes": 9067,
       "sha256": "4de746fd550af1d42338b4e98b8d969d1279c3c4e1a4c76002bbdeb2883dda97"
     },
     "content-site/finishes/foil-stamping-packaging.html": {
-      "bytes": 9400,
+      "bytes": 9416,
       "sha256": "2dddc482e0a6cc01acf14cb283ba815f15903affcb2b0fdf6966e2ccd1d30b6f"
     },
     "content-site/finishes/matte-lamination-packaging.html": {
-      "bytes": 9160,
+      "bytes": 9176,
       "sha256": "51144d8eae81a3f7751584523a4735f22a70e9865292367260a8941e21a00ef4"
     },
     "content-site/finishes/soft-touch-packaging.html": {
-      "bytes": 9393,
+      "bytes": 9409,
       "sha256": "27f3598ab252a2925a5ef8d046216c5a6017fc889649e1d660a1d05f2b74a7eb"
     },
     "content-site/finishes/spot-uv-packaging.html": {
-      "bytes": 8916,
+      "bytes": 8932,
       "sha256": "e347c1a3dfbfa2410cea656bbef8939d462704cd0d0d927968dd1b35f0ed5423"
     },
     "content-site/fr/contact.html": {
@@ -3050,7 +3051,7 @@
       "sha256": "9e761b8a966c0d09de2141cf353d381b53f6d1f501d6da750d950e5bdbc2b852"
     },
     "content-site/fr/products.html": {
-      "bytes": 110543,
+      "bytes": 110781,
       "sha256": "0432d8590ff0bd851881a3294bbf9ac39fa4f5ec13c39c804e1491cd1437d52d"
     },
     "content-site/fr/products/coffee-bags.html": {
@@ -3134,8 +3135,8 @@
       "sha256": "a45b4f7107209b963421d5bf9424e575103a7658a8678141b077606f3a7e1eae"
     },
     "content-site/index.html": {
-      "bytes": 52960,
-      "sha256": "f32ef4a0954ce233a930a22c3841ab5f1adc702a6a856744adff1358437dd8e9"
+      "bytes": 53468,
+      "sha256": "93de617903ee8d2deccb66579b1e4855b40071fbd1cbf75952823192ac2428f9"
     },
     "content-site/industries.html": {
       "bytes": 14311,
@@ -3546,7 +3547,7 @@
       "sha256": "42bd1ecb85e2928aab449d32ee2377a84294d9b691e820e73ec3448ea5240da3"
     },
     "content-site/ja/products.html": {
-      "bytes": 115929,
+      "bytes": 116168,
       "sha256": "8effbd552e549f94d567f8f602eae0b83d440c0f4c38c52d7f9c8015b9b630ed"
     },
     "content-site/ja/products/coffee-bags.html": {
@@ -3638,7 +3639,7 @@
       "sha256": "5e9225eff17be86a269ff6664c358f5a7a8687db7f78d69cb66ad49c28930d4c"
     },
     "content-site/llms.txt": {
-      "bytes": 24913,
+      "bytes": 24920,
       "sha256": "0a8230a1eb6c5c1570f7580de4c8ee6abe355bfc15f3a1b7e2bb559aa52570be"
     },
     "content-site/materials.html": {
@@ -3718,7 +3719,7 @@
       "sha256": "e8d496212defe260977b0d932cb828373ad966b2c9f32119b0c80ae4022f4707"
     },
     "content-site/products.html": {
-      "bytes": 105432,
+      "bytes": 105774,
       "sha256": "51cae748884ddfa49fbd4107fa1aa4e8b04a87b6f29fc7406a884e9b8f883b78"
     },
     "content-site/products/1kg-coffee-bean-bags.html": {
@@ -4146,16 +4147,12 @@
       "sha256": "e1bee5fbf218265c15ef60b5669d1b43564ba1022e0f256fd6cac4b19e6c1c3e"
     },
     "content-site/robots.txt": {
-      "bytes": 592,
+      "bytes": 595,
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "content-site/samples.html": {
-      "bytes": 7055,
+      "bytes": 7063,
       "sha256": "beca12041b98b9ea201d034343bb6147c20ac803ebe1df9e037e9219688b4100"
-    },
-    "content-site/testimonials.html": {
-      "bytes": 47749,
-      "sha256": "17de26193839fae18f0f39449d4ee67137f7595b0a2d8f8c75b014a47800c66b"
     },
     "content-site/sitemap-index.xml": {
       "bytes": 594,
@@ -4164,6 +4161,10 @@
     "content-site/sitemap.xml": {
       "bytes": 182286,
       "sha256": "f7b3acb5ae101d649fd2cd3127d5d16fe04243813c1b90b5f1c6ac59fd12a681"
+    },
+    "content-site/testimonials.html": {
+      "bytes": 43165,
+      "sha256": "ad6fc8407db4275471b205fbe367e9cba7a4a8ab7e0431c444079064d6d188a4"
     },
     "content-site/thank-you.html": {
       "bytes": 5691,
@@ -7605,6 +7606,9 @@
     },
     "https://www.bestpackfactory.com/samples.html": {
       "lastmod": "2026-09-08"
+    },
+    "https://www.bestpackfactory.com/testimonials.html": {
+      "lastmod": "2026-09-26"
     },
     "https://www.bestpackfactory.com/trust-profile.html": {
       "lastmod": "2026-09-08"

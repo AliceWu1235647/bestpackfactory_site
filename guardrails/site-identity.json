@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "approvedAt": "2026-09-14",
+  "approvedAt": "2026-09-28",
   "siteUrl": "https://www.bestpackfactory.com",
   "packageName": "bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready",
-  "sourceOfTruthStatus": "ready",
+  "sourceOfTruthStatus": "repository-static-content-approved-r2-disabled",
   "git": {
     "repository": "AliceWu1235647/bestpackfactory_site",
     "repositoryId": 1275025881,
@@ -28,10 +28,10 @@
     "contentSource": "repository-static-content"
   },
   "production": {
-    "lastApprovedCommit": "10d87158910db81c62baac28c3275437d7f005cd",
-    "rollbackTag": "rollback/pre-protection-bootstrap-20260914",
-    "lastApprovedDeploymentId": "dpl_9id5CtRZ7RQzYS6oNGpeNxTSPUr1",
-    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-mzh6jzngg-alicewu1235647s-projects.vercel.app",
+    "lastApprovedCommit": "4b7351404f7efb8196fed3075964c3291ce77ac2",
+    "rollbackTag": "rollback/pre-seo-geo-20260928",
+    "lastApprovedDeploymentId": "dpl_5yMPvsWzBQ6YFY6Gd7ju4oDqkxGn",
+    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-8qechlw6t-alicewu1235647s-projects.vercel.app",
     "allowedDomains": [
       "bestpackfactory.com",
       "www.bestpackfactory.com",
@@ -39,8 +39,17 @@
     ]
   },
   "protection": {
-    "locales": ["ar", "de", "es", "fr", "ja"],
-    "contentRoots": ["content-site", "public/assets"],
+    "locales": [
+      "ar",
+      "de",
+      "es",
+      "fr",
+      "ja"
+    ],
+    "contentRoots": [
+      "content-site",
+      "public/assets"
+    ],
     "sitemapFile": "public/sitemap.xml",
     "protectedFiles": [
       "app/layout.js",
