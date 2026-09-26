@@ -16,7 +16,7 @@ const localeBootstrapScript = `(function(){try{var s=location.pathname.replace(/
   LOCALE_LANGS
 )},d=${JSON.stringify(
   LOCALE_DIRS
-)};var e=document.documentElement;if(l[s]){e.lang=l[s];if(d[s]){e.dir=d[s]}}}catch(_){}})();`;
+)};var e=document.documentElement;if(l[s]){e.lang=l[s];if(d[s]){e.dir=d[s]}var h=document.head;var a=document.createElement("link");a.rel="stylesheet";a.href="/css/i18n.css?v=20260828_i18n1";h.appendChild(a);if(d[s]){var r=document.createElement("link");r.rel="stylesheet";r.href="/css/rtl.css?v=20260828_rtl1";h.appendChild(r)}}}catch(_){}})();`;
 
 const googleAnalyticsCandidate = String(process.env.NEXT_PUBLIC_GA_ID || '').trim().toUpperCase();
 const googleAnalyticsId = /^G-[A-Z0-9]+$/.test(googleAnalyticsCandidate)
@@ -47,8 +47,6 @@ export default function RootLayout({ children }) {
         <link rel="alternate" type="application/json" href="/ai-index.json" title="BestPackFactory AI index" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="BestPackFactory Packaging Insights" />
         <link rel="stylesheet" href="/css/style.css?v=20260927_widget_v3" />
-        <link rel="stylesheet" href="/css/i18n.css?v=20260828_i18n1" />
-        <link rel="stylesheet" href="/css/rtl.css?v=20260828_rtl1" />
         <style dangerouslySetInnerHTML={{ __html: '.bpf-whatsapp-chat{display:none!important}' }} />
       </head>
       <body suppressHydrationWarning={true}>

@@ -1,8 +1,12 @@
 /**
  * geo-round4.mjs
- * 1. Add AggregateRating to homepage Organization schema
- * 2. Add customer reviews section to homepage (before certs section)
- * 3. Create content-site/testimonials.html with all 33 reviews
+ * 1. Add customer reviews section to homepage (before certs section)
+ * 2. Create content-site/testimonials.html with all 33 reviews
+ *
+ * Review text stays visible, but no first-party AggregateRating/Review markup is
+ * emitted. Google does not show self-serving review rich results for an
+ * Organization/LocalBusiness reviewing itself, and provenance must be retained
+ * separately before any review markup is reconsidered.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -105,20 +109,13 @@ function reviewCard(r, compact=false) {
 </div>`;
 }
 
-// ─── 1. HOMEPAGE: Add AggregateRating to Organization schema ─────────────────
+// ─── 1. HOMEPAGE: keep review text visible without self-serving rating schema ─
 {
   const filePath = path.join(root, 'content-site', 'index.html');
   let h = fs.readFileSync(filePath, 'utf8');
 
-  if (h.includes('aggregateRating')) {
-    console.log('SKIP homepage schema: aggregateRating already present');
-  } else {
-    h = h.replace(
-      '"knowsAbout": [',
-      '"aggregateRating": {"@type": "AggregateRating","ratingValue": "4.9","bestRating": "5","worstRating": "1","ratingCount": "66","reviewCount": "66"},"knowsAbout": ['
-    );
-    console.log('✓ homepage: AggregateRating added to Organization schema');
-  }
+  h = h.replace(/\s*"aggregateRating"\s*:\s*\{[^{}]*\}\s*,?/, '\n  ');
+  console.log('✓ homepage: self-serving AggregateRating schema absent');
 
   // 2. Add reviews section before certs section
   if (h.includes('customer-reviews-section')) {
@@ -187,28 +184,6 @@ ${reviewCards}
 
     const allCards = REVIEWS.map(r => `<div style="break-inside:avoid;margin-bottom:1rem;">${reviewCard(r,false)}</div>`).join('\n');
 
-    const reviewSchema = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "BestPackFactory",
-      "url": "https://www.bestpackfactory.com/",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "bestRating": "5",
-        "worstRating": "1",
-        "ratingCount": "66",
-        "reviewCount": "66"
-      },
-      "review": REVIEWS.slice(0,10).map(r => ({
-        "@type": "Review",
-        "author": {"@type": "Person", "name": r.name},
-        "datePublished": r.date,
-        "reviewRating": {"@type": "Rating", "ratingValue": String(r.stars), "bestRating": "5"},
-        "reviewBody": r.text
-      }))
-    });
-
     const page = `${head}</head><body><div hidden=""><!--$--><!--/$--></div><div><header class="site-header-blog"><a class="header-logo" href="/index.html">BestPack<span>Factory</span></a><nav class="header-nav"><a href="/products.html">Products</a><a href="industries.html">Industries</a><a href="/blog.html">Blog</a><a href="/contact.html">Contact</a></nav></header>
 <main class="blog-post-main"><article class="blog-article">
 <h1>Customer Reviews &amp; Testimonials</h1>
@@ -237,7 +212,7 @@ ${allCards}
 </div>
 <p class="blog-cta"><a class="btn-cta" href="/contact.html">Request a quote →</a></p>
 </article></main>
-<footer class="site-footer-blog"><p>© 2026 BestPackFactory · <a href="/contact.html">lisa@colorprintingpackage.com</a> · WhatsApp +86 158 8653 0985</p></footer></div><script type="application/ld+json">${reviewSchema}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.bestpackfactory.com/"},{"@type":"ListItem","position":2,"name":"Customer Reviews &amp; Testimonials"}]}</script></body></html>`;
+<footer class="site-footer-blog"><p>© 2026 BestPackFactory · <a href="/contact.html">lisa@colorprintingpackage.com</a> · WhatsApp +86 158 8653 0985</p></footer></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.bestpackfactory.com/"},{"@type":"ListItem","position":2,"name":"Customer Reviews &amp; Testimonials"}]}</script></body></html>`;
 
     fs.writeFileSync(filePath, page, 'utf8');
     console.log('✓ testimonials.html created with', REVIEWS.length, 'reviews');
