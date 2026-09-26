@@ -478,8 +478,11 @@ html{
   -webkit-text-size-adjust:100%;
   scroll-behavior:smooth;
 }
-html,body{
+html{
   overflow-x:hidden;
+}
+body{
+  overflow-x:clip;
 }
 a,button,input,textarea,select{
   -webkit-tap-highlight-color:rgba(0,122,63,.14);

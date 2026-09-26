@@ -44,11 +44,19 @@ export default function WhatsAppWidget() {
           position: fixed;
           right: 20px;
           bottom: 20px;
+          /* Progressive enhancement: respect iOS home indicator & browser chrome */
+          bottom: max(20px, calc(20px + env(safe-area-inset-bottom, 0px)));
           z-index: 100000;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
           gap: 10px;
+          /* Force GPU compositing layer — fixes iOS Safari position:fixed during scroll */
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          /* Prevent any ancestor overflow from clipping this element */
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
         }
 
         /* ---------- WhatsApp 圆形按钮 ---------- */
@@ -149,7 +157,12 @@ export default function WhatsAppWidget() {
         }
 
         @media (max-width: 600px) {
-          .bpf-contact-dock { right: 14px; bottom: 14px; gap: 8px; }
+          .bpf-contact-dock {
+            right: 14px;
+            bottom: 14px;
+            bottom: max(14px, calc(14px + env(safe-area-inset-bottom, 0px)));
+            gap: 8px;
+          }
           .bpf-wa-icon-btn { width: 56px; height: 56px; }
           .bpf-wa-icon-btn svg { width: 30px; height: 30px; }
           .bpf-mail-pill { font-size: 13px; padding: 9px 15px; }
