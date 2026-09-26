@@ -21,8 +21,8 @@
   },
   "protectedFiles": {
     "app/layout.js": {
-      "bytes": 3970,
-      "sha256": "340a40d01fa078ef2777930ec9db45bea64bcda37d98d1428467183c63552d50"
+      "bytes": 3888,
+      "sha256": "46ad90cebacac104b0f2444df47a53f6ff4148ac2b14b0cd2ec3e44def53093e"
     },
     "app/page.js": {
       "bytes": 1579,
@@ -109,8 +109,8 @@
       "sha256": "c0bcfb903adec32a90557b6aebc56377620dd0c70a0628ed22c7702df35f361a"
     },
     "public/css/style.css": {
-      "bytes": 129578,
-      "sha256": "85c674cfd46cec23eec56ba685fafca9a1eec3299d23065dab9f9f214f0dfe75"
+      "bytes": 129573,
+      "sha256": "27260b543ae43b005bd1cce59a8239fff6fb4a89fa26fafce4a7279633ec9f11"
     },
     "public/css/i18n.css": {
       "bytes": 874,
