@@ -17,13 +17,15 @@ export async function GET() {
   const blogIndex = r2ContentEnabled() ? await getR2ContentIndex('blog') : null;
   const newsIndex = r2ContentEnabled() ? await getR2ContentIndex('news') : null;
   return NextResponse.json({
-    ok: enabled ? Boolean(productIndex || blogIndex || newsIndex) : false,
+    ok: enabled ? Boolean(productIndex || blogIndex || newsIndex) : true,
+    contentSource: enabled ? 'r2' : 'repository-static-content',
     r2Enabled: enabled,
     products: { hasIndex: Boolean(productIndex), count: countIndex(productIndex, 'products') },
     blog: { hasIndex: Boolean(blogIndex), count: countIndex(blogIndex, 'posts') },
     news: { hasIndex: Boolean(newsIndex), count: countIndex(newsIndex, 'news') },
-    expectedEnv: ['R2_PUBLIC_BASE_URL', 'REVALIDATE_SECRET'],
+    expectedEnv: enabled ? ['CONTENT_SOURCE', 'R2_PUBLIC_BASE_URL', 'REVALIDATE_SECRET'] : [],
     optionalEnv: [
+      'CONTENT_SOURCE', 'R2_PUBLIC_BASE_URL', 'REVALIDATE_SECRET',
       'R2_PRODUCT_JSON_PREFIX', 'R2_PRODUCT_INDEX_PATH', 'R2_PRODUCT_REVALIDATE_SECONDS',
       'R2_BLOG_JSON_PREFIX', 'R2_BLOG_INDEX_PATH', 'R2_NEWS_JSON_PREFIX', 'R2_NEWS_INDEX_PATH', 'R2_CONTENT_REVALIDATE_SECONDS',
       'NEXT_PUBLIC_SITE_URL'

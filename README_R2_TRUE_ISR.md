@@ -17,9 +17,13 @@ REVALIDATE_SECRET=use-a-long-random-secret
 NEXT_PUBLIC_SITE_URL=https://bestpackfactory.com
 ```
 
-To enable Cloudflare R2 product JSON as the live product data source, also set:
+The repository static HTML is the default and canonical content source. To enable
+Cloudflare R2 product JSON as the live product data source, set both values below
+only after `products/index.json`, `blog/index.json`, and `news/index.json` exist and
+the health endpoint passes:
 
 ```bash
+CONTENT_SOURCE=r2
 R2_PUBLIC_BASE_URL=https://your-r2-public-domain.example.com
 R2_PRODUCT_JSON_PREFIX=products
 R2_PRODUCT_INDEX_PATH=products/index.json
