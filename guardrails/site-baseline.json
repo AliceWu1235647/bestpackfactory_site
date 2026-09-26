@@ -2183,8 +2183,8 @@
       "sha256": "eed4ad724972103c2e816ec63f8b2b6f6ab7e46e541131c43583267d73fcd82e"
     },
     "content-site/blog/amazon-fba-sioc-packaging-requirements.html": {
-      "bytes": 8314,
-      "sha256": "8c880cd51938ce3550bcfd1b11d5f614235fdb26331ebf7d00f254d82b4d2114"
+      "bytes": 8234,
+      "sha256": "ed46df50bc8eb1462767d8ad050d82ca3f1858a33b26d03119b72a8102e4079d"
     },
     "content-site/blog/brand-packaging-brief-checklist-custom-packaging-rfq.html": {
       "bytes": 10846,
@@ -2399,8 +2399,8 @@
       "sha256": "b8d50a8b278e3501a9d803f9ef603b6d2da8de082edbd7a9468faf30ced31192"
     },
     "content-site/blog/flat-pack-vs-assembled-packaging.html": {
-      "bytes": 7033,
-      "sha256": "384adfbca410808cff74e3ba8621830df404435940c5535f78f61ee94ddb2665"
+      "bytes": 6969,
+      "sha256": "28325fd2f6786a621edf5a1751e483d9d82d9758cd305fa5f15a93f5979112d4"
     },
     "content-site/blog/flexible-packaging-structures.html": {
       "bytes": 9410,
@@ -2531,8 +2531,8 @@
       "sha256": "8d19f170ca188a40de01a029758bd87fef7dcbd25834a1a0934ee0f1da351eb7"
     },
     "content-site/blog/packaging-cost-reduction.html": {
-      "bytes": 10364,
-      "sha256": "952ccd6daca628cd73b96c45e0fffe65827dff91cbabf9bb5b87d2912af26d94"
+      "bytes": 10290,
+      "sha256": "a81ffeefa6283370e847546155d132452d8de8f678aa098bb53d34b1f48a1b69"
     },
     "content-site/blog/packaging-damage-root-cause-checklist-ecommerce.html": {
       "bytes": 12412,
@@ -2555,8 +2555,8 @@
       "sha256": "b2947ed5ed9bbd657ac710aa82644aec82041d42640d216218b1a0ed548a9a17"
     },
     "content-site/blog/packaging-for-baby-products.html": {
-      "bytes": 6965,
-      "sha256": "82c223206eb6be1c20ad28387cc77860e5a9c41b3c0f4b6e87fc6cda72e0f51b"
+      "bytes": 6905,
+      "sha256": "602a1c20e699948a5882c60376afafdda4c1431d7240c3f54c12343a9f736647"
     },
     "content-site/blog/packaging-for-cosmetics-oem.html": {
       "bytes": 7038,
@@ -2571,8 +2571,8 @@
       "sha256": "8126a3009df2b1a21313734d370a9d7ca245dddbe761a1a8fde69dc244553150"
     },
     "content-site/blog/packaging-for-food-delivery.html": {
-      "bytes": 7045,
-      "sha256": "34b1109749d27500d90ffd898ee1439622778c078e13397fe77eae2b240a2b07"
+      "bytes": 6983,
+      "sha256": "4daeffb878d7e223cb07f37c3fab95f64b8efc9287a0a9bf67f02a1623e4f6d7"
     },
     "content-site/blog/packaging-for-health-supplements.html": {
       "bytes": 6902,
@@ -2619,8 +2619,8 @@
       "sha256": "2576164be96afc5d11391100b0804850519fdc8bedc2cf5830f00a2943e3fbc6"
     },
     "content-site/blog/packaging-print-prepress-checklist.html": {
-      "bytes": 6828,
-      "sha256": "6bac467831a7907fee62c8c69cdf37d683aac488ae2aa67d6f82b2eb5ef889a1"
+      "bytes": 6764,
+      "sha256": "b970c3327c9646bc5bc85803e5638bf32edd04373db35fcd982d6d3ea3851cc6"
     },
     "content-site/blog/packaging-sample-checklist-before-mass-production.html": {
       "bytes": 14721,
@@ -2691,16 +2691,16 @@
       "sha256": "3eea072212afb83b001d6fe5c5486fbe9825b5771ee51c7fb419ebe0b3423981"
     },
     "content-site/blog/pharmaceutical-packaging-guide.html": {
-      "bytes": 9028,
-      "sha256": "f0974965eb08c7fc9ef04fa7d984b9d06c2206536eb8e989f81e8e94dfaf4478"
+      "bytes": 8972,
+      "sha256": "0989d8b937a70d65793b7cc80960f234ccafa9f7f017ca8580cab3c7f70c2507"
     },
     "content-site/blog/prepare-artwork-dielines-packaging-production-china.html": {
       "bytes": 10416,
       "sha256": "e5579ec24c53c92614e44793c80cc10d78d5be6ab8772c802e22a27923b0589f"
     },
     "content-site/blog/printing-pantone-colors-on-packaging.html": {
-      "bytes": 7505,
-      "sha256": "23d2f2b96ea50c538a13d3e26346d3f7c5e14b0a889de5d49ca8dd91ad458016"
+      "bytes": 7445,
+      "sha256": "d2cbba31482a4633432530e0f2c199060193d3b49becec0eb8a327c1020a598e"
     },
     "content-site/blog/rigid-box-vs-folding-carton-procurement-guide.html": {
       "bytes": 14485,
@@ -2747,8 +2747,8 @@
       "sha256": "1d2038a2552eb1be66862f0fb2258bb86d5bdbf218245761a6a16e282d5755f1"
     },
     "content-site/blog/sustainable-packaging-certifications-explained.html": {
-      "bytes": 7699,
-      "sha256": "6a51866592c7610d4b06e7c97064f867ded440565bf17a4e3bf0ff98c3e997bd"
+      "bytes": 7633,
+      "sha256": "f59c09c73d5ba1264cf7f0475bf9cc4707deb63b8d98581e2d06d722878f890c"
     },
     "content-site/blog/tea-coffee-packaging-trends.html": {
       "bytes": 9283,
