@@ -3022,24 +3022,24 @@
       "sha256": "0fb027ca6c3f73e46b1903093a6630343a5b7ed964d4048c3f3113a79f5e00fd"
     },
     "content-site/finishes/embossing-packaging.html": {
-      "bytes": 7164,
-      "sha256": "5780deff299eaee313d7f9b3591a959759320fae433561eabb4bc396bd11a767"
+      "bytes": 9051,
+      "sha256": "4de746fd550af1d42338b4e98b8d969d1279c3c4e1a4c76002bbdeb2883dda97"
     },
     "content-site/finishes/foil-stamping-packaging.html": {
-      "bytes": 7233,
-      "sha256": "6e5da4a34a56f974fbede2d720f72f02a3a8d9e1ebec1c680ccb7f412bcdbf37"
+      "bytes": 9400,
+      "sha256": "2dddc482e0a6cc01acf14cb283ba815f15903affcb2b0fdf6966e2ccd1d30b6f"
     },
     "content-site/finishes/matte-lamination-packaging.html": {
-      "bytes": 7247,
-      "sha256": "b5389de0269695a032b2792b0a5d14649e3ee215b3e5037b10c8299117f6297d"
+      "bytes": 9160,
+      "sha256": "51144d8eae81a3f7751584523a4735f22a70e9865292367260a8941e21a00ef4"
     },
     "content-site/finishes/soft-touch-packaging.html": {
-      "bytes": 7184,
-      "sha256": "2157d85ec344aa91173d8022c65a85b4cfc5d031c2ab7751521faefa49126683"
+      "bytes": 9393,
+      "sha256": "27f3598ab252a2925a5ef8d046216c5a6017fc889649e1d660a1d05f2b74a7eb"
     },
     "content-site/finishes/spot-uv-packaging.html": {
-      "bytes": 7106,
-      "sha256": "bff78695c2946b2995781e3fd7c447d400d807a0111e2a191d4252f94e252ba8"
+      "bytes": 8916,
+      "sha256": "e347c1a3dfbfa2410cea656bbef8939d462704cd0d0d927968dd1b35f0ed5423"
     },
     "content-site/fr/contact.html": {
       "bytes": 11982,
@@ -4150,8 +4150,8 @@
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "content-site/samples.html": {
-      "bytes": 5907,
-      "sha256": "6f529370be7e7fb8142e724b1f2d42ad06d0cdb2c539b540d6756acb9026610f"
+      "bytes": 7055,
+      "sha256": "beca12041b98b9ea201d034343bb6147c20ac803ebe1df9e037e9219688b4100"
     },
     "content-site/sitemap-index.xml": {
       "bytes": 594,
