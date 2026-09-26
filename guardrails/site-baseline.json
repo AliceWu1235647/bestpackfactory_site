@@ -93,40 +93,40 @@
       "sha256": "c82fd42d133830a0a2828f956992456de9187962a344daa547b95a5b937127ba"
     },
     "content-site/css/i18n.css": {
-      "bytes": 1616,
-      "sha256": "932c803f76aff4ac5ee32a1c52ceab36333fecd37ae8d1b9265c26cf9def86e2"
+      "bytes": 874,
+      "sha256": "faa70ca7bcebe95cb8f0463c35306df56dad177a00d04e1607b5f6f765382ab4"
     },
     "content-site/css/rtl.css": {
-      "bytes": 2835,
-      "sha256": "fd641e8c19b79f1d84d76ee99baacaa1f2f1fd673df50839f502c985d8b06dc8"
+      "bytes": 1455,
+      "sha256": "bca47d3e53b9b52b36197d3fc099c5efad8ebaba709a313595d0be7a335d3a65"
     },
     "content-site/js/main.js": {
-      "bytes": 40583,
-      "sha256": "a654828d1604ea9fed2dcda2f508d4542ca28a628018d261e63ca8434644ec3e"
+      "bytes": 31059,
+      "sha256": "5e9225eff17be86a269ff6664c358f5a7a8687db7f78d69cb66ad49c28930d4c"
     },
     "content-site/js/main-bootstrap.js": {
-      "bytes": 3565,
-      "sha256": "f09e3694e5f47d9b92d6872bdfb05b46023f45a5c8a279399f275b7283e0d9ab"
+      "bytes": 2070,
+      "sha256": "c0bcfb903adec32a90557b6aebc56377620dd0c70a0628ed22c7702df35f361a"
     },
     "public/css/style.css": {
       "bytes": 133454,
       "sha256": "94b365b2ce8131563a16781756a3d9f2b9118413026f558fdeab4796ab41db1b"
     },
     "public/css/i18n.css": {
-      "bytes": 1616,
-      "sha256": "932c803f76aff4ac5ee32a1c52ceab36333fecd37ae8d1b9265c26cf9def86e2"
+      "bytes": 874,
+      "sha256": "faa70ca7bcebe95cb8f0463c35306df56dad177a00d04e1607b5f6f765382ab4"
     },
     "public/css/rtl.css": {
-      "bytes": 2835,
-      "sha256": "fd641e8c19b79f1d84d76ee99baacaa1f2f1fd673df50839f502c985d8b06dc8"
+      "bytes": 1455,
+      "sha256": "bca47d3e53b9b52b36197d3fc099c5efad8ebaba709a313595d0be7a335d3a65"
     },
     "public/js/main.js": {
-      "bytes": 40583,
-      "sha256": "a654828d1604ea9fed2dcda2f508d4542ca28a628018d261e63ca8434644ec3e"
+      "bytes": 31059,
+      "sha256": "5e9225eff17be86a269ff6664c358f5a7a8687db7f78d69cb66ad49c28930d4c"
     },
     "public/js/main-bootstrap.js": {
-      "bytes": 7147,
-      "sha256": "624891e371a88fdd96cf9e1762112ca740e284de3419d79ce842968964577d03"
+      "bytes": 4304,
+      "sha256": "9957da75f68eef00d09b7e0403be681772789a9d032f18a2cc195f61d1cfe508"
     },
     "scripts/generate-sitemap.mjs": {
       "bytes": 8498,
@@ -2779,15 +2779,14 @@
       "sha256": "084eedc212d7d2af30a3c1bc5ca4b869be139e7b2a31ff0c945ef14400819b03"
     },
     "content-site/css/i18n.css": {
-      "bytes": 1616,
-      "sha256": "932c803f76aff4ac5ee32a1c52ceab36333fecd37ae8d1b9265c26cf9def86e2"
+      "bytes": 874,
+      "sha256": "faa70ca7bcebe95cb8f0463c35306df56dad177a00d04e1607b5f6f765382ab4"
     },
     "content-site/css/rtl.css": {
-      "bytes": 2835,
-      "sha256": "fd641e8c19b79f1d84d76ee99baacaa1f2f1fd673df50839f502c985d8b06dc8"
+      "bytes": 1455,
+      "sha256": "bca47d3e53b9b52b36197d3fc099c5efad8ebaba709a313595d0be7a335d3a65"
     },
     "content-site/css/style.css": {
-      "bytes": 133453,
       "sha256": "c82fd42d133830a0a2828f956992456de9187962a344daa547b95a5b937127ba"
     },
     "content-site/custom-packaging-manufacturer.html": {
@@ -3631,12 +3630,12 @@
       "sha256": "744ccabf14c34af2eb5f3411a2f8bd416921fa5749135f63b0b4bd98d617e927"
     },
     "content-site/js/main-bootstrap.js": {
-      "bytes": 3565,
-      "sha256": "f09e3694e5f47d9b92d6872bdfb05b46023f45a5c8a279399f275b7283e0d9ab"
+      "bytes": 2070,
+      "sha256": "c0bcfb903adec32a90557b6aebc56377620dd0c70a0628ed22c7702df35f361a"
     },
     "content-site/js/main.js": {
-      "bytes": 40583,
-      "sha256": "a654828d1604ea9fed2dcda2f508d4542ca28a628018d261e63ca8434644ec3e"
+      "bytes": 31059,
+      "sha256": "5e9225eff17be86a269ff6664c358f5a7a8687db7f78d69cb66ad49c28930d4c"
     },
     "content-site/llms.txt": {
       "bytes": 24913,
