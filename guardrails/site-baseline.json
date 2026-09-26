@@ -2994,24 +2994,24 @@
       "sha256": "d77b10e44b95a02b9dd2b77135879926fa7d23c40c6602d1dd8f6de957cbe6cf"
     },
     "content-site/factory/about-us.html": {
-      "bytes": 9461,
-      "sha256": "81a79c81b940e0f0a9d541cfb560c5d836152e8bf0d7edc57c9d7f7ae6ac7cc4"
+      "bytes": 10415,
+      "sha256": "fce8bf68650697684aa0796bed2175bd0ce285ec9b317177d0770ce0f52e6074"
     },
     "content-site/factory/certificates.html": {
       "bytes": 18454,
       "sha256": "36c5c30194ceb2bd39f81dd29544cc91d5dcf5db17366de945b4e789606282de"
     },
     "content-site/factory/exhibition.html": {
-      "bytes": 9394,
-      "sha256": "0beb3657e20e2c36b5f470606251c2c4cf64bb3ea9d7c2cd25e964d4d50af5ac"
+      "bytes": 10336,
+      "sha256": "406fb0e376777a79e8053efd958bdb2a03a4205d45b75427efaaf3a89cc27ac3"
     },
     "content-site/factory/production-workshop.html": {
-      "bytes": 9414,
-      "sha256": "b1593b7810073e7347fe7733fc1ff2033340fd57f6a604c32a8a27c0773d7c81"
+      "bytes": 10325,
+      "sha256": "f9eff66fd2040cf8c8156186281452d5a2b041b59d189c1df882540b354979c5"
     },
     "content-site/factory/quality-control.html": {
-      "bytes": 9385,
-      "sha256": "4316f5613772d2a60fce9df6f0dfab8a5aa4574446c14ead414bb38a78f721df"
+      "bytes": 10314,
+      "sha256": "7ad42158e66afba271776568d62e01496afe2f4c9ede7e91198b166caf116475"
     },
     "content-site/faq.html": {
       "bytes": 7930,
@@ -3718,8 +3718,8 @@
       "sha256": "e8d496212defe260977b0d932cb828373ad966b2c9f32119b0c80ae4022f4707"
     },
     "content-site/products.html": {
-      "bytes": 99834,
-      "sha256": "2a050fecd6c05ce4541b35ebe4cace7da1501456045f37314da27c38009e734e"
+      "bytes": 101231,
+      "sha256": "6fd00ba884ac5252b308e347b1bf5be7b61359b8f45d0be221fcaae5da9acb67"
     },
     "content-site/products/1kg-coffee-bean-bags.html": {
       "bytes": 17472,
