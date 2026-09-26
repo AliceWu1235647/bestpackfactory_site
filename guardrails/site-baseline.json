@@ -109,8 +109,8 @@
       "sha256": "c0bcfb903adec32a90557b6aebc56377620dd0c70a0628ed22c7702df35f361a"
     },
     "public/css/style.css": {
-      "bytes": 133454,
-      "sha256": "94b365b2ce8131563a16781756a3d9f2b9118413026f558fdeab4796ab41db1b"
+      "bytes": 129578,
+      "sha256": "85c674cfd46cec23eec56ba685fafca9a1eec3299d23065dab9f9f214f0dfe75"
     },
     "public/css/i18n.css": {
       "bytes": 874,
@@ -163,8 +163,8 @@
       "sha256": "c506f49d26c2170f413f324d1f7baee8369992da3bf1076b87806a085788c052"
     },
     "content-site/ar/products.html": {
-      "bytes": 119192,
-      "sha256": "238a7825e04845342f58f8828374a15db27b8050da6017e1f1e9322c2dad6d11"
+      "bytes": 118934,
+      "sha256": "f43aae42ca062bad0d5ede8d4a4fbbc30d9c3070e7d36042f9af3aa688e357e2"
     },
     "content-site/ar/products/coffee-bags.html": {
       "bytes": 19829,
@@ -2810,8 +2810,8 @@
       "sha256": "d7abf8a025f93ebaafb4b9fd7ffcbac5c9e518b6c824438615f9b3647a1c0b39"
     },
     "content-site/de/products.html": {
-      "bytes": 109572,
-      "sha256": "8b8810179332296096445dd64f566f72e3aafaf3b5189003e0f7ed507a42186f"
+      "bytes": 109314,
+      "sha256": "b3654de738bdf4d80caa759a724f6f7b2000fb3043298b2937f49d9eac4068e1"
     },
     "content-site/de/products/coffee-bags.html": {
       "bytes": 16595,
@@ -2906,8 +2906,8 @@
       "sha256": "34b08a5ab67e3c08bc49cdfa638aeace5865eaf4ff14141e1ca814fdbd586ab5"
     },
     "content-site/es/products.html": {
-      "bytes": 112287,
-      "sha256": "b2beb558374713566aecf6c938fe7ff5934b622d7f424f1d4c1499c1c7fe3ae6"
+      "bytes": 112029,
+      "sha256": "ab952e7530d68e841a0929dc78a82b4eab3008d9594fbbd483e7ab56f70fff63"
     },
     "content-site/es/products/coffee-bags.html": {
       "bytes": 17303,
@@ -3050,8 +3050,8 @@
       "sha256": "9e761b8a966c0d09de2141cf353d381b53f6d1f501d6da750d950e5bdbc2b852"
     },
     "content-site/fr/products.html": {
-      "bytes": 110801,
-      "sha256": "9a250588920d0f2f8a4d1b91a41fcf6a8cd85ed0f5657847583c60c1bf58ffc7"
+      "bytes": 110543,
+      "sha256": "0432d8590ff0bd851881a3294bbf9ac39fa4f5ec13c39c804e1491cd1437d52d"
     },
     "content-site/fr/products/coffee-bags.html": {
       "bytes": 18619,
@@ -3546,8 +3546,8 @@
       "sha256": "42bd1ecb85e2928aab449d32ee2377a84294d9b691e820e73ec3448ea5240da3"
     },
     "content-site/ja/products.html": {
-      "bytes": 116188,
-      "sha256": "2a5fde69a791666c362fdb7ccb19f94d510bb952b8c46d4644b326cbfbb876c8"
+      "bytes": 115929,
+      "sha256": "8effbd552e549f94d567f8f602eae0b83d440c0f4c38c52d7f9c8015b9b630ed"
     },
     "content-site/ja/products/coffee-bags.html": {
       "bytes": 19116,
@@ -3718,8 +3718,8 @@
       "sha256": "e8d496212defe260977b0d932cb828373ad966b2c9f32119b0c80ae4022f4707"
     },
     "content-site/products.html": {
-      "bytes": 105449,
-      "sha256": "8b1f6c6d4c2d8dade06379367765e3040406d6965abe4eaf3497591632435803"
+      "bytes": 105432,
+      "sha256": "51cae748884ddfa49fbd4107fa1aa4e8b04a87b6f29fc7406a884e9b8f883b78"
     },
     "content-site/products/1kg-coffee-bean-bags.html": {
       "bytes": 17472,
