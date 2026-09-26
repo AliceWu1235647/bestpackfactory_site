@@ -138,7 +138,7 @@
     },
     "public/sitemap.xml": {
       "bytes": 182286,
-      "sha256": "2443099a12a4e43676b18b1441b6d6d4a6a83ed4f08f49ff9ed6d6fd1e079370"
+      "sha256": "c90f1254793eddc32d782126724828ddb3a624130a03ce5962d04edabd3bfe3d"
     }
   },
   "contentFiles": {
@@ -4162,8 +4162,8 @@
       "sha256": "00538ba44127eeae0e21688756a81fd284871c3c070658331ac6203b0bb21567"
     },
     "content-site/sitemap.xml": {
-      "bytes": 182126,
-      "sha256": "c3131663101f56efa16923048e2465d91c232fbc7baeb7574d41965d6c10c175"
+      "bytes": 182286,
+      "sha256": "c90f1254793eddc32d782126724828ddb3a624130a03ce5962d04edabd3bfe3d"
     },
     "content-site/thank-you.html": {
       "bytes": 5691,
