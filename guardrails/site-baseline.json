@@ -138,7 +138,7 @@
     },
     "public/sitemap.xml": {
       "bytes": 182286,
-      "sha256": "c90f1254793eddc32d782126724828ddb3a624130a03ce5962d04edabd3bfe3d"
+      "sha256": "f7b3acb5ae101d649fd2cd3127d5d16fe04243813c1b90b5f1c6ac59fd12a681"
     }
   },
   "contentFiles": {
@@ -4154,8 +4154,8 @@
       "sha256": "beca12041b98b9ea201d034343bb6147c20ac803ebe1df9e037e9219688b4100"
     },
     "content-site/testimonials.html": {
-      "bytes": 47721,
-      "sha256": "97dfd72dabe44db7e611626ffc5be789dc85d07472e0bb089e239cc8f8f0e494"
+      "bytes": 47749,
+      "sha256": "17de26193839fae18f0f39449d4ee67137f7595b0a2d8f8c75b014a47800c66b"
     },
     "content-site/sitemap-index.xml": {
       "bytes": 594,
@@ -4163,7 +4163,7 @@
     },
     "content-site/sitemap.xml": {
       "bytes": 182286,
-      "sha256": "c90f1254793eddc32d782126724828ddb3a624130a03ce5962d04edabd3bfe3d"
+      "sha256": "f7b3acb5ae101d649fd2cd3127d5d16fe04243813c1b90b5f1c6ac59fd12a681"
     },
     "content-site/thank-you.html": {
       "bytes": 5691,
