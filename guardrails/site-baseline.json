@@ -137,8 +137,8 @@
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "public/sitemap.xml": {
-      "bytes": 182126,
-      "sha256": "c3131663101f56efa16923048e2465d91c232fbc7baeb7574d41965d6c10c175"
+      "bytes": 182286,
+      "sha256": "2443099a12a4e43676b18b1441b6d6d4a6a83ed4f08f49ff9ed6d6fd1e079370"
     }
   },
   "contentFiles": {
@@ -3134,8 +3134,8 @@
       "sha256": "a45b4f7107209b963421d5bf9424e575103a7658a8678141b077606f3a7e1eae"
     },
     "content-site/index.html": {
-      "bytes": 42474,
-      "sha256": "a90a48370febce54811dc4ef979db0f9dbaa97172020c655fca8807fe524034e"
+      "bytes": 52960,
+      "sha256": "f32ef4a0954ce233a930a22c3841ab5f1adc702a6a856744adff1358437dd8e9"
     },
     "content-site/industries.html": {
       "bytes": 14311,
@@ -4152,6 +4152,10 @@
     "content-site/samples.html": {
       "bytes": 7055,
       "sha256": "beca12041b98b9ea201d034343bb6147c20ac803ebe1df9e037e9219688b4100"
+    },
+    "content-site/testimonials.html": {
+      "bytes": 47721,
+      "sha256": "97dfd72dabe44db7e611626ffc5be789dc85d07472e0bb089e239cc8f8f0e494"
     },
     "content-site/sitemap-index.xml": {
       "bytes": 594,
