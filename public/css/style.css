@@ -478,7 +478,7 @@ html{
   -webkit-text-size-adjust:100%;
   scroll-behavior:smooth;
 }
-body{
+html,body{
   overflow-x:hidden;
 }
 a,button,input,textarea,select{
