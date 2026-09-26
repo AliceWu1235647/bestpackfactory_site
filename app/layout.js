@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
         <link rel="alternate" type="text/plain" href="/llms.txt" title="BestPackFactory LLM summary" />
         <link rel="alternate" type="application/json" href="/ai-index.json" title="BestPackFactory AI index" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="BestPackFactory Packaging Insights" />
-        <link rel="stylesheet" href="/css/style.css?v=20260927_overflow_fix1" />
+        <link rel="stylesheet" href="/css/style.css?v=20260927_widget_v3" />
         <link rel="stylesheet" href="/css/i18n.css?v=20260828_i18n1" />
         <link rel="stylesheet" href="/css/rtl.css?v=20260828_rtl1" />
         <style dangerouslySetInnerHTML={{ __html: '.bpf-whatsapp-chat{display:none!important}' }} />
