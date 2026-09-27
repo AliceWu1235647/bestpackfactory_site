@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T18:52:32.701Z",
+  "generatedAt": "2026-09-27T03:20:41.402Z",
   "generatedFromCommit": "4b7351404f7efb8196fed3075964c3291ce77ac2",
   "identity": {
     "repositoryId": 1275025881,
@@ -21,8 +21,8 @@
   },
   "protectedFiles": {
     "app/layout.js": {
-      "bytes": 4069,
-      "sha256": "3282bb817db302eb2df4b3848c2bf9b906fe1a25de656a046fb9488262be63d3"
+      "bytes": 4013,
+      "sha256": "2ea31b3312c061646841f41969142c408433d65fcf72c6deafc03278545493d1"
     },
     "app/page.js": {
       "bytes": 1579,
@@ -3135,7 +3135,7 @@
       "sha256": "a45b4f7107209b963421d5bf9424e575103a7658a8678141b077606f3a7e1eae"
     },
     "content-site/index.html": {
-      "bytes": 53468,
+      "bytes": 53469,
       "sha256": "93de617903ee8d2deccb66579b1e4855b40071fbd1cbf75952823192ac2428f9"
     },
     "content-site/industries.html": {
@@ -4163,7 +4163,7 @@
       "sha256": "f7b3acb5ae101d649fd2cd3127d5d16fe04243813c1b90b5f1c6ac59fd12a681"
     },
     "content-site/testimonials.html": {
-      "bytes": 43165,
+      "bytes": 43588,
       "sha256": "ad6fc8407db4275471b205fbe367e9cba7a4a8ab7e0431c444079064d6d188a4"
     },
     "content-site/thank-you.html": {
