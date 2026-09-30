@@ -8,6 +8,7 @@ import {
 } from '../../lib/static-pages';
 import BlogIndex from '../BlogIndex';
 import { injectCommercialAuthorityHub } from '../../lib/commercial-authority-hubs';
+import { splitLocaleRoute } from '../../lib/locales';
 
 export const revalidate = 3600;
 export const dynamic = 'force-static';
@@ -44,6 +45,7 @@ export default async function StaticHtmlRoute({ params }) {
   if (route === 'blog.html') return <BlogIndex />;
   const page = getPage(route);
   if (!page) notFound();
+  const { locale } = splitLocaleRoute(route);
   const body = injectCommercialAuthorityHub(page.body, route);
   const articleJsonLd = normalizeArticleJsonLd(page.jsonLd, page.metadata);
   const productJsonLd = normalizeProductJsonLd(articleJsonLd, body, page.metadata);
@@ -58,7 +60,12 @@ export default async function StaticHtmlRoute({ params }) {
           fetchPriority="high"
         />
       ) : null}
-      <div dangerouslySetInnerHTML={{ __html: body }} suppressHydrationWarning={true} />
+      <div
+        lang={locale === 'en' ? undefined : locale}
+        dir={locale === 'ar' ? 'rtl' : undefined}
+        dangerouslySetInnerHTML={{ __html: body }}
+        suppressHydrationWarning={true}
+      />
       {jsonLd.map((json, index) => (
         <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />
       ))}

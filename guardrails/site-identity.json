@@ -28,10 +28,10 @@
     "contentSource": "repository-static-content"
   },
   "production": {
-    "lastApprovedCommit": "a9938bebe069188cae77dec6cc8b0baefaf64eee",
-    "rollbackTag": "rollback/pre-seo-geo-20260930",
-    "lastApprovedDeploymentId": "dpl_9hSWfcQ7JFVEMNq6NwGPuqpMyvUm",
-    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-pcwqkqzlh-alicewu1235647s-projects.vercel.app",
+    "lastApprovedCommit": "a7a6f635e93ae46fb8ec91e9fe208ece4cae7b88",
+    "rollbackTag": "rollback/pre-lang-rtl-20260930",
+    "lastApprovedDeploymentId": "dpl_2rKCKmxPoUbQh5RzrYPX92PtmSfS",
+    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-p77q8d9bg-alicewu1235647s-projects.vercel.app",
     "allowedDomains": [
       "bestpackfactory.com",
       "www.bestpackfactory.com",
