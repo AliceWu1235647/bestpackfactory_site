@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T02:30:09.275Z",
-  "generatedFromCommit": "a9938bebe069188cae77dec6cc8b0baefaf64eee",
+  "generatedAt": "2026-09-30T04:09:29.316Z",
+  "generatedFromCommit": "879338ad036aca54145d31c0f6af18c7386d47c2",
   "identity": {
     "repositoryId": 1275025881,
     "vercelProjectId": "prj_xXGSQzpuzCiQrlGWUfMZ3h1ZvKf4",
-    "rollbackTag": "rollback/pre-seo-geo-20260930"
+    "rollbackTag": "rollback/pre-lang-rtl-20260930"
   },
   "counts": {
     "contentFiles": 1523,
@@ -29,8 +29,8 @@
       "sha256": "59d1bdb60265af45a51c07b18ad830d8b63146cdc3afafae03a47ea33579de46"
     },
     "app/[...path]/page.js": {
-      "bytes": 2440,
-      "sha256": "170e6ae2f9ae806040eae85eaf23dda3f49b37c1efb57f0681015d21f6105921"
+      "bytes": 2659,
+      "sha256": "33eb71a3aa47cbcca34a5cad85cde2772e9ab0b2dc14711eaa2dee56fb6fdf8f"
     },
     "app/products/[slug]/page.js": {
       "bytes": 3863,
@@ -137,7 +137,7 @@
       "sha256": "f491421560ce85db840b4e76b3856dfe0f5fe0bce30b616e64c802b54d1d3008"
     },
     "public/sitemap.xml": {
-      "bytes": 182759,
+      "bytes": 182286,
       "sha256": "f7b3acb5ae101d649fd2cd3127d5d16fe04243813c1b90b5f1c6ac59fd12a681"
     }
   },
@@ -4159,7 +4159,7 @@
       "sha256": "00538ba44127eeae0e21688756a81fd284871c3c070658331ac6203b0bb21567"
     },
     "content-site/sitemap.xml": {
-      "bytes": 182759,
+      "bytes": 182286,
       "sha256": "f7b3acb5ae101d649fd2cd3127d5d16fe04243813c1b90b5f1c6ac59fd12a681"
     },
     "content-site/testimonials.html": {
