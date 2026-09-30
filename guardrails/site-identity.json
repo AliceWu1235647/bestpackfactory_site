@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "approvedAt": "2026-09-28",
+  "approvedAt": "2026-09-30",
   "siteUrl": "https://www.bestpackfactory.com",
   "packageName": "bestpackfactory-static-first-r2-isr-dynamic-backend-codex-ready",
   "sourceOfTruthStatus": "repository-static-content-approved-r2-disabled",
@@ -28,10 +28,10 @@
     "contentSource": "repository-static-content"
   },
   "production": {
-    "lastApprovedCommit": "4b7351404f7efb8196fed3075964c3291ce77ac2",
-    "rollbackTag": "rollback/pre-seo-geo-20260928",
-    "lastApprovedDeploymentId": "dpl_5yMPvsWzBQ6YFY6Gd7ju4oDqkxGn",
-    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-8qechlw6t-alicewu1235647s-projects.vercel.app",
+    "lastApprovedCommit": "a9938bebe069188cae77dec6cc8b0baefaf64eee",
+    "rollbackTag": "rollback/pre-seo-geo-20260930",
+    "lastApprovedDeploymentId": "dpl_9hSWfcQ7JFVEMNq6NwGPuqpMyvUm",
+    "lastApprovedDeploymentUrl": "https://bestpackfactory-site-gmrk-pcwqkqzlh-alicewu1235647s-projects.vercel.app",
     "allowedDomains": [
       "bestpackfactory.com",
       "www.bestpackfactory.com",
