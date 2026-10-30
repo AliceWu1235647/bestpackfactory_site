@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T02:30:09.275Z",
+  "generatedAt": "2026-10-30T04:10:34.047Z",
   "generatedFromCommit": "a9938bebe069188cae77dec6cc8b0baefaf64eee",
   "identity": {
     "repositoryId": 1275025881,
@@ -8,8 +8,8 @@
     "rollbackTag": "rollback/pre-seo-geo-20260930"
   },
   "counts": {
-    "contentFiles": 1523,
-    "htmlPages": 521,
+    "contentFiles": 1621,
+    "htmlPages": 599,
     "localePages": {
       "ar": 23,
       "de": 23,
@@ -2186,6 +2186,38 @@
       "bytes": 8234,
       "sha256": "ed46df50bc8eb1462767d8ad050d82ca3f1858a33b26d03119b72a8102e4079d"
     },
+    "content-site/blog/aql-sampling-custom-packaging-inspection.html": {
+      "bytes": 17843,
+      "sha256": "45b8f59551504f2ecb4dcdc7a3474d97f95da9a77b75239a4828cc703d585440"
+    },
+    "content-site/blog/bakery-box-sizes-donut-cupcake-cake.html": {
+      "bytes": 16399,
+      "sha256": "b3c96718447154afb66086d444c37e78563689df11cf4261e8a88a58dcc3acf1"
+    },
+    "content-site/blog/bakery-paper-bag-greaseproof-vs-glassine-vs-pe-lined.html": {
+      "bytes": 16355,
+      "sha256": "59cd941de29b4b652ceb1e35a4106ae45058e971bbf682ea051fadbc3a1898ec"
+    },
+    "content-site/blog/black-packaging-scuff-scratch-prevention.html": {
+      "bytes": 15700,
+      "sha256": "174cd3732c2e57cdeaf81a1cdc03f98548520621184fa9f633cb70cfe629bee9"
+    },
+    "content-site/blog/book-catalog-manual-binding-selection-guide.html": {
+      "bytes": 16004,
+      "sha256": "fc64e9007c37feed00076ac980b43a878249483cfe9b68ef1537b659dc68405f"
+    },
+    "content-site/blog/book-spine-width-page-count-calculation.html": {
+      "bytes": 15030,
+      "sha256": "8f0ebac652c0f9918c2fb8ea3a608611d54cbb5dda5a854b892a617de3bcef3d"
+    },
+    "content-site/blog/bottle-label-lifting-curling-troubleshooting.html": {
+      "bytes": 16410,
+      "sha256": "6f4f19f4356c0f17c8f70bdb3539a19690016d6c963a79931bfe4acf409ad84f"
+    },
+    "content-site/blog/box-lamination-peeling-bubbling-causes.html": {
+      "bytes": 16008,
+      "sha256": "ba4d19e5233297974c48e5b516600c09fb3e81afa6b7a8c59ca34f7170e8a7ef"
+    },
     "content-site/blog/brand-packaging-brief-checklist-custom-packaging-rfq.html": {
       "bytes": 10846,
       "sha256": "5f15ef138fba31cce8e1f5c031f814eb5c502a238e637debcd23b20ea50eab92"
@@ -2214,6 +2246,10 @@
       "bytes": 7528,
       "sha256": "bd6b92f2ec230302c9adb6b0fc0eaa616485d1aefbb1b90436bcf05b1aa598d6"
     },
+    "content-site/blog/china-vs-domestic-custom-packaging-500-units.html": {
+      "bytes": 18096,
+      "sha256": "ebd1889bd149ffdbe93ab0531fcb759d2c3904abe13e0eeb0a1cf2635de2c250"
+    },
     "content-site/blog/chinese-packaging-supplier-payment-terms.html": {
       "bytes": 7083,
       "sha256": "63e06e7edb6653bdbc9ce44cefe0a97c40be1baa0acc9706fec9961b57c6be1d"
@@ -2238,6 +2274,10 @@
       "bytes": 7288,
       "sha256": "bf7ca71dc331ec84049c6efce179dadb958e748ba321a32c3b05255a7006fd09"
     },
+    "content-site/blog/container-rain-paper-packaging-sea-freight.html": {
+      "bytes": 16609,
+      "sha256": "2eb1b6ff91485cd87ef3f5ce3f79e4358bc493bb9e62199efce67e41307e6c77"
+    },
     "content-site/blog/corrugated-box-printing-guide.html": {
       "bytes": 6823,
       "sha256": "2b22cef26174d4bf10478f4f47e1074b72623cf8ba300518cbac1cd9cee9ac38"
@@ -2254,6 +2294,10 @@
       "bytes": 9107,
       "sha256": "d74e8479dc55ad2d8862074074409f803fe0780ed57070afe13e26d678ca91a1"
     },
+    "content-site/blog/cotton-nonwoven-drawstring-bag-selection-guide.html": {
+      "bytes": 15993,
+      "sha256": "a3ca1a1e47d01dc21b06192a14e4745e1a57dc1911466ac4148a30b2d8b520f6"
+    },
     "content-site/blog/custom-coffee-bags-buying-guide-materials-valves.html": {
       "bytes": 10592,
       "sha256": "9b0b9cbddfc955361c1c0c2a88e7c64f2c7765f481261181e9f97f61412940fa"
@@ -2265,6 +2309,10 @@
     "content-site/blog/custom-folding-carton-printing-guide.html": {
       "bytes": 10505,
       "sha256": "27e4f0d43e9569a12480a475a7f1dd523367cdab0f612566fc2fe51404248b1d"
+    },
+    "content-site/blog/custom-gift-boxes-for-uae-saudi-brands.html": {
+      "bytes": 18457,
+      "sha256": "7ebb4aed62305cb80f7a5b43102e5654a001c90be5236070a32530730f486ff3"
     },
     "content-site/blog/custom-gift-boxes-strategy-design-manufacturing-logistics.html": {
       "bytes": 15991,
@@ -2306,6 +2354,10 @@
       "bytes": 7434,
       "sha256": "a2aefb4164a8bf79aa7509d40c1eaa3efd438606b35f50cfedda98ed94e02816"
     },
+    "content-site/blog/custom-packaging-for-japanese-brands.html": {
+      "bytes": 17961,
+      "sha256": "bb5d2dfd9be68db1519c7e9f6100c1fe958af9c9141ed13da34e6cafca5ede73"
+    },
     "content-site/blog/custom-packaging-for-subscription-boxes.html": {
       "bytes": 7053,
       "sha256": "62184fb48a0e182e816ca5de1ce2cc933dfa92a78623c5b62d9d83808bdc80fc"
@@ -2313,6 +2365,22 @@
     "content-site/blog/custom-packaging-format-decision-guide.html": {
       "bytes": 10005,
       "sha256": "cfd738e291688a63af818a1c45827ee3000f58ec044e7139b024e09b20b2a2af"
+    },
+    "content-site/blog/custom-packaging-from-china-to-australia.html": {
+      "bytes": 19183,
+      "sha256": "64411e364882e1d6cc5edc4e0052b16fcd2a4f14d8371c7b93f8530449e7145c"
+    },
+    "content-site/blog/custom-packaging-from-china-to-canada.html": {
+      "bytes": 17053,
+      "sha256": "4156d468dd784459022c074c6a362d72a024613f1667142f2e5951daa69e9cec"
+    },
+    "content-site/blog/custom-packaging-from-china-to-eu-germany.html": {
+      "bytes": 16999,
+      "sha256": "48307a534265c380bb8026e567b377a9fdf773f5ec92503fcc80bf0664c37818"
+    },
+    "content-site/blog/custom-packaging-from-china-to-uk.html": {
+      "bytes": 17514,
+      "sha256": "ea3f2fee0e4b6e7f4b0d8d56deeadf4e2aca60ee32525dfda34efd54ac075749"
     },
     "content-site/blog/custom-packaging-insert-inner-tray-guide.html": {
       "bytes": 10683,
@@ -2346,6 +2414,10 @@
       "bytes": 14431,
       "sha256": "a344199396046b30938786f3a508032da5c8bf4836dd78d913f11b455a451d40"
     },
+    "content-site/blog/custom-packaging-proof-types-digital-white-sample-press-proof.html": {
+      "bytes": 15670,
+      "sha256": "10f4333ae19f722804825130e1b254b5092ec911bacf25d1c6ec8577333ef28d"
+    },
     "content-site/blog/custom-packaging-rfq-checklist.html": {
       "bytes": 14250,
       "sha256": "f0e7ca07bcb00a7b6fe19f58575ff663e69fda49013e4318a98f05ac7cf6441c"
@@ -2366,6 +2438,10 @@
       "bytes": 10053,
       "sha256": "c8e9a3f13623256f2a6bff038bdcc8745bc33f117522d8cad24c07058c94285e"
     },
+    "content-site/blog/custom-paper-cup-size-lid-wall-guide.html": {
+      "bytes": 17146,
+      "sha256": "80e945d69e1f998df632321d10dbd48908d5ba0c88efc10f0acd21ea02437631"
+    },
     "content-site/blog/custom-printed-tissue-paper-guide.html": {
       "bytes": 6781,
       "sha256": "63c0c05a2721471c9cecc832b4fd5d3035f6261507d723dadce9fa5ee8f4f786"
@@ -2378,13 +2454,33 @@
       "bytes": 9380,
       "sha256": "aaa23a7224c09172d512d714ab7d61a62c1157e328b5528ed188775ff20e041b"
     },
+    "content-site/blog/custom-tissue-paper-repeat-pattern-artwork-guide.html": {
+      "bytes": 15802,
+      "sha256": "b06b2193bb1e3986f03e783bf6274092c770767e84dc937ba597a6d0a40a4770"
+    },
     "content-site/blog/cylinder-tube-packaging-luxury-gifts-guide.html": {
       "bytes": 14687,
       "sha256": "bbca0e687cb25e9f2096b9876172f5dffeacb882604476e345440ec536d60e08"
     },
+    "content-site/blog/damaged-packaging-shipment-claim-steps.html": {
+      "bytes": 18337,
+      "sha256": "92d37a8c5c56789febf9e3b76d818393bad67a3bdbc9f2d9e4f5e055b5e28121"
+    },
     "content-site/blog/dieline-artwork-checklist-custom-packaging.html": {
       "bytes": 14506,
       "sha256": "23ae5cffefe64072466d2d778c01274ea3e1fd003ab86524b6e709dd51579f8b"
+    },
+    "content-site/blog/dieline-file-formats-pdf-ai-dxf.html": {
+      "bytes": 16199,
+      "sha256": "22e151d1904b4c1cf46f6f6fd6414f7d74258f253d381d9a00a3bda521d16906"
+    },
+    "content-site/blog/dieline-line-types-cut-crease-perforation-bleed.html": {
+      "bytes": 15371,
+      "sha256": "163d97d85fc4a55b5d90897243b596da302c8a01472e8779294db13352b2d10c"
+    },
+    "content-site/blog/digital-vs-rotogravure-printing-flexible-packaging.html": {
+      "bytes": 15922,
+      "sha256": "95f9dca904a8eab537c1f56be345af444dc8513ceb2761dcc5175f828460d653"
     },
     "content-site/blog/dimensional-weight-box-sizing-guide.html": {
       "bytes": 12699,
@@ -2393,6 +2489,10 @@
     "content-site/blog/eco-friendly-packaging-options.html": {
       "bytes": 9395,
       "sha256": "b59b3af24531ff36a111b8a32d0f2914c98bbc390be90091fe2c343c071b7753"
+    },
+    "content-site/blog/export-carton-shipping-marks-packaging-order.html": {
+      "bytes": 16842,
+      "sha256": "460e591e4d547ae7c570eb1a52cef62c2db7ad89335bbe77fe8f78741bd071bc"
     },
     "content-site/blog/flat-bottom-bag-vs-stand-up-pouch.html": {
       "bytes": 15972,
@@ -2410,9 +2510,17 @@
       "bytes": 13695,
       "sha256": "f0b965e8ff2063db80be688471a55f806139aa1b30cddce73c606bb9ec4d162f"
     },
+    "content-site/blog/foil-cracking-on-box-fold-lines.html": {
+      "bytes": 17252,
+      "sha256": "3a6fc7d7266816850875ac96fce79669ab9aaa4238bee594cf159b9788c572a6"
+    },
     "content-site/blog/foil-stamping-packaging.html": {
       "bytes": 8807,
       "sha256": "1405aba88177eaa49b87d041f818d5c316fafd2061a066dad90e7f5213ad0560"
+    },
+    "content-site/blog/folding-carton-paperboard-sbs-c1s-ccnb-kraft-guide.html": {
+      "bytes": 16194,
+      "sha256": "14658f5cb53647932327f0bda73a0afe23701390825e6d5855c00b86a20b6f82"
     },
     "content-site/blog/food-packaging-compliance-document-request-checklist.html": {
       "bytes": 13739,
@@ -2438,6 +2546,18 @@
       "bytes": 11301,
       "sha256": "cb6b24f4e0f73436ce9fc5c837df6931983254769dcc1f0754036e4b741e07c6"
     },
+    "content-site/blog/gift-box-ribbon-satin-grosgrain-organza-width.html": {
+      "bytes": 15829,
+      "sha256": "b39ffed16f25965a9062e40db77ed81b311565724311cc5b79a49b86f3860129"
+    },
+    "content-site/blog/gift-box-wrapping-paper-art-paper-specialty-paper-leatherette.html": {
+      "bytes": 15287,
+      "sha256": "0b26d9561aa6a546bdbbd814d94a9fe20c264b59d6ecce1441fad0c97ea8b1fa"
+    },
+    "content-site/blog/how-many-units-first-packaging-order.html": {
+      "bytes": 16743,
+      "sha256": "c54f1c85e521ca19ae3972ff82def89d3ea07b057bb207f4d340ea6fc2783cf9"
+    },
     "content-site/blog/how-to-choose-a-magnetic-gift-box.html": {
       "bytes": 11533,
       "sha256": "1ab2974972ae32ba83e54697f4d3b743f8a94e8f6bbfb251fda07d072e02f57c"
@@ -2454,6 +2574,10 @@
       "bytes": 7416,
       "sha256": "281b12aa289d6dd536ebba9e5c1f439701542f35bc56e26f75ce691a5ef11089"
     },
+    "content-site/blog/how-to-measure-custom-box-dimensions-inner-outer.html": {
+      "bytes": 16853,
+      "sha256": "eeb72461613025e2d522129f379e1f6bf4fdf59933fc9c494cd67f7115b22f3e"
+    },
     "content-site/blog/how-to-reduce-packaging-weight.html": {
       "bytes": 6987,
       "sha256": "a197641ea192cb795e8b77f0b7e52f3f66a3b7ad26b29c200617d8c75a967905"
@@ -2466,6 +2590,10 @@
       "bytes": 7511,
       "sha256": "076384f096e1a270c972e6b36224d96443c0eff8ff88a9d7962a5d328c4f93f0"
     },
+    "content-site/blog/ink-rub-off-kraft-boxes-bags.html": {
+      "bytes": 16196,
+      "sha256": "d1e7ec31c0a2229441dcf7097cfecf83e4ccb4e1e892ba7931872390f0562427"
+    },
     "content-site/blog/jewelry-packaging-guide.html": {
       "bytes": 9095,
       "sha256": "258be636f731c6b309c6efa12c6bccbbafd2e72d18c010a5be11d300541aee55"
@@ -2477,6 +2605,10 @@
     "content-site/blog/kraft-paper-pouch-vs-foil-pouch-coffee.html": {
       "bytes": 16124,
       "sha256": "4508767d111d38aa5d5d45fc2ea95bdeee5455ebf5704e030b6652057d1386ad"
+    },
+    "content-site/blog/loose-leaf-tea-packaging-tin-vs-pouch-vs-box.html": {
+      "bytes": 15217,
+      "sha256": "c7930059d03a133713ec277a53f01a63829b27f4112a06e1779a30cd36cb2258"
     },
     "content-site/blog/low-moq-seasonal-packaging-hybrid-plan.html": {
       "bytes": 12397,
@@ -2658,6 +2790,14 @@
       "bytes": 9458,
       "sha256": "c92d799b0667d19b2edce978016ed547924d0ca8d15c0823552c90dface27efb"
     },
+    "content-site/blog/paper-bag-paper-weight-gsm-load-guide.html": {
+      "bytes": 16119,
+      "sha256": "0b529a18cda8a2b599b7b625019b14d690c5f3b66c0dbd81801449dd71d16ff8"
+    },
+    "content-site/blog/paper-bowl-sauce-cup-size-lid-guide.html": {
+      "bytes": 15375,
+      "sha256": "a8b878485f8d9a19b3bdba472e4ad5e164c2824f5b77690ce1bf59a96469b849"
+    },
     "content-site/blog/paper-gift-bag-and-foam-insert-luxury-packaging-guide.html": {
       "bytes": 15089,
       "sha256": "15e370cc7cf0b551b740b5de7dd25ee4facba849bea805f07d736c5856c4e5c8"
@@ -2669,6 +2809,10 @@
     "content-site/blog/perfume-packaging-design.html": {
       "bytes": 8713,
       "sha256": "ecf26d2920ac1c5a1cc7eee1dbd5ab60f5a8b4183aeedff9d58b3858c5611837"
+    },
+    "content-site/blog/pet-bottle-neck-finish-cap-matching-28-410-38-400.html": {
+      "bytes": 16396,
+      "sha256": "ed8fd1631aa1c4c7a2fdb82cd6ced25f13260d9f6200a51a952235ffe33e82ff"
     },
     "content-site/blog/pet-food-bag-barrier-material-guide.html": {
       "bytes": 15845,
@@ -2686,13 +2830,37 @@
       "bytes": 14015,
       "sha256": "37556137191614064520b6769fb8dad50d04bbc96b6b176d2e690fb2b583c7f5"
     },
+    "content-site/blog/pet-window-patch-vs-open-window-box.html": {
+      "bytes": 17035,
+      "sha256": "3384c275a882626713e6c5216944d63eb1b069007aeb530fe80d769e19ff67f2"
+    },
     "content-site/blog/pharma-folding-carton-gs1-datamatrix-checklist.html": {
       "bytes": 16094,
       "sha256": "3eea072212afb83b001d6fe5c5486fbe9825b5771ee51c7fb419ebe0b3423981"
     },
+    "content-site/blog/pharmaceutical-carton-braille-tamper-evident-guide.html": {
+      "bytes": 16748,
+      "sha256": "eb749b764140dcd8dd3a01a9201cb8f89a785d3c634bd750855005461e2b2177"
+    },
     "content-site/blog/pharmaceutical-packaging-guide.html": {
       "bytes": 8972,
       "sha256": "0989d8b937a70d65793b7cc80960f234ccafa9f7f017ca8580cab3c7f70c2507"
+    },
+    "content-site/blog/pizza-box-e-flute-vs-b-flute-venting.html": {
+      "bytes": 15469,
+      "sha256": "1654652f7cce9620c00f185451f7f3103d139b36e81e1c1c4dc2a2b81a6113ea"
+    },
+    "content-site/blog/pouch-barcode-placement-gusset-curve-scan.html": {
+      "bytes": 17374,
+      "sha256": "fc764f04f0a638ccb35b01f493232451c608c1012dba242184fb4af194891946"
+    },
+    "content-site/blog/pouch-zipper-types-press-to-close-slider-child-resistant.html": {
+      "bytes": 16509,
+      "sha256": "b05ca45f6783e757662110ca4b8726ee13c1bab6ce8de1e467c9aa124aa51b1e"
+    },
+    "content-site/blog/pre-roll-tube-and-box-size-by-cone-length.html": {
+      "bytes": 15154,
+      "sha256": "db2370c316456f358fe6a46a546f28562e5d924e55fb59e46bae73391a8817a9"
     },
     "content-site/blog/prepare-artwork-dielines-packaging-production-china.html": {
       "bytes": 10416,
@@ -2702,6 +2870,22 @@
       "bytes": 7445,
       "sha256": "d2cbba31482a4633432530e0f2c199060193d3b49becec0eb8a327c1020a598e"
     },
+    "content-site/blog/prop-65-packaging-buyer-overview.html": {
+      "bytes": 17928,
+      "sha256": "2bb77893b1ab3e69302c11203253c14e8835b11c39141ff9c4a9ac388ba70bd5"
+    },
+    "content-site/blog/recyclable-mono-pe-pouch-vs-foil-barrier-shelf-life.html": {
+      "bytes": 15915,
+      "sha256": "dbc10202b115e9b6883bba9099aa11269882fbf9b256b3edde33d7a95b829580"
+    },
+    "content-site/blog/retort-pouch-structure-121c-vs-135c-sterilization.html": {
+      "bytes": 17108,
+      "sha256": "d7efcac90b0b1efa03def92ac7db3d79214443983215e10b3240163f880ab4b1"
+    },
+    "content-site/blog/reverse-tuck-end-vs-straight-tuck-end-vs-auto-bottom-box.html": {
+      "bytes": 16140,
+      "sha256": "8141930f96e2ef70b8f840cdcbc37ef427aa795c7a3e0228b2da67f1275ac7b3"
+    },
     "content-site/blog/rigid-box-vs-folding-carton-procurement-guide.html": {
       "bytes": 14485,
       "sha256": "3929d627287ed35bad582cae97285e079e0c6add36d1483fb41b1b4342ae3647"
@@ -2710,17 +2894,41 @@
       "bytes": 7636,
       "sha256": "1d61c5f05eb01c61cd123e9f3f544f98f032ffe171aceffaeae6159443ebc3ac"
     },
+    "content-site/blog/rigid-box-warping-causes-prevention.html": {
+      "bytes": 17318,
+      "sha256": "2a43949d7518d7565858440175f6d5212dc9486b5c9ccd0449dc39a26319459d"
+    },
     "content-site/blog/rigid-boxes-vs-folding-cartons-vs-mailer-boxes.html": {
       "bytes": 10461,
       "sha256": "af15fd23cbfeb60ef8f846feb3c693ef549cf49e9f9e423ae46d80b669f19e1f"
+    },
+    "content-site/blog/rigid-gift-box-greyboard-thickness-guide.html": {
+      "bytes": 15605,
+      "sha256": "7dd987765e1e7a88749989a25ad2e1c4715be0c2e80e15f49e03689e8772bda7"
+    },
+    "content-site/blog/ring-binder-o-ring-vs-d-ring-capacity.html": {
+      "bytes": 16256,
+      "sha256": "73e32741fb4eddc3e043801da3197c54ea9419fe5756b3990be8aebe3e7e6617"
     },
     "content-site/blog/roll-label-winding-direction-application-checklist.html": {
       "bytes": 12555,
       "sha256": "bba6b777f33c43a8c50d266af6101d5b35a943e6e8f0773b61f32b5706c756bc"
     },
+    "content-site/blog/roll-stock-film-spec-sheet-vffs-hffs.html": {
+      "bytes": 16765,
+      "sha256": "bf9f1701b39aee57cb7e01e68c6b70632b555e7ca4cb724b73057e9bb9d25a6a"
+    },
     "content-site/blog/shipping-custom-packaging-china-ddp-fob-air-freight.html": {
       "bytes": 16233,
       "sha256": "0ae2f76df7251ca502a46717afbdf4875a375da9ac6e72d1ab0868cdd5a29c7e"
+    },
+    "content-site/blog/shrink-sleeve-petg-vs-pvc-vs-ops-distortion.html": {
+      "bytes": 16354,
+      "sha256": "fdda90efe8b76cb1b426ad23b52765dd148d13d57d1593620c6bc8e447e52d83"
+    },
+    "content-site/blog/skincare-brand-launch-packaging-checklist.html": {
+      "bytes": 18056,
+      "sha256": "fd87c472dbc73c9eba9be1912907e23cc27b34da8176db0e7cdd063812752977"
     },
     "content-site/blog/skincare-cosmetic-box-insert-fit-guide.html": {
       "bytes": 11719,
@@ -2738,9 +2946,21 @@
       "bytes": 8703,
       "sha256": "eb54bc98ccac336939d30513e7b9766dd8e698f750351d131e25845c8ac4a57a"
     },
+    "content-site/blog/spout-pouch-spout-size-by-product.html": {
+      "bytes": 17654,
+      "sha256": "d85314212518125a0112855fbd07cfb4162febcce33e14fce2b625fd1baca0f8"
+    },
     "content-site/blog/stand-up-pouch-barrier-materials.html": {
       "bytes": 9847,
       "sha256": "2f86d04f4d5d8f5353d9514f0f353a3245a55c71683428797b7cbe687d13a03b"
+    },
+    "content-site/blog/stand-up-pouch-seal-leak-troubleshooting.html": {
+      "bytes": 17054,
+      "sha256": "ac8245c8544eca89312cb398feea5594221ed83b09280c0250cc6b08dada8e73"
+    },
+    "content-site/blog/stand-up-pouch-size-guide-by-fill-weight.html": {
+      "bytes": 16552,
+      "sha256": "6035ce4eccd4b4ffd0a9e7772ca83e1270f86eb63853c2578fc7871c8e121f91"
     },
     "content-site/blog/subscription-box-packaging.html": {
       "bytes": 9317,
@@ -2750,17 +2970,53 @@
       "bytes": 12165,
       "sha256": "56340a902dde41c1d0af5fb7468fbc8b2bb191d91b3844f193250c3df25217f4"
     },
+    "content-site/blog/sustainable-packaging-inks-soy-water-based-uv.html": {
+      "bytes": 15977,
+      "sha256": "0c6ebe80ea06d18f9bbc4db2fff7e3185223f578bb18e000566e5e070c26728a"
+    },
+    "content-site/blog/takeaway-food-box-size-by-menu-item.html": {
+      "bytes": 16228,
+      "sha256": "a1af89f9ee52a7f783d88686f88c778de59cb552dbd7de6d87e570baa423dff8"
+    },
     "content-site/blog/tea-coffee-packaging-trends.html": {
       "bytes": 9283,
       "sha256": "b3cefdbe45b241afeb47f349d3f8e4d15bb162fdaa20f85e54f1f2e7b193bb62"
+    },
+    "content-site/blog/three-side-seal-vs-side-gusset-vs-pillow-pouch.html": {
+      "bytes": 16418,
+      "sha256": "c81c012bb643da069754a7a9149108207467da1cbba2657af91c2645c7422c0a"
+    },
+    "content-site/blog/tin-box-lid-types-slip-hinged-screw-plug.html": {
+      "bytes": 16901,
+      "sha256": "02860bbf9c622b1bf681fbe95a4dc87a64995c91e0b0f09174231deed48af1f7"
+    },
+    "content-site/blog/uk-epr-packaging-data-from-supplier.html": {
+      "bytes": 16983,
+      "sha256": "bdc723b6bc5a71779046ce0fb00c5f0701a74f13b3cde33fcaf86910f3e369cb"
+    },
+    "content-site/blog/us-import-duties-custom-packaging-china-overview.html": {
+      "bytes": 19058,
+      "sha256": "fce7e733a04967cf6d1cc8f8274aac6dbcdae0abf0982204daef56b550159233"
     },
     "content-site/blog/variable-data-pharma-packaging.html": {
       "bytes": 11561,
       "sha256": "40fdb3fdf4458ef00932660e403768a9a8617f438059caaeddf6f26965afe714"
     },
+    "content-site/blog/water-activated-paper-tape-vs-bopp-printed-tape.html": {
+      "bytes": 16332,
+      "sha256": "e2e9d0eb1da029837da7eab0d24618984dc2683efa3580f125d6a056b317a0e8"
+    },
+    "content-site/blog/white-ink-underprint-clear-metallic-kraft.html": {
+      "bytes": 16846,
+      "sha256": "83c6785e75222d27ea5182094f002b907eac40ec09aff169f1be0d2dd6265055"
+    },
     "content-site/blog/wine-spirits-packaging-guide.html": {
       "bytes": 7565,
       "sha256": "2b8ad5292e72162f1f2a6b9166ef095920dc69969198b95b881ebed5c4631c6a"
+    },
+    "content-site/blog/working-with-china-packaging-factory-communication.html": {
+      "bytes": 16944,
+      "sha256": "1bd5ce41aac0857ed892f4a0b125896ec0baf6350101c62c18acbcb9c208ddd4"
     },
     "content-site/brand-profile.json": {
       "bytes": 308,
@@ -3719,8 +3975,8 @@
       "sha256": "e8d496212defe260977b0d932cb828373ad966b2c9f32119b0c80ae4022f4707"
     },
     "content-site/products.html": {
-      "bytes": 105774,
-      "sha256": "51cae748884ddfa49fbd4107fa1aa4e8b04a87b6f29fc7406a884e9b8f883b78"
+      "bytes": 116737,
+      "sha256": "619da13aa4ed1aee2c69ccc4e04c7d481362c390f2ae27e20cf8c6bec5e9a582"
     },
     "content-site/products/1kg-coffee-bean-bags.html": {
       "bytes": 17472,
@@ -3802,6 +4058,10 @@
       "bytes": 16825,
       "sha256": "89e57f3b85c2c01855114c08ed50677eaf364f6183a08c56516ae698b5ca981e"
     },
+    "content-site/products/custom-book-printing.html": {
+      "bytes": 18628,
+      "sha256": "b3cf754e2030a13cae52981786bfab4e7b81dc524d46f47efc4f2bafe2457c81"
+    },
     "content-site/products/custom-boxes-moq-500.html": {
       "bytes": 15295,
       "sha256": "ac186aa828aecf2b137e8f7508d95aee4ae0568ad17c25e7149cec62b7b0ffe9"
@@ -3813,6 +4073,14 @@
     "content-site/products/custom-cannabis-packaging.html": {
       "bytes": 16067,
       "sha256": "7b256721e376658840055c4821ed037a93106b7c2c1504ffd2f2dc0cffce0cef"
+    },
+    "content-site/products/custom-catalog-printing.html": {
+      "bytes": 17406,
+      "sha256": "adda8a962547610c2bc219a3027441be59890429af9d235a6d4f2a8fd5a58dbd"
+    },
+    "content-site/products/custom-chocolate-boxes-inserts.html": {
+      "bytes": 19595,
+      "sha256": "953babea20bcb0611051b2f19cae21325b3b48713fad28fa72595dbbedcb1155"
     },
     "content-site/products/custom-coffee-bags.html": {
       "bytes": 16213,
@@ -3834,9 +4102,17 @@
       "bytes": 15944,
       "sha256": "08215d274154e41122dbe9eaba105787a727ee3060a3bfd41b86a9ba9a4618ed"
     },
+    "content-site/products/custom-cotton-tote-bags.html": {
+      "bytes": 16803,
+      "sha256": "32ff2babc30ef66ae3df91a348b6fbbee7e7d9e4e4b811a6dc29f877ffd02f94"
+    },
     "content-site/products/custom-dark-green-magnetic-gift-box-set.html": {
       "bytes": 16906,
       "sha256": "f6941a5b8a72720501f599a46e00eba27aaa299d28704a14cb536b46d18c0efc"
+    },
+    "content-site/products/custom-drawstring-bags.html": {
+      "bytes": 17588,
+      "sha256": "c753cb29b9e5b9296c96d4a5f687e6fed31368a0d04f660069c61101126e319a"
     },
     "content-site/products/custom-dusty-rose-magnetic-gift-box-with-pouch.html": {
       "bytes": 16852,
@@ -3877,6 +4153,10 @@
     "content-site/products/custom-food-packaging.html": {
       "bytes": 13954,
       "sha256": "7f176ce521d08356ecf7eb2f3f2e13f44e4d4114d649213029f66e40ac2c8c47"
+    },
+    "content-site/products/custom-insulated-takeaway-bags.html": {
+      "bytes": 16539,
+      "sha256": "bc9f2d90ffc6d2273e455167d9282e5bc09118c6fe3f11fb9fe55fcce66b770f"
     },
     "content-site/products/custom-ivory-magnetic-gift-box-set.html": {
       "bytes": 16907,
@@ -3926,9 +4206,21 @@
       "bytes": 17070,
       "sha256": "08d7e4e8082138c5abe87737aec0b2f5859d39c26c5a56b69976ae99959a66df"
     },
+    "content-site/products/custom-macaron-cookie-boxes.html": {
+      "bytes": 20306,
+      "sha256": "4cdd08a2f86fd449873593b91e619a046fd095013e88bc48767aace32b834681"
+    },
     "content-site/products/custom-magnetic-closure-gift-boxes-pouch-tissue.html": {
       "bytes": 16885,
       "sha256": "0c4e50d9d2bfb935d92b0f9da186a96e6beafd26fec40cae0a8fd0f1b568e643"
+    },
+    "content-site/products/custom-manual-printing.html": {
+      "bytes": 17429,
+      "sha256": "6b5323b1a51cfa4e045c8cca73da5161a8e150ac37a8336927787c540ddf08e5"
+    },
+    "content-site/products/custom-non-woven-bags.html": {
+      "bytes": 16919,
+      "sha256": "20577504b4a522035933febe2138d0afac0821a971871f81e211f3374543c1b8"
     },
     "content-site/products/custom-packaging-boxes.html": {
       "bytes": 18477,
@@ -3941,6 +4233,14 @@
     "content-site/products/custom-paper-bags.html": {
       "bytes": 13455,
       "sha256": "d3f112808bae62bbccbdc14af5e159977f057ff88c97e4e1e51be31eff2d7c23"
+    },
+    "content-site/products/custom-paper-bowls.html": {
+      "bytes": 16668,
+      "sha256": "5c4bc33288e99db1c30acd3db0ab81bd59fbb36bfbdd0b1ff9fa89752daa1f94"
+    },
+    "content-site/products/custom-paper-cups.html": {
+      "bytes": 21217,
+      "sha256": "b68f770238f223d9b644bf6610bf2f02a1cbc056d40c61713b906436cf96c164"
     },
     "content-site/products/custom-perfume-packaging-boxes-flocked-inserts.html": {
       "bytes": 16862,
@@ -3961,6 +4261,10 @@
     "content-site/products/custom-pr-boxes-influencer-kits-compartment-inserts.html": {
       "bytes": 17315,
       "sha256": "2e39b352e65451e4075af4775195e1e45d4a28e1172659d0cec8b1d681cccb18"
+    },
+    "content-site/products/custom-printed-cards.html": {
+      "bytes": 16906,
+      "sha256": "5808eb84e68f7a4ede8a0acd84904504168b05f57efa9aec9c29c6e07d537c29"
     },
     "content-site/products/custom-printed-tape.html": {
       "bytes": 17379,
@@ -3990,6 +4294,10 @@
       "bytes": 16769,
       "sha256": "beb54e019decb4006dbf30ffd50ef8bb9d0815f057fb11f19e7f18fa3c5dc772"
     },
+    "content-site/products/custom-sauce-cups.html": {
+      "bytes": 16852,
+      "sha256": "287d9e081f9118c5ffaa9d0318f6cbd8fe2f9b21c5656b4cf44ef149c49b8a93"
+    },
     "content-site/products/custom-shrink-sleeve-labels-bottles-cans.html": {
       "bytes": 19020,
       "sha256": "b1b8358e8743075b8c2fc2a0fbe4371cfb75b6d726ca74ef6c40674da01d5073"
@@ -4005,6 +4313,10 @@
     "content-site/products/custom-stand-up-pouches.html": {
       "bytes": 35099,
       "sha256": "67393f5c969ca97a31bf0268cee314568942fbec2ffccccd3f3271fdfbd1354d"
+    },
+    "content-site/products/custom-takeaway-meal-boxes.html": {
+      "bytes": 15081,
+      "sha256": "dcdcce237c9f4d7471b97241d7082da3d15828f92ca7fc40f16acbda8ec45ee7"
     },
     "content-site/products/custom-tea-packaging-bags.html": {
       "bytes": 17609,
@@ -4734,6 +5046,18 @@
       "bytes": 53952,
       "sha256": "c5a934a22be31f6a0280efd653173951ea644c6ccac9aa1e411aed74697e9f87"
     },
+    "public/assets/products/chocolate-boxes/chocolate-gift-box-12-cavity-insert-01.jpg": {
+      "bytes": 228703,
+      "sha256": "d4cc8d6fd470dd864cfcf3f61dc3e469da61da6d94ace32ca327a79da45e115e"
+    },
+    "public/assets/products/chocolate-boxes/chocolate-gift-box-magnetic-book-style-02.jpg": {
+      "bytes": 453241,
+      "sha256": "49c9bcd15c40375901de2d4449b9466122d3a3337e17287761359174d6c55b7d"
+    },
+    "public/assets/products/chocolate-boxes/chocolate-gift-box-with-paper-bag-03.jpg": {
+      "bytes": 213344,
+      "sha256": "ba7bb805406139fda1b95fcdf027d673794e51628ab5e71702100c20ed5cc865"
+    },
     "public/assets/products/coffee-bags-01-640.webp": {
       "bytes": 14216,
       "sha256": "fd1e9717259538064fcc85579a9fa24848b520c5460bc06dc6ba1a019b5746e7"
@@ -5442,6 +5766,62 @@
       "bytes": 47404,
       "sha256": "ae435a42ded63188736e3ea1dc83fb5d4b0f0ee25b6acfc874c6dee116d1a955"
     },
+    "public/assets/products/expansion-2026-10-v2/new-01-books.webp": {
+      "bytes": 103270,
+      "sha256": "15858f4d14a24eabd51c2c9a51138fac62722d3ea5b116b93ab754517e962fdf"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-02-catalogs.webp": {
+      "bytes": 123230,
+      "sha256": "25b00bda41461d4137fd4118c0c89e4572824adf8af00e6af9ffbfe119459bb5"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-03-manuals.webp": {
+      "bytes": 57062,
+      "sha256": "ea58aa7db950d2d0a69ee0277e8eed35d9e985c978c12945c2d4ed06ec547bf3"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-04-drawstring-bags.webp": {
+      "bytes": 108216,
+      "sha256": "f7dd2323f39c2db6055a61e6484c1c217486bf50cf451f3a4d3f35f6246ee30a"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-05-cards.webp": {
+      "bytes": 87610,
+      "sha256": "449a545df17ac83c6371d385b4856c536d5c3d1ad8f3f44ab060759366a6be15"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-08-nonwoven-bags.webp": {
+      "bytes": 95576,
+      "sha256": "f365746183151f09ce89edef78fc7bd1f1040c73a011be725b66184113622434"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-09-cotton-bags.webp": {
+      "bytes": 215486,
+      "sha256": "b5519a2a2cf3b79425191122cba491389909fed546a3b9f29f0b16aeeeeeb5a7"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-10-insulated-takeaway-bags.webp": {
+      "bytes": 122480,
+      "sha256": "cbc2bef3e34c6675875c836335e553146120c7aaed7d7bddd801271db6119b16"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-11-paper-bowls.webp": {
+      "bytes": 79724,
+      "sha256": "243b0990f8c2a2c689074b442827f82d8dee2a7efa73a49cca7c9f88ad76f9ff"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-12-paper-cups.webp": {
+      "bytes": 94020,
+      "sha256": "fefd609729c6fd2796edf811813cfb4ffee27496a4713f106c1e57a03e97126b"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-13-milk-tea-cups.webp": {
+      "bytes": 88024,
+      "sha256": "4066ac2281fc1e9f1f18bb1ea4089ffe7016db57a067e120e5c459626cde66a2"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-14-coffee-cups.webp": {
+      "bytes": 181380,
+      "sha256": "6fc7a428f915b97a7707fc661051eee2960e160e215c7a335d1889d5a12fa49f"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-15-sauce-cups.webp": {
+      "bytes": 95326,
+      "sha256": "e8530b1be1e4a57fa2c0cf01cf41deafea8c628d4aa77df97b77fe209a4f24c0"
+    },
+    "public/assets/products/expansion-2026-10-v2/new-17-takeaway-meal-boxes.webp": {
+      "bytes": 121408,
+      "sha256": "10e170b6e04e85f1828e8a3552ce3f3b371a42f9d3d0d2fda7502ce95383a0cc"
+    },
     "public/assets/products/flexible-packaging-01-640.webp": {
       "bytes": 34142,
       "sha256": "4a4926c1426dbb18979c2616f85a3649f5412635ebaf8bda3cd8296253ea6df1"
@@ -5741,6 +6121,18 @@
     "public/assets/products/luxury-retail-paper-bags-01.webp": {
       "bytes": 23154,
       "sha256": "98ec6e514c537c6b132f3e33fedeb51a2072301bb00c0e53c44e1801bf3739a7"
+    },
+    "public/assets/products/macaron-boxes/macaron-box-10-cavity-insert-open-01.jpg": {
+      "bytes": 157789,
+      "sha256": "026f224f6132d9d8314f6d7dc06ecdc91e35fe74b932dbd36136278562484a99"
+    },
+    "public/assets/products/macaron-boxes/macaron-box-empty-divider-insert-02.jpg": {
+      "bytes": 100786,
+      "sha256": "a2c7a4dac28b001649f731b420fc688e1655f63b300f222f2f5133a1379c63e5"
+    },
+    "public/assets/products/macaron-boxes/macaron-box-printed-gradient-closed-03.jpg": {
+      "bytes": 78850,
+      "sha256": "03275cec80937bbb5aca3325eecbe86c8e2618f55fd568255d35bf9187d4c2e9"
     },
     "public/assets/products/matte-black-coffee-bags-01-640.webp": {
       "bytes": 23782,
