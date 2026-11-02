@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { LOCALES, localeUrl, splitLocaleRoute, translatedPaths } from '../lib/locales.js';
 
@@ -50,6 +51,20 @@ function sitemapDate(value) {
   return Number.isNaN(date.getTime()) ? '' : date.toISOString().slice(0, 10);
 }
 
+function gitCommitDate(file) {
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%ad', '--date=short', '--', file], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+      timeout: 5000
+    }).trim();
+    return out ? sitemapDate(out) : '';
+  } catch {
+    return '';
+  }
+}
+
 function lastModified(html, file, canonical) {
   const structuredDates = [
     ...[...html.matchAll(/["']dateModified["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1])),
@@ -57,7 +72,9 @@ function lastModified(html, file, canonical) {
   ].filter(Boolean).sort();
   if (structuredDates.length) return structuredDates[structuredDates.length - 1];
   if (previousLastmods.has(canonical)) return previousLastmods.get(canonical);
-  return sitemapDate(fs.statSync(file).mtime);
+  // Vercel checks files out with a fixed timestamp (2018-10-20); prefer the
+  // real authoring date from git over that meaningless mtime.
+  return gitCommitDate(file) || sitemapDate(fs.statSync(file).mtime);
 }
 
 function canonicalUrl(html) {
@@ -212,4 +229,30 @@ for (const output of outputs) {
 
 console.log(`Excluded ${skippedDedicated} product/blog/news detail URLs handled by dedicated sitemaps.`);
 console.log(`Skipped ${skippedNoindex} noindex pages and ${skippedNoCanonical} pages without a canonical URL.`);
+
+// The product/blog/news sitemaps are rendered at runtime by route handlers on
+// Vercel, where the deployment has no .git directory. Freeze the authoring dates
+// here so those routes can report a real lastmod instead of falling back to the
+// build image's 2018-10-20 file timestamp.
+const contentDates = {};
+for (const section of ['products', 'blog', 'news']) {
+  const directory = path.join(contentRoot, section);
+  if (!fs.existsSync(directory)) continue;
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
+    const file = path.join(directory, entry.name);
+    const html = fs.readFileSync(file, 'utf8');
+    const structured = [
+      ...[...html.matchAll(/["']dateModified["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1])),
+      ...[...html.matchAll(/["']datePublished["']\s*:\s*["']([^"']+)["']/gi)].map(match => sitemapDate(match[1]))
+    ].filter(Boolean).sort();
+    const date = structured.length ? structured[structured.length - 1] : gitCommitDate(file);
+    if (date) contentDates[`${section}/${entry.name}`] = date;
+  }
+}
+const datesFile = path.join(projectRoot, 'lib', 'content-dates.json');
+const datesJson = `${JSON.stringify(contentDates, null, 2)}\n`;
+const currentDates = fs.existsSync(datesFile) ? fs.readFileSync(datesFile, 'utf8') : '';
+if (currentDates !== datesJson) fs.writeFileSync(datesFile, datesJson, 'utf8');
+console.log(`Recorded ${Object.keys(contentDates).length} content authoring dates in lib/content-dates.json.`);
 

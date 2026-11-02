@@ -129,8 +129,8 @@
       "sha256": "9957da75f68eef00d09b7e0403be681772789a9d032f18a2cc195f61d1cfe508"
     },
     "scripts/generate-sitemap.mjs": {
-      "bytes": 8498,
-      "sha256": "1fac66fd8fa617a07db8193c6b7926a4a801d37e90f028000900100f3503fedd"
+      "bytes": 10658,
+      "sha256": "bdb994a5b804f7e5c91fd475abad0f9f81007e17b24048f2d8772564b7ea5241"
     },
     "public/robots.txt": {
       "bytes": 595,
@@ -3391,8 +3391,8 @@
       "sha256": "a45b4f7107209b963421d5bf9424e575103a7658a8678141b077606f3a7e1eae"
     },
     "content-site/index.html": {
-      "bytes": 53469,
-      "sha256": "93de617903ee8d2deccb66579b1e4855b40071fbd1cbf75952823192ac2428f9"
+      "bytes": 53604,
+      "sha256": "6fbadaa4721192bf05b377d9d4440f013c7d99ca5b61797fe4ad9e811fe28835"
     },
     "content-site/industries.html": {
       "bytes": 14311,
