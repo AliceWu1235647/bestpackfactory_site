@@ -129,8 +129,8 @@
       "sha256": "9957da75f68eef00d09b7e0403be681772789a9d032f18a2cc195f61d1cfe508"
     },
     "scripts/generate-sitemap.mjs": {
-      "bytes": 10658,
-      "sha256": "bdb994a5b804f7e5c91fd475abad0f9f81007e17b24048f2d8772564b7ea5241"
+      "bytes": 11411,
+      "sha256": "17017b2372d2cf86494853409fc5d500d5ee3506414b925624ab348661509946"
     },
     "public/robots.txt": {
       "bytes": 595,

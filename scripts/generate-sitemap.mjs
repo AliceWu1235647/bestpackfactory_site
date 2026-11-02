@@ -251,8 +251,23 @@ for (const section of ['products', 'blog', 'news']) {
   }
 }
 const datesFile = path.join(projectRoot, 'lib', 'content-dates.json');
-const datesJson = `${JSON.stringify(contentDates, null, 2)}\n`;
+// Never let a build that cannot read git history erase dates the committed
+// manifest already knows. Vercel does a shallow, single-commit checkout, so
+// `git log -- <file>` returns nothing for any file the head commit did not
+// touch; without this merge the manifest was rewritten every deploy with an
+// empty map and the runtime sitemap fell back to the build timestamp.
+let previousDates = {};
+try {
+  previousDates = JSON.parse(fs.readFileSync(datesFile, 'utf8'));
+} catch {
+  previousDates = {};
+}
+for (const [key, value] of Object.entries(previousDates)) {
+  if (!contentDates[key] && value) contentDates[key] = value;
+}
+const sortedDates = Object.fromEntries(Object.entries(contentDates).sort(([a], [b]) => a.localeCompare(b)));
+const datesJson = `${JSON.stringify(sortedDates, null, 2)}\n`;
 const currentDates = fs.existsSync(datesFile) ? fs.readFileSync(datesFile, 'utf8') : '';
 if (currentDates !== datesJson) fs.writeFileSync(datesFile, datesJson, 'utf8');
-console.log(`Recorded ${Object.keys(contentDates).length} content authoring dates in lib/content-dates.json.`);
+console.log(`Recorded ${Object.keys(sortedDates).length} content authoring dates in lib/content-dates.json.`);
 
