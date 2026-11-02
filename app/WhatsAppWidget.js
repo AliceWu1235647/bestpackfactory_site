@@ -57,6 +57,27 @@ export default function WhatsAppWidget() {
           /* Prevent any ancestor overflow from clipping this element */
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+          /* The dock's bounding box spans the gap between the WhatsApp bubble and
+             the email pill, and it z-indexes above everything else. Leaving the
+             container clickable made it swallow clicks on whatever sat underneath
+             (the homepage inquiry card's "Email Inquiry" button did not respond).
+             Only the dock's own links take pointer events now. */
+          pointer-events: none;
+        }
+        .bpf-contact-dock > a {
+          pointer-events: auto;
+        }
+        .bpf-contact-dock > a * {
+          pointer-events: none;
+        }
+
+        /* The homepage hero already carries its own larger "Need Custom
+           Packaging?" inquiry card at this width, so the floating dock would be
+           a duplicate stacked on top of it. Keep a single contact widget there. */
+        @media (min-width: 981px) {
+          body:has(.hero.hero-image-carousel.bpf-layered-carousel) .bpf-contact-dock {
+            display: none;
+          }
         }
 
         /* ---------- WhatsApp 圆形按钮 ---------- */
