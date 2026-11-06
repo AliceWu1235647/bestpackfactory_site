@@ -71,13 +71,13 @@ export default function WhatsAppWidget() {
           pointer-events: none;
         }
 
-        /* The homepage hero already carries its own larger "Need Custom
-           Packaging?" inquiry card at this width, so the floating dock would be
-           a duplicate stacked on top of it. Keep a single contact widget there. */
-        @media (min-width: 981px) {
-          body:has(.hero.hero-image-carousel.bpf-layered-carousel) .bpf-contact-dock {
-            display: none;
-          }
+        /* The floating dock is the site-wide contact widget. The homepage hero
+           also ships an older "Need Custom Packaging?" card (static markup that
+           style.css force-shows on the carousel homepage) which stacked on top of
+           the dock. Keep the dock and hide that duplicate card, matching every
+           other page where the card is already hidden. */
+        html body:has(.hero.hero-image-carousel.bpf-layered-carousel) .bpf-whatsapp-chat {
+          display: none !important;
         }
 
         /* ---------- WhatsApp 圆形按钮 ---------- */
