@@ -143,8 +143,8 @@
   },
   "contentFiles": {
     "content-site/about.html": {
-      "bytes": 15246,
-      "sha256": "bcacb8c51ad1a7bd0c154c8cca430979fbec63037b8df19b9ad331625b72a582"
+      "bytes": 15201,
+      "sha256": "04b4fedb89bdddd36be2bdae13c31bb91e0cde004ab9f98016fa928f549f39a1"
     },
     "content-site/ai-index.json": {
       "bytes": 44229,
@@ -3031,8 +3031,8 @@
       "sha256": "bb375c80da345c7bf82d8f4c0e8c6c312c4cbed8ea03b8d5a88ba8de60558cee"
     },
     "content-site/contact.html": {
-      "bytes": 12013,
-      "sha256": "084eedc212d7d2af30a3c1bc5ca4b869be139e7b2a31ff0c945ef14400819b03"
+      "bytes": 12050,
+      "sha256": "696a1fcde6c114f9a1985c25b9e9d85974f25f480b74c954a765b9e00563baee"
     },
     "content-site/css/i18n.css": {
       "bytes": 874,
@@ -3047,8 +3047,8 @@
       "sha256": "c82fd42d133830a0a2828f956992456de9187962a344daa547b95a5b937127ba"
     },
     "content-site/custom-packaging-manufacturer.html": {
-      "bytes": 17858,
-      "sha256": "38db4f7f4a92b40a806d7bd831c74831c4a54412dad15f4329302c2642caca5d"
+      "bytes": 17890,
+      "sha256": "210588b5754388e0c880902b1de00686af424d7728d4219ea73ced55a981c55c"
     },
     "content-site/custom-packaging-moq-500.html": {
       "bytes": 12460,
@@ -3979,64 +3979,64 @@
       "sha256": "619da13aa4ed1aee2c69ccc4e04c7d481362c390f2ae27e20cf8c6bec5e9a582"
     },
     "content-site/products/1kg-coffee-bean-bags.html": {
-      "bytes": 17472,
-      "sha256": "aa5e32a6fbcd0d45ca7e391389a0e71f2b5b0549cd645c365cf15685e42e7315"
+      "bytes": 16583,
+      "sha256": "f2301e3215887f7b69aeab11c1daa53202f2940ebd49eadbd16da0d45cdd9eb4"
     },
     "content-site/products/250g-coffee-bags-with-valve.html": {
-      "bytes": 17555,
-      "sha256": "55a4dd3a6c5401b1fbe6cf19471e8a854fb44b8a6f75490537c68ed7cf2328e2"
+      "bytes": 16652,
+      "sha256": "f7230f660fe31883d35ee6a789e804533dfcc4ddcbd666e16100f3f2e45442c6"
     },
     "content-site/products/500g-flat-bottom-coffee-bags.html": {
-      "bytes": 17519,
-      "sha256": "601a617fe48faeec904bc9bff3a5e4d394c724163d34593884c5d63a745f6239"
+      "bytes": 16614,
+      "sha256": "2f72744da374e52742d81506292fd37fef60b9ed0a8fbb0a640b18ecf88d6379"
     },
     "content-site/products/bakery-donut-packaging-boxes.html": {
-      "bytes": 14239,
-      "sha256": "174a6a15b6f33d1895985d17c8dbd91fc8b3c6bb3db6311d51db2d671c5af516"
+      "bytes": 13636,
+      "sha256": "15353863fa8bdba20207a1f620b0b6ad3cf2f25b22db0852ad040ad8840edc6c"
     },
     "content-site/products/bakery-paper-bags.html": {
-      "bytes": 17308,
-      "sha256": "f19e3d3b0215f28caaf05f3b5564658127fca039543cc75cc28165ec3224555e"
+      "bytes": 16491,
+      "sha256": "2603f7eb47f06b89188055d1ed359cc81c5301dd21ef3a1857731dfbd72509f7"
     },
     "content-site/products/burger-packaging-boxes.html": {
-      "bytes": 14088,
-      "sha256": "6610c6faec835fa64cc8391af01fad4c0af25f63f344e017f733ee6fb62cf867"
+      "bytes": 13477,
+      "sha256": "cc36a903deb636d18db9565416fc3a7dc197ff9629e94d8dbbecf91836b563f1"
     },
     "content-site/products/cannabis-child-resistant-bags.html": {
-      "bytes": 14976,
-      "sha256": "2b398cd2f85958ea8651ce24bd37be5062fa2818b2b2add60382e8c08389f860"
+      "bytes": 14110,
+      "sha256": "a421a22635361fd9c34120a15995458e82095f32e73995ce0e6326fdf323af49"
     },
     "content-site/products/cannabis-flower-packaging-bags.html": {
-      "bytes": 17708,
-      "sha256": "3f1389fc01758a772637b9fea65c55184499970e2af59c64091c00e87bb93fcc"
+      "bytes": 16808,
+      "sha256": "a98c7a615ce8a8da4127f41ca78181a1d4bb8e0879abb6977d5e51e6441accd3"
     },
     "content-site/products/cannabis-mylar-bags.html": {
-      "bytes": 17848,
-      "sha256": "8a139e1d286718495d6a8799c3a6db7c01bca5b2a8b4e28ef4663ccc4f9fae31"
+      "bytes": 17002,
+      "sha256": "eee4308f133435ae63f1dab0f34df5ecf535ecbfb0e8b1cfa1c2103229eddfbe"
     },
     "content-site/products/cannabis-stand-up-pouches.html": {
-      "bytes": 15288,
-      "sha256": "613a7cc3555ff9f1dbb1e503073a9441bab643ae54895217cd3cf1862b657473"
+      "bytes": 14573,
+      "sha256": "3e6a6a3860392febf3677de1b021407b08beda9f4de34a9e789644dcf963ac1d"
     },
     "content-site/products/cbd-gummies-packaging-bags.html": {
-      "bytes": 17611,
-      "sha256": "3c4395fb4a957d29d7a95ff4b7490fa43dc1de8dc6952d06278a8c0682c689b9"
+      "bytes": 16719,
+      "sha256": "e601a2d299a3306dbcc8a6f7975478fb66968832358ab1974c5b59419070e03f"
     },
     "content-site/products/child-resistant-cannabis-mylar-bags.html": {
-      "bytes": 17833,
-      "sha256": "385cffe251ac781f02fbfdca958f06b7185fd7d66cbd8910d736863b7abf9682"
+      "bytes": 16922,
+      "sha256": "b37a94c27df3de48bc0b2e80516ea0cd39a8083c54ad845d590876c9b17cad29"
     },
     "content-site/products/coffee-bags.html": {
-      "bytes": 17546,
-      "sha256": "59e10cc66331dec4c950532246a74265c369095b3ed4b0b51eb80e4b7b934be0"
+      "bytes": 16708,
+      "sha256": "12140e7e80046fa6bd1964ec0ba9779706d13dd1136175c657a05fc29f4aa735"
     },
     "content-site/products/collagen-powder-packaging-pouches.html": {
-      "bytes": 17733,
-      "sha256": "5066bb908f4063dc6ae432b2da0e7088a1bdba197881b48025ae82b852cc4a04"
+      "bytes": 16839,
+      "sha256": "17565cef6f413c70fb42a207d244efe378932d1a9d645296415a037863a87c8f"
     },
     "content-site/products/custom-black-foldable-magnetic-gift-boxes-tissue-paper-stickers.html": {
-      "bytes": 18250,
-      "sha256": "95bfc0525a65e7be6172ea654ffe9caa434b05ddd8c0aca4758e96d08eddc5be"
+      "bytes": 17793,
+      "sha256": "ac8f16e73d8dd07d2b8268560076e38158a49c7b176cac0f7b86226ae861be38"
     },
     "content-site/products/custom-black-magnetic-cosmetic-box-with-foam-insert.html": {
       "bytes": 17142,
@@ -4059,60 +4059,60 @@
       "sha256": "89e57f3b85c2c01855114c08ed50677eaf364f6183a08c56516ae698b5ca981e"
     },
     "content-site/products/custom-book-printing.html": {
-      "bytes": 18628,
-      "sha256": "b3cf754e2030a13cae52981786bfab4e7b81dc524d46f47efc4f2bafe2457c81"
+      "bytes": 17714,
+      "sha256": "2cf6fcf4f07de7735e554411bc49c697cac7e049730909bf5ffcf0baaf31ccd0"
     },
     "content-site/products/custom-boxes-moq-500.html": {
-      "bytes": 15295,
-      "sha256": "ac186aa828aecf2b137e8f7508d95aee4ae0568ad17c25e7149cec62b7b0ffe9"
+      "bytes": 14270,
+      "sha256": "247444936797301f1b318603f922c82c6dc107dd1199821931a4972840bcfc74"
     },
     "content-site/products/custom-boxes.html": {
-      "bytes": 19181,
-      "sha256": "7e47aa0c5a9b817b3adef378a094ada6562de5628e5102dab9cb9836d26b8087"
+      "bytes": 18580,
+      "sha256": "a8daf5bb1f95f161d663d080805fe50ed39c5364c5858a8c8c4b448e281d275b"
     },
     "content-site/products/custom-cannabis-packaging.html": {
       "bytes": 16067,
       "sha256": "7b256721e376658840055c4821ed037a93106b7c2c1504ffd2f2dc0cffce0cef"
     },
     "content-site/products/custom-catalog-printing.html": {
-      "bytes": 17406,
-      "sha256": "adda8a962547610c2bc219a3027441be59890429af9d235a6d4f2a8fd5a58dbd"
+      "bytes": 16150,
+      "sha256": "2c151783436c8927e087904a723ee46dd23f2f88ea983736183d6ad3248c9e02"
     },
     "content-site/products/custom-chocolate-boxes-inserts.html": {
-      "bytes": 19595,
-      "sha256": "953babea20bcb0611051b2f19cae21325b3b48713fad28fa72595dbbedcb1155"
+      "bytes": 18418,
+      "sha256": "58a2f4942b3113c0d65ff2873ea37d4d1760abd366e664d6e24d8d09d14f043e"
     },
     "content-site/products/custom-coffee-bags.html": {
       "bytes": 16213,
       "sha256": "9c61b645144bc1fd063ae677742bde8c0bd32a065d63c06e66cdcdb9558c9398"
     },
     "content-site/products/custom-compostable-stand-up-pouches.html": {
-      "bytes": 17273,
-      "sha256": "266e79be3b579b1a422d874ca57e6c0c257505714e6482e7118d4e66a6292575"
+      "bytes": 16395,
+      "sha256": "faf3e4f76b5bce30aa578b2ab574c7ea18a07f881b0c3200ac8559f5c751049a"
     },
     "content-site/products/custom-cosmetic-compact-packaging-boxes-die-cut-inserts.html": {
       "bytes": 16811,
       "sha256": "2ace1eafb90c95722594c690f05b8321de1b90a48b1e2587eb2e6e6944398fac"
     },
     "content-site/products/custom-cosmetic-packaging-boxes.html": {
-      "bytes": 17908,
-      "sha256": "c0f3dda0db079f25ffd3ad864ff35aca1a2a6c0ec63fd991ff05ddd5bccd82e7"
+      "bytes": 17242,
+      "sha256": "475e5827d283233a5c5eaf8dd8f47e5256686b158bc15392dd518fa49a0ebd3f"
     },
     "content-site/products/custom-cosmetic-packaging.html": {
       "bytes": 15944,
       "sha256": "08215d274154e41122dbe9eaba105787a727ee3060a3bfd41b86a9ba9a4618ed"
     },
     "content-site/products/custom-cotton-tote-bags.html": {
-      "bytes": 16803,
-      "sha256": "32ff2babc30ef66ae3df91a348b6fbbee7e7d9e4e4b811a6dc29f877ffd02f94"
+      "bytes": 16120,
+      "sha256": "142b1ff811ffc0c2db6edb8b52d7bd16cf87cf87889d173ed3c45b8b3315dde2"
     },
     "content-site/products/custom-dark-green-magnetic-gift-box-set.html": {
       "bytes": 16906,
       "sha256": "f6941a5b8a72720501f599a46e00eba27aaa299d28704a14cb536b46d18c0efc"
     },
     "content-site/products/custom-drawstring-bags.html": {
-      "bytes": 17588,
-      "sha256": "c753cb29b9e5b9296c96d4a5f687e6fed31368a0d04f660069c61101126e319a"
+      "bytes": 16686,
+      "sha256": "16401d8629704128541c644fb1ae2d25b3dd90a2f04e962cef45fef738d596a0"
     },
     "content-site/products/custom-dusty-rose-magnetic-gift-box-with-pouch.html": {
       "bytes": 16852,
@@ -4155,8 +4155,8 @@
       "sha256": "7f176ce521d08356ecf7eb2f3f2e13f44e4d4114d649213029f66e40ac2c8c47"
     },
     "content-site/products/custom-insulated-takeaway-bags.html": {
-      "bytes": 16539,
-      "sha256": "bc9f2d90ffc6d2273e455167d9282e5bc09118c6fe3f11fb9fe55fcce66b770f"
+      "bytes": 15696,
+      "sha256": "a532a81fe0890ae8f6b7417128adaec53adbc6f6140fdceb8d9a66bb0ec59b36"
     },
     "content-site/products/custom-ivory-magnetic-gift-box-set.html": {
       "bytes": 16907,
@@ -4195,8 +4195,8 @@
       "sha256": "deef01c77c7bd52989064c61cfab3e24a62b84c699673ab1146bca6b1e9cb0b8"
     },
     "content-site/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.html": {
-      "bytes": 14723,
-      "sha256": "87c023c8767bdd669cbebd0783728ef82a6c4ea8de573cfc18db4d72fd47c162"
+      "bytes": 14231,
+      "sha256": "afba82724daac745a169e6039cd1d1936ccb688a21c53d1f8a84d27206f984f9"
     },
     "content-site/products/custom-luxury-gift-boxes-manufacturer-premium-rigid-gift-packaging.json": {
       "bytes": 1792,
@@ -4207,40 +4207,40 @@
       "sha256": "08d7e4e8082138c5abe87737aec0b2f5859d39c26c5a56b69976ae99959a66df"
     },
     "content-site/products/custom-macaron-cookie-boxes.html": {
-      "bytes": 20306,
-      "sha256": "4cdd08a2f86fd449873593b91e619a046fd095013e88bc48767aace32b834681"
+      "bytes": 19233,
+      "sha256": "17234b14c169509ffd1242f2c37c220dd6547a4a43f3e8e2062a78cb78b1e7a9"
     },
     "content-site/products/custom-magnetic-closure-gift-boxes-pouch-tissue.html": {
       "bytes": 16885,
       "sha256": "0c4e50d9d2bfb935d92b0f9da186a96e6beafd26fec40cae0a8fd0f1b568e643"
     },
     "content-site/products/custom-manual-printing.html": {
-      "bytes": 17429,
-      "sha256": "6b5323b1a51cfa4e045c8cca73da5161a8e150ac37a8336927787c540ddf08e5"
+      "bytes": 16116,
+      "sha256": "0c8b41b3df69e09830c1410417ffa8fc907b01b7abde18494c9f6198c969fe9f"
     },
     "content-site/products/custom-non-woven-bags.html": {
-      "bytes": 16919,
-      "sha256": "20577504b4a522035933febe2138d0afac0821a971871f81e211f3374543c1b8"
+      "bytes": 16110,
+      "sha256": "674e37493563e07f3ed4834cb4135b87d8395f6849d4137c5b5257b3561e7889"
     },
     "content-site/products/custom-packaging-boxes.html": {
       "bytes": 18477,
       "sha256": "793e5f0b882e1f47a39d69adad4cc2c375ebe6ec97bbd4371b7bafe73b39587e"
     },
     "content-site/products/custom-paper-bags-wholesale.html": {
-      "bytes": 15603,
-      "sha256": "68a52cc703e9ba434abd812c12e04c609818705341c0fc4462fc9e178427f1e1"
+      "bytes": 15113,
+      "sha256": "0045734dbc36b13f882f28fe00fe296daa514d6cfd0ea0f4bb8b038c9efebdd2"
     },
     "content-site/products/custom-paper-bags.html": {
       "bytes": 13455,
       "sha256": "d3f112808bae62bbccbdc14af5e159977f057ff88c97e4e1e51be31eff2d7c23"
     },
     "content-site/products/custom-paper-bowls.html": {
-      "bytes": 16668,
-      "sha256": "5c4bc33288e99db1c30acd3db0ab81bd59fbb36bfbdd0b1ff9fa89752daa1f94"
+      "bytes": 15943,
+      "sha256": "b1b4af063142fac8fb526b29b00790a4dea58dd55df92a4f11832b12dcf79117"
     },
     "content-site/products/custom-paper-cups.html": {
-      "bytes": 21217,
-      "sha256": "b68f770238f223d9b644bf6610bf2f02a1cbc056d40c61713b906436cf96c164"
+      "bytes": 20184,
+      "sha256": "3d549edf553dc5aa279e7b98592ae7fe6bdfb19398fef4e633310588bbbd3bf7"
     },
     "content-site/products/custom-perfume-packaging-boxes-flocked-inserts.html": {
       "bytes": 16862,
@@ -4251,32 +4251,32 @@
       "sha256": "7ed08d8c4521007a055d511caa05d31930a8a7329be46ccada0c7df03f5113b1"
     },
     "content-site/products/custom-pizza-boxes.html": {
-      "bytes": 17760,
-      "sha256": "c452dd5c6b8b9d4ee96b3285ca08179debb8ae58f0d969fd617f52148bab450b"
+      "bytes": 17118,
+      "sha256": "f908c369bfed990a9bbcfb2e4956b36f56631c804a9c541217348761a1a33995"
     },
     "content-site/products/custom-pp-ring-binder-folders.html": {
-      "bytes": 16685,
-      "sha256": "2a92a1884a7e71aad388156c74d9b8976c07a777487423d3fdf200ce9601708b"
+      "bytes": 15859,
+      "sha256": "56270c2597dd91b46c6fbaa286a3d073813a5af7f0b89d3056eb3acea8495824"
     },
     "content-site/products/custom-pr-boxes-influencer-kits-compartment-inserts.html": {
       "bytes": 17315,
       "sha256": "2e39b352e65451e4075af4775195e1e45d4a28e1172659d0cec8b1d681cccb18"
     },
     "content-site/products/custom-printed-cards.html": {
-      "bytes": 16906,
-      "sha256": "5808eb84e68f7a4ede8a0acd84904504168b05f57efa9aec9c29c6e07d537c29"
+      "bytes": 15997,
+      "sha256": "0524ae9b2365f6237540522ea9c15e6b3bac1e17e758a181d17304e90e59095c"
     },
     "content-site/products/custom-printed-tape.html": {
-      "bytes": 17379,
-      "sha256": "fbd6731166e054b3fc1d47c31036d4cf055a9792091b83929fa1889ce8bf6149"
+      "bytes": 16510,
+      "sha256": "5d6cdcac42f5ff10928852164fb1752c8988438e1086009a2c4948197761f21c"
     },
     "content-site/products/custom-printed-tissue-paper.html": {
       "bytes": 17526,
       "sha256": "e0f25f6376955a1cf0c3ef6785849c7f1569f5b3667acfb39b971f164cf8c3f5"
     },
     "content-site/products/custom-retort-pouches-ready-meal-packaging.html": {
-      "bytes": 17037,
-      "sha256": "0b150cedf4e4dca61e554e838e735d1b1c258c189a93430394b96206af2d663a"
+      "bytes": 16200,
+      "sha256": "3400ba9c47e15a7759eae50fbf950dfa8b8fe021f03d6b3a5e3cd8c5eae08711"
     },
     "content-site/products/custom-ribbon-pull-gift-boxes-floral-foil-printing.html": {
       "bytes": 16649,
@@ -4287,168 +4287,168 @@
       "sha256": "48ae7421fd8a74a7174a911dfca76b2c009f3cdd737e488f404d6f702e949743"
     },
     "content-site/products/custom-rigid-boxes.html": {
-      "bytes": 33197,
-      "sha256": "0e7b54fec432f4995fd774aa1ef2ff23d2d5c8a3ce125e1678a672b698bd51f3"
+      "bytes": 32920,
+      "sha256": "6c9c8894d89d7b449ddd51d65b83db8fc308a75e13baa9955da565880d1c6901"
     },
     "content-site/products/custom-roll-stock-film-snack-protein-bar.html": {
-      "bytes": 16769,
-      "sha256": "beb54e019decb4006dbf30ffd50ef8bb9d0815f057fb11f19e7f18fa3c5dc772"
+      "bytes": 15910,
+      "sha256": "f7ed84e27ae37302f55ee401a14ecc2f51b3fdfd0fea50e93b5e06b7211d64e2"
     },
     "content-site/products/custom-sauce-cups.html": {
-      "bytes": 16852,
-      "sha256": "287d9e081f9118c5ffaa9d0318f6cbd8fe2f9b21c5656b4cf44ef149c49b8a93"
+      "bytes": 15565,
+      "sha256": "89a76b72e502b8a08c10b4411c8bcab6a42efc27f6e16381906c0e1b61eab502"
     },
     "content-site/products/custom-shrink-sleeve-labels-bottles-cans.html": {
-      "bytes": 19020,
-      "sha256": "b1b8358e8743075b8c2fc2a0fbe4371cfb75b6d726ca74ef6c40674da01d5073"
+      "bytes": 18230,
+      "sha256": "49cb7977277674604c23f986c9d97a6369c6cc045f624a5e2fe16578b343fef6"
     },
     "content-site/products/custom-spout-pouches-sauce-baby-food.html": {
-      "bytes": 16006,
-      "sha256": "c738fa23be318bc68db8ff16559809b49f4c53ecf13f30fff5747577fbf46358"
+      "bytes": 15448,
+      "sha256": "2c61034328fd085a28565b31415c0b528eda4cb3f1e6235fb06b273a4d2d1f67"
     },
     "content-site/products/custom-spout-pouches.html": {
       "bytes": 16241,
       "sha256": "4bf0143414f1560c1249d3fb3e70246a4f2b1881d2ef5e449becce64a79a4ebd"
     },
     "content-site/products/custom-stand-up-pouches.html": {
-      "bytes": 35099,
-      "sha256": "67393f5c969ca97a31bf0268cee314568942fbec2ffccccd3f3271fdfbd1354d"
+      "bytes": 34739,
+      "sha256": "5cde2b00351a29b90f137b813168e20760ea01496037548c3c306ebc5e57048e"
     },
     "content-site/products/custom-takeaway-meal-boxes.html": {
-      "bytes": 15081,
-      "sha256": "dcdcce237c9f4d7471b97241d7082da3d15828f92ca7fc40f16acbda8ec45ee7"
+      "bytes": 14047,
+      "sha256": "d31e5b588b34229173a352cc764483d5003520fb29dc04475409e8d99fd7dd62"
     },
     "content-site/products/custom-tea-packaging-bags.html": {
-      "bytes": 17609,
-      "sha256": "f156fd39611767fbdcd155e1a47a2b0910035d37b9d16cd9ae8a77f5db617364"
+      "bytes": 16710,
+      "sha256": "5493c9c0c9d4732022c14fc101306e58bca0fb42b160a4904126a191e86629dd"
     },
     "content-site/products/custom-tissue-paper.html": {
       "bytes": 15385,
       "sha256": "495be10261429b0743c7422af307c6a18dfdfd28e181f517ecb85297da937793"
     },
     "content-site/products/dog-food-flat-bottom-bags.html": {
-      "bytes": 18845,
-      "sha256": "dea1583d7136a515301d658b9a68025320fc8435ec72719c74e70dd698240a0d"
+      "bytes": 18024,
+      "sha256": "7b489bfa92627fe037ac4125bbd9fb7f75431b6a219b3c4acdce3a714ddefcea"
     },
     "content-site/products/flexible-packaging.html": {
-      "bytes": 22981,
-      "sha256": "01d8e67d6aa357bff3b4a5e4f52f50ad02dc3bb938e4f6125bb5ddb8c2bc3ebc"
+      "bytes": 22153,
+      "sha256": "c5346381bbf79e73e14274bf84a4a7522188c9a05fa6bf380d91f7c177fe1703"
     },
     "content-site/products/food-packaging.html": {
       "bytes": 30449,
       "sha256": "5089a0640b52e8a37110961a74e2a4dc3d215a53349715dc77adf469e5439716"
     },
     "content-site/products/fried-chicken-packaging-boxes.html": {
-      "bytes": 14192,
-      "sha256": "f31806495887b9843abe9ed865573c31ae552c5e23dd261c4dcb4864bcc90dd0"
+      "bytes": 13567,
+      "sha256": "f64ecde895744e00e0f01cc51d2b5913d46275b694837119047bc3cfad3e0001"
     },
     "content-site/products/fries-packaging-boxes.html": {
-      "bytes": 14061,
-      "sha256": "6ebea1a4e4d787448c61d13270cd523c1cb752a661ed12c6b3cbdb0b6a343172"
+      "bytes": 13452,
+      "sha256": "8d162c4bde6a5c6d3eda1f3a1f917ff63dc511c1a47ad17196c55ab297cc6d9e"
     },
     "content-site/products/gs1-pharma-packaging-boxes.html": {
-      "bytes": 14486,
-      "sha256": "399f5eec811101b442ef6db1b3063dea89df5e4c379c7e682c484b986abcc1cb"
+      "bytes": 13861,
+      "sha256": "9fce27c7d17db3339a09decf2d0c82c37c3178034b2a77ef417535782c3aaaac"
     },
     "content-site/products/kraft-paper-coffee-bags.html": {
-      "bytes": 17832,
-      "sha256": "000ba92cbfe8a33769e0e47e2f871e9b1570b61c8652ce6e9d434b4b030a02e6"
+      "bytes": 16937,
+      "sha256": "11a71fc77e2a560382fe0f9e227ee56265c4202b76285690106c3618cfa7fca7"
     },
     "content-site/products/labels-stickers.html": {
-      "bytes": 15438,
-      "sha256": "0cd429cabfc210face4f595f1f45a0855b068be8ed3afbe7e51fecfab8ab5650"
+      "bytes": 14603,
+      "sha256": "974ae2d219f3a37c76f7140b098fc6edfd2e143e29a3dfd5c9eeaaeef70c2599"
     },
     "content-site/products/luxury-magnetic-boxes.html": {
       "bytes": 28935,
       "sha256": "2215819899fa014e26a9b4362d770b14723b5433d4e91390aa24a8eab0397423"
     },
     "content-site/products/luxury-retail-paper-bags.html": {
-      "bytes": 17016,
-      "sha256": "72fb5832404c137c62c26bf896e8480b6841c2743a60939e05f0c82531565866"
+      "bytes": 16187,
+      "sha256": "afb819e1ab9bc86ffc1eb8ab54f44c8a872337f59ed1a533dece2f8efa7052ed"
     },
     "content-site/products/matte-black-coffee-bags.html": {
-      "bytes": 17601,
-      "sha256": "01e354e1022d259e2d5a4beeba5366e3a6fd82a3a14080ddabbe2f251dfca38d"
+      "bytes": 16706,
+      "sha256": "0b9ccc6c265f20f57d0856b0e25ab86139a4dff434faec1dd39876f89993d40d"
     },
     "content-site/products/medical-aesthetic-packaging-boxes.html": {
       "bytes": 12802,
       "sha256": "2a4ea82b132b3169aea7dbe0d1050849b86d9780f51776746d5e87664bfc15e0"
     },
     "content-site/products/paper-bags.html": {
-      "bytes": 32275,
-      "sha256": "240a5e70f8a20dada5a219827f17da93d42b84aaf657309fb59d60bae43679e8"
+      "bytes": 32084,
+      "sha256": "9de65b1680726e565278ae5aadbd15f76453992ae7b1b2c726d9171d4026878b"
     },
     "content-site/products/pet-bottles-candy-pharma.html": {
-      "bytes": 14828,
-      "sha256": "79248ea7c853210009a02c9d9e5a6c881f6d792177ea5dd974fba142fc10da8b"
+      "bytes": 13917,
+      "sha256": "6ac25319ce8a66aa223cbcd53320f55447a46509c2bdc09a45eced2268141c4f"
     },
     "content-site/products/pet-bottles.html": {
-      "bytes": 15129,
-      "sha256": "98764616b058eec4055036f8dbb773430a405f75b9c62eb624b0a03277b576db"
+      "bytes": 14324,
+      "sha256": "30ceb28cb4ac8529f770f496775846146202d1f8c0f2c0c7a60535a4a1c36a4f"
     },
     "content-site/products/pet-food-bags.html": {
-      "bytes": 18103,
-      "sha256": "5b27e4c98ef0bb5f4b7a79e6f17fbe538d6ca53479f612dc975f8b69461b4fdb"
+      "bytes": 17271,
+      "sha256": "62c5d0f0d83e19fdde8d5f13ea9da26150670cca75263bf8654eef981e3b1362"
     },
     "content-site/products/pharma-packaging.html": {
-      "bytes": 17735,
-      "sha256": "b1ff0c9f1e3e5009d3517f7a273137bb653d559f8bfca9cf3946d108e9c5592c"
+      "bytes": 17118,
+      "sha256": "ebbc41672f0528a6fd728d360c9aa6f1541578875c2d0284d3c0fd9acc041fce"
     },
     "content-site/products/pharmaceutical-folding-cartons.html": {
-      "bytes": 18064,
-      "sha256": "547bd54d3a4ec9c9564354fffd97a502beaa57cdafce18556058ec049896d85d"
+      "bytes": 17386,
+      "sha256": "c209802654a347c7c2a1a299f6190ac2e56794cfc2b91d67a39697ad38673023"
     },
     "content-site/products/pizza-packaging-boxes.html": {
-      "bytes": 14187,
-      "sha256": "42da7437fe9f158e1e63a33fedbc0174a47b858e52bf294ba153ca268e6e2505"
+      "bytes": 13578,
+      "sha256": "ff5eed7888bccaeeaf9d8de2304f35e31a7efc349206e30886fb2af3ca92b4c2"
     },
     "content-site/products/pre-roll-packaging-boxes.html": {
-      "bytes": 17555,
-      "sha256": "052362f0240a85eff03b4182c0262bc81bd98ce2d554b60cfe91193be894000c"
+      "bytes": 16898,
+      "sha256": "4705ef766ed1c661ec145d713fbeb88c2ee06f527182adb7958a8e6f4acd5b96"
     },
     "content-site/products/protein-powder-stand-up-pouches.html": {
-      "bytes": 17790,
-      "sha256": "439ba0c94f17e8118797d810147e61bb1092a981748d71889bb902051e2abf4f"
+      "bytes": 16900,
+      "sha256": "260a4d2da2961d1905fceda1473bc6815e89e6ba29ad55752e08f7b2404b3a07"
     },
     "content-site/products/roll-labels-for-automatic-labeling.html": {
-      "bytes": 17686,
-      "sha256": "2b7e740a554aca572dc12663bbd4286696dfa885e4be5066eed33d382c27ed08"
+      "bytes": 16787,
+      "sha256": "1ebc9ed3249bc44e44ce951cdd92e0499da4bd781abfee56a1ec12549094e40a"
     },
     "content-site/products/sandwich-packaging-boxes.html": {
-      "bytes": 17144,
-      "sha256": "3df2c686a38d41b4b24cadc8c1a405334f9afab95f22614e4a062b0279750b0e"
+      "bytes": 16496,
+      "sha256": "71bd932f77cf7bf23a7c2d1314275428b0445385c8998684dccfcd0fc4a4335b"
     },
     "content-site/products/shawarma-packaging-boxes.html": {
-      "bytes": 14136,
-      "sha256": "2b088a8836bc105711bae961044b28f18b1fed0f71d45532ab8e50f1331aa5ba"
+      "bytes": 13521,
+      "sha256": "c602a70ac3dca63b70cffac414056286e10f313f683e563055e0d895ad487830"
     },
     "content-site/products/smell-proof-mylar-bags.html": {
-      "bytes": 17765,
-      "sha256": "43ff2dbfbc95086bf21103d301082cc0c8ccd4ddf329ea103551b563d2cf8c50"
+      "bytes": 16880,
+      "sha256": "b79a89d15cd783754f0630442f4a333eaa7de47fa43d4fc0569a80a49c045d52"
     },
     "content-site/products/stand-up-pouch.html": {
       "bytes": 18082,
       "sha256": "c084ca49d041e8def94be69c6c19b521664fc09b3854aca8c4383c75f1e7ed63"
     },
     "content-site/products/tin-boxes.html": {
-      "bytes": 14400,
-      "sha256": "c37382bdf721f5026bd0a1bd2dfde44e1bab4b1e658b7d6546db18e80af16585"
+      "bytes": 13605,
+      "sha256": "16d5874e819abea3fba9e29276088e65f701245bfc89b27c25b0710451972d9e"
     },
     "content-site/products/tissue-paper-packaging.html": {
-      "bytes": 14134,
-      "sha256": "006f57bf0437d017da5587b95d14829903f060488d60fb1e4e5edd210aa98630"
+      "bytes": 13401,
+      "sha256": "036a695f4fc19f8ad5637668c2ef61c3294f53491c9b52811c4c1ad9c33df1c8"
     },
     "content-site/products/vitamin-supplement-packaging-boxes.html": {
-      "bytes": 17758,
-      "sha256": "c57d7bf18331dd67339be9baaf06a19274c6c7f2aa707965710aa510eeba3f0f"
+      "bytes": 17072,
+      "sha256": "e9e81c6664b80e1d5b18e16c0e44a30f5f104f57304c08c7d3363bb0754dc3f9"
     },
     "content-site/products/weight-loss-pill-packaging-boxes.html": {
-      "bytes": 17636,
-      "sha256": "7ca1bc5e5b0cdba63b11ff74fe80d3ad1b856a27c063129e709d02c87baf772d"
+      "bytes": 16954,
+      "sha256": "c774d2fa46e990dd91a596ffff4d25bc9f2e289b2eb4b639d3ae2bfd4e213178"
     },
     "content-site/products/wine-magnetic-gift-boxes.html": {
-      "bytes": 17824,
-      "sha256": "b9e3600cb11b86a6ab7f4b586815dff4d312a64bd1995bf2e7097b82b9e2ed70"
+      "bytes": 17174,
+      "sha256": "c9de6d72089aacfd7c916175bfe224ee2609b712e94b1233427492c10a09f241"
     },
     "content-site/quote-ready-packaging-sourcing-hub.html": {
       "bytes": 16331,
